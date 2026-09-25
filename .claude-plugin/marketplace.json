@@ -1,0 +1,23 @@
+{
+  "name": "mattpocock",
+  "owner": {
+    "name": "Matt Pocock",
+    "url": "https://www.aihero.dev"
+  },
+  "description": "Matt Pocock 面向实际工程工作的技能，以可安装的 Claude Code 插件提供。",
+  "plugins": [
+    {
+      "name": "mattpocock-skills",
+      "source": "./",
+      "description": "Matt Pocock 面向实际工程工作的 agent 技能（追问、规格说明／工单流程、TDD、代码审查、领域建模等）。",
+      "category": "engineering",
+      "keywords": [
+        "engineering",
+        "skills",
+        "tdd",
+        "code-review",
+        "grilling"
+      ]
+    }
+  ]
+}

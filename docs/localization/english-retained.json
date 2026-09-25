@@ -1,0 +1,2249 @@
+{
+  "source_commit": "c55ee46073ed923f86ce59a5eb3b6d895095d1b7",
+  "candidates": [
+    {
+      "id": "009456c14b078eef58144adfeb7c83c3e09bc056fb213e8f2b2ed0a196d27cd3",
+      "path": "docs/engineering/wizard.md",
+      "part": "text",
+      "text": "GitHub Actions secrets",
+      "context": " 文件和 GitHub Actions secrets。",
+      "occurrences": 1,
+      "reason": "GitHub 产品及其 secrets 技术术语，保留英文身份或词形。"
+    },
+    {
+      "id": "014e36efee40eea7d81c9a7bbaf3ddc6b48138bcfa54181950dac5c7a24e54d4",
+      "path": "docs/engineering/code-review.md",
+      "part": "text",
+      "text": "no spec available",
+      "context": " 写入。没有这个文件，只要你提供路径，这个维度仍然能工作。如果根本没有规格说明，就跳过 Spec 子 agent，并在报告中写 \"no spec available\"，而不是编造需求。",
+      "occurrences": 1,
+      "reason": "固定模板标题、状态字段或输出字面量；其他文件/技能引用该名称，保留原文以维持协议。"
+    },
+    {
+      "id": "02626d2f1d556b4ff44a9e07b9cc5013fa0c6bd9afa5d251463f7ce0f6ec05b2",
+      "path": "skills/engineering/improve-codebase-architecture/HTML-REPORT.md",
+      "part": "fence:0",
+      "text": "small custom layer for things Tailwind doesn't cover cleanly",
+      "context": "      /* small custom layer for things Tailwind doesn't cover cleanly:",
+      "occurrences": 1,
+      "reason": "HTML 模板中 CSS 区域的代码解释注释，随原 CSS/脚本代码原样保留；可见页面文字已翻译。"
+    },
+    {
+      "id": "068f31b1e72bb49e9365824d89c5b9c5e188c6d5e44c33506aec62b29ae3b087",
+      "path": "skills/misc/README.md",
+      "part": "text",
+      "text": "Husky pre-commit hooks",
+      "context": "：设置包含 lint-staged、Prettier、类型检查和测试的 Husky pre-commit hooks。",
+      "occurrences": 1,
+      "reason": "包名及 pre-commit hooks 技术术语，保留英文身份或词形。"
+    },
+    {
+      "id": "07e0fbde5a2c2e8ae02559306588f9a34b8ac5baeee182dbf865ca1af8f13710",
+      "path": ".agents/writing-docs.md",
+      "part": "text",
+      "text": "AI Coding Dictionary",
+      "context": "页面使用的每个 AI Coding Dictionary 术语都采用词典写法，并且仅首次出现链接到词条。",
+      "occurrences": 1,
+      "reason": "词典专名，保留英文身份或词形。"
+    },
+    {
+      "id": "0d14da5367d8d8cae5b68d0f5b5753c5625cd0292314ae2292181c10e106c975",
+      "path": "skills/engineering/to-tickets/SKILL.md",
+      "part": "text",
+      "text": "can start immediately",
+      "context": "指向每张阻塞工单的引用，或 \"None (can start immediately)\"。",
+      "occurrences": 1,
+      "reason": "固定模板标题、状态字段或输出字面量；其他文件/技能引用该名称，保留原文以维持协议。"
+    },
+    {
+      "id": "0dff234e0baed297e71919c8fc3c02a7c9773a6a7fcea0ec66b65a089072a873",
+      "path": "skills/engineering/wayfinder/SKILL.md",
+      "part": "fence:0",
+      "text": "Decisions so far",
+      "context": "## Decisions so far",
+      "occurrences": 1,
+      "reason": "固定模板标题、状态字段或输出字面量；其他文件/技能引用该名称，保留原文以维持协议。"
+    },
+    {
+      "id": "0f90709abb1dd83d7e3245f1661ad83f852309899dc187c74621cb5d42dbba46",
+      "path": "skills/in-progress/writing-fragments/SKILL.md",
+      "part": "text",
+      "text": "cut the last one",
+      "context": "用户随时可以说 \"cut the last one\"（删掉最后一个）、\"rewrite that one sharper\"（把那个改得更有力）、\"merge those two\"（合并这两个）。把这些当作一等指令处理。",
+      "occurrences": 1,
+      "reason": "原文明确的触发或用户操作短语；保留英文触发条件，周围解释已译为中文。"
+    },
+    {
+      "id": "1182c27ad7f6293ab57f911b67348dcec581c084962a56373dc7433224f60b89",
+      "path": "skills/engineering/to-tickets/SKILL.md",
+      "part": "text",
+      "text": "What to build",
+      "context": "What to build:",
+      "occurrences": 1,
+      "reason": "固定模板标题、状态字段或输出字面量；其他文件/技能引用该名称，保留原文以维持协议。"
+    },
+    {
+      "id": "12735fc74ed1f47670de2113d06522bb857717bff2035ff352c4a5992953b347",
+      "path": "docs/engineering/to-tickets.md",
+      "part": "code_inline",
+      "text": "gh issue create",
+      "context": "gh issue create --blocked-by 12,15",
+      "occurrences": 1,
+      "reason": "原样命令示例及其参数，包含自然语言参数时也不改写命令；本任务不执行。"
+    },
+    {
+      "id": "14b44289c2cba44e9ac50551806c477fc67232c3725b7d87b371232098944829",
+      "path": "skills/engineering/triage/AGENT-BRIEF.md",
+      "part": "fence:4",
+      "text": "Files to change",
+      "context": "**Files to change:**",
+      "occurrences": 1,
+      "reason": "固定模板标题、状态字段或输出字面量；其他文件/技能引用该名称，保留原文以维持协议。"
+    },
+    {
+      "id": "1664b81a6819c20bae0c448dbd1c883fcf487b245db330f4b98b1ab689c0d185",
+      "path": "skills/engineering/setup-matt-pocock-skills/issue-tracker-github.md",
+      "part": "code_inline",
+      "text": "gh pr list",
+      "context": "gh pr list --state open --json number,title,body,labels,author,authorAssociation,comments",
+      "occurrences": 1,
+      "reason": "原样命令示例及其参数，包含自然语言参数时也不改写命令；本任务不执行。"
+    },
+    {
+      "id": "172007fd7695ff1e1da69f93bba3836469595cfbf52abbaefc558c1b76333075",
+      "path": "skills/engineering/setup-matt-pocock-skills/issue-tracker-github.md",
+      "part": "code_inline",
+      "text": "gh pr edit",
+      "context": "gh pr edit --add-label",
+      "occurrences": 1,
+      "reason": "原样命令示例及其参数，包含自然语言参数时也不改写命令；本任务不执行。"
+    },
+    {
+      "id": "191a17d4806e212e1ea754c5f42bfbc76199a0b6df987a077942880f398b9899",
+      "path": ".agents/writing-docs.md",
+      "part": "code_inline",
+      "text": "It's working if",
+      "context": "## It's working if",
+      "occurrences": 1,
+      "reason": "固定模板标题、状态字段或输出字面量；其他文件/技能引用该名称，保留原文以维持协议。"
+    },
+    {
+      "id": "198275f13b41fe80a2102e56904ed4700e3c7e8ae10181400ac962c6a9fe2ad8",
+      "path": "skills/engineering/to-spec/SKILL.md",
+      "part": "text",
+      "text": "Out of Scope",
+      "context": "Out of Scope",
+      "occurrences": 1,
+      "reason": "固定模板标题、状态字段或输出字面量；其他文件/技能引用该名称，保留原文以维持协议。"
+    },
+    {
+      "id": "1af9786e8f974c24298276de402bf80f8f50fd23fb6d6d467c76670efef0f0b2",
+      "path": ".agents/writing-docs.md",
+      "part": "text",
+      "text": "AI Coding Dictionary",
+      "context": "AI Coding Dictionary",
+      "occurrences": 1,
+      "reason": "词典专名，保留英文身份或词形。"
+    },
+    {
+      "id": "1c03a2903bdf8faa916a327c6284ba359a41d9ae77c186f157251fc3a9be4a65",
+      "path": "skills/engineering/setup-matt-pocock-skills/issue-tracker-gitlab.md",
+      "part": "code_inline",
+      "text": "glab issue view",
+      "context": "glab issue view <number> --comments",
+      "occurrences": 2,
+      "reason": "原样命令示例及其参数，包含自然语言参数时也不改写命令；本任务不执行。"
+    },
+    {
+      "id": "1c055aa8366639c213823da1271c49465adf376e1502f3f190cc8ccbf600ec16",
+      "path": "skills/engineering/setup-matt-pocock-skills/issue-tracker-github.md",
+      "part": "code_inline",
+      "text": "gh issue comment",
+      "context": "gh issue comment <number> --body \"...\"",
+      "occurrences": 1,
+      "reason": "原样命令示例及其参数，包含自然语言参数时也不改写命令；本任务不执行。"
+    },
+    {
+      "id": "1c1d655986a44f6b3ecd15a35dec488ddf3f0a02ba665d10d2aa7983af5e8c18",
+      "path": "docs/productivity/writing-for-agents.md",
+      "part": "text",
+      "text": "Writing for agents",
+      "context": "“Writing for agents”：是让 agent 来写吗？",
+      "occurrences": 1,
+      "reason": "FAQ 正在讨论的技能名称含义，保留英文身份或词形。"
+    },
+    {
+      "id": "1c50b667fdd2263f521f1780e82c57f15a3a6f9b28a54f2d6c98816157896430",
+      "path": "docs/engineering/domain-modeling.md",
+      "part": "code_inline",
+      "text": "md more concise and remove any implementation details from it",
+      "context": "/grill-with-docs make my CONTEXT.md more concise and remove any implementation details from it",
+      "occurrences": 1,
+      "reason": "原样命令示例及其参数，包含自然语言参数时也不改写命令；本任务不执行。"
+    },
+    {
+      "id": "1df44988bdd630be91be595eeb6871abb17b6f424d7548eed7ad03d9213c67b0",
+      "path": "docs/engineering/improve-codebase-architecture.md",
+      "part": "text",
+      "text": "just show the report",
+      "context": "可以：调用时说明（\"don't grill me, just show the report\"，即不要追问，只展示报告）。这是本技能最强烈的抱怨。一位用户直言，本来喜欢它是因为“能方便地获得全面的改进分析”，加入追问循环后却觉得“几乎无法使用”，报告说会话提出单一方案后，又问“几十甚至几百个问题”。设计意图是先给报告，只针对你选中的候选项开始追问；但较弱的",
+      "occurrences": 1,
+      "reason": "原文明确的触发或用户操作短语；保留英文触发条件，周围解释已译为中文。"
+    },
+    {
+      "id": "1e97b387837e512aef11d642f51d519bde99567a3e6f69515200e043e79d88ca",
+      "path": "skills/engineering/wayfinder/SKILL.md",
+      "part": "fence:0",
+      "text": "Not yet specified",
+      "context": "## Not yet specified",
+      "occurrences": 1,
+      "reason": "固定模板标题、状态字段或输出字面量；其他文件/技能引用该名称，保留原文以维持协议。"
+    },
+    {
+      "id": "1ef5eda10ab055529403f50cb55f075d78b9a010b5eeb9ae70295469ff9b148e",
+      "path": "skills/engineering/setup-matt-pocock-skills/issue-tracker-gitlab.md",
+      "part": "code_inline",
+      "text": "glab api projects",
+      "context": "glab api projects/:id/issues/:iid/links",
+      "occurrences": 1,
+      "reason": "原样命令示例及其参数，包含自然语言参数时也不改写命令；本任务不执行。"
+    },
+    {
+      "id": "1f48ca2e0216bed4571b3013053bd1ec4b235fb4b4defd4db7fc35e960e9ad06",
+      "path": "skills/productivity/teach/RESOURCES-FORMAT.md",
+      "part": "fence:0",
+      "text": "The Science and Practice of Strength Training",
+      "context": "- [书籍：Zatsiorsky 与 Kraemer 著 _The Science and Practice of Strength Training_](https://example.com)",
+      "occurrences": 1,
+      "reason": "著作标题，与作者和来源身份一起保留；其余说明中文。"
+    },
+    {
+      "id": "224df1f2c36ba57bedc2f53c80158734c11d5a8dfdde3cf514dd3176513b3e00",
+      "path": "README.md",
+      "part": "code_inline",
+      "text": "npx skills update",
+      "context": "npx skills update",
+      "occurrences": 1,
+      "reason": "原样命令示例及其参数，包含自然语言参数时也不改写命令；本任务不执行。"
+    },
+    {
+      "id": "22d32d1d8f41c3b49bcb7bee09d5b51f3228798b063e472833764e1f1d878fef",
+      "path": "skills/in-progress/pr/CREDITS.md",
+      "part": "text",
+      "text": "The shape of the change",
+      "context": "“变更的形态”（\"The shape of the change\"）章节几乎逐字转载自 ",
+      "occurrences": 1,
+      "reason": "credits 中指出转载来源的原章节标题，已有中文对应说明。"
+    },
+    {
+      "id": "22dc890d8f0280904bc604e0eb62277e74cf8a13bd6e4e34559c36b73de73c06",
+      "path": "skills/productivity/teach/RESOURCES-FORMAT.md",
+      "part": "fence:0",
+      "text": "How Much Should I Train",
+      "context": "- [文章：Greg Nuckols（Stronger By Science）的 \"How Much Should I Train?\"](https://example.com)",
+      "occurrences": 1,
+      "reason": "引用文章标题，与 Greg Nuckols / Stronger By Science 的署名保持一致。"
+    },
+    {
+      "id": "23cf7e9e8b31fc672dbcdc1faf64645642891029388ea8fdee48e5fa4fc1ceb4",
+      "path": "CLAUDE.md",
+      "part": "text",
+      "text": "It's working if",
+      "context": "It's working if",
+      "occurrences": 1,
+      "reason": "固定模板标题、状态字段或输出字面量；其他文件/技能引用该名称，保留原文以维持协议。"
+    },
+    {
+      "id": "251ddd65ad5af4ee67548cb4b620ee20462f1db948b414bfd207a596d6d045b3",
+      "path": "docs/engineering/triage.md",
+      "part": "code_inline",
+      "text": "This was generated by AI during triage",
+      "context": "> *This was generated by AI during triage.*",
+      "occurrences": 1,
+      "reason": "必须逐字输出的 triage 免责声明，与 SKILL.md 代码块保持一致。"
+    },
+    {
+      "id": "25281206206f253ffd63a59f76974c8d76853f6616b9c2bc70e6db33e9503a69",
+      "path": "skills/engineering/setup-matt-pocock-skills/issue-tracker-gitlab.md",
+      "part": "code_inline",
+      "text": "glab mr note",
+      "context": "glab mr note",
+      "occurrences": 2,
+      "reason": "原样命令示例及其参数，包含自然语言参数时也不改写命令；本任务不执行。"
+    },
+    {
+      "id": "2a222b2cbfd81849d8afa83fb7da3b91967f64ec52dab914ae4316675567e582",
+      "path": "skills/engineering/improve-codebase-architecture/HTML-REPORT.md",
+      "part": "fence:0",
+      "text": "dashed seam lines",
+      "context": "         dashed seam lines, hand-drawn-feeling arrow heads, etc. */",
+      "occurrences": 1,
+      "reason": "HTML 模板中 CSS 区域的代码解释注释，随原 CSS/脚本代码原样保留；可见页面文字已翻译。"
+    },
+    {
+      "id": "2c49dbcd4d77731ae6089702f01561707e0559bc4c85b48813b1f71b349450c1",
+      "path": "skills/engineering/setup-matt-pocock-skills/issue-tracker-github.md",
+      "part": "code_inline",
+      "text": "gh issue view",
+      "context": "gh issue view 42",
+      "occurrences": 1,
+      "reason": "原样命令示例及其参数，包含自然语言参数时也不改写命令；本任务不执行。"
+    },
+    {
+      "id": "2e4f567439ec455a58d6d9f68af925c9ac65e211776c1db716d29a0aceed6c61",
+      "path": "docs/engineering/setup-matt-pocock-skills.md",
+      "part": "text",
+      "text": "Config is death",
+      "context": "\"Config is death.\"（配置就是死路。）",
+      "occurrences": 1,
+      "reason": "原作者被明确引用的固定短句，已附中文翻译。"
+    },
+    {
+      "id": "2fbd3b16245d1089a594b1dbfb78ea4bd4a25a1c07b250909b47f67fb77d4600",
+      "path": "docs/engineering/improve-codebase-architecture.md",
+      "part": "text",
+      "text": "don't grill me",
+      "context": "可以：调用时说明（\"don't grill me, just show the report\"，即不要追问，只展示报告）。这是本技能最强烈的抱怨。一位用户直言，本来喜欢它是因为“能方便地获得全面的改进分析”，加入追问循环后却觉得“几乎无法使用”，报告说会话提出单一方案后，又问“几十甚至几百个问题”。设计意图是先给报告，只针对你选中的候选项开始追问；但较弱的",
+      "occurrences": 1,
+      "reason": "原文明确的触发或用户操作短语；保留英文触发条件，周围解释已译为中文。"
+    },
+    {
+      "id": "30a71b0b32b8813f0ad2e28b1511a4e311386683dd8d84870e14283dc33d1549",
+      "path": "docs/engineering/triage.md",
+      "part": "code_inline",
+      "text": "gh pr list",
+      "context": "gh pr list",
+      "occurrences": 1,
+      "reason": "原样命令示例及其参数，包含自然语言参数时也不改写命令；本任务不执行。"
+    },
+    {
+      "id": "30ab9857d7ad8b05b6e286337a6386b67a7009323e23744b77ac47ee80e8daba",
+      "path": "skills/engineering/setup-matt-pocock-skills/issue-tracker-gitlab.md",
+      "part": "code_inline",
+      "text": "glab mr view",
+      "context": "glab mr view <number> --comments",
+      "occurrences": 1,
+      "reason": "原样命令示例及其参数，包含自然语言参数时也不改写命令；本任务不执行。"
+    },
+    {
+      "id": "31a7757faa28e7c1d3a97e227b816691222350ba8ce4ffc8fee2b4f5d7e45924",
+      "path": "skills/engineering/improve-codebase-architecture/HTML-REPORT.md",
+      "part": "code_inline",
+      "text": "text-xs uppercase tracking-wider",
+      "context": "text-xs uppercase tracking-wider",
+      "occurrences": 1,
+      "reason": "Tailwind CSS class 字面量，不翻译。"
+    },
+    {
+      "id": "335eacb75c283a1e35ee4ca25f390a95cc8c23a0dcd3fd1ab5d043790630ba69",
+      "path": ".agents/invocation.md",
+      "part": "code_inline",
+      "text": "Call the Skill tool twice",
+      "context": "Call the Skill tool twice, for \"grilling\" and \"domain-modeling\"",
+      "occurrences": 1,
+      "reason": "技能调用规范的固定示例句，必须保留 Skill 工具及参数语义；不是本任务要执行的指令。"
+    },
+    {
+      "id": "37b7a818998b359df594a3cfb586a20fd25b5ee4c7ba5f82545b27d57dffe756",
+      "path": "skills/engineering/triage/AGENT-BRIEF.md",
+      "part": "fence:0",
+      "text": "Out of scope",
+      "context": "**Out of scope:**",
+      "occurrences": 1,
+      "reason": "固定模板标题、状态字段或输出字面量；其他文件/技能引用该名称，保留原文以维持协议。"
+    },
+    {
+      "id": "3ab917da3c7c46e63c0c130ca5651b1fd82d9ba0966bdfecc65b5f6f6212ee01",
+      "path": ".changeset/skill-tool-invocation-terminology.md",
+      "part": "code_inline",
+      "text": "Call the Skill tool with",
+      "context": "Call the Skill tool with \"grilling\"",
+      "occurrences": 1,
+      "reason": "技能调用规范的固定示例句，必须保留 Skill 工具及参数语义；不是本任务要执行的指令。"
+    },
+    {
+      "id": "3c62b73ca8c0bdea7ca35332fb42655ba6fc4408637191c9c54d312ac912e300",
+      "path": "skills/engineering/setup-matt-pocock-skills/issue-tracker-github.md",
+      "part": "code_inline",
+      "text": "gh issue view",
+      "context": "gh issue view <number> --comments",
+      "occurrences": 2,
+      "reason": "原样命令示例及其参数，包含自然语言参数时也不改写命令；本任务不执行。"
+    },
+    {
+      "id": "41be9ad5c68cfe7c014777a81327f9f618609d13a24552de15b30e239b1ab9b3",
+      "path": "skills/engineering/setup-matt-pocock-skills/issue-tracker-gitlab.md",
+      "part": "code_inline",
+      "text": "glab issue note",
+      "context": "glab issue note <n> --message \"<answer>\"",
+      "occurrences": 1,
+      "reason": "原样命令示例及其参数，包含自然语言参数时也不改写命令；本任务不执行。"
+    },
+    {
+      "id": "41d336b7b40da48e96f3a2de8bd4b1a95db374497416530abc10e3c3d3e59f4a",
+      "path": "skills/engineering/setup-matt-pocock-skills/issue-tracker-github.md",
+      "part": "code_inline",
+      "text": "gh issue list",
+      "context": "gh issue list --state open --json number,title,body,labels,comments --jq '[.[] | {number, title, body, labels: [.labels[].name], comments: [.comments[].body]}]'",
+      "occurrences": 1,
+      "reason": "原样命令示例及其参数，包含自然语言参数时也不改写命令；本任务不执行。"
+    },
+    {
+      "id": "41f196efe0545ee2c62e5a1a1b85cb150b5ab24c1a65f3092cb2ac1600507f89",
+      "path": "docs/engineering/wayfinder.md",
+      "part": "text",
+      "text": "Decisions so far",
+      "context": "Decisions so far",
+      "occurrences": 2,
+      "reason": "固定模板标题、状态字段或输出字面量；其他文件/技能引用该名称，保留原文以维持协议。"
+    },
+    {
+      "id": "44ac615c17a62ec658eb5b0e1aa624aeef6f0a634bbde657af137a7e8d27dc7c",
+      "path": "CHANGELOG.md",
+      "part": "text",
+      "text": "Simplified Technical English",
+      "context": "，用一个词纠正模型啰嗦。消息没讲明白时立刻输入，agent 会重新解释：补一点上下文，使用 ASD-STE100 Simplified Technical English，以及 ",
+      "occurrences": 1,
+      "reason": "ASD-STE100 标准专名，保留英文身份或词形。"
+    },
+    {
+      "id": "4706c04f8bfed7c60bc62078a73a8fdd32fdfcbe5d751b4c56d159c3abcf25f9",
+      "path": "skills/engineering/setup-matt-pocock-skills/issue-tracker-gitlab.md",
+      "part": "code_inline",
+      "text": "glab issue update",
+      "context": "glab issue update <n> --assignee @me",
+      "occurrences": 1,
+      "reason": "原样命令示例及其参数，包含自然语言参数时也不改写命令；本任务不执行。"
+    },
+    {
+      "id": "48d521d44ab07ec2764998789d655073a1c4540cc867f31d229c7a8d8dfe1452",
+      "path": "skills/engineering/wayfinder/SKILL.md",
+      "part": "fence:0",
+      "text": "Out of scope",
+      "context": "## Out of scope",
+      "occurrences": 1,
+      "reason": "固定模板标题、状态字段或输出字面量；其他文件/技能引用该名称，保留原文以维持协议。"
+    },
+    {
+      "id": "48dd9856c71fc55e51a9a56c0a48859269e3d3a7b25b26529b0721b9dea63531",
+      "path": "skills/engineering/setup-matt-pocock-skills/issue-tracker-gitlab.md",
+      "part": "code_inline",
+      "text": "glab issue update",
+      "context": "glab issue update <number> --label \"...\"",
+      "occurrences": 1,
+      "reason": "原样命令示例及其参数，包含自然语言参数时也不改写命令；本任务不执行。"
+    },
+    {
+      "id": "48ec4da7bf58bb0356d8c33ed19480af37d239c25e282527da8ed9307c05d8a7",
+      "path": "skills/in-progress/writing-fragments/SKILL.md",
+      "part": "text",
+      "text": "merge those two",
+      "context": "用户随时可以说 \"cut the last one\"（删掉最后一个）、\"rewrite that one sharper\"（把那个改得更有力）、\"merge those two\"（合并这两个）。把这些当作一等指令处理。",
+      "occurrences": 1,
+      "reason": "原文明确的触发或用户操作短语；保留英文触发条件，周围解释已译为中文。"
+    },
+    {
+      "id": "4957aec74534a36876e90b2f1b7f29de0629ed01e90a2989949fd24247ad0c59",
+      "path": ".agents/invocation.md",
+      "part": "code_inline",
+      "text": "Call the Skill tool with",
+      "context": "Call the Skill tool with \"grilling\"",
+      "occurrences": 1,
+      "reason": "技能调用规范的固定示例句，必须保留 Skill 工具及参数语义；不是本任务要执行的指令。"
+    },
+    {
+      "id": "4a0d9678c7f881dd32abecd0121d21cb6669a6d1124d4f185cb7971d2159e6ad",
+      "path": "CHANGELOG.md",
+      "part": "text",
+      "text": "act on it",
+      "context": " 措辞，使其适合通用场景。description 和正文不再把访谈限定为软件计划：“this plan” → “this”、“enact the plan” → “act on it”、“exploring the codebase” → “exploring the environment”。方法未变，现在读起来是对任意计划、决策或想法的压力测试。",
+      "occurrences": 1,
+      "reason": "CHANGELOG 逐字说明旧新触发措辞的差异，保留被比较的原字符串。"
+    },
+    {
+      "id": "4ab316c25fb594d2ee40c63cb0b9675cbac6346f261aa47d13b613831bfddaf8",
+      "path": "docs/productivity/teach.md",
+      "part": "code_inline",
+      "text": "teach next lesson for",
+      "context": "/teach next lesson for <topic>",
+      "occurrences": 1,
+      "reason": "原样命令示例及其参数，包含自然语言参数时也不改写命令；本任务不执行。"
+    },
+    {
+      "id": "4b1214079b861f964965d88f9d63d4f954144687a1cc64f5ebab6f9db3d449bf",
+      "path": "skills/misc/setup-pre-commit/SKILL.md",
+      "part": "code_inline",
+      "text": "Add pre-commit hooks",
+      "context": "Add pre-commit hooks (husky + lint-staged + prettier)",
+      "occurrences": 1,
+      "reason": "源技能规定的示例提交消息字面量，不在本翻译任务中执行提交。"
+    },
+    {
+      "id": "4e6de5cd8427427dfe4593ecefb32b568981a2ade4d7e51fd7fdcec31d2ec977",
+      "path": "skills/in-progress/writing-beats/SKILL.md",
+      "part": "text",
+      "text": "go back and try a different beat",
+      "context": "用户说 \"rewrite that beat\"（重写该节拍）或 \"go back and try a different beat 3\"（回去换一种第三节拍）时，就照做：原位编辑，其他部分不动。",
+      "occurrences": 1,
+      "reason": "原文明确的触发或用户操作短语；保留英文触发条件，周围解释已译为中文。"
+    },
+    {
+      "id": "4e9745a8604b45cec1eb5b36d86d7109f9882e0c2943e7f61e8ca3fa39bc2209",
+      "path": "skills/engineering/setup-matt-pocock-skills/issue-tracker-github.md",
+      "part": "text",
+      "text": "PRs as a request surface",
+      "context": "PRs as a request surface: no.",
+      "occurrences": 1,
+      "reason": "GitHub 跟踪器模板的固定设置字段，保留 no 默认值。"
+    },
+    {
+      "id": "4ef9823868c49b1caf19527da325bdc445ab40e0c01188cea66f1fcdd91fe9d2",
+      "path": "skills/engineering/setup-matt-pocock-skills/issue-tracker-github.md",
+      "part": "code_inline",
+      "text": "gh issue create",
+      "context": "gh issue create --label wayfinder:map",
+      "occurrences": 1,
+      "reason": "原样命令示例及其参数，包含自然语言参数时也不改写命令；本任务不执行。"
+    },
+    {
+      "id": "50bd6fb09d474bacd1f2aab6df28507f65bd4b3c382f0823bb148f1a2d881272",
+      "path": "CLAUDE.md",
+      "part": "text",
+      "text": "What it does",
+      "context": "What it does",
+      "occurrences": 1,
+      "reason": "固定模板标题、状态字段或输出字面量；其他文件/技能引用该名称，保留原文以维持协议。"
+    },
+    {
+      "id": "5383782ae66c83cbc251712d25818368b500a4bddd6a64ceb27622f2bb3ec091",
+      "path": "skills/engineering/domain-modeling/ADR-FORMAT.md",
+      "part": "code_inline",
+      "text": "superseded by ADR-NNNN",
+      "context": "proposed | accepted | deprecated | superseded by ADR-NNNN",
+      "occurrences": 1,
+      "reason": "固定模板标题、状态字段或输出字面量；其他文件/技能引用该名称，保留原文以维持协议。"
+    },
+    {
+      "id": "5418f4de74b18a38a73f494e36e330d46b690346b5916ea5af1c68f2db137523",
+      "path": "skills/productivity/teach/RESOURCES-FORMAT.md",
+      "part": "fence:0",
+      "text": "Stronger By Science",
+      "context": "- [文章：Greg Nuckols（Stronger By Science）的 \"How Much Should I Train?\"](https://example.com)",
+      "occurrences": 1,
+      "reason": "来源机构名称，保留英文身份或词形。"
+    },
+    {
+      "id": "54deb4121f9b5f48e81cb588a6ac84dcbbff834efabd0ea29373b89b81a1a957",
+      "path": "skills/engineering/triage/AGENT-BRIEF.md",
+      "part": "fence:1",
+      "text": "Out of scope",
+      "context": "**Out of scope:**",
+      "occurrences": 1,
+      "reason": "固定模板标题、状态字段或输出字面量；其他文件/技能引用该名称，保留原文以维持协议。"
+    },
+    {
+      "id": "54f444cef9e1ce5bf0cb76fcb11347683c850a2cca22b880b5fea57def26a9d0",
+      "path": "skills/engineering/improve-codebase-architecture/HTML-REPORT.md",
+      "part": "fence:0",
+      "text": "import mermaid from",
+      "context": "      import mermaid from \"https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs\";",
+      "occurrences": 1,
+      "reason": "JavaScript 模块导入语句，不翻译可执行代码。"
+    },
+    {
+      "id": "553d3faa425e9da8aa1587137308b9e6cc20152e68a472c3af83512bbb733f8b",
+      "path": "skills/engineering/tdd/SKILL.md",
+      "part": "text",
+      "text": "user can checkout with valid cart",
+      "context": "测试通过公共接口验证行为，而不是实现细节。代码可以完全改变，测试不应因此改变。好测试读起来像规格说明：\"user can checkout with valid cart\"（用户可以用有效购物车结账）准确说明了系统具备的能力；它不关心内部结构，因此能经受重构。",
+      "occurrences": 1,
+      "reason": "测试名称字面量，须与 tests.md 内测试代码一致；自然含义已有中文解释。"
+    },
+    {
+      "id": "57bbe21c4ad302d3f2ab9ccd1c868985ae353c115c44aeab26473ed0b592d0d2",
+      "path": ".agents/writing-docs.md",
+      "part": "text",
+      "text": "Where it fits",
+      "context": "Where it fits",
+      "occurrences": 1,
+      "reason": "固定模板标题、状态字段或输出字面量；其他文件/技能引用该名称，保留原文以维持协议。"
+    },
+    {
+      "id": "5a3cea5eb72dd8cc7f6d6b6e52eea91592016f3610e2fb3416a0c07d9c2e20d4",
+      "path": "skills/engineering/setup-matt-pocock-skills/issue-tracker-gitlab.md",
+      "part": "code_inline",
+      "text": "glab issue close",
+      "context": "glab issue close",
+      "occurrences": 1,
+      "reason": "原样命令示例及其参数，包含自然语言参数时也不改写命令；本任务不执行。"
+    },
+    {
+      "id": "5b027880f8b03575180a8c175d73311ada21e510fc4224c79f7e1885cad943d6",
+      "path": "skills/engineering/triage/SKILL.md",
+      "part": "text",
+      "text": "established so far",
+      "context": "把追问中已解决的所有内容记入 \"established so far\"，以免成果丢失。问题必须具体且可行动，不要写“请提供更多信息”。",
+      "occurrences": 1,
+      "reason": "固定模板标题、状态字段或输出字面量；其他文件/技能引用该名称，保留原文以维持协议。"
+    },
+    {
+      "id": "5d076cd4a972f230ef8a08b5e00741f629b518d40ab65e92cd730e0fa6464ced",
+      "path": "skills/engineering/setup-matt-pocock-skills/issue-tracker-github.md",
+      "part": "code_inline",
+      "text": "gh issue create",
+      "context": "gh issue create --title \"...\" --body \"...\"",
+      "occurrences": 1,
+      "reason": "原样命令示例及其参数，包含自然语言参数时也不改写命令；本任务不执行。"
+    },
+    {
+      "id": "5de702e13a93326e2d3fc4b844c6554d1e91ca6adbe38659561b3c6113f79950",
+      "path": "skills/engineering/triage/AGENT-BRIEF.md",
+      "part": "fence:4",
+      "text": "What to do",
+      "context": "**What to do:**",
+      "occurrences": 1,
+      "reason": "固定模板标题、状态字段或输出字面量；其他文件/技能引用该名称，保留原文以维持协议。"
+    },
+    {
+      "id": "5e0563bc9950a3b129808934186a583e3e2bd8e59e5e5775391283163dd3aa03",
+      "path": "skills/engineering/triage/AGENT-BRIEF.md",
+      "part": "code_inline",
+      "text": "gh issue list",
+      "context": "gh issue list --label needs-triage",
+      "occurrences": 1,
+      "reason": "原样命令示例及其参数，包含自然语言参数时也不改写命令；本任务不执行。"
+    },
+    {
+      "id": "5f7ecf228c807830f64a848ab781f052a1ad26c4bc4d64a25cb1c1d8a1dfee98",
+      "path": "skills/engineering/setup-matt-pocock-skills/issue-tracker-gitlab.md",
+      "part": "code_inline",
+      "text": "glab mr view",
+      "context": "glab mr view",
+      "occurrences": 1,
+      "reason": "原样命令示例及其参数，包含自然语言参数时也不改写命令；本任务不执行。"
+    },
+    {
+      "id": "60184541a0cfae51c973c75246524a754aba41620e7bdefac090c1720919efbd",
+      "path": "skills/misc/git-guardrails-claude-code/SKILL.md",
+      "part": "frontmatter.description",
+      "text": "Claude Code hooks",
+      "context": "设置 Claude Code hooks，在执行前阻止危险 Git 命令（push、reset --hard、clean、branch -D 等）。用户想防止破坏性 Git 操作、添加 Git 安全 hooks，或在 Claude Code 中阻止 git push/reset 时使用。",
+      "occurrences": 1,
+      "reason": "产品名及 hooks 技术术语，保留英文身份或词形。"
+    },
+    {
+      "id": "60d9cceb08e8c4d573928023dffa7a45f8a8a69bbc8d00dd83e23ad387bdf263",
+      "path": "docs/engineering/domain-modeling.md",
+      "part": "code_inline",
+      "text": "grill-with-docs help me scaffold my existing repo with a CONTEXT",
+      "context": "/grill-with-docs help me scaffold my existing repo with a CONTEXT.md",
+      "occurrences": 1,
+      "reason": "原样命令示例及其参数，包含自然语言参数时也不改写命令；本任务不执行。"
+    },
+    {
+      "id": "60fa5545a28e7b1c11f30bdbf9eaa36eae7515bc4c18e43139948d423ee79e77",
+      "path": "CHANGELOG.md",
+      "part": "text",
+      "text": "enact the plan",
+      "context": " 措辞，使其适合通用场景。description 和正文不再把访谈限定为软件计划：“this plan” → “this”、“enact the plan” → “act on it”、“exploring the codebase” → “exploring the environment”。方法未变，现在读起来是对任意计划、决策或想法的压力测试。",
+      "occurrences": 1,
+      "reason": "CHANGELOG 逐字说明旧新触发措辞的差异，保留被比较的原字符串。"
+    },
+    {
+      "id": "6246024c6715e9942bfa1b9d9cd816f05607ea94200231a1077aa2f5448a6ea1",
+      "path": "docs/engineering/code-review.md",
+      "part": "code_inline",
+      "text": "npx skills update",
+      "context": "npx skills update",
+      "occurrences": 1,
+      "reason": "原样命令示例及其参数，包含自然语言参数时也不改写命令；本任务不执行。"
+    },
+    {
+      "id": "6297a6aab1de0ab5e32c84df41a4f201f4bcdadc7a0fb82c08085a8bf47087d7",
+      "path": "skills/engineering/triage/SKILL.md",
+      "part": "fence:1",
+      "text": "What we still need from you",
+      "context": "**What we still need from you (@reporter):**",
+      "occurrences": 1,
+      "reason": "固定模板标题、状态字段或输出字面量；其他文件/技能引用该名称，保留原文以维持协议。"
+    },
+    {
+      "id": "633fffd9780b3d49e6d08a051952e5b1615af624ca6d3d6236eee4294b4171b2",
+      "path": "skills/engineering/triage/AGENT-BRIEF.md",
+      "part": "fence:1",
+      "text": "Use when the user wants to confi",
+      "context": "（例如 \"Use when the user wants to confi\"）。",
+      "occurrences": 1,
+      "reason": "用于说明 description 被截断的原样错误输出示例，不补全。"
+    },
+    {
+      "id": "6363db4d3e05d87f3de4a0e546e3c0525d76afbb43c9b8ce87b60901c0e6ccae",
+      "path": "docs/engineering/triage.md",
+      "part": "code_inline",
+      "text": "gh label create",
+      "context": "gh label create",
+      "occurrences": 1,
+      "reason": "原样命令示例及其参数，包含自然语言参数时也不改写命令；本任务不执行。"
+    },
+    {
+      "id": "644fe9bd69770bd6d981b08f04a3215e99514bcff93f4a27d018aa9b19723a41",
+      "path": ".agents/writing-docs.md",
+      "part": "code_inline",
+      "text": "Where it fits",
+      "context": "## Where it fits",
+      "occurrences": 2,
+      "reason": "固定模板标题、状态字段或输出字面量；其他文件/技能引用该名称，保留原文以维持协议。"
+    },
+    {
+      "id": "645231eceadd11f341f71b1da4efcce016863ca65f460672e3052a811fd035b0",
+      "path": "CHANGELOG.md",
+      "part": "code_inline",
+      "text": "Out of scope",
+      "context": "## Out of scope",
+      "occurrences": 1,
+      "reason": "固定模板标题、状态字段或输出字面量；其他文件/技能引用该名称，保留原文以维持协议。"
+    },
+    {
+      "id": "6555ad816d0f1158292ff37092ead727e1317ceefde9f26923b0fa8143f11499",
+      "path": "docs/engineering/to-tickets.md",
+      "part": "code_inline",
+      "text": "gh issue edit",
+      "context": "gh issue edit <parent> --add-sub-issue <n>",
+      "occurrences": 1,
+      "reason": "原样命令示例及其参数，包含自然语言参数时也不改写命令；本任务不执行。"
+    },
+    {
+      "id": "6806e9b02e99c87d15911fb8e6edbb2a39b9c18a87a88d444599a64fd9468ced",
+      "path": "CHANGELOG.md",
+      "part": "text",
+      "text": "exploring the environment",
+      "context": " 措辞，使其适合通用场景。description 和正文不再把访谈限定为软件计划：“this plan” → “this”、“enact the plan” → “act on it”、“exploring the codebase” → “exploring the environment”。方法未变，现在读起来是对任意计划、决策或想法的压力测试。",
+      "occurrences": 1,
+      "reason": "CHANGELOG 逐字说明旧新触发措辞的差异，保留被比较的原字符串。"
+    },
+    {
+      "id": "68b6bb7f6bb363a8f781dc90813b8f94bf7b2062f204fc8951b4ba1dd0ebda9e",
+      "path": "skills/engineering/wayfinder/SKILL.md",
+      "part": "fence:0",
+      "text": "Fog of war",
+      "context": "<!-- 参见“Fog of war”：在范围内但尚无法形成工单的迷雾；随前沿推进转化为工单 -->",
+      "occurrences": 1,
+      "reason": "被模板引用的固定术语和标题，保留英文身份或词形。"
+    },
+    {
+      "id": "697d3e15549493064c13cd4ebea73a71740130c88d7330284808d50a5780ecc3",
+      "path": "skills/in-progress/claude-handoff/SKILL.md",
+      "part": "code_inline",
+      "text": "Fix login bug",
+      "context": "--name \"Fix login bug\"",
+      "occurrences": 1,
+      "reason": "CLI --name 参数的原样示例值。"
+    },
+    {
+      "id": "6dcb05b91dcac951b0b4715784f96fd86e2e4288a298f6c789323d21eeb508f9",
+      "path": "skills/misc/setup-pre-commit/SKILL.md",
+      "part": "frontmatter.description",
+      "text": "Husky pre-commit hooks",
+      "context": "在当前仓库设置 Husky pre-commit hooks，包含 lint-staged（Prettier）、类型检查和测试。用户想添加 pre-commit hooks、设置 Husky、配置 lint-staged，或添加提交时格式化/类型检查/测试时使用。",
+      "occurrences": 1,
+      "reason": "包名及 pre-commit hooks 技术术语，保留英文身份或词形。"
+    },
+    {
+      "id": "6eca48c65d5a5e41a9e0cf94b205493f5cb866d3547afd2ef43acefc8c7a191e",
+      "path": "skills/engineering/setup-matt-pocock-skills/issue-tracker-gitlab.md",
+      "part": "text",
+      "text": "MRs as a request surface",
+      "context": "MRs as a request surface: no.",
+      "occurrences": 1,
+      "reason": "GitLab 跟踪器模板的固定设置字段，保留 no 默认值。"
+    },
+    {
+      "id": "7101d6f43c338a940971b15e79e258c9c61be295a9398f5ec3d9b9256b90a914",
+      "path": "skills/engineering/triage/OUT-OF-SCOPE.md",
+      "part": "fence:1",
+      "text": "resolved at build time",
+      "context": "  colors: ColorPalette; // single palette, resolved at build time",
+      "occurrences": 1,
+      "reason": "嵌套 TypeScript 示例的原注释，随代码保持原样；自然语言模板正文已翻译。"
+    },
+    {
+      "id": "723ef23e487ab33c94a57d10349710b3a44e5e56de9eae932a14916c3fdd61ab",
+      "path": ".agents/writing-docs.md",
+      "part": "text",
+      "text": "It's working if",
+      "context": "It's working if",
+      "occurrences": 1,
+      "reason": "固定模板标题、状态字段或输出字面量；其他文件/技能引用该名称，保留原文以维持协议。"
+    },
+    {
+      "id": "73f5c853038a3804455fd36b3caedcf27831629d3977075f2cea421f40a0130c",
+      "path": "skills/engineering/code-review/SKILL.md",
+      "part": "frontmatter.description",
+      "text": "review since X",
+      "context": "从两个维度审查固定基准点（提交、分支、标签或 merge-base）以来的改动：Standards（代码是否遵守仓库已记录的编码标准？）和 Spec（代码是否符合原始 issue／规格说明的要求？）。由并行子 agent 运行两项审查，并排报告。当用户希望审查分支、PR、进行中的改动，或要求 \"review since X\" 时使用。",
+      "occurrences": 1,
+      "reason": "原文明确的触发或用户操作短语；保留英文触发条件，周围解释已译为中文。"
+    },
+    {
+      "id": "749e379c296ecd9f2faa711d854f7216eaa7a931894294fab8074860308babaf",
+      "path": "skills/engineering/setup-matt-pocock-skills/issue-tracker-github.md",
+      "part": "code_inline",
+      "text": "method POST repos",
+      "context": "gh api --method POST repos/<owner>/<repo>/issues/<child>/dependencies/blocked_by -F issue_id=<blocker-db-id>",
+      "occurrences": 1,
+      "reason": "原样命令示例及其参数，包含自然语言参数时也不改写命令；本任务不执行。"
+    },
+    {
+      "id": "74d28e6f9ac4f448f2ddeb5708d6ed4adbc631ea95f109614c1c41a08c688bd7",
+      "path": "skills/engineering/wayfinder/SKILL.md",
+      "part": "fence:0",
+      "text": "Out of scope",
+      "context": "<!-- 参见“Out of scope”：判定超出目标的工作；已关闭，永不转化为工单 -->",
+      "occurrences": 1,
+      "reason": "固定模板标题、状态字段或输出字面量；其他文件/技能引用该名称，保留原文以维持协议。"
+    },
+    {
+      "id": "7603ae0c035b5db29e71f8e781cd6781054cdabadd2a76526f0719cbbc776641",
+      "path": ".agents/writing-docs.md",
+      "part": "text",
+      "text": "What it does",
+      "context": "What it does",
+      "occurrences": 1,
+      "reason": "固定模板标题、状态字段或输出字面量；其他文件/技能引用该名称，保留原文以维持协议。"
+    },
+    {
+      "id": "77141660594fb2ebacb05bf84818e6ea611df7578a6a5c0c7489b41cd0170174",
+      "path": ".agents/adr/0002-ship-as-a-claude-code-plugin.md",
+      "part": "code_inline",
+      "text": "missing or invalid plugin",
+      "context": "missing or invalid plugin.json",
+      "occurrences": 1,
+      "reason": "上游 ADR 引用的 CLI 错误输出，保留可匹配字面量。"
+    },
+    {
+      "id": "771a0d57e57695afbd7eb18dfc17dba9c42a21b96f9a9ee7947279e409a06efa",
+      "path": ".agents/writing-docs.md",
+      "part": "text",
+      "text": "When to reach for it",
+      "context": "When to reach for it",
+      "occurrences": 1,
+      "reason": "固定模板标题、状态字段或输出字面量；其他文件/技能引用该名称，保留原文以维持协议。"
+    },
+    {
+      "id": "781b7333972f53448f12f40e693dd881022fc6e1cad6adb6c4e1153c2c9ad5d0",
+      "path": "skills/productivity/teach/MISSION-FORMAT.md",
+      "part": "fence:0",
+      "text": "Out of scope",
+      "context": "## Out of scope",
+      "occurrences": 1,
+      "reason": "固定模板标题、状态字段或输出字面量；其他文件/技能引用该名称，保留原文以维持协议。"
+    },
+    {
+      "id": "7b3f76bcb76c2e392e6b18d4f0cb2273613e78566dabc335d397931e1edd649a",
+      "path": "skills/misc/migrate-to-shoehorn/SKILL.md",
+      "part": "code_inline",
+      "text": "as unknown as Type",
+      "context": "as unknown as Type",
+      "occurrences": 3,
+      "reason": "TypeScript 双重类型断言语法及类型占位符，机器代码原样保留。"
+    },
+    {
+      "id": "7e2f9284b345cfadba89c3b3ea5950d3a8d27bb4834f9797b3fd58e90a25d90c",
+      "path": "skills/engineering/setup-matt-pocock-skills/issue-tracker-github.md",
+      "part": "code_inline",
+      "text": "gh issue list",
+      "context": "gh issue list --state open",
+      "occurrences": 1,
+      "reason": "原样命令示例及其参数，包含自然语言参数时也不改写命令；本任务不执行。"
+    },
+    {
+      "id": "7fe4e190c63ba272000463d4a7d60638f1744dcef820020b9a72608ccf54a283",
+      "path": "skills/engineering/triage/SKILL.md",
+      "part": "fence:1",
+      "text": "What we've established so far",
+      "context": "**What we've established so far:**",
+      "occurrences": 1,
+      "reason": "固定模板标题、状态字段或输出字面量；其他文件/技能引用该名称，保留原文以维持协议。"
+    },
+    {
+      "id": "81959aac73010b85957ba8133ef0ff30e8ad1ccb6a0d336f9b3ca496af9666c6",
+      "path": ".agents/writing-docs.md",
+      "part": "code_inline",
+      "text": "When to reach for it",
+      "context": "## When to reach for it",
+      "occurrences": 3,
+      "reason": "固定模板标题、状态字段或输出字面量；其他文件/技能引用该名称，保留原文以维持协议。"
+    },
+    {
+      "id": "82a9c0ebca8ed70cfb8d4e5ab1fa8c2ab2abc5208af4e3dfca423d9fec143cb0",
+      "path": "skills/engineering/to-tickets/SKILL.md",
+      "part": "text",
+      "text": "What to build",
+      "context": "What to build",
+      "occurrences": 1,
+      "reason": "固定模板标题、状态字段或输出字面量；其他文件/技能引用该名称，保留原文以维持协议。"
+    },
+    {
+      "id": "84a979642d3fd0ca6437a1bb1ed3dcec5e3971fd3573b5b5a61138a4b00713cf",
+      "path": ".changeset/user-invoked-skill-invocation.md",
+      "part": "code_inline",
+      "text": "Call the Skill tool with",
+      "context": "Call the Skill tool with \"name\"",
+      "occurrences": 1,
+      "reason": "技能调用规范的固定示例句，必须保留 Skill 工具及参数语义；不是本任务要执行的指令。"
+    },
+    {
+      "id": "851558b9808b3cd31e4931ee268e3694d2a159ef174b7718874a7af2032bc5d0",
+      "path": "skills/engineering/setup-matt-pocock-skills/issue-tracker-github.md",
+      "part": "code_inline",
+      "text": "gh pr view",
+      "context": "gh pr view <number> --comments",
+      "occurrences": 1,
+      "reason": "原样命令示例及其参数，包含自然语言参数时也不改写命令；本任务不执行。"
+    },
+    {
+      "id": "873e7f747632e3de007acce65c048984173a908ac8d321e7d5372fcfa811e13c",
+      "path": "skills/in-progress/writing-fragments/SKILL.md",
+      "part": "text",
+      "text": "rewrite that one sharper",
+      "context": "用户随时可以说 \"cut the last one\"（删掉最后一个）、\"rewrite that one sharper\"（把那个改得更有力）、\"merge those two\"（合并这两个）。把这些当作一等指令处理。",
+      "occurrences": 1,
+      "reason": "原文明确的触发或用户操作短语；保留英文触发条件，周围解释已译为中文。"
+    },
+    {
+      "id": "874cee416fc3f15ec00f2f00906f4f46771c34e99796216d2e0ac8a516cf2757",
+      "path": "skills/engineering/wayfinder/SKILL.md",
+      "part": "text",
+      "text": "Decisions so far",
+      "context": "Decisions so far",
+      "occurrences": 1,
+      "reason": "固定模板标题、状态字段或输出字面量；其他文件/技能引用该名称，保留原文以维持协议。"
+    },
+    {
+      "id": "89eed15db60c9a8206e959bc14b7fdac7e192be7edb2f4fca798554d1aaa6b1e",
+      "path": "CLAUDE.md",
+      "part": "code_inline",
+      "text": "claude plugin validate",
+      "context": "claude plugin validate . --strict",
+      "occurrences": 1,
+      "reason": "原样命令示例及其参数，包含自然语言参数时也不改写命令；本任务不执行。"
+    },
+    {
+      "id": "8a0a79b947878140dc078b4a098193aee18dd62b54a5b011055bb35a6f1fc100",
+      "path": "skills/engineering/improve-codebase-architecture/HTML-REPORT.md",
+      "part": "fence:0",
+      "text": "hand-drawn-feeling arrow heads",
+      "context": "         dashed seam lines, hand-drawn-feeling arrow heads, etc. */",
+      "occurrences": 1,
+      "reason": "HTML 模板中 CSS 区域的代码解释注释，随原 CSS/脚本代码原样保留；可见页面文字已翻译。"
+    },
+    {
+      "id": "8d7552eb32718f56520e081dc72ea7193fe0af6c8e18d5c9d780bcf5adfcf725",
+      "path": "skills/engineering/setup-matt-pocock-skills/issue-tracker-gitlab.md",
+      "part": "code_inline",
+      "text": "glab issue note",
+      "context": "glab issue note <child> --message \"/blocked_by #<blocker>\"",
+      "occurrences": 1,
+      "reason": "原样命令示例及其参数，包含自然语言参数时也不改写命令；本任务不执行。"
+    },
+    {
+      "id": "8e6d0cb91e0066c871501e00e4b44f0dc24fa38042a76fb0c9f581ce22b0e236",
+      "path": "skills/engineering/triage/OUT-OF-SCOPE.md",
+      "part": "fence:1",
+      "text": "Why this is out of scope",
+      "context": "## Why this is out of scope",
+      "occurrences": 1,
+      "reason": "固定模板标题、状态字段或输出字面量；其他文件/技能引用该名称，保留原文以维持协议。"
+    },
+    {
+      "id": "8f683a9df66e49bc6129950e3448c5100aeb90c6f05495c4fee60a2dde2ed00d",
+      "path": "skills/engineering/setup-matt-pocock-skills/issue-tracker-github.md",
+      "part": "code_inline",
+      "text": "gh issue close",
+      "context": "gh issue close <number> --comment \"...\"",
+      "occurrences": 1,
+      "reason": "原样命令示例及其参数，包含自然语言参数时也不改写命令；本任务不执行。"
+    },
+    {
+      "id": "909ad04076e92ab21bd0c03d264dd5c03b066c28683d96908ea867bcf1369970",
+      "path": "skills/engineering/setup-matt-pocock-skills/SKILL.md",
+      "part": "code_inline",
+      "text": "gh issue create",
+      "context": "gh issue create",
+      "occurrences": 1,
+      "reason": "原样命令示例及其参数，包含自然语言参数时也不改写命令；本任务不执行。"
+    },
+    {
+      "id": "90ed65baa72ff2aa44656a864ad75395c639e578ebce517fa2bc4019e3c16681",
+      "path": "skills/engineering/triage/AGENT-BRIEF.md",
+      "part": "fence:3",
+      "text": "Out of scope",
+      "context": "**Out of scope:**",
+      "occurrences": 1,
+      "reason": "固定模板标题、状态字段或输出字面量；其他文件/技能引用该名称，保留原文以维持协议。"
+    },
+    {
+      "id": "92d6d3d975d1ea6060583eea0e069ae505a066c51aa6596f3ed9c628e969b446",
+      "path": "docs/productivity/wait-what.md",
+      "part": "text",
+      "text": "Simplified Technical English",
+      "context": " 中已有的引导词。ASD-STE100 Simplified Technical English 决定表达风格，通用语言提供名词。技能、",
+      "occurrences": 1,
+      "reason": "ASD-STE100 标准专名，保留英文身份或词形。"
+    },
+    {
+      "id": "9512c849b1c0b607bec820e98a5a8c594007963b547f594390703f15cba481f0",
+      "path": "CLAUDE.md",
+      "part": "text",
+      "text": "When to reach for it",
+      "context": "When to reach for it",
+      "occurrences": 1,
+      "reason": "固定模板标题、状态字段或输出字面量；其他文件/技能引用该名称，保留原文以维持协议。"
+    },
+    {
+      "id": "97981d750fa39d4f4c3615d80fc8dce60cf3118e8e3d213ee5cea4b1416c3ca0",
+      "path": "CHANGELOG.md",
+      "part": "text",
+      "text": "Claude Code frontmatter",
+      "context": "! - 在每项技能的 Claude Code frontmatter 旁添加 Codex 元数据，使整套技能无需生成副本即可用于两个 harness。",
+      "occurrences": 1,
+      "reason": "产品名及 frontmatter 技术术语，保留英文身份或词形。"
+    },
+    {
+      "id": "98541670abb8c458ecf2be230a43acba245b09640873654d00ffcbfb5dcaf889",
+      "path": "docs/engineering/wizard.md",
+      "part": "text",
+      "text": "Reveal test key",
+      "context": " 引用；这些都是向导必须产出的值。之后展示有序阶段列表供你确认，再将各阶段映射为人类遵循的精确路径（\"Dashboard → Developers → API keys → Reveal test key → copy\"）。不知道当前 UI 时，会问你或查文档，不会编造点击步骤。",
+      "occurrences": 1,
+      "reason": "示例 UI 点击路径中的按钮标签，保持可定位的原始文字。"
+    },
+    {
+      "id": "9da44db20c90232ddfb644fee3b328ff3198e1a235e171ab717154138c0914f0",
+      "path": "skills/engineering/setup-matt-pocock-skills/issue-tracker-github.md",
+      "part": "code_inline",
+      "text": "gh pr comment",
+      "context": "gh pr comment",
+      "occurrences": 1,
+      "reason": "原样命令示例及其参数，包含自然语言参数时也不改写命令；本任务不执行。"
+    },
+    {
+      "id": "9e8913048aafe14f68c1b6ec993f26da81dc9e99dcba5a07947f44b510f8ce73",
+      "path": "skills/engineering/to-tickets/SKILL.md",
+      "part": "text",
+      "text": "can start immediately",
+      "context": " 阻塞本工单的工单编号／标题，或 \"None (can start immediately)\"。",
+      "occurrences": 1,
+      "reason": "固定模板标题、状态字段或输出字面量；其他文件/技能引用该名称，保留原文以维持协议。"
+    },
+    {
+      "id": "9f1808c42c8112b8e92f0877049a29549034914f5e80e86bedcc9dfe300f8b99",
+      "path": "skills/engineering/wayfinder/SKILL.md",
+      "part": "text",
+      "text": "Decisions so far",
+      "context": " 不包括已经决定的内容（Decisions so far）、已存在的活跃工单，以及范围之外的内容（下一节）。",
+      "occurrences": 1,
+      "reason": "固定模板标题、状态字段或输出字面量；其他文件/技能引用该名称，保留原文以维持协议。"
+    },
+    {
+      "id": "a27a9d2e06232a11b294dd4c3fb2d8245e4ab2eb44b331c69f7b94a4dd4801a8",
+      "path": "skills/engineering/triage/AGENT-BRIEF.md",
+      "part": "fence:2",
+      "text": "Out of scope",
+      "context": "**Out of scope:**",
+      "occurrences": 1,
+      "reason": "固定模板标题、状态字段或输出字面量；其他文件/技能引用该名称，保留原文以维持协议。"
+    },
+    {
+      "id": "a287e7128fa8734b8a9231bda436411fa5fa0b66e17f0948e9d7df86a162933a",
+      "path": "skills/engineering/wayfinder/SKILL.md",
+      "part": "text",
+      "text": "Not yet specified",
+      "context": "Not yet specified",
+      "occurrences": 7,
+      "reason": "固定模板标题、状态字段或输出字面量；其他文件/技能引用该名称，保留原文以维持协议。"
+    },
+    {
+      "id": "a378aa8f558a81a1e74b68d0a68dccebdc60422be19b93c7cdae7c012be02895",
+      "path": "skills/productivity/wait-what/SKILL.md",
+      "part": "text",
+      "text": "Simplified Technical English",
+      "context": "等一下，我不明白你这里说到哪了。重新讲一遍：给我一点背景，用 ASD-STE100 Simplified Technical English（简化技术英语）表达，并使用 ",
+      "occurrences": 1,
+      "reason": "ASD-STE100 标准专名，保留英文身份或词形。"
+    },
+    {
+      "id": "a3db5b4e3953af32cc365255bed92a15bb060a05b4eae2d939b9a19569c64fa0",
+      "path": "skills/productivity/to-questionnaire/SKILL.md",
+      "part": "text",
+      "text": "How your answers will be used",
+      "context": "How your answers will be used:",
+      "occurrences": 1,
+      "reason": "固定模板标题、状态字段或输出字面量；其他文件/技能引用该名称，保留原文以维持协议。"
+    },
+    {
+      "id": "a3f948d4e484be2c4ff9946e260057e48e180ff8b872a80d62e5912636db3e88",
+      "path": "skills/engineering/codebase-design/DESIGN-IT-TWICE.md",
+      "part": "text",
+      "text": "Design It Twice",
+      "context": "当用户希望为选定的加深候选对象探索不同接口方案时，使用这种并行子 agent 模式。它基于 Ousterhout 的 \"Design It Twice\"：你的第一个想法不太可能是最好的。",
+      "occurrences": 1,
+      "reason": "Ousterhout 设计方法专名，保留英文身份或词形。"
+    },
+    {
+      "id": "a4aa4a6c6ca46254386a42dba63651ca08224aedac5d4144380fba2270e05580",
+      "path": "docs/engineering/tdd.md",
+      "part": "text",
+      "text": "checkout calls paymentService",
+      "context": "测试名称读起来像能力（\"user can checkout with valid cart\"），而不是内部细节（\"checkout calls paymentService.process\"）。",
+      "occurrences": 1,
+      "reason": "测试名称中的实现细节反例，须与代码示例一致。"
+    },
+    {
+      "id": "a8eb82d5e102992c29c4aeff9b13965bb038f2e0742f6907fcb3359a3326044c",
+      "path": "docs/engineering/ask-matt.md",
+      "part": "code_inline",
+      "text": "npx skills update",
+      "context": "npx skills update",
+      "occurrences": 1,
+      "reason": "原样命令示例及其参数，包含自然语言参数时也不改写命令；本任务不执行。"
+    },
+    {
+      "id": "abb0b8801ab2e8444f57a7f0e22186a8cf199a79ee7aba13d74016c682df4b49",
+      "path": "skills/productivity/teach/LEARNING-RECORD-FORMAT.md",
+      "part": "code_inline",
+      "text": "superseded by LR-NNNN",
+      "context": "active | superseded by LR-NNNN",
+      "occurrences": 1,
+      "reason": "固定模板标题、状态字段或输出字面量；其他文件/技能引用该名称，保留原文以维持协议。"
+    },
+    {
+      "id": "ac442bd0f5a301cffbcef96139179f01bc7e7942c360352c6218b6b395d4353f",
+      "path": "skills/engineering/setup-matt-pocock-skills/issue-tracker-github.md",
+      "part": "code_inline",
+      "text": "gh issue edit",
+      "context": "gh issue edit <number> --add-label \"...\"",
+      "occurrences": 1,
+      "reason": "原样命令示例及其参数，包含自然语言参数时也不改写命令；本任务不执行。"
+    },
+    {
+      "id": "acae61019c60ea30a81749bbe11aead394aebbc7fad49ccb8854bb9f40efba56",
+      "path": "CHANGELOG.md",
+      "part": "text",
+      "text": "exploring the codebase",
+      "context": " 措辞，使其适合通用场景。description 和正文不再把访谈限定为软件计划：“this plan” → “this”、“enact the plan” → “act on it”、“exploring the codebase” → “exploring the environment”。方法未变，现在读起来是对任意计划、决策或想法的压力测试。",
+      "occurrences": 1,
+      "reason": "CHANGELOG 逐字说明旧新触发措辞的差异，保留被比较的原字符串。"
+    },
+    {
+      "id": "ad64e389ea29fb8b64d51af9d67b66512b1414787c8c6c558cf9c2eee6cff72a",
+      "path": "skills/productivity/teach/LEARNING-RECORD-FORMAT.md",
+      "part": "code_inline",
+      "text": "superseded by LR-NNNN",
+      "context": "Status: superseded by LR-NNNN",
+      "occurrences": 1,
+      "reason": "固定模板标题、状态字段或输出字面量；其他文件/技能引用该名称，保留原文以维持协议。"
+    },
+    {
+      "id": "aeec3c7ef9f352ecd86b9fcd02a257c3872f66829113d4c6d2ee91d7dda944be",
+      "path": "CHANGELOG.md",
+      "part": "text",
+      "text": "Grill the user relentlessly",
+      "context": " 引导词（“Grill the user relentlessly”）强化触发，文档页已重新同步。",
+      "occurrences": 1,
+      "reason": "原文明确的触发或用户操作短语；保留英文触发条件，周围解释已译为中文。"
+    },
+    {
+      "id": "af13d3d9335a219ce6175a3a58dd0a6c6d1f5e149696ae12683492313dededf0",
+      "path": ".agents/writing-docs.md",
+      "part": "code_inline",
+      "text": "What it does",
+      "context": "What it does",
+      "occurrences": 1,
+      "reason": "固定模板标题、状态字段或输出字面量；其他文件/技能引用该名称，保留原文以维持协议。"
+    },
+    {
+      "id": "afc019e30f32b5f5f1d9163e2a3bc049936679b3dc4ec17978cbb0eacf82cd69",
+      "path": "skills/engineering/ask-matt/PHASE-BOUNDARIES.md",
+      "part": "code_inline",
+      "text": "compact we're going to QA this area",
+      "context": "/compact we're going to QA this area",
+      "occurrences": 1,
+      "reason": "原样命令示例及其参数，包含自然语言参数时也不改写命令；本任务不执行。"
+    },
+    {
+      "id": "b00441e4e4056445a1841125e49a81e459a79ca4634d69fc4f04212de039e243",
+      "path": "skills/engineering/setup-matt-pocock-skills/issue-tracker-github.md",
+      "part": "code_inline",
+      "text": "gh api repos",
+      "context": "gh api repos/<owner>/<repo>/issues/<n> --jq .id",
+      "occurrences": 1,
+      "reason": "原样命令示例及其参数，包含自然语言参数时也不改写命令；本任务不执行。"
+    },
+    {
+      "id": "b0634b82398e5019c5abc7d0b17ace816d252e5e43a18c8ad7dea2d3ef86ae3e",
+      "path": "skills/engineering/wayfinder/SKILL.md",
+      "part": "text",
+      "text": "human in the loop",
+      "context": "（human in the loop，",
+      "occurrences": 1,
+      "reason": "HITL 术语的英文展开，保留英文身份或词形。"
+    },
+    {
+      "id": "b16f491bce5e2d780bddae3f186e1927a7ad5c778c0d075291b9fe67be1506ff",
+      "path": ".agents/writing-docs.md",
+      "part": "code_inline",
+      "text": "gh issue list",
+      "context": "gh issue list --repo mattpocock/skills --search \"<skill-name>\" --state all",
+      "occurrences": 1,
+      "reason": "原样命令示例及其参数，包含自然语言参数时也不改写命令；本任务不执行。"
+    },
+    {
+      "id": "b1a01595f5f7a1c43149f699a8d4b88b15d0c39f6a69c37a9502857d693e2099",
+      "path": "skills/misc/README.md",
+      "part": "text",
+      "text": "Claude Code hooks",
+      "context": "：设置 Claude Code hooks，在执行前阻止危险 Git 命令（push、reset --hard、clean 等）。",
+      "occurrences": 1,
+      "reason": "产品名及 hooks 技术术语，保留英文身份或词形。"
+    },
+    {
+      "id": "b325e1ae7288aa006ac93a22e5146e2daadba16d260c40f0dabb79c6ceaf2a92",
+      "path": "skills/engineering/setup-matt-pocock-skills/issue-tracker-gitlab.md",
+      "part": "code_inline",
+      "text": "glab mr close",
+      "context": "glab mr close",
+      "occurrences": 1,
+      "reason": "原样命令示例及其参数，包含自然语言参数时也不改写命令；本任务不执行。"
+    },
+    {
+      "id": "b33e10b9e1941761abfe1b06a337ab7ea27c698354365736f43308d97882f8e6",
+      "path": ".agents/install-block.md",
+      "part": "code_inline",
+      "text": "plugin marketplace add mattpocock",
+      "context": "/plugin marketplace add mattpocock/skills",
+      "occurrences": 1,
+      "reason": "原样命令示例及其参数，包含自然语言参数时也不改写命令；本任务不执行。"
+    },
+    {
+      "id": "b391e092bf9e54e2793242d02b43120989c0ba50c3e0cf0d81b5696c10cf0775",
+      "path": "skills/engineering/setup-matt-pocock-skills/issue-tracker-github.md",
+      "part": "code_inline",
+      "text": "gh pr view",
+      "context": "gh pr view 42",
+      "occurrences": 1,
+      "reason": "原样命令示例及其参数，包含自然语言参数时也不改写命令；本任务不执行。"
+    },
+    {
+      "id": "b4e99c2c1cd1504b4db05468099012ef35426ff188132dfb7695d792442a4330",
+      "path": "skills/engineering/setup-matt-pocock-skills/issue-tracker-gitlab.md",
+      "part": "code_inline",
+      "text": "glab issue note",
+      "context": "glab issue note <number> --message \"...\"",
+      "occurrences": 2,
+      "reason": "原样命令示例及其参数，包含自然语言参数时也不改写命令；本任务不执行。"
+    },
+    {
+      "id": "b77806f1ac63f8b8360caaf88d37bb10b159de5d26ff06ce51d3dc869f6b082a",
+      "path": ".agents/writing-docs.md",
+      "part": "code_inline",
+      "text": "When to reach for it",
+      "context": "When to reach for it",
+      "occurrences": 1,
+      "reason": "固定模板标题、状态字段或输出字面量；其他文件/技能引用该名称，保留原文以维持协议。"
+    },
+    {
+      "id": "b7d3cebba014cfde21f3a883e868854253d656f89d3bb5090b4345cce2ef6940",
+      "path": "skills/engineering/wizard/SKILL.md",
+      "part": "text",
+      "text": "Reveal test key",
+      "context": "为每个阶段写出人类实际遵循的精确路径：打开哪个 URL、在那里做什么、值显示在哪里、填入哪个变量。例如 \"Dashboard → Developers → API keys → Reveal test key → copy\"。如果并不知道当前 UI 或准确命令，就说明，并询问用户或查阅文档：绝不要编造可能不存在的步骤。",
+      "occurrences": 1,
+      "reason": "示例 UI 点击路径中的按钮标签，保持可定位的原始文字。"
+    },
+    {
+      "id": "b866bd7e9ad43fdb3ae4963e9cef7e52490342731ab318c7a262dfeceb02ed39",
+      "path": "docs/engineering/setup-matt-pocock-skills.md",
+      "part": "text",
+      "text": "link the skills to a custom issue tracker",
+      "context": "，并按其中说明执行。因此，这套技能不绑定 GitHub，也无需编辑任何技能文件来改用其他位置。用 \"link the skills to a custom issue tracker\"（将技能连接到自定义 issue 跟踪器）调用，任何可通过程序连接的系统都能使用，技能无需改动。",
+      "occurrences": 1,
+      "reason": "原文明确的触发或用户操作短语；保留英文触发条件，周围解释已译为中文。"
+    },
+    {
+      "id": "b8bd41aa0eb981c6fd1445d8a707d3bcd38b73a2cbc85e810754930b79b087c4",
+      "path": "skills/productivity/writing-for-agents/SKILL.md",
+      "part": "text",
+      "text": "fog of war",
+      "context": "fog of war",
+      "occurrences": 1,
+      "reason": "原文用于引导概念的固定术语，保留英文身份或词形。"
+    },
+    {
+      "id": "ba5fb7feef393ff25f0845b630aaa1b09fdd96882fe3c836b19e4536b08ecd87",
+      "path": "CHANGELOG.md",
+      "part": "text",
+      "text": "Bad Smells in Code",
+      "context": "：精选约 12 个高信号 “Bad Smells in Code”（Mysterious Name、Duplicated Code、Feature Envy、Data Clumps、Primitive Obsession、Repeated Switches、Shotgun Surgery、Divergent Change、Speculative Generality、Message Chains、Middle Man、Refused Bequest），作为固定基线内联进 ",
+      "occurrences": 1,
+      "reason": "Fowler 著作中的章节专名，保留英文身份或词形。"
+    },
+    {
+      "id": "bae4335fe6ad68f1cbdb610b2926ae71acb73a6336b1fc29176d78b2200ac9fc",
+      "path": "skills/misc/scaffold-exercises/SKILL.md",
+      "part": "code_inline",
+      "text": "pnpm ai-hero-cli internal lint",
+      "context": "pnpm ai-hero-cli internal lint",
+      "occurrences": 3,
+      "reason": "原样命令示例及其参数，包含自然语言参数时也不改写命令；本任务不执行。"
+    },
+    {
+      "id": "bb54c9516e4c7594ee801bd8baf517aa99b085fa0827d91406af0ac11f461e15",
+      "path": ".agents/adr/0002-ship-as-a-claude-code-plugin.md",
+      "part": "code_inline",
+      "text": "claude plugin validate",
+      "context": "claude plugin validate . --strict",
+      "occurrences": 1,
+      "reason": "原样命令示例及其参数，包含自然语言参数时也不改写命令；本任务不执行。"
+    },
+    {
+      "id": "bb7b2c3cec17eafb7a1fa218cd297fed1c690c99a7cf38c0a709dd6fc5ddc07b",
+      "path": "skills/engineering/improve-codebase-architecture/HTML-REPORT.md",
+      "part": "fence:0",
+      "text": "xl mx-auto px-",
+      "context": "    <main class=\"max-w-5xl mx-auto px-6 py-12 space-y-12\">",
+      "occurrences": 1,
+      "reason": "Tailwind CSS class 字面量，不翻译。"
+    },
+    {
+      "id": "bb84be15e563e856e700e156116cc6e2108f7510099120d50565bf6c59f615ac",
+      "path": "docs/engineering/grill-with-docs.md",
+      "part": "text",
+      "text": "help me document my repo",
+      "context": "可以。对于没有 ADR、领域语言或设计原则的代码库，这就是合适的技能：调用它，并说 \"help me document my repo\"。社区常用做法是将它与 ",
+      "occurrences": 1,
+      "reason": "原文明确的触发或用户操作短语；保留英文触发条件，周围解释已译为中文。"
+    },
+    {
+      "id": "bc8cf079754ed16f08d5186cde07222c592f9220ef2b4a69b3af8fb48762ccbf",
+      "path": "skills/engineering/wayfinder/SKILL.md",
+      "part": "fence:0",
+      "text": "closed ticket title",
+      "context": "- [<closed ticket title>](link): <答案的一行概要>",
+      "occurrences": 1,
+      "reason": "模板中的 <closed ticket title> 占位标识，保留尖括号、字段文本和链接结构。"
+    },
+    {
+      "id": "beabfebdeff6763f52592a0b6964eed0e75f2d2ca3cead3cdbad4c2f3be38811",
+      "path": ".changeset/user-invoked-skill-invocation.md",
+      "part": "code_inline",
+      "text": "Call the Skill tool with",
+      "context": "Call the Skill tool with \"setup-matt-pocock-skills\"",
+      "occurrences": 1,
+      "reason": "技能调用规范的固定示例句，必须保留 Skill 工具及参数语义；不是本任务要执行的指令。"
+    },
+    {
+      "id": "bff2ecb97b064756f45a6de3063e68c0ff18dc48cfc73cc83412775f3dcc4166",
+      "path": "skills/in-progress/writing-beats/SKILL.md",
+      "part": "text",
+      "text": "rewrite that beat",
+      "context": "用户说 \"rewrite that beat\"（重写该节拍）或 \"go back and try a different beat 3\"（回去换一种第三节拍）时，就照做：原位编辑，其他部分不动。",
+      "occurrences": 1,
+      "reason": "原文明确的触发或用户操作短语；保留英文触发条件，周围解释已译为中文。"
+    },
+    {
+      "id": "c2646fab42c5d1fbf17fd12154addfc23feba72b446fc907b92850fda3c68d63",
+      "path": "CHANGELOG.md",
+      "part": "code_inline",
+      "text": "Not yet specified",
+      "context": "## Not yet specified",
+      "occurrences": 1,
+      "reason": "固定模板标题、状态字段或输出字面量；其他文件/技能引用该名称，保留原文以维持协议。"
+    },
+    {
+      "id": "c28d4059a2b2693f6f5bf731a094c74b6824f096d0dff193bc16504a9a2cf727",
+      "path": "skills/misc/scaffold-exercises/SKILL.md",
+      "part": "code_inline",
+      "text": "pnpm run exercise",
+      "context": "pnpm run exercise",
+      "occurrences": 1,
+      "reason": "原样命令示例及其参数，包含自然语言参数时也不改写命令；本任务不执行。"
+    },
+    {
+      "id": "c54d763880bfd48ccc99928f22f7d98d2d9db249176cd71211f32230b87886cc",
+      "path": "skills/engineering/setup-matt-pocock-skills/issue-tracker-github.md",
+      "part": "code_inline",
+      "text": "gh issue edit",
+      "context": "gh issue edit <n> --add-assignee @me",
+      "occurrences": 1,
+      "reason": "原样命令示例及其参数，包含自然语言参数时也不改写命令；本任务不执行。"
+    },
+    {
+      "id": "c5643f82cb79bb6b82977762ab83c38ba9560a58fe9daf83e4f286482711cbf0",
+      "path": "docs/engineering/diagnosing-bugs.md",
+      "part": "code_inline",
+      "text": "git bisect run",
+      "context": "git bisect run",
+      "occurrences": 1,
+      "reason": "原样命令示例及其参数，包含自然语言参数时也不改写命令；本任务不执行。"
+    },
+    {
+      "id": "c5b1999e227116ecdb7a8658896c6fc7ca6527c07ee4304dc16a429bb1b3c4f0",
+      "path": "skills/productivity/teach/MISSION-FORMAT.md",
+      "part": "fence:0",
+      "text": "Success looks like",
+      "context": "## Success looks like",
+      "occurrences": 1,
+      "reason": "固定模板标题、状态字段或输出字面量；其他文件/技能引用该名称，保留原文以维持协议。"
+    },
+    {
+      "id": "ca39ad1656088b14b22a31ab6e99abd6c48d0e63fb609ca9269027758439f8fd",
+      "path": ".agents/adr/0002-ship-as-a-claude-code-plugin.md",
+      "part": "code_inline",
+      "text": "npx skills add mattpocock",
+      "context": "npx skills add mattpocock/skills",
+      "occurrences": 1,
+      "reason": "原样命令示例及其参数，包含自然语言参数时也不改写命令；本任务不执行。"
+    },
+    {
+      "id": "ca76f89d75497411a13e205e94bdff8226422ce6955850a42637bb2a0dbf25e2",
+      "path": "skills/engineering/setup-matt-pocock-skills/issue-tracker-gitlab.md",
+      "part": "code_inline",
+      "text": "glab mr diff",
+      "context": "glab mr diff <number>",
+      "occurrences": 1,
+      "reason": "原样命令示例及其参数，包含自然语言参数时也不改写命令；本任务不执行。"
+    },
+    {
+      "id": "caba6962f513063b1126a3a9c79008a8188e7a092870527ec6a63deffdadefa3",
+      "path": "CONTEXT.md",
+      "part": "text",
+      "text": "Matt Pocock Skills",
+      "context": "Matt Pocock Skills",
+      "occurrences": 1,
+      "reason": "原项目名称，保留英文身份或词形。"
+    },
+    {
+      "id": "cbf052b73b3d3890b4ff34f249d70dfefd11c39c7cbecad6e2292bf9732b7c8c",
+      "path": "skills/engineering/setup-matt-pocock-skills/issue-tracker-gitlab.md",
+      "part": "code_inline",
+      "text": "glab issue close",
+      "context": "glab issue close <number>",
+      "occurrences": 1,
+      "reason": "原样命令示例及其参数，包含自然语言参数时也不改写命令；本任务不执行。"
+    },
+    {
+      "id": "ccb39768b6ee82195930050ec5511c9d82e076c9b4a620ca54fc938de9993406",
+      "path": ".agents/adr/0002-ship-as-a-claude-code-plugin.md",
+      "part": "code_inline",
+      "text": "claude plugins install mattpocock-skills",
+      "context": "claude plugins install mattpocock-skills",
+      "occurrences": 2,
+      "reason": "原样命令示例及其参数，包含自然语言参数时也不改写命令；本任务不执行。"
+    },
+    {
+      "id": "cd4fc20fc757d0dd832b728ef76f1f2a73c0a8d52c9c77ae3a906e855f7e1f93",
+      "path": ".agents/writing-docs.md",
+      "part": "code_inline",
+      "text": "It's working if",
+      "context": "It's working if",
+      "occurrences": 1,
+      "reason": "固定模板标题、状态字段或输出字面量；其他文件/技能引用该名称，保留原文以维持协议。"
+    },
+    {
+      "id": "d1b0a3544407773d7b0b6b3d1bc89c57f7d893b13d2717f98805a883f3d75cae",
+      "path": "skills/engineering/setup-matt-pocock-skills/issue-tracker-github.md",
+      "part": "code_inline",
+      "text": "gh pr diff",
+      "context": "gh pr diff <number>",
+      "occurrences": 1,
+      "reason": "原样命令示例及其参数，包含自然语言参数时也不改写命令；本任务不执行。"
+    },
+    {
+      "id": "d1dbe0f41fe465444d4c6ad8eceef31b8cba43f7ffe8d7fae86af0880d5c0f9b",
+      "path": ".agents/writing-docs.md",
+      "part": "code_inline",
+      "text": "What it does",
+      "context": "## What it does",
+      "occurrences": 2,
+      "reason": "固定模板标题、状态字段或输出字面量；其他文件/技能引用该名称，保留原文以维持协议。"
+    },
+    {
+      "id": "d6eaba518576aa41899c51f9dc03c8c0f6fed7e71f9b11d5eeb42db518892229",
+      "path": ".agents/install-block.md",
+      "part": "code_inline",
+      "text": "plugin install mattpocock-skills",
+      "context": "/plugin install mattpocock-skills@mattpocock",
+      "occurrences": 1,
+      "reason": "原样命令示例及其参数，包含自然语言参数时也不改写命令；本任务不执行。"
+    },
+    {
+      "id": "d73b67c2c9e451ac37c8d72ea998618e88ed7e7af181f5f6be9180ff6e6354bd",
+      "path": "skills/engineering/code-review/SKILL.md",
+      "part": "text",
+      "text": "no spec available",
+      "context": " 子 agent 将跳过，并报告 \"no spec available\"。",
+      "occurrences": 1,
+      "reason": "固定模板标题、状态字段或输出字面量；其他文件/技能引用该名称，保留原文以维持协议。"
+    },
+    {
+      "id": "d761120311d0d1e8578778925d446a895a1706d7e4cab27bfcca80707af839ac",
+      "path": "skills/productivity/teach/GLOSSARY-FORMAT.md",
+      "part": "fence:0",
+      "text": "Rate of Perceived Exertion",
+      "context": "**RPE（主观用力程度评分，Rate of Perceived Exertion）**：",
+      "occurrences": 1,
+      "reason": "RPE 的术语展开，与中文释义并列，保留英文身份或词形。"
+    },
+    {
+      "id": "daf556952930fcca2a0776e47ee045f3225d526ac5675c4b76c389c5d210bc9b",
+      "path": "docs/engineering/wayfinder.md",
+      "part": "text",
+      "text": "Out of scope",
+      "context": "Out of scope",
+      "occurrences": 1,
+      "reason": "固定模板标题、状态字段或输出字面量；其他文件/技能引用该名称，保留原文以维持协议。"
+    },
+    {
+      "id": "db1c8488f7597a42ee0fff652b1f97d32498b5e09b84f79f1da6eab7aba277e2",
+      "path": "docs/engineering/setup-matt-pocock-skills.md",
+      "part": "code_inline",
+      "text": "gh issue create",
+      "context": "gh issue create --label <missing>",
+      "occurrences": 1,
+      "reason": "原样命令示例及其参数，包含自然语言参数时也不改写命令；本任务不执行。"
+    },
+    {
+      "id": "db37f003434ae7bb6c9cf675a496f96aee09c294e248d13544c37a6240168d8a",
+      "path": "skills/engineering/setup-matt-pocock-skills/issue-tracker-gitlab.md",
+      "part": "code_inline",
+      "text": "glab issue create",
+      "context": "glab issue create --label wayfinder:map",
+      "occurrences": 1,
+      "reason": "原样命令示例及其参数，包含自然语言参数时也不改写命令；本任务不执行。"
+    },
+    {
+      "id": "db468f45ca7d319f926033fb699e3e29e10573ebf971a6f2a5b7a3e854fc1c9f",
+      "path": "skills/engineering/triage/OUT-OF-SCOPE.md",
+      "part": "fence:1",
+      "text": "The current ThemeConfig interface is not designed for runtime switching",
+      "context": "// The current ThemeConfig interface is not designed for runtime switching:",
+      "occurrences": 1,
+      "reason": "嵌套 TypeScript 示例的原注释，随代码保持原样；自然语言模板正文已翻译。"
+    },
+    {
+      "id": "dc92760161d6e1527288b4348c89a7249bcff318c5aa35fddc33d5aaabbff186",
+      "path": ".agents/adr/0002-ship-as-a-claude-code-plugin.md",
+      "part": "code_inline",
+      "text": "claude plugin details mattpocock-skills",
+      "context": "claude plugin details mattpocock-skills",
+      "occurrences": 1,
+      "reason": "原样命令示例及其参数，包含自然语言参数时也不改写命令；本任务不执行。"
+    },
+    {
+      "id": "e03de30687b987ebc4606dde19c7a181060694ae92c4623b7feeff4caeea30f7",
+      "path": ".agents/adr/0002-ship-as-a-claude-code-plugin.md",
+      "part": "code_inline",
+      "text": "plugin install mattpocock-skills",
+      "context": "/plugin install mattpocock-skills",
+      "occurrences": 1,
+      "reason": "原样命令示例及其参数，包含自然语言参数时也不改写命令；本任务不执行。"
+    },
+    {
+      "id": "e206a5d8837505f42a65e96a0e30457306aa76e2027967b50957664801b4b2f3",
+      "path": "skills/in-progress/writing-fragments/SKILL.md",
+      "part": "text",
+      "text": "fog of war",
+      "context": "fog of war",
+      "occurrences": 1,
+      "reason": "原文用于引导概念的固定术语，保留英文身份或词形。"
+    },
+    {
+      "id": "e339afb43298a4bad42bb119ce8ff8cc00863a92d2e0046a53f89d6173ae228d",
+      "path": "skills/engineering/setup-matt-pocock-skills/issue-tracker-github.md",
+      "part": "code_inline",
+      "text": "gh issue close",
+      "context": "gh issue close <n>",
+      "occurrences": 1,
+      "reason": "原样命令示例及其参数，包含自然语言参数时也不改写命令；本任务不执行。"
+    },
+    {
+      "id": "e59daa42addba397c65683f882edf13c9f9e40842b55ba1cb8e4cf812f11ed32",
+      "path": "skills/engineering/setup-matt-pocock-skills/issue-tracker-github.md",
+      "part": "code_inline",
+      "text": "gh pr close",
+      "context": "gh pr close",
+      "occurrences": 1,
+      "reason": "原样命令示例及其参数，包含自然语言参数时也不改写命令；本任务不执行。"
+    },
+    {
+      "id": "e5a39af67f345d3dbd74a29a13bdd9f88905b2a896f97654426380a68bab7713",
+      "path": "CHANGELOG.md",
+      "part": "text",
+      "text": "GitHub Actions secrets",
+      "context": " 文件和 GitHub Actions secrets。",
+      "occurrences": 1,
+      "reason": "GitHub 产品及其 secrets 技术术语，保留英文身份或词形。"
+    },
+    {
+      "id": "e5b9405c55fdb5cabc29dc8c8b50a3414c8c4f5da0609591ad8905d4c56e74c2",
+      "path": "skills/engineering/setup-matt-pocock-skills/issue-tracker-gitlab.md",
+      "part": "code_inline",
+      "text": "glab issue close",
+      "context": "glab issue close <n>",
+      "occurrences": 1,
+      "reason": "原样命令示例及其参数，包含自然语言参数时也不改写命令；本任务不执行。"
+    },
+    {
+      "id": "e6a526b5caac9b3af193fb6c44f20a55005b73c42708be9829d16f902099f697",
+      "path": "docs/engineering/diagnosing-bugs.md",
+      "part": "text",
+      "text": "just answer this",
+      "context": "会过度调用。在分级机制落地之前，实际应对办法是明确说出需要（\"just answer this, don't diagnose\"，即只回答，不要诊断），或在 ",
+      "occurrences": 1,
+      "reason": "原文明确的触发或用户操作短语；保留英文触发条件，周围解释已译为中文。"
+    },
+    {
+      "id": "eaeb1e9705f091ae3e97838e05b46a8652895bc98274d6646081a8ed1c2eedb9",
+      "path": "skills/engineering/diagnosing-bugs/SKILL.md",
+      "part": "code_inline",
+      "text": "git bisect run",
+      "context": "git bisect run",
+      "occurrences": 1,
+      "reason": "原样命令示例及其参数，包含自然语言参数时也不改写命令；本任务不执行。"
+    },
+    {
+      "id": "eb38ef9641844e24665a211f1dae0a3aabc3e162fb4cd70e0114b7866febfde2",
+      "path": "docs/engineering/wayfinder.md",
+      "part": "text",
+      "text": "Not yet specified",
+      "context": "Not yet specified",
+      "occurrences": 2,
+      "reason": "固定模板标题、状态字段或输出字面量；其他文件/技能引用该名称，保留原文以维持协议。"
+    },
+    {
+      "id": "ebd58a55e778e84333a810ea63d76731bf9ad1b7e2fd192f223b96cb733e92b9",
+      "path": "skills/engineering/setup-matt-pocock-skills/issue-tracker-github.md",
+      "part": "code_inline",
+      "text": "gh issue comment",
+      "context": "gh issue comment <n> --body \"<answer>\"",
+      "occurrences": 1,
+      "reason": "原样命令示例及其参数，包含自然语言参数时也不改写命令；本任务不执行。"
+    },
+    {
+      "id": "ee42453afc2a12314530d782683946bcd242aa1fbdd31ec139d887c687e78416",
+      "path": "skills/engineering/wayfinder/SKILL.md",
+      "part": "text",
+      "text": "Out of scope",
+      "context": "Out of scope",
+      "occurrences": 2,
+      "reason": "固定模板标题、状态字段或输出字面量；其他文件/技能引用该名称，保留原文以维持协议。"
+    },
+    {
+      "id": "ef15d9ecd1b0d9ff3d1e3f0e992a6e096506c4d0c42ac3e0aba67fa4c3c418d4",
+      "path": "skills/engineering/setup-matt-pocock-skills/issue-tracker-gitlab.md",
+      "part": "code_inline",
+      "text": "glab mr update",
+      "context": "glab mr update --label",
+      "occurrences": 1,
+      "reason": "原样命令示例及其参数，包含自然语言参数时也不改写命令；本任务不执行。"
+    },
+    {
+      "id": "f1e97b3b8258aea6b8cc69f6aea409587b7f11ff7bf2c03b7c66e8bf1a463f9b",
+      "path": "docs/engineering/domain-modeling.md",
+      "part": "code_inline",
+      "text": "grill-with-docs make my CONTEXT",
+      "context": "/grill-with-docs make my CONTEXT.md more concise and remove any implementation details from it",
+      "occurrences": 1,
+      "reason": "原样命令示例及其参数，包含自然语言参数时也不改写命令；本任务不执行。"
+    },
+    {
+      "id": "f2ea11db1c11f84f59d513abc0749347a1215b67ec0f9609ce73ab6f2b9576db",
+      "path": "docs/engineering/setup-matt-pocock-skills.md",
+      "part": "code_inline",
+      "text": "gh label create",
+      "context": "gh label create",
+      "occurrences": 1,
+      "reason": "原样命令示例及其参数，包含自然语言参数时也不改写命令；本任务不执行。"
+    },
+    {
+      "id": "f6c285447937b371ede1945a3110e7c1f600c9b04bcede50f61c2855fd1a18d0",
+      "path": "docs/engineering/tdd.md",
+      "part": "text",
+      "text": "user can checkout with valid cart",
+      "context": "测试名称读起来像能力（\"user can checkout with valid cart\"），而不是内部细节（\"checkout calls paymentService.process\"）。",
+      "occurrences": 1,
+      "reason": "测试名称字面量，须与 tests.md 内测试代码一致；自然含义已有中文解释。"
+    },
+    {
+      "id": "f7ef4cab62d423ce84be1d2512f517eb2fe80c82187425e44e332b98147f1a8e",
+      "path": "skills/engineering/code-review/SKILL.md",
+      "part": "text",
+      "text": "possible Feature Envy",
+      "context": " 每种坏味道都是带标签的启发式判断（\"possible Feature Envy\"），绝不是硬性违规。与这里的其他标准一样，跳过工具已经强制执行的内容。",
+      "occurrences": 1,
+      "reason": "代码审查启发式的示例标签，保留英文身份或词形。"
+    },
+    {
+      "id": "f9851fe7f27c681ee135167c780a1ba9907bdd853e36d987423b4a5b0bf3e903",
+      "path": "skills/engineering/setup-matt-pocock-skills/issue-tracker-gitlab.md",
+      "part": "code_inline",
+      "text": "glab issue list",
+      "context": "glab issue list -F json",
+      "occurrences": 2,
+      "reason": "原样命令示例及其参数，包含自然语言参数时也不改写命令；本任务不执行。"
+    },
+    {
+      "id": "f99ba028a0bffc2c8814aaa7c892c6dfac8149e07f05c6ad80dbdd80b5c2d9c5",
+      "path": "skills/engineering/setup-matt-pocock-skills/issue-tracker-gitlab.md",
+      "part": "code_inline",
+      "text": "glab issue create",
+      "context": "glab issue create --title \"...\" --description \"...\"",
+      "occurrences": 1,
+      "reason": "原样命令示例及其参数，包含自然语言参数时也不改写命令；本任务不执行。"
+    },
+    {
+      "id": "fa9a622e2f392cfdd3c8f8eef6df7293d480f4a6e23c0dc97a93a0749ef53d61",
+      "path": "skills/engineering/setup-matt-pocock-skills/issue-tracker-gitlab.md",
+      "part": "code_inline",
+      "text": "glab mr create",
+      "context": "glab mr create",
+      "occurrences": 1,
+      "reason": "原样命令示例及其参数，包含自然语言参数时也不改写命令；本任务不执行。"
+    },
+    {
+      "id": "fab90f9e13449140aa84e7a43c81368de82ffe03ed0aa8e2c8be74806a2438d1",
+      "path": "docs/engineering/to-tickets.md",
+      "part": "code_inline",
+      "text": "gh issue create",
+      "context": "gh issue create --parent <n>",
+      "occurrences": 1,
+      "reason": "原样命令示例及其参数，包含自然语言参数时也不改写命令；本任务不执行。"
+    },
+    {
+      "id": "fbefd07658327c93ee4321b6e8db6a83cb6aabd28e48224e926cc035a8d935d0",
+      "path": "CHANGELOG.md",
+      "part": "text",
+      "text": "What to build",
+      "context": " 章节作为回退。“What to build”模板指向 ",
+      "occurrences": 1,
+      "reason": "固定模板标题、状态字段或输出字面量；其他文件/技能引用该名称，保留原文以维持协议。"
+    },
+    {
+      "id": "fd818606ec7d350b246596d8cd723192201455b940b31e0e8b18fc17972a85e4",
+      "path": "skills/productivity/to-questionnaire/SKILL.md",
+      "part": "text",
+      "text": "How to answer",
+      "context": "How to answer",
+      "occurrences": 1,
+      "reason": "固定模板标题、状态字段或输出字面量；其他文件/技能引用该名称，保留原文以维持协议。"
+    },
+    {
+      "id": "fe151adb91e8bed91d607485b9ceb006464d9c27fa2a7e0aaf827317543a8ddb",
+      "path": "docs/engineering/code-review.md",
+      "part": "text",
+      "text": "possible Feature Envy",
+      "context": "是其底线，来自 Fowler《Refactoring》第 3 章的十二种代码坏味道：Mysterious Name（含混的名称）、Duplicated Code（重复代码）、Feature Envy（依恋情结）、Data Clumps（数据泥团）、Primitive Obsession（基本类型偏执）、Repeated Switches（重复的条件分支）、Shotgun Surgery（霰弹式修改）、Divergent Change（发散式变化）、Speculative Generality（夸夸其谈的通用性）、Message Chains（消息链）、Middle Man（中间人）、Refused Bequest（拒绝继承的遗产）。每种都是带标签的启发式判断（\"possible Feature Envy\"），绝不是硬性违规；每种都按",
+      "occurrences": 1,
+      "reason": "代码审查启发式的示例标签，保留英文身份或词形。"
+    },
+    {
+      "id": "febd71e225360dc58d0470ab7bb88386ef4c1739701d6ebcdece0d50cc15d929",
+      "path": "skills/engineering/setup-matt-pocock-skills/issue-tracker-gitlab.md",
+      "part": "code_inline",
+      "text": "glab mr list",
+      "context": "glab mr list -F json",
+      "occurrences": 1,
+      "reason": "原样命令示例及其参数，包含自然语言参数时也不改写命令；本任务不执行。"
+    }
+  ],
+  "preserved_fences": [
+    {
+      "path": ".agents/install-block.md",
+      "index": 0,
+      "info": "bash",
+      "sha256": "49cd3af76c0ee729674e36325cb9e32a32478aa25ab490566cad4033f7e6c44e",
+      "reason": "Shell 命令示例；命令、参数、路径与安装来源原样保留，不执行。"
+    },
+    {
+      "path": ".agents/install-block.md",
+      "index": 1,
+      "info": "",
+      "sha256": "a14b907310ed75c3956ef4aeeaed175d7bdca4a7dcf0ad0223052de3bbd79165",
+      "reason": "Claude 插件安装 slash 命令及上游插件名原样保留，不执行安装。"
+    },
+    {
+      "path": ".agents/install-block.md",
+      "index": 2,
+      "info": "bash",
+      "sha256": "97d91df34b56f0861e45e345644c8fd1f9b2f40c24ec7241bcce19bfa5080982",
+      "reason": "Shell 命令示例；命令、参数、路径与安装来源原样保留，不执行。"
+    },
+    {
+      "path": ".agents/install-block.md",
+      "index": 3,
+      "info": "bash",
+      "sha256": "cd45e7d716f7f376b7df41d3a2756ecc632679725aad934a788d0b53c9e739be",
+      "reason": "Shell 命令示例；命令、参数、路径与安装来源原样保留，不执行。"
+    },
+    {
+      "path": ".agents/install-block.md",
+      "index": 4,
+      "info": "bash",
+      "sha256": "9ed5622c28a4bfcc3eda4a7e83cebcd5f7aa323dee74531ed5ec780ae3ef280e",
+      "reason": "Shell 命令示例；命令、参数、路径与安装来源原样保留，不执行。"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "index": 0,
+      "info": "bash",
+      "sha256": "49cd3af76c0ee729674e36325cb9e32a32478aa25ab490566cad4033f7e6c44e",
+      "reason": "Shell 命令示例；命令、参数、路径与安装来源原样保留，不执行。"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "index": 1,
+      "info": "",
+      "sha256": "a14b907310ed75c3956ef4aeeaed175d7bdca4a7dcf0ad0223052de3bbd79165",
+      "reason": "Claude 插件安装 slash 命令及上游插件名原样保留，不执行安装。"
+    },
+    {
+      "path": "README.md",
+      "index": 0,
+      "info": "bash",
+      "sha256": "49cd3af76c0ee729674e36325cb9e32a32478aa25ab490566cad4033f7e6c44e",
+      "reason": "Shell 命令示例；命令、参数、路径与安装来源原样保留，不执行。"
+    },
+    {
+      "path": "README.md",
+      "index": 1,
+      "info": "",
+      "sha256": "a14b907310ed75c3956ef4aeeaed175d7bdca4a7dcf0ad0223052de3bbd79165",
+      "reason": "Claude 插件安装 slash 命令及上游插件名原样保留，不执行安装。"
+    },
+    {
+      "path": "README.md",
+      "index": 2,
+      "info": "bash",
+      "sha256": "97d91df34b56f0861e45e345644c8fd1f9b2f40c24ec7241bcce19bfa5080982",
+      "reason": "Shell 命令示例；命令、参数、路径与安装来源原样保留，不执行。"
+    },
+    {
+      "path": "README.md",
+      "index": 3,
+      "info": "bash",
+      "sha256": "97d91df34b56f0861e45e345644c8fd1f9b2f40c24ec7241bcce19bfa5080982",
+      "reason": "Shell 命令示例；命令、参数、路径与安装来源原样保留，不执行。"
+    },
+    {
+      "path": "docs/engineering/grill-with-docs.md",
+      "index": 0,
+      "info": "txt",
+      "sha256": "2b644f2b241259f3b33d08753dc4a3eb6b0484fba31ae40c3a1b5982816adc85",
+      "reason": "技能工作流图，节点均为实际技能 slug，连接顺序不变。"
+    },
+    {
+      "path": "docs/engineering/implement.md",
+      "index": 0,
+      "info": "txt",
+      "sha256": "2b644f2b241259f3b33d08753dc4a3eb6b0484fba31ae40c3a1b5982816adc85",
+      "reason": "技能工作流图，节点均为实际技能 slug，连接顺序不变。"
+    },
+    {
+      "path": "docs/engineering/tdd.md",
+      "index": 0,
+      "info": "txt",
+      "sha256": "2b644f2b241259f3b33d08753dc4a3eb6b0484fba31ae40c3a1b5982816adc85",
+      "reason": "技能工作流图，节点均为实际技能 slug，连接顺序不变。"
+    },
+    {
+      "path": "docs/engineering/to-spec.md",
+      "index": 0,
+      "info": "txt",
+      "sha256": "2b644f2b241259f3b33d08753dc4a3eb6b0484fba31ae40c3a1b5982816adc85",
+      "reason": "技能工作流图，节点均为实际技能 slug，连接顺序不变。"
+    },
+    {
+      "path": "docs/engineering/to-tickets.md",
+      "index": 0,
+      "info": "txt",
+      "sha256": "2b644f2b241259f3b33d08753dc4a3eb6b0484fba31ae40c3a1b5982816adc85",
+      "reason": "技能工作流图，节点均为实际技能 slug，连接顺序不变。"
+    },
+    {
+      "path": "skills/engineering/codebase-design/SKILL.md",
+      "index": 2,
+      "info": "typescript",
+      "sha256": "088efa4cd170c6de1ead158b8ccf4efe37083f2924270231290a1f7b454b5f73",
+      "reason": "可执行 TypeScript/TSX 或明确的程序示例；逻辑、类型、字符串、测试名及原注释整体原样保留。"
+    },
+    {
+      "path": "skills/engineering/codebase-design/SKILL.md",
+      "index": 3,
+      "info": "typescript",
+      "sha256": "e212bbeee0d9877222cbebaeae6b15cae8e0f8891f957c1819355dd7667703fe",
+      "reason": "可执行 TypeScript/TSX 或明确的程序示例；逻辑、类型、字符串、测试名及原注释整体原样保留。"
+    },
+    {
+      "path": "skills/engineering/domain-modeling/SKILL.md",
+      "index": 0,
+      "info": "",
+      "sha256": "64809bce93c275978051cb35961d87538a4a4cdce5a50764252b9097d3336cf8",
+      "reason": "目录树示例，仅含路径及文件名，保持机器路径原样。"
+    },
+    {
+      "path": "skills/engineering/improve-codebase-architecture/HTML-REPORT.md",
+      "index": 1,
+      "info": "html",
+      "sha256": "743a8f9fde39669171be88d684a6f9f1047c18b134c284239103d21662c986a3",
+      "reason": "HTML 内嵌 Mermaid 代码示例；类名、模块名、布局及图形语法原样保留。"
+    },
+    {
+      "path": "skills/engineering/prototype/UI.md",
+      "index": 0,
+      "info": "tsx",
+      "sha256": "aebd0554493e5fd22b8ed30232a96661fb7bd02b1244cb3e8deaee726cc9a56a",
+      "reason": "可执行 TypeScript/TSX 或明确的程序示例；逻辑、类型、字符串、测试名及原注释整体原样保留。"
+    },
+    {
+      "path": "skills/engineering/setup-matt-pocock-skills/domain.md",
+      "index": 0,
+      "info": "",
+      "sha256": "134f0096dd97d7dc693c4d3fe9a00b0455a6a4ba0c78f8819a58dd2b838a30b3",
+      "reason": "目录树示例，仅含路径及文件名，保持机器路径原样。"
+    },
+    {
+      "path": "skills/engineering/tdd/mocking.md",
+      "index": 0,
+      "info": "typescript",
+      "sha256": "07b4f9eae7f574fdb346bd8a95a0a97db2844fb42184916e2d0611e43dc08692",
+      "reason": "可执行 TypeScript/TSX 或明确的程序示例；逻辑、类型、字符串、测试名及原注释整体原样保留。"
+    },
+    {
+      "path": "skills/engineering/tdd/mocking.md",
+      "index": 1,
+      "info": "typescript",
+      "sha256": "1e41059ceb30be9fa67202e858c2dc1a352176e97f126b2621f7ccc988f57e0c",
+      "reason": "可执行 TypeScript/TSX 或明确的程序示例；逻辑、类型、字符串、测试名及原注释整体原样保留。"
+    },
+    {
+      "path": "skills/engineering/tdd/tests.md",
+      "index": 0,
+      "info": "typescript",
+      "sha256": "d6bd5e9988425c84602564c015a497c83a409089d0f198015a6dba0496947996",
+      "reason": "可执行 TypeScript/TSX 或明确的程序示例；逻辑、类型、字符串、测试名及原注释整体原样保留。"
+    },
+    {
+      "path": "skills/engineering/tdd/tests.md",
+      "index": 1,
+      "info": "typescript",
+      "sha256": "82b55636959bf326f2d10dbd2ddb6109839eb06cf28a44f37cc27e3f9e8ce03f",
+      "reason": "可执行 TypeScript/TSX 或明确的程序示例；逻辑、类型、字符串、测试名及原注释整体原样保留。"
+    },
+    {
+      "path": "skills/engineering/tdd/tests.md",
+      "index": 2,
+      "info": "typescript",
+      "sha256": "c20724541fe613e59b3e6495574effe75c7f780e7de914ceccf5f356826e5307",
+      "reason": "可执行 TypeScript/TSX 或明确的程序示例；逻辑、类型、字符串、测试名及原注释整体原样保留。"
+    },
+    {
+      "path": "skills/engineering/tdd/tests.md",
+      "index": 3,
+      "info": "typescript",
+      "sha256": "15cec5df6f27db7291cfae07f744e95d0f39ea3b4321039436a633e2d87091f1",
+      "reason": "可执行 TypeScript/TSX 或明确的程序示例；逻辑、类型、字符串、测试名及原注释整体原样保留。"
+    },
+    {
+      "path": "skills/engineering/triage/OUT-OF-SCOPE.md",
+      "index": 0,
+      "info": "",
+      "sha256": "1dea4b5a2e24dd0087b134749dcb6ded42cf6265eba66777271975d6946ca41d",
+      "reason": "目录树示例，仅含路径及文件名，保持机器路径原样。"
+    },
+    {
+      "path": "skills/engineering/triage/SKILL.md",
+      "index": 0,
+      "info": "",
+      "sha256": "0cf8f8e35d10789f0eeb07adfd21c62749e73325369e2542b6e99dabd92bbaf3",
+      "reason": "triage 必须逐字使用的 AI 免责声明固定输出。"
+    },
+    {
+      "path": "skills/in-progress/README.md",
+      "index": 0,
+      "info": "bash",
+      "sha256": "cd45e7d716f7f376b7df41d3a2756ecc632679725aad934a788d0b53c9e739be",
+      "reason": "Shell 命令示例；命令、参数、路径与安装来源原样保留，不执行。"
+    },
+    {
+      "path": "skills/in-progress/pr/SKILL.md",
+      "index": 1,
+      "info": "text",
+      "sha256": "866299caf05434f963a6d4a5316a09f73bc48fff289a8dd5a3534c30ca48bf6e",
+      "reason": "伪代码、调用图或目录树程序示例；操作词、标识、文件名及代码注释整体原样保留。"
+    },
+    {
+      "path": "skills/in-progress/pr/SKILL.md",
+      "index": 2,
+      "info": "text",
+      "sha256": "c6c6189222b390ff6e0eba33555a355b7faf7a5df4037320026746af6e225aed",
+      "reason": "伪代码、调用图或目录树程序示例；操作词、标识、文件名及代码注释整体原样保留。"
+    },
+    {
+      "path": "skills/in-progress/pr/SKILL.md",
+      "index": 3,
+      "info": "tsx",
+      "sha256": "5a1a96fdcc6b6b57782c206c298f893da8f6eb95bafc9987699451b1f7304918",
+      "reason": "可执行 TypeScript/TSX 或明确的程序示例；逻辑、类型、字符串、测试名及原注释整体原样保留。"
+    },
+    {
+      "path": "skills/in-progress/pr/SKILL.md",
+      "index": 4,
+      "info": "text",
+      "sha256": "99efcb63e876183a72915c27d0990c29fd2e840a37f6258ad459fdd4dc62bc9d",
+      "reason": "伪代码、调用图或目录树程序示例；操作词、标识、文件名及代码注释整体原样保留。"
+    },
+    {
+      "path": "skills/in-progress/pr/SKILL.md",
+      "index": 5,
+      "info": "mermaid",
+      "sha256": "3e5c1a6271f993d57d470be0e8d99f7b28d6def8603d148f9a6960fbb466a85b",
+      "reason": "Mermaid 程序交互示例，参与者、消息和语法原样保留。"
+    },
+    {
+      "path": "skills/in-progress/pr/SKILL.md",
+      "index": 6,
+      "info": "diff",
+      "sha256": "45a74c33d722a8b973597624f8799e4b9457e7efe3db036048296f0159969fcd",
+      "reason": "示例程序变更 diff；行前缀、调用/文件结构、伪代码和注释原样保留。"
+    },
+    {
+      "path": "skills/in-progress/pr/SKILL.md",
+      "index": 7,
+      "info": "diff",
+      "sha256": "616dc8925aef9d24b0bb7652a1557cbc7e18e0fa71ce0ee9aec1c9622dce0753",
+      "reason": "示例程序变更 diff；行前缀、调用/文件结构、伪代码和注释原样保留。"
+    },
+    {
+      "path": "skills/in-progress/pr/SKILL.md",
+      "index": 8,
+      "info": "diff",
+      "sha256": "8dafacd0ab0e4feb70b2afecde81c4af45f0fbb978560a37200aab04aab3aba2",
+      "reason": "示例程序变更 diff；行前缀、调用/文件结构、伪代码和注释原样保留。"
+    },
+    {
+      "path": "skills/in-progress/pr/SKILL.md",
+      "index": 9,
+      "info": "diff",
+      "sha256": "6968f43f286e04a2d4a3d900328ca2bd62454679811a086e81c460a2b4559ce3",
+      "reason": "示例程序变更 diff；行前缀、调用/文件结构、伪代码和注释原样保留。"
+    },
+    {
+      "path": "skills/in-progress/pr/SKILL.md",
+      "index": 10,
+      "info": "ts",
+      "sha256": "dcc9f857dcf6f176fc68e84b8d2de110709ca0c4063a0df0167fbdf78d65f42b",
+      "reason": "可执行 TypeScript/TSX 或明确的程序示例；逻辑、类型、字符串、测试名及原注释整体原样保留。"
+    },
+    {
+      "path": "skills/misc/git-guardrails-claude-code/SKILL.md",
+      "index": 0,
+      "info": "json",
+      "sha256": "6797ce07614f15645ffb6a9279a96719fa5210a88b112b6bedbfcfdd12521774",
+      "reason": "JSON 配置示例；键、值、类型与命令字符串逐字保留。"
+    },
+    {
+      "path": "skills/misc/git-guardrails-claude-code/SKILL.md",
+      "index": 1,
+      "info": "json",
+      "sha256": "bdc79a2032cd567b65c78bf0f1111d839ad4f222a704ccfafcd5727d843345ba",
+      "reason": "JSON 配置示例；键、值、类型与命令字符串逐字保留。"
+    },
+    {
+      "path": "skills/misc/git-guardrails-claude-code/SKILL.md",
+      "index": 2,
+      "info": "bash",
+      "sha256": "cf0ca6893df3f4e9d77da746be441129e80c56002f237bd2566918965fdc4303",
+      "reason": "Shell 命令示例；命令、参数、路径与安装来源原样保留，不执行。"
+    },
+    {
+      "path": "skills/misc/migrate-to-shoehorn/SKILL.md",
+      "index": 0,
+      "info": "bash",
+      "sha256": "edb7ff8e2f808ad70444f7483febdbfe1c4f5f830da4163f1db7ead664f536b9",
+      "reason": "Shell 命令示例；命令、参数、路径与安装来源原样保留，不执行。"
+    },
+    {
+      "path": "skills/misc/migrate-to-shoehorn/SKILL.md",
+      "index": 1,
+      "info": "ts",
+      "sha256": "7620c954c7c4364d9e9ef0da77ee237fa8daa75c84eee7840badde2772792e9a",
+      "reason": "可执行 TypeScript/TSX 或明确的程序示例；逻辑、类型、字符串、测试名及原注释整体原样保留。"
+    },
+    {
+      "path": "skills/misc/migrate-to-shoehorn/SKILL.md",
+      "index": 2,
+      "info": "ts",
+      "sha256": "5a02a4f9f59ed4385847cf788c103b57a59af08f7113d3500b1aeab09e9978ae",
+      "reason": "可执行 TypeScript/TSX 或明确的程序示例；逻辑、类型、字符串、测试名及原注释整体原样保留。"
+    },
+    {
+      "path": "skills/misc/migrate-to-shoehorn/SKILL.md",
+      "index": 3,
+      "info": "ts",
+      "sha256": "ed31faf8d777f99aef64f1aae26b25c7fe352602ca708893ed5d76860247bf58",
+      "reason": "可执行 TypeScript/TSX 或明确的程序示例；逻辑、类型、字符串、测试名及原注释整体原样保留。"
+    },
+    {
+      "path": "skills/misc/migrate-to-shoehorn/SKILL.md",
+      "index": 4,
+      "info": "ts",
+      "sha256": "fcb5dd347b21c9f25fe9359f6e64a574df03cd6f67e206963a5a7bbd112ac366",
+      "reason": "可执行 TypeScript/TSX 或明确的程序示例；逻辑、类型、字符串、测试名及原注释整体原样保留。"
+    },
+    {
+      "path": "skills/misc/migrate-to-shoehorn/SKILL.md",
+      "index": 5,
+      "info": "ts",
+      "sha256": "013aa3d07d2abd81a5263e190f1041c7503f7c637e432afcfe2c4c26c62d909b",
+      "reason": "可执行 TypeScript/TSX 或明确的程序示例；逻辑、类型、字符串、测试名及原注释整体原样保留。"
+    },
+    {
+      "path": "skills/misc/migrate-to-shoehorn/SKILL.md",
+      "index": 6,
+      "info": "ts",
+      "sha256": "8177bde3432fb8ebcb791418f209d1dd4c33c3a961e6862d21b8195359d37ca9",
+      "reason": "可执行 TypeScript/TSX 或明确的程序示例；逻辑、类型、字符串、测试名及原注释整体原样保留。"
+    },
+    {
+      "path": "skills/misc/scaffold-exercises/SKILL.md",
+      "index": 1,
+      "info": "bash",
+      "sha256": "842d1d8ac615715387c7d6804fb2c510053887688c4d104110b04aba4d502aea",
+      "reason": "Shell 命令示例；命令、参数、路径与安装来源原样保留，不执行。"
+    },
+    {
+      "path": "skills/misc/scaffold-exercises/SKILL.md",
+      "index": 3,
+      "info": "bash",
+      "sha256": "656e9ffc26aeee6eb1fa44eb9250696e31c9b69404ed6fca5c7509fe854656ab",
+      "reason": "Shell 命令示例；命令、参数、路径与安装来源原样保留，不执行。"
+    },
+    {
+      "path": "skills/misc/setup-pre-commit/SKILL.md",
+      "index": 0,
+      "info": "",
+      "sha256": "bb4f29269e92dbb4fcb34d0795c97d21cbd18f4cf4d4f66e0e68067c279494fa",
+      "reason": "依赖包名或检查命令清单，原样保留不执行。"
+    },
+    {
+      "path": "skills/misc/setup-pre-commit/SKILL.md",
+      "index": 1,
+      "info": "bash",
+      "sha256": "19e3eb580c00b804cc18fc10942b395273896d61cca9ccb4f793fc0d60aef65a",
+      "reason": "Shell 命令示例；命令、参数、路径与安装来源原样保留，不执行。"
+    },
+    {
+      "path": "skills/misc/setup-pre-commit/SKILL.md",
+      "index": 2,
+      "info": "",
+      "sha256": "fd4ead49a76c63247b11def7ae9447d046985987b8eba68ff5cae23959adc161",
+      "reason": "依赖包名或检查命令清单，原样保留不执行。"
+    },
+    {
+      "path": "skills/misc/setup-pre-commit/SKILL.md",
+      "index": 3,
+      "info": "json",
+      "sha256": "82cbd95175ddf2cf783437f3ffd9c59919e5bf758491beaeb54d522c26bf60d3",
+      "reason": "JSON 配置示例；键、值、类型与命令字符串逐字保留。"
+    },
+    {
+      "path": "skills/misc/setup-pre-commit/SKILL.md",
+      "index": 4,
+      "info": "json",
+      "sha256": "2501b2933173be1b761d0fa131b175801f3c220198d70cb7f03c6df6c6004ab7",
+      "reason": "JSON 配置示例；键、值、类型与命令字符串逐字保留。"
+    }
+  ],
+  "preserved_paths": [
+    {
+      "path": ".changeset/config.json",
+      "mode": "100644",
+      "sha256": "61717b21675ba9d99f0fc363253ead2716895a4c043c779727d8c685d48684e8",
+      "reason": "机器配置、发布 workflow 或忽略规则，键、值、命令和语义逐字节保留。"
+    },
+    {
+      "path": ".github/workflows/release.yml",
+      "mode": "100644",
+      "sha256": "73ce81a83de90d93a63272dae7e1a3ff8d57dc2f8e99424694289dc7174eec46",
+      "reason": "机器配置、发布 workflow 或忽略规则，键、值、命令和语义逐字节保留。"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "sha256": "a7e7370254fc919ab78ddf61e0e3763b80ea7ade18863c6650c329da44b8ec7b",
+      "reason": "机器配置、发布 workflow 或忽略规则，键、值、命令和语义逐字节保留。"
+    },
+    {
+      "path": "AGENTS.md",
+      "mode": "120000",
+      "sha256": "6ebdb617a8104a7756d0cf36578ab01103dc9f07e4dc6feb751296b9c402faf7",
+      "reason": "保留指向 CLAUDE.md 的符号链接，不解引用为副本。"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+      "reason": "许可证及版权法律文字逐字节保留。"
+    },
+    {
+      "path": "package-lock.json",
+      "mode": "100644",
+      "sha256": "b89967d44b654ceb7b9fcc7e0d6c3f74fb110bb96eb66c65bac14099c729338d",
+      "reason": "依赖锁定文件，包名、版本、完整性值和依赖结构逐字节保留。"
+    },
+    {
+      "path": "scripts/link-skills.sh",
+      "mode": "100755",
+      "sha256": "ae1ce5404a1eb90c1e80f6b6ecf101ed05e4efbc5ef62d6d83f896a9377b3878",
+      "reason": "独立程序/脚本及配置代码，含注释和字符串均逐字节保留；文件 mode 不变。"
+    },
+    {
+      "path": "scripts/list-skills.sh",
+      "mode": "100755",
+      "sha256": "9968c1b679e2a08a8e3204f6e72afeea3b51df50299faec12a4c8eed6bcf2f6a",
+      "reason": "独立程序/脚本及配置代码，含注释和字符串均逐字节保留；文件 mode 不变。"
+    },
+    {
+      "path": "scripts/sync-plugin-version.mjs",
+      "mode": "100644",
+      "sha256": "1ef892ec79e2f41ffe4c4d051f0e29d70401219499b6a11e717e5db337d78984",
+      "reason": "独立程序/脚本及配置代码，含注释和字符串均逐字节保留；文件 mode 不变。"
+    },
+    {
+      "path": "skills/engineering/diagnosing-bugs/scripts/hitl-loop.template.sh",
+      "mode": "100644",
+      "sha256": "35103539fc36873eea36074769ad454f9379d6fc8b2dc0e26ce987fd3bfe5503",
+      "reason": "独立程序/脚本及配置代码，含注释和字符串均逐字节保留；文件 mode 不变。"
+    },
+    {
+      "path": "skills/engineering/wizard/template.sh",
+      "mode": "100644",
+      "sha256": "33cbe9dfb1d0e9185b60248a52aabed14bc64785a00cac695e302e739dd6c153",
+      "reason": "独立程序/脚本及配置代码，含注释和字符串均逐字节保留；文件 mode 不变。"
+    },
+    {
+      "path": "skills/in-progress/setup-ts-deep-modules/dependency-cruiser.config.cjs",
+      "mode": "100644",
+      "sha256": "3c4973bec69f73b2117654abf9e666a7c28665b213be20e6d39869e29842428e",
+      "reason": "独立程序/脚本及配置代码，含注释和字符串均逐字节保留；文件 mode 不变。"
+    },
+    {
+      "path": "skills/misc/git-guardrails-claude-code/scripts/block-dangerous-git.sh",
+      "mode": "100755",
+      "sha256": "234922b83c0a1737ee7300806c21ac0f389b07aaeb65c2d71ccedafbc5e1ea4b",
+      "reason": "独立程序/脚本及配置代码，含注释和字符串均逐字节保留；文件 mode 不变。"
+    }
+  ],
+  "review_method": "终检逐项查看候选的完整上下文；58个原样围栏逐块查看全部内容。普通说明已译；每项保留理由绑定精确上下文和出现次数。少于三个词的固定字段、技术术语、名称和英文触发词另由逐文件全文校对覆盖。"
+}

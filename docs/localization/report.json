@@ -1,0 +1,182 @@
+{
+  "mode": "全量",
+  "source_commit": "c55ee46073ed923f86ce59a5eb3b6d895095d1b7",
+  "paths": 169,
+  "skills": 38,
+  "reviewed_paths": 156,
+  "reviewed_skills": 38,
+  "preserved_paths": 13,
+  "errors": [],
+  "notes": [
+    {
+      "path": "docs/productivity/grill-me.md",
+      "fence": 0,
+      "kind": "已登记的自然语言代码块翻译，语义由全文校对记录覆盖"
+    },
+    {
+      "path": "docs/productivity/grilling.md",
+      "fence": 0,
+      "kind": "已登记的自然语言代码块翻译，语义由全文校对记录覆盖"
+    },
+    {
+      "path": "skills/engineering/codebase-design/SKILL.md",
+      "fence": 0,
+      "kind": "已登记的自然语言代码块翻译，语义由全文校对记录覆盖"
+    },
+    {
+      "path": "skills/engineering/codebase-design/SKILL.md",
+      "fence": 1,
+      "kind": "已登记的自然语言代码块翻译，语义由全文校对记录覆盖"
+    },
+    {
+      "path": "skills/engineering/domain-modeling/ADR-FORMAT.md",
+      "fence": 0,
+      "kind": "已登记的自然语言代码块翻译，语义由全文校对记录覆盖"
+    },
+    {
+      "path": "skills/engineering/domain-modeling/CONTEXT-FORMAT.md",
+      "fence": 0,
+      "kind": "已登记的自然语言代码块翻译，语义由全文校对记录覆盖"
+    },
+    {
+      "path": "skills/engineering/domain-modeling/CONTEXT-FORMAT.md",
+      "fence": 1,
+      "kind": "已登记的自然语言代码块翻译，语义由全文校对记录覆盖"
+    },
+    {
+      "path": "skills/engineering/domain-modeling/SKILL.md",
+      "fence": 1,
+      "kind": "已登记的自然语言代码块翻译，语义由全文校对记录覆盖"
+    },
+    {
+      "path": "skills/engineering/improve-codebase-architecture/HTML-REPORT.md",
+      "fence": 0,
+      "kind": "已登记的自然语言代码块翻译，语义由全文校对记录覆盖"
+    },
+    {
+      "path": "skills/engineering/setup-matt-pocock-skills/SKILL.md",
+      "fence": 0,
+      "kind": "已登记的自然语言代码块翻译，语义由全文校对记录覆盖"
+    },
+    {
+      "path": "skills/engineering/setup-matt-pocock-skills/domain.md",
+      "fence": 1,
+      "kind": "已登记的自然语言代码块翻译，语义由全文校对记录覆盖"
+    },
+    {
+      "path": "skills/engineering/triage/AGENT-BRIEF.md",
+      "fence": 0,
+      "kind": "已登记的自然语言代码块翻译，语义由全文校对记录覆盖"
+    },
+    {
+      "path": "skills/engineering/triage/AGENT-BRIEF.md",
+      "fence": 1,
+      "kind": "已登记的自然语言代码块翻译，语义由全文校对记录覆盖"
+    },
+    {
+      "path": "skills/engineering/triage/AGENT-BRIEF.md",
+      "fence": 2,
+      "kind": "已登记的自然语言代码块翻译，语义由全文校对记录覆盖"
+    },
+    {
+      "path": "skills/engineering/triage/AGENT-BRIEF.md",
+      "fence": 3,
+      "kind": "已登记的自然语言代码块翻译，语义由全文校对记录覆盖"
+    },
+    {
+      "path": "skills/engineering/triage/AGENT-BRIEF.md",
+      "fence": 4,
+      "kind": "已登记的自然语言代码块翻译，语义由全文校对记录覆盖"
+    },
+    {
+      "path": "skills/engineering/triage/OUT-OF-SCOPE.md",
+      "fence": 1,
+      "kind": "已登记的自然语言代码块翻译，语义由全文校对记录覆盖"
+    },
+    {
+      "path": "skills/engineering/triage/OUT-OF-SCOPE.md",
+      "fence": 2,
+      "kind": "已登记的自然语言代码块翻译，语义由全文校对记录覆盖"
+    },
+    {
+      "path": "skills/engineering/triage/SKILL.md",
+      "fence": 1,
+      "kind": "已登记的自然语言代码块翻译，语义由全文校对记录覆盖"
+    },
+    {
+      "path": "skills/engineering/wayfinder/SKILL.md",
+      "fence": 0,
+      "kind": "已登记的自然语言代码块翻译，语义由全文校对记录覆盖"
+    },
+    {
+      "path": "skills/engineering/wayfinder/SKILL.md",
+      "fence": 1,
+      "kind": "已登记的自然语言代码块翻译，语义由全文校对记录覆盖"
+    },
+    {
+      "path": "skills/in-progress/pr/SKILL.md",
+      "fence": 0,
+      "kind": "已登记的自然语言代码块翻译，语义由全文校对记录覆盖"
+    },
+    {
+      "path": "skills/in-progress/setup-ts-deep-modules/SKILL.md",
+      "fence": 0,
+      "kind": "已登记的自然语言代码块翻译，语义由全文校对记录覆盖"
+    },
+    {
+      "path": "skills/in-progress/writing-fragments/SKILL.md",
+      "fence": 0,
+      "kind": "已登记的自然语言代码块翻译，语义由全文校对记录覆盖"
+    },
+    {
+      "path": "skills/misc/scaffold-exercises/SKILL.md",
+      "fence": 0,
+      "kind": "已登记的自然语言代码块翻译，语义由全文校对记录覆盖"
+    },
+    {
+      "path": "skills/misc/scaffold-exercises/SKILL.md",
+      "fence": 2,
+      "kind": "已登记的自然语言代码块翻译，语义由全文校对记录覆盖"
+    },
+    {
+      "path": "skills/misc/scaffold-exercises/SKILL.md",
+      "fence": 4,
+      "kind": "已登记的自然语言代码块翻译，语义由全文校对记录覆盖"
+    },
+    {
+      "path": "skills/productivity/grilling/SKILL.md",
+      "fence": 0,
+      "kind": "已登记的自然语言代码块翻译，语义由全文校对记录覆盖"
+    },
+    {
+      "path": "skills/productivity/teach/GLOSSARY-FORMAT.md",
+      "fence": 0,
+      "kind": "已登记的自然语言代码块翻译，语义由全文校对记录覆盖"
+    },
+    {
+      "path": "skills/productivity/teach/LEARNING-RECORD-FORMAT.md",
+      "fence": 0,
+      "kind": "已登记的自然语言代码块翻译，语义由全文校对记录覆盖"
+    },
+    {
+      "path": "skills/productivity/teach/MISSION-FORMAT.md",
+      "fence": 0,
+      "kind": "已登记的自然语言代码块翻译，语义由全文校对记录覆盖"
+    },
+    {
+      "path": "skills/productivity/teach/RESOURCES-FORMAT.md",
+      "fence": 0,
+      "kind": "已登记的自然语言代码块翻译，语义由全文校对记录覆盖"
+    }
+  ],
+  "baseline_links": [],
+  "english_candidates": [],
+  "limitations": [
+    "不访问外部 URL；按冻结提交保留上游陈述",
+    "自动检查不判断译义；需逐文件全文校对记录",
+    "Markdown 采用 CommonMark + table 解析；GitHub 自动锚点算法为本地兼容实现，并补显式锚点",
+    "代码模板中的非代码文本改动依靠逐块校对；不会运行示例",
+    "HTML 比较标签/属性/嵌套，不运行 CDN 脚本或进行渲染验证",
+    "英文逐项保留理由与模板内链接/URL/调用引用由 audit.py 和 english-retained.json 补充验收"
+  ]
+}

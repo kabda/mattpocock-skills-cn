@@ -1,0 +1,463 @@
+{
+  "source_commit": "c55ee46073ed923f86ce59a5eb3b6d895095d1b7",
+  "errors": [],
+  "reviewed_english_items": 195,
+  "english_occurrences": 218,
+  "preserved_fences": 58,
+  "translated_fences": 32,
+  "preserved_paths": 13,
+  "url_occurrences": 655,
+  "promoted_docs": [
+    "ask-matt",
+    "code-review",
+    "codebase-design",
+    "diagnosing-bugs",
+    "domain-modeling",
+    "grill-me",
+    "grill-with-docs",
+    "grilling",
+    "handoff",
+    "implement",
+    "improve-codebase-architecture",
+    "prototype",
+    "research",
+    "resolving-merge-conflicts",
+    "setup-matt-pocock-skills",
+    "tdd",
+    "teach",
+    "to-questionnaire",
+    "to-spec",
+    "to-tickets",
+    "triage",
+    "wait-what",
+    "wayfinder",
+    "wizard",
+    "writing-for-agents"
+  ],
+  "skill_references": [
+    {
+      "path": ".agents/adr/0001-explicit-setup-pointer-only-for-hard-dependencies.md",
+      "skill_invocations": {
+        "/setup-matt-pocock-skills": 3
+      }
+    },
+    {
+      "path": ".agents/invocation.md",
+      "skill_invocations": {
+        "/setup-matt-pocock-skills": 1
+      }
+    },
+    {
+      "path": ".changeset/add-implement-spec-skill.md",
+      "skill_invocations": {
+        "/code-review": 1
+      }
+    },
+    {
+      "path": ".changeset/skill-tool-invocation-terminology.md",
+      "skill_invocations": {
+        "/grilling": 1
+      }
+    },
+    {
+      "path": ".changeset/user-invoked-skill-invocation.md",
+      "skill_invocations": {
+        "/setup-matt-pocock-skills": 1
+      }
+    },
+    {
+      "path": ".out-of-scope/mainstream-issue-trackers-only.md",
+      "skill_invocations": {
+        "/to-spec": 1,
+        "/to-tickets": 1,
+        "/triage": 1
+      }
+    },
+    {
+      "path": ".out-of-scope/question-limits.md",
+      "skill_invocations": {
+        "/grill-me": 1
+      }
+    },
+    {
+      "path": ".out-of-scope/setup-skill-verify-mode.md",
+      "skill_invocations": {
+        "/setup-matt-pocock-skills": 1
+      }
+    },
+    {
+      "path": "CHANGELOG.md",
+      "skill_invocations": {
+        "$writing-for-agents": 1,
+        "/ask-matt": 1,
+        "/code-review": 1,
+        "/codebase-design": 3,
+        "/diagnosing-bugs": 1,
+        "/domain-modeling": 3,
+        "/grill-me": 1,
+        "/grill-with-docs": 2,
+        "/grilling": 1,
+        "/handoff": 3,
+        "/implement": 4,
+        "/improve-codebase-architecture": 1,
+        "/prototype": 1,
+        "/research": 1,
+        "/resolving-merge-conflicts": 1,
+        "/setup-matt-pocock-skills": 2,
+        "/to-spec": 4,
+        "/to-tickets": 3,
+        "/triage": 1,
+        "/wayfinder": 3,
+        "/wizard": 1
+      }
+    },
+    {
+      "path": "CONTEXT.md",
+      "skill_invocations": {
+        "/setup-matt-pocock-skills": 1
+      }
+    },
+    {
+      "path": "README.md",
+      "skill_invocations": {
+        "/code-review": 1,
+        "/diagnosing-bugs": 1,
+        "/grill-me": 3,
+        "/grill-with-docs": 2,
+        "/improve-codebase-architecture": 1,
+        "/setup-matt-pocock-skills": 1,
+        "/tdd": 2,
+        "/to-spec": 1,
+        "/triage": 1
+      }
+    },
+    {
+      "path": "docs/engineering/ask-matt.md",
+      "skill_invocations": {
+        "/ask-matt": 1,
+        "/grilling": 2,
+        "/handoff": 1,
+        "/resolving-merge-conflicts": 1,
+        "/tdd": 1
+      }
+    },
+    {
+      "path": "docs/engineering/code-review.md",
+      "skill_invocations": {
+        "/code-review": 7
+      }
+    },
+    {
+      "path": "docs/engineering/codebase-design.md",
+      "skill_invocations": {
+        "/codebase-design": 3,
+        "/grill-with-docs": 1,
+        "/improve-codebase-architecture": 1,
+        "/tdd": 1
+      }
+    },
+    {
+      "path": "docs/engineering/diagnosing-bugs.md",
+      "skill_invocations": {
+        "/diagnosing-bugs": 2,
+        "/triage": 1
+      }
+    },
+    {
+      "path": "docs/engineering/domain-modeling.md",
+      "skill_invocations": {
+        "/domain-modeling": 1,
+        "/grill-with-docs": 2
+      }
+    },
+    {
+      "path": "docs/engineering/grill-with-docs.md",
+      "skill_invocations": {
+        "/grill-with-docs": 2,
+        "/wayfinder": 2
+      }
+    },
+    {
+      "path": "docs/engineering/implement.md",
+      "skill_invocations": {
+        "/implement": 8,
+        "/tdd": 1
+      }
+    },
+    {
+      "path": "docs/engineering/improve-codebase-architecture.md",
+      "skill_invocations": {
+        "/codebase-design": 3,
+        "/improve-codebase-architecture": 1,
+        "/to-spec": 1
+      }
+    },
+    {
+      "path": "docs/engineering/prototype.md",
+      "skill_invocations": {
+        "/implement": 1,
+        "/prototype": 2
+      }
+    },
+    {
+      "path": "docs/engineering/research.md",
+      "skill_invocations": {
+        "/research": 3,
+        "/wayfinder": 1
+      }
+    },
+    {
+      "path": "docs/engineering/resolving-merge-conflicts.md",
+      "skill_invocations": {
+        "/resolving-merge-conflicts": 1
+      }
+    },
+    {
+      "path": "docs/engineering/setup-matt-pocock-skills.md",
+      "skill_invocations": {
+        "/setup-matt-pocock-skills": 1,
+        "/to-tickets": 1,
+        "/triage": 2
+      }
+    },
+    {
+      "path": "docs/engineering/tdd.md",
+      "skill_invocations": {
+        "/code-review": 2,
+        "/implement": 4,
+        "/tdd": 5
+      }
+    },
+    {
+      "path": "docs/engineering/to-spec.md",
+      "skill_invocations": {
+        "/implement": 2,
+        "/to-spec": 5,
+        "/to-tickets": 4
+      }
+    },
+    {
+      "path": "docs/engineering/to-tickets.md",
+      "skill_invocations": {
+        "/implement": 1,
+        "/to-spec": 1,
+        "/to-tickets": 6
+      }
+    },
+    {
+      "path": "docs/engineering/triage.md",
+      "skill_invocations": {
+        "/diagnosing-bugs": 1,
+        "/to-spec": 1,
+        "/to-tickets": 1,
+        "/triage": 4
+      }
+    },
+    {
+      "path": "docs/engineering/wayfinder.md",
+      "skill_invocations": {
+        "/grill-with-docs": 3,
+        "/to-spec": 2,
+        "/to-tickets": 1,
+        "/wayfinder": 5
+      }
+    },
+    {
+      "path": "docs/engineering/wizard.md",
+      "skill_invocations": {
+        "$wizard": 1,
+        "/grill-with-docs": 1,
+        "/to-spec": 1,
+        "/wizard": 4
+      }
+    },
+    {
+      "path": "docs/productivity/grill-me.md",
+      "skill_invocations": {
+        "/grill-me": 1
+      }
+    },
+    {
+      "path": "docs/productivity/grilling.md",
+      "skill_invocations": {
+        "/grilling": 4
+      }
+    },
+    {
+      "path": "docs/productivity/handoff.md",
+      "skill_invocations": {
+        "/handoff": 6
+      }
+    },
+    {
+      "path": "docs/productivity/teach.md",
+      "skill_invocations": {
+        "/handoff": 1,
+        "/teach": 4
+      }
+    },
+    {
+      "path": "docs/productivity/to-questionnaire.md",
+      "skill_invocations": {
+        "/grill-me": 1,
+        "/to-questionnaire": 2
+      }
+    },
+    {
+      "path": "docs/productivity/wait-what.md",
+      "skill_invocations": {
+        "/wait-what": 1
+      }
+    },
+    {
+      "path": "docs/productivity/writing-for-agents.md",
+      "skill_invocations": {
+        "/writing-for-agents": 1
+      }
+    },
+    {
+      "path": "skills/engineering/README.md",
+      "skill_invocations": {
+        "/code-review": 1,
+        "/tdd": 1
+      }
+    },
+    {
+      "path": "skills/engineering/ask-matt/PHASE-BOUNDARIES.md",
+      "skill_invocations": {
+        "/handoff": 4
+      }
+    },
+    {
+      "path": "skills/engineering/ask-matt/SKILL.md",
+      "skill_invocations": {
+        "/code-review": 2,
+        "/codebase-design": 2,
+        "/diagnosing-bugs": 1,
+        "/domain-modeling": 1,
+        "/grill-me": 4,
+        "/grill-with-docs": 10,
+        "/grilling": 2,
+        "/handoff": 5,
+        "/implement": 8,
+        "/improve-codebase-architecture": 4,
+        "/prototype": 2,
+        "/research": 1,
+        "/resolving-merge-conflicts": 1,
+        "/setup-matt-pocock-skills": 1,
+        "/tdd": 3,
+        "/teach": 1,
+        "/to-questionnaire": 1,
+        "/to-spec": 3,
+        "/to-tickets": 5,
+        "/triage": 2,
+        "/wait-what": 1,
+        "/wayfinder": 2,
+        "/wizard": 1,
+        "/writing-for-agents": 1
+      }
+    },
+    {
+      "path": "skills/engineering/code-review/SKILL.md",
+      "skill_invocations": {
+        "/setup-matt-pocock-skills": 1
+      }
+    },
+    {
+      "path": "skills/engineering/implement/SKILL.md",
+      "skill_invocations": {
+        "/code-review": 1,
+        "/tdd": 1
+      }
+    },
+    {
+      "path": "skills/engineering/improve-codebase-architecture/HTML-REPORT.md",
+      "skill_invocations": {
+        "/codebase-design": 3
+      }
+    },
+    {
+      "path": "skills/engineering/improve-codebase-architecture/SKILL.md",
+      "skill_invocations": {
+        "/codebase-design": 1
+      }
+    },
+    {
+      "path": "skills/engineering/setup-matt-pocock-skills/domain.md",
+      "skill_invocations": {
+        "/domain-modeling": 2,
+        "/grill-with-docs": 1,
+        "/improve-codebase-architecture": 1
+      }
+    },
+    {
+      "path": "skills/engineering/setup-matt-pocock-skills/issue-tracker-github.md",
+      "skill_invocations": {
+        "/triage": 1,
+        "/wayfinder": 1
+      }
+    },
+    {
+      "path": "skills/engineering/setup-matt-pocock-skills/issue-tracker-gitlab.md",
+      "skill_invocations": {
+        "/triage": 1,
+        "/wayfinder": 1
+      }
+    },
+    {
+      "path": "skills/engineering/setup-matt-pocock-skills/issue-tracker-local.md",
+      "skill_invocations": {
+        "/wayfinder": 1
+      }
+    },
+    {
+      "path": "skills/engineering/to-spec/SKILL.md",
+      "skill_invocations": {
+        "/setup-matt-pocock-skills": 1
+      }
+    },
+    {
+      "path": "skills/engineering/to-tickets/SKILL.md",
+      "skill_invocations": {
+        "/setup-matt-pocock-skills": 2
+      }
+    },
+    {
+      "path": "skills/engineering/triage/AGENT-BRIEF.md",
+      "skill_invocations": {
+        "/triage": 1
+      }
+    },
+    {
+      "path": "skills/engineering/triage/SKILL.md",
+      "skill_invocations": {
+        "/setup-matt-pocock-skills": 1,
+        "/triage": 1
+      }
+    },
+    {
+      "path": "skills/engineering/wayfinder/SKILL.md",
+      "skill_invocations": {
+        "/setup-matt-pocock-skills": 1
+      }
+    },
+    {
+      "path": "skills/in-progress/implement-spec/SKILL.md",
+      "skill_invocations": {
+        "/code-review": 1
+      }
+    },
+    {
+      "path": "skills/in-progress/loop-me/SKILL.md",
+      "skill_invocations": {
+        "/grilling": 1
+      }
+    }
+  ],
+  "limitations": [
+    "英文扫描按连续三个以上英文单词找候选，短词和标识另由逐文件全文校对覆盖；扫描不证明译义",
+    "保留英文项必须与手工分类精确匹配；不会自动批准新增候选",
+    "URL 只检查本地字面量，外部地址可用性和平台运行情况未验证",
+    "调用引用扫描排除 HTML 关闭标签和路径连接；include-list/build-tool 两处普通名词连接经人工复核排除。其余 slash/dollar 候选按源译数量比较，当前技能另按冻结树 slug 分类"
+  ]
+}

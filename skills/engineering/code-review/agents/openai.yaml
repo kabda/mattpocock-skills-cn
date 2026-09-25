@@ -1,0 +1,3 @@
+interface:
+  display_name: "Code Review"
+  short_description: "从标准与规格说明两个维度审查 diff"

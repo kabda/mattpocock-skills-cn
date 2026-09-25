@@ -1,0 +1,5 @@
+interface:
+  display_name: "To Questionnaire"
+  short_description: "将问题预先整理成文档，供他人回答"
+policy:
+  allow_implicit_invocation: false
