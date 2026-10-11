@@ -25,7 +25,7 @@
 
 容易与相邻技能混淆的地方：
 
-- 设计已经选定的一个模块，用 [codebase-design](https://aihero.dev/skills-codebase-design)：它是工作台，本技能是找到要放到工作台上的对象的调研。
+- 设计已经选定的一个模块，用 [codebase-design](https://aihero.dev/skills-codebase-design)。本技能找到要改进的模块，`codebase-design` 则负责设计它。
 - 整项工作大到一场会话容纳不下，用 [wayfinder](https://aihero.dev/skills-wayfinder)。
 - “这个具体东西坏了”，用 [diagnosing-bugs](https://aihero.dev/skills-diagnosing-bugs)。如果真正的发现是缺少能通过测试锁定 bug 的合适 seam，它会交回这里。
 
@@ -33,15 +33,21 @@
 
 ## 前置条件
 
-运行不需要前置条件。如果存在 `CONTEXT.md` 和 `docs/adr/` 下的 ADR，它会读取，并使用领域自己的名词：候选项会写成“加深 Order 接入模块”，而不是“重构 FooBarHandler”。
+运行不需要前置条件。如果存在 `GLOSSARY.md` 和 `docs/adr/` 下的 ADR，它会读取，并使用领域自己的名词：候选项会写成“加深 Order 接入模块”，而不是“重构 FooBarHandler”。
 
-它会写入两处。报告放在仓库之外的 `<tmpdir>/architecture-review-<timestamp>.html`。追问循环中会向 `CONTEXT.md` 添加或精炼术语，文件不存在则创建；还会提议把被否决的候选项记录为 ADR，避免以后再次推荐。
+它会写入两处。报告放在仓库之外的 `<tmpdir>/architecture-review-<timestamp>.html`。追问循环中会向 `GLOSSARY.md` 添加或精炼术语，文件不存在则创建；还会提议把被否决的候选项记录为 ADR，避免以后再次推荐。
 
 <a id="depth-and-the-report-that-hunts-for-it"></a>
 
 ## 深度，以及寻找深度的报告
 
-技能围绕一个概念运作：**深度**。深模块把大量行为放在小而稳定的接口后。浅模块则通过几乎与底层代码一样宽的接口泄漏实现。报告寻找三种浅层结构：仅为可测试性提取纯函数，真正的 bug 却藏在调用方式中（没有**局部性**）；模块跨 **seam** 泄漏；以及不打开五个文件就无法理解的概念。最后提出通过加深来解决问题的方案。
+本技能建立在一个观念上：**深度**。深模块用小而稳定的接口隐藏大量行为，浅模块则用几乎与实现一样宽的接口暴露内部。报告寻找三种浅层形式：
+
+- 仅为可测试性提取纯函数，而实际 bug 来自调用方的使用方式（没有**局部性**）。
+- 模块跨越其 **seam** 泄漏。
+- 必须打开五个文件才能理解一个概念。
+
+对每一种情况，它都会建议能解决问题的深化方案。
 
 每个候选项是一张卡片：涉及的文件、阻力、浅显英语描述的方案、用**局部性**与**杠杆效应**说明的收益、改前／改后图示，以及强度徽章。
 
@@ -114,4 +120,10 @@
 
 ## 它在流程中的位置
 
-`improve-codebase-architecture` 是**定期维护**：每隔几天在任何流程之外运行，用来排出工作，而不是执行工作。相邻技能包括 [codebase-design](https://aihero.dev/skills-codebase-design)，拥有描述每个候选项所用的深度与 seam 词汇；[grilling](https://aihero.dev/skills-grilling)，在选定候选项之后遍历决策树；以及 [domain-modeling](https://aihero.dev/skills-domain-modeling)，在决策明确时保持 `CONTEXT.md` 和 ADR 最新。它产出的是想法，通过 [grill-with-docs](https://aihero.dev/skills-grill-with-docs) 或 [to-spec](https://aihero.dev/skills-to-spec) 重新进入主构建流程。要判断某种情况适合哪个技能，[ask-matt](https://aihero.dev/skills-ask-matt) 是整套技能的路由入口。
+`improve-codebase-architecture` 是**定期维护**。每隔几天在链条之外运行，用于排定后续工作，不直接实施。相邻技能：
+
+- [codebase-design](https://aihero.dev/skills-codebase-design) 定义每个候选使用的深度和 seam 词汇。
+- [grilling](https://aihero.dev/skills-grilling) 在选中候选后遍历决策树。
+- [domain-modeling](https://aihero.dev/skills-domain-modeling) 在作决策时维护 `GLOSSARY.md` 和 ADR。
+
+产出是一个想法，经 [grill-with-docs](https://aihero.dev/skills-grill-with-docs) 或 [to-spec](https://aihero.dev/skills-to-spec) 重新进入主构建流程。主流程末尾的对应技能是 [retro](https://aihero.dev/skills-retro)：本技能改进 agent 使用的代码，`retro` 则在构建后改进周围环境（检查、标准、引导文件）。不确定如何选择时，[ask-matt](https://aihero.dev/skills-ask-matt) 路由整套技能。

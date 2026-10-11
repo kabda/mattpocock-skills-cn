@@ -35,7 +35,7 @@
 - Agent 3：“为最常见的调用方优化：让默认情况轻而易举。”
 - Agent 4（如适用）：“围绕端口与适配器设计跨 seam 的依赖。”
 
-在简报中同时包含 [SKILL.md](SKILL.md) 和 CONTEXT.md 的词汇，让每个子 agent 的命名同时符合架构语言和项目领域语言。
+在简报中同时包含 [SKILL.md](SKILL.md) 和 GLOSSARY.md 的词汇，让每个子 agent 的命名同时符合架构语言和项目领域语言。
 
 每个子 agent 输出：
 

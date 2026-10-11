@@ -6,7 +6,7 @@
 
 仓库之间只有这些文件不同。技能本身在各处完全相同；运行时读取 `docs/agents/issue-tracker.md`，并按其中说明执行。因此，这套技能不绑定 GitHub，也无需编辑任何技能文件来改用其他位置。用 "link the skills to a custom issue tracker"（将技能连接到自定义 issue 跟踪器）调用，任何可通过程序连接的系统都能使用，技能无需改动。
 
-这是由提示词驱动的技能，不是确定性脚本。它读取 `git remote`、现有 `CLAUDE.md` 和 `CONTEXT.md`，提出基于发现的建议，等待确认后才写入任何内容。
+这是由提示词驱动的技能，不是确定性脚本。它读取 `git remote`、现有 `CLAUDE.md` 和 `GLOSSARY.md`，提出基于发现的建议，等待确认后才写入任何内容。
 
 <a id="when-to-reach-for-it"></a>
 
@@ -41,7 +41,7 @@
 | --- | --- | --- |
 | **Issue 跟踪器** | 与 `git remote` 匹配的跟踪器 | 始终询问：这是唯一真正需要选择的项 |
 | **分流标签** | 保留五个规范名称（`needs-triage`、`needs-info`、`ready-for-agent`、`ready-for-human`、`wontfix`） | 仅在安装了 `triage` 技能时 |
-| **领域文档** | 单上下文：根目录一个 `CONTEXT.md` 加 `docs/adr/` | 仅在发现 monorepo 信号时，提供多上下文 `CONTEXT-MAP.md` 选项 |
+| **领域文档** | 单上下文：根目录一个 `GLOSSARY.md` 加 `docs/adr/` | 仅在发现 monorepo 信号时，提供多上下文 `GLOSSARY-MAP.md` 选项 |
 
 跟踪器选项：
 
@@ -66,7 +66,7 @@
 
 **更新技能后需要重新运行吗？**
 
-v1.1 之后有人直接问过，Matt 回答需要。技能自己的结束说明更宽松：它告诉你，只有切换跟踪器或从头开始才需要重跑。两种说法都可以理解，差异的原因真实存在：种子模板在不同版本间变化，旧版本写出的 `docs/agents/issue-tracker.md`，相对于现在读取它的技能可能已经过时。如果下游技能的行为与文档描述开始不同，重新运行是低成本修复。
+v1.1 之后的直接回答是需要。技能自己的结束说明更宽松：只有切换跟踪器或从头开始才需要重跑。两种说法都可以理解。种子模板在不同版本间变化，旧版本生成的 `docs/agents/issue-tracker.md`，相对于现在读取它的技能可能已经过时。如果下游技能的行为与文档描述不同，就重新运行 setup。成本很低。
 
 **我用的是 Codex，它却写入 `CLAUDE.md`。**
 
@@ -81,7 +81,7 @@ v1.1 之后有人直接问过，Matt 回答需要。技能自己的结束说明�
 
 **能在这里配置其他技能的行为吗（[追问](https://www.aihero.dev/ai-coding-dictionary/grilling)节奏、问题格式、语气）？**
 
-不能。它只配置三件事：跟踪器、标签、文档布局。有人直接请求让它承载用户偏好，而一贯的回答是技能应当保持主张：*"Config is death."（配置就是死路。）* 偏好应当以普通指令放进 `CLAUDE.md`，每个技能本来就会读取。
+不会。它只配置跟踪器、标签和文档布局三件事。用户曾要求在此配置个人偏好，但技能保持明确立场，不接受个人配置。偏好应作为普通指令写入 `CLAUDE.md`，各技能已经会读取它。
 
 **能把配置放进 `~/.claude`，而不是提交到每个仓库吗？**
 
@@ -105,4 +105,4 @@ v1.1 之后有人直接问过，Matt 回答需要。技能自己的结束说明�
 
 ## 它在流程中的位置
 
-`setup-matt-pocock-skills` 是工程流程中**运行一次的设置**，是其他一切所假定的前提，而不是流程链中的一步。相邻技能就是这些文件的读取者：[triage](https://aihero.dev/skills-triage) 使用这里写出的标签词汇；[to-spec](https://aihero.dev/skills-to-spec) 和 [to-tickets](https://aihero.dev/skills-to-tickets) 发布到这里指定的跟踪器；[wayfinder](https://aihero.dev/skills-wayfinder) 读取同一跟踪器文件的 "Wayfinding operations" 章节，了解地图和子[工单](https://www.aihero.dev/ai-coding-dictionary/ticket)如何存储。这里记录的领域文档布局，随后由 [domain-modeling](https://aihero.dev/skills-domain-modeling) 填充：只有术语或决策真正明确时，才按需创建 `CONTEXT.md` 和 ADR，因此设置后仓库仍空着是预期状态。接下来该用哪个技能，[ask-matt](https://aihero.dev/skills-ask-matt) 会为整套技能指路。
+`setup-matt-pocock-skills` 是工程流程中**运行一次的设置**，是其他一切所假定的前提，而不是流程链中的一步。相邻技能就是这些文件的读取者：[triage](https://aihero.dev/skills-triage) 使用这里写出的标签词汇；[to-spec](https://aihero.dev/skills-to-spec) 和 [to-tickets](https://aihero.dev/skills-to-tickets) 发布到这里指定的跟踪器；[wayfinder](https://aihero.dev/skills-wayfinder) 读取同一跟踪器文件的 "Wayfinding operations" 章节，了解地图和子[工单](https://www.aihero.dev/ai-coding-dictionary/ticket)如何存储。这里记录的领域文档布局，随后由 [domain-modeling](https://aihero.dev/skills-domain-modeling) 填充：只有术语或决策真正明确时，才按需创建 `GLOSSARY.md` 和 ADR，因此设置后仓库仍空着是预期状态。接下来该用哪个技能，[ask-matt](https://aihero.dev/skills-ask-matt) 会为整套技能指路。

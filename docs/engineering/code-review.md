@@ -31,12 +31,12 @@ Standards 维度不需要额外准备。它读取仓库记录的任何标准（`
 
 Spec 维度需要存在且能找到规格说明。按以下顺序查找：
 
-1. 提交信息中的 issue 引用（`#123`、`Closes #45`、GitLab 的 `!67`），通过 `docs/agents/issue-tracker.md` 获取。
+1. 提交信息中的 issue 引用（`#123`、`Closes #45`、GitLab 的 `!67`），通过跟踪器文档获取。
 2. 你通过参数传入的路径。
 3. `docs/`、`specs/` 或 `.scratch/` 下与分支或功能名称匹配的规格说明文件。
 4. 询问你。
 
-第 1 步依赖 `docs/agents/issue-tracker.md`，由 [setup-matt-pocock-skills](https://aihero.dev/skills-setup-matt-pocock-skills) 写入。没有这个文件，只要你提供路径，这个维度仍然能工作。如果根本没有规格说明，就跳过 Spec 子 agent，并在报告中写 "no spec available"，而不是编造需求。
+第 1 步依赖 [setup-matt-pocock-skills](https://aihero.dev/skills-setup-matt-pocock-skills) 写入的跟踪器文档。没有它，也可直接提供路径。如果完全没有规格说明，技能跳过 Spec 子 agent，报告 “no spec available”，不会编造需求。
 
 <a id="the-two-axes"></a>
 
@@ -59,7 +59,12 @@ Spec 维度需要存在且能找到规格说明。按以下顺序查找：
 
 **它与 Claude Code 自带的 `/code-review` 冲突，怎么办？**
 
-这是本技能被报告最多的问题，尚未修复。Claude Code 自带的 `/code-review` 做的是另一件事：在 diff 中找 bug，而本技能检查规格符合性和仓库标准。安装这个技能库后，其中一个会胜出，具体取决于安装方式。通过插件市场安装，所有内容都带有 `mattpocock-skills:` 前缀别名，内置技能难以通过不带限定的名称访问；通过普通技能安装，本地文件胜出，本技能会遮蔽内置技能。一种干净的处理方式是完全移除 Claude Code 内置技能：能节省大量[上下文](https://www.aihero.dev/ai-coding-dictionary/context)，名称冲突也不再重要。遮蔽本身可以说是 Claude Code [运行环境](https://www.aihero.dev/ai-coding-dictionary/harness)的 bug（技能作者应当能自由命名技能），所以另一个办法是重命名本地副本。编辑 frontmatter 或重命名目录会被 `npx skills update` 撤销；用户报告的持久办法是将技能 fork 为新名称，并把 `code-review` 从受管理集合中移除，同时记录 fork 所依据的提交，便于手动重新同步。
+这是本技能最常被报告、且尚未修复的问题。Claude Code 自带 `/code-review`，职责不同：它寻找 diff 中的 bug，而本技能检查规格说明和仓库标准。安装本库后，其中一个会优先生效，取决于安装方式：
+
+- **插件 marketplace。** 每个技能带 `mattpocock-skills:` 前缀，而通过无前缀名称访问内置技能会变得困难。
+- **普通技能安装。** 本地文件优先，本技能会遮蔽内置技能。
+
+一种方法是完全移除 Claude Code 内置技能，节省大量[上下文](https://www.aihero.dev/ai-coding-dictionary/context)，也消除冲突。遮蔽可以视为 Claude Code [harness](https://www.aihero.dev/ai-coding-dictionary/harness) 的 bug，作者应能自由命名技能；另一种方法是改名本地副本。`npx skills update` 会撤销 frontmatter 编辑或目录改名。用户报告的持久办法是 fork 为新名称，再从受管理集合中移除 `code-review`。记录 fork 的提交，便于手动同步。
 
 **它的子 agent 不断再次调用 `/code-review`，启动更多 agent。**
 
@@ -99,9 +104,11 @@ Spec 维度需要存在且能找到规格说明。按以下顺序查找：
 
 ## 它在流程中的位置
 
-`code-review` 是构建流程末尾的审查步骤：`grill-with-docs → to-spec → to-tickets → implement → code-review`。它也可以独立用于你指定的任何分支或 PR。
+`code-review` 是构建流程末尾的审查步骤：`grill-with-docs → to-spec → to-tickets → implement → code-review → retro`。它也可以独立用于你指定的任何分支或 PR。
 
-- [implement](https://aihero.dev/skills-implement) 是最接近的相邻技能：驱动构建，并在提交前调用本技能作为结束审查。
+- [implement](https://aihero.dev/skills-implement) 是最近的相邻技能。它驱动构建，在提交前调用本技能收尾。[implement-spec](https://aihero.dev/skills-implement-spec) 也这样做，但只对整个集成分支审查一次。
+- [retro](https://aihero.dev/skills-retro) 接在后面并调校审查。发现审查遗漏某类错误时，`retro` 建议新增检查或 `CODING_STANDARDS.md` 规则，供 Standards 维度读取。
+- [pr](https://aihero.dev/skills-pr) 在审查后的工作提交为 PR 时撰写正文。
 - [to-spec](https://aihero.dev/skills-to-spec) 和 [to-tickets](https://aihero.dev/skills-to-tickets) 产出 Spec 维度检查的文档；含糊的规格说明会让该维度也含糊。
 - [improve-codebase-architecture](https://aihero.dev/skills-improve-codebase-architecture) 是针对整个代码库的对应工具：本技能始终只看一个 diff。
 

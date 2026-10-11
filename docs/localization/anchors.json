@@ -329,9 +329,9 @@
       "method": "在中文标题前添加原 fragment 的显式锚点"
     },
     {
-      "source_heading": "Update CONTEXT.md inline",
-      "translated_heading": "随时更新 CONTEXT.md",
-      "fragment": "update-contextmd-inline",
+      "source_heading": "Update GLOSSARY.md inline",
+      "translated_heading": "随时更新 GLOSSARY.md",
+      "fragment": "update-glossarymd-inline",
       "method": "在中文标题前添加原 fragment 的显式锚点"
     },
     {
@@ -379,11 +379,11 @@
       "method": "在中文标题前添加原 fragment 的显式锚点"
     }
   ],
-  "skills/engineering/domain-modeling/CONTEXT-FORMAT.md": [
+  "skills/engineering/domain-modeling/GLOSSARY-FORMAT.md": [
     {
-      "source_heading": "CONTEXT.md Format",
-      "translated_heading": "CONTEXT.md 格式",
-      "fragment": "contextmd-format",
+      "source_heading": "GLOSSARY.md Format",
+      "translated_heading": "GLOSSARY.md 格式",
+      "fragment": "glossarymd-format",
       "method": "在中文标题前添加原 fragment 的显式锚点"
     },
     {
@@ -2913,7 +2913,7 @@
       "method": "在中文标题前添加原 fragment 的显式锚点"
     }
   ],
-  "skills/in-progress/implement-spec/SKILL.md": [
+  "skills/engineering/implement-spec/SKILL.md": [
     {
       "source_heading": "Steps",
       "translated_heading": "步骤",
@@ -2947,7 +2947,7 @@
       "method": "在中文标题前添加原 fragment 的显式锚点"
     }
   ],
-  "skills/in-progress/pr/SKILL.md": [
+  "skills/engineering/pr/SKILL.md": [
     {
       "source_heading": "Sections",
       "translated_heading": "章节",
@@ -2979,7 +2979,7 @@
       "method": "在中文标题前添加原 fragment 的显式锚点"
     }
   ],
-  "skills/in-progress/retro/SKILL.md": [
+  "skills/engineering/retro/SKILL.md": [
     {
       "source_heading": "Steps",
       "translated_heading": "步骤",
@@ -3005,7 +3005,7 @@
       "method": "在中文标题前添加原 fragment 的显式锚点"
     }
   ],
-  "skills/in-progress/pr/CREDITS.md": [
+  "skills/engineering/pr/CREDITS.md": [
     {
       "source_heading": "Credits",
       "translated_heading": "致谢",
@@ -3263,7 +3263,7 @@
       "method": "在中文标题前添加原 fragment 的显式锚点"
     }
   ],
-  "CONTEXT.md": [
+  "GLOSSARY.md": [
     {
       "source_heading": "Relationships",
       "translated_heading": "关系",
@@ -3379,6 +3379,18 @@
       "translated_heading": "更新：2026-08-05",
       "fragment": "update-2026-08-05",
       "method": "在中文标题前添加原 fragment 的显式锚点"
+    },
+    {
+      "source_heading": "Update, 2026-10-07",
+      "translated_heading": "更新，2026-10-07",
+      "fragment": "update-2026-10-07",
+      "method": "在中文标题前添加原 fragment 的显式锚点"
+    },
+    {
+      "source_heading": "Update, 2026-10-08: managed installs first",
+      "translated_heading": "更新，2026-10-08：优先使用受管理安装",
+      "fragment": "update-2026-10-08-managed-installs-first",
+      "method": "在中文标题前添加原 fragment 的显式锚点"
     }
   ],
   ".agents/install-block.md": [
@@ -3389,27 +3401,27 @@
       "method": "在中文标题前添加原 fragment 的显式锚点"
     },
     {
-      "source_heading": "Claude Code: the plugin",
-      "translated_heading": "Claude Code：插件",
-      "fragment": "claude-code-the-plugin",
+      "source_heading": "Managed installs first",
+      "translated_heading": "优先使用受管理安装",
+      "fragment": "managed-installs-first",
       "method": "在中文标题前添加原 fragment 的显式锚点"
     },
     {
-      "source_heading": "Codex, and other agents: skills.sh",
-      "translated_heading": "Codex 及其他 agent：skills.sh",
-      "fragment": "codex-and-other-agents-skillssh",
+      "source_heading": "GitHub Copilot (CLI and VS Code)",
+      "translated_heading": "GitHub Copilot（CLI 和 VS Code）",
+      "fragment": "github-copilot-cli-and-vs-code",
+      "method": "在中文标题前添加原 fragment 的显式锚点"
+    },
+    {
+      "source_heading": "Every other agent, or editable files (skills.sh)",
+      "translated_heading": "其他所有 agent，或可编辑文件（skills.sh）",
+      "fragment": "every-other-agent-or-editable-files-skillssh",
       "method": "在中文标题前添加原 fragment 的显式锚点"
     },
     {
       "source_heading": "The two routes are exclusive",
       "translated_heading": "两条路线互斥",
       "fragment": "the-two-routes-are-exclusive",
-      "method": "在中文标题前添加原 fragment 的显式锚点"
-    },
-    {
-      "source_heading": "Not the install story",
-      "translated_heading": "不作为安装主线",
-      "fragment": "not-the-install-story",
       "method": "在中文标题前添加原 fragment 的显式锚点"
     }
   ],
@@ -3461,9 +3473,9 @@
   ],
   ".out-of-scope/mainstream-issue-trackers-only.md": [
     {
-      "source_heading": "Issue tracker integrations are limited to mainstream tools",
-      "translated_heading": "Issue 跟踪器集成仅限主流工具",
-      "fragment": "issue-tracker-integrations-are-limited-to-mainstream-tools",
+      "source_heading": "Issue tracker integrations: GitHub, GitLab and local markdown only",
+      "translated_heading": "Issue 跟踪器集成：仅 GitHub、GitLab 和本地 Markdown",
+      "fragment": "issue-tracker-integrations-github-gitlab-and-local-markdown-only",
       "method": "在中文标题前添加原 fragment 的显式锚点"
     },
     {
@@ -3527,12 +3539,6 @@
       "method": "在中文标题前添加原 fragment 的显式锚点"
     },
     {
-      "source_heading": "Patch Changes",
-      "translated_heading": "补丁变更",
-      "fragment": "patch-changes-1",
-      "method": "在中文标题前添加原 fragment 的显式锚点"
-    },
-    {
       "source_heading": "Minor Changes",
       "translated_heading": "次要变更",
       "fragment": "minor-changes",
@@ -3541,7 +3547,19 @@
     {
       "source_heading": "Patch Changes",
       "translated_heading": "补丁变更",
+      "fragment": "patch-changes-1",
+      "method": "在中文标题前添加原 fragment 的显式锚点"
+    },
+    {
+      "source_heading": "Patch Changes",
+      "translated_heading": "补丁变更",
       "fragment": "patch-changes-2",
+      "method": "在中文标题前添加原 fragment 的显式锚点"
+    },
+    {
+      "source_heading": "Patch Changes",
+      "translated_heading": "补丁变更",
+      "fragment": "patch-changes-3",
       "method": "在中文标题前添加原 fragment 的显式锚点"
     },
     {
@@ -3553,19 +3571,7 @@
     {
       "source_heading": "Patch Changes",
       "translated_heading": "补丁变更",
-      "fragment": "patch-changes-3",
-      "method": "在中文标题前添加原 fragment 的显式锚点"
-    },
-    {
-      "source_heading": "Patch Changes",
-      "translated_heading": "补丁变更",
       "fragment": "patch-changes-4",
-      "method": "在中文标题前添加原 fragment 的显式锚点"
-    },
-    {
-      "source_heading": "Major Changes",
-      "translated_heading": "主要变更",
-      "fragment": "major-changes",
       "method": "在中文标题前添加原 fragment 的显式锚点"
     },
     {
@@ -3578,6 +3584,330 @@
       "source_heading": "Patch Changes",
       "translated_heading": "补丁变更",
       "fragment": "patch-changes-5",
+      "method": "在中文标题前添加原 fragment 的显式锚点"
+    },
+    {
+      "source_heading": "Patch Changes",
+      "translated_heading": "补丁变更",
+      "fragment": "patch-changes-6",
+      "method": "在中文标题前添加原 fragment 的显式锚点"
+    },
+    {
+      "source_heading": "Major Changes",
+      "translated_heading": "主要变更",
+      "fragment": "major-changes",
+      "method": "在中文标题前添加原 fragment 的显式锚点"
+    },
+    {
+      "source_heading": "Minor Changes",
+      "translated_heading": "次要变更",
+      "fragment": "minor-changes-3",
+      "method": "在中文标题前添加原 fragment 的显式锚点"
+    },
+    {
+      "source_heading": "Patch Changes",
+      "translated_heading": "补丁变更",
+      "fragment": "patch-changes-7",
+      "method": "在中文标题前添加原 fragment 的显式锚点"
+    }
+  ],
+  ".out-of-scope/frozen-misc-skills.md": [
+    {
+      "source_heading": "Changes to `misc/` skills",
+      "translated_heading": "对 `misc/` 技能的修改",
+      "fragment": "changes-to-misc-skills",
+      "method": "在中文标题前添加原 fragment 的显式锚点"
+    },
+    {
+      "source_heading": "Why this is out of scope",
+      "translated_heading": "为什么超出范围",
+      "fragment": "why-this-is-out-of-scope",
+      "method": "在中文标题前添加原 fragment 的显式锚点"
+    },
+    {
+      "source_heading": "Prior requests",
+      "translated_heading": "既往请求",
+      "fragment": "prior-requests",
+      "method": "在中文标题前添加原 fragment 的显式锚点"
+    }
+  ],
+  ".out-of-scope/harness-name-collisions.md": [
+    {
+      "source_heading": "Renaming skills to dodge harness built-in commands",
+      "translated_heading": "为避开 harness 内置命令而重命名技能",
+      "fragment": "renaming-skills-to-dodge-harness-built-in-commands",
+      "method": "在中文标题前添加原 fragment 的显式锚点"
+    },
+    {
+      "source_heading": "Why this is out of scope",
+      "translated_heading": "为什么超出范围",
+      "fragment": "why-this-is-out-of-scope",
+      "method": "在中文标题前添加原 fragment 的显式锚点"
+    },
+    {
+      "source_heading": "Prior requests",
+      "translated_heading": "既往请求",
+      "fragment": "prior-requests",
+      "method": "在中文标题前添加原 fragment 的显式锚点"
+    }
+  ],
+  ".out-of-scope/lazy-load-writing-for-agents.md": [
+    {
+      "source_heading": "Lazy-loading `writing-for-agents` in skills that judge agent-facing writing",
+      "translated_heading": "在评估 agent 文档的技能中延迟加载 `writing-for-agents`",
+      "fragment": "lazy-loading-writing-for-agents-in-skills-that-judge-agent-facing-writing",
+      "method": "在中文标题前添加原 fragment 的显式锚点"
+    },
+    {
+      "source_heading": "Why this is out of scope",
+      "translated_heading": "为什么超出范围",
+      "fragment": "why-this-is-out-of-scope",
+      "method": "在中文标题前添加原 fragment 的显式锚点"
+    },
+    {
+      "source_heading": "Prior requests",
+      "translated_heading": "既往请求",
+      "fragment": "prior-requests",
+      "method": "在中文标题前添加原 fragment 的显式锚点"
+    }
+  ],
+  ".out-of-scope/native-question-tool.md": [
+    {
+      "source_heading": "Grilling through the harness's native question tool",
+      "translated_heading": "通过 harness 原生提问工具进行追问",
+      "fragment": "grilling-through-the-harnesss-native-question-tool",
+      "method": "在中文标题前添加原 fragment 的显式锚点"
+    },
+    {
+      "source_heading": "Why this is out of scope",
+      "translated_heading": "为什么超出范围",
+      "fragment": "why-this-is-out-of-scope",
+      "method": "在中文标题前添加原 fragment 的显式锚点"
+    },
+    {
+      "source_heading": "Prior requests",
+      "translated_heading": "既往请求",
+      "fragment": "prior-requests",
+      "method": "在中文标题前添加原 fragment 的显式锚点"
+    }
+  ],
+  ".out-of-scope/new-skills.md": [
+    {
+      "source_heading": "New skill proposals and contributions",
+      "translated_heading": "新技能建议与贡献",
+      "fragment": "new-skill-proposals-and-contributions",
+      "method": "在中文标题前添加原 fragment 的显式锚点"
+    },
+    {
+      "source_heading": "Why this is out of scope",
+      "translated_heading": "为什么超出范围",
+      "fragment": "why-this-is-out-of-scope",
+      "method": "在中文标题前添加原 fragment 的显式锚点"
+    },
+    {
+      "source_heading": "Prior requests",
+      "translated_heading": "既往请求",
+      "fragment": "prior-requests",
+      "method": "在中文标题前添加原 fragment 的显式锚点"
+    }
+  ],
+  ".out-of-scope/subagent-recursion.md": [
+    {
+      "source_heading": "Guards against sub-agents recursing into skills",
+      "translated_heading": "防止子 agent 递归进入技能的约束",
+      "fragment": "guards-against-sub-agents-recursing-into-skills",
+      "method": "在中文标题前添加原 fragment 的显式锚点"
+    },
+    {
+      "source_heading": "Why this is out of scope",
+      "translated_heading": "为什么超出范围",
+      "fragment": "why-this-is-out-of-scope",
+      "method": "在中文标题前添加原 fragment 的显式锚点"
+    },
+    {
+      "source_heading": "Prior requests",
+      "translated_heading": "既往请求",
+      "fragment": "prior-requests",
+      "method": "在中文标题前添加原 fragment 的显式锚点"
+    }
+  ],
+  "SCOPE.md": [
+    {
+      "source_heading": "Scope",
+      "translated_heading": "范围",
+      "fragment": "scope",
+      "method": "在中文标题前添加原 fragment 的显式锚点"
+    },
+    {
+      "source_heading": "The bar",
+      "translated_heading": "门槛",
+      "fragment": "the-bar",
+      "method": "在中文标题前添加原 fragment 的显式锚点"
+    },
+    {
+      "source_heading": "By bucket",
+      "translated_heading": "按分类",
+      "fragment": "by-bucket",
+      "method": "在中文标题前添加原 fragment 的显式锚点"
+    },
+    {
+      "source_heading": "Already decided",
+      "translated_heading": "已作出的决策",
+      "fragment": "already-decided",
+      "method": "在中文标题前添加原 fragment 的显式锚点"
+    },
+    {
+      "source_heading": "Unclear issues",
+      "translated_heading": "不明确的 issue",
+      "fragment": "unclear-issues",
+      "method": "在中文标题前添加原 fragment 的显式锚点"
+    }
+  ],
+  "docs/agents/triage-labels.md": [
+    {
+      "source_heading": "Triage Labels",
+      "translated_heading": "分流标签",
+      "fragment": "triage-labels",
+      "method": "在中文标题前添加原 fragment 的显式锚点"
+    }
+  ],
+  "docs/engineering/implement-spec.md": [
+    {
+      "source_heading": "The integration branch",
+      "translated_heading": "集成分支",
+      "fragment": "the-integration-branch",
+      "method": "在中文标题前添加原 fragment 的显式锚点"
+    },
+    {
+      "source_heading": "What it does",
+      "translated_heading": "它能做什么",
+      "fragment": "what-it-does",
+      "method": "在中文标题前添加原 fragment 的显式锚点"
+    },
+    {
+      "source_heading": "When to reach for it",
+      "translated_heading": "何时使用",
+      "fragment": "when-to-reach-for-it",
+      "method": "在中文标题前添加原 fragment 的显式锚点"
+    },
+    {
+      "source_heading": "Prerequisites",
+      "translated_heading": "前置条件",
+      "fragment": "prerequisites",
+      "method": "在中文标题前添加原 fragment 的显式锚点"
+    },
+    {
+      "source_heading": "Common questions",
+      "translated_heading": "常见问题",
+      "fragment": "common-questions",
+      "method": "在中文标题前添加原 fragment 的显式锚点"
+    },
+    {
+      "source_heading": "It's working if",
+      "translated_heading": "如何判断它有效",
+      "fragment": "its-working-if",
+      "method": "在中文标题前添加原 fragment 的显式锚点"
+    },
+    {
+      "source_heading": "Where it fits",
+      "translated_heading": "它在流程中的位置",
+      "fragment": "where-it-fits",
+      "method": "在中文标题前添加原 fragment 的显式锚点"
+    }
+  ],
+  "docs/engineering/pr.md": [
+    {
+      "source_heading": "The template",
+      "translated_heading": "模板",
+      "fragment": "the-template",
+      "method": "在中文标题前添加原 fragment 的显式锚点"
+    },
+    {
+      "source_heading": "What it does",
+      "translated_heading": "它能做什么",
+      "fragment": "what-it-does",
+      "method": "在中文标题前添加原 fragment 的显式锚点"
+    },
+    {
+      "source_heading": "When to reach for it",
+      "translated_heading": "何时使用",
+      "fragment": "when-to-reach-for-it",
+      "method": "在中文标题前添加原 fragment 的显式锚点"
+    },
+    {
+      "source_heading": "Common questions",
+      "translated_heading": "常见问题",
+      "fragment": "common-questions",
+      "method": "在中文标题前添加原 fragment 的显式锚点"
+    },
+    {
+      "source_heading": "It's working if",
+      "translated_heading": "如何判断它有效",
+      "fragment": "its-working-if",
+      "method": "在中文标题前添加原 fragment 的显式锚点"
+    },
+    {
+      "source_heading": "Where it fits",
+      "translated_heading": "它在流程中的位置",
+      "fragment": "where-it-fits",
+      "method": "在中文标题前添加原 fragment 的显式锚点"
+    }
+  ],
+  "docs/engineering/retro.md": [
+    {
+      "source_heading": "Where the findings land",
+      "translated_heading": "发现落在哪里",
+      "fragment": "where-the-findings-land",
+      "method": "在中文标题前添加原 fragment 的显式锚点"
+    },
+    {
+      "source_heading": "What it does",
+      "translated_heading": "它能做什么",
+      "fragment": "what-it-does",
+      "method": "在中文标题前添加原 fragment 的显式锚点"
+    },
+    {
+      "source_heading": "When to reach for it",
+      "translated_heading": "何时使用",
+      "fragment": "when-to-reach-for-it",
+      "method": "在中文标题前添加原 fragment 的显式锚点"
+    },
+    {
+      "source_heading": "Common questions",
+      "translated_heading": "常见问题",
+      "fragment": "common-questions",
+      "method": "在中文标题前添加原 fragment 的显式锚点"
+    },
+    {
+      "source_heading": "It's working if",
+      "translated_heading": "如何判断它有效",
+      "fragment": "its-working-if",
+      "method": "在中文标题前添加原 fragment 的显式锚点"
+    },
+    {
+      "source_heading": "Where it fits",
+      "translated_heading": "它在流程中的位置",
+      "fragment": "where-it-fits",
+      "method": "在中文标题前添加原 fragment 的显式锚点"
+    }
+  ],
+  "skills/in-progress/chief-of-staff/SKILL.md": [
+    {
+      "source_heading": "Schedules",
+      "translated_heading": "定期计划",
+      "fragment": "schedules",
+      "method": "在中文标题前添加原 fragment 的显式锚点"
+    },
+    {
+      "source_heading": "Subagents",
+      "translated_heading": "子 agent",
+      "fragment": "subagents",
+      "method": "在中文标题前添加原 fragment 的显式锚点"
+    },
+    {
+      "source_heading": "Strategic View",
+      "translated_heading": "战略视角",
+      "fragment": "strategic-view",
       "method": "在中文标题前添加原 fragment 的显式锚点"
     }
   ]

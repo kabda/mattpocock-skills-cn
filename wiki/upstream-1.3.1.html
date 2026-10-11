@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>上游更新对比 · Matt Pocock Skills 中文版</title>
+<style>
+:root{font-family:system-ui,-apple-system,"PingFang SC",sans-serif;line-height:1.75;color:#24352f;background:#f4f5ef}body{max-width:1040px;margin:auto;padding:48px 28px 80px}header{border-top:5px solid #37654d;padding-top:22px}h1{font-size:clamp(2rem,5vw,3.2rem);line-height:1.25;letter-spacing:-.04em}h2{font-size:1.45rem;margin-top:42px}a{color:#286247;text-underline-offset:4px}code{font-family:ui-monospace,monospace;font-size:.87em;overflow-wrap:anywhere}.eyebrow{color:#426f52;letter-spacing:.1em;font-size:.9rem}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:28px 0}.stat{background:#e5ece1;border-radius:12px;padding:20px}.stat strong{display:block;font-size:2rem;line-height:1.2}.stat span{font-size:.9rem}.note{background:#e5ece1;border-left:4px solid #37654d;padding:16px 20px}table{width:100%;border-collapse:collapse}th,td{text-align:left;vertical-align:top;border-bottom:1px solid #c6d2c5;padding:14px 12px}th{color:#42664d;font-size:.9rem}td:first-child{width:25%;font-weight:600}footer{margin-top:48px;font-size:.9rem;color:#64756a}.scroll{overflow-x:auto}@media(max-width:650px){body{padding:28px 18px 56px}.stats{grid-template-columns:repeat(2,1fr)}td:first-child{width:32%}th,td{padding:12px 8px}}@media(prefers-color-scheme:dark){:root{color:#e6ece3;background:#18231d}a{color:#a1d4af}.stat,.note{background:#293d2e}th,.eyebrow{color:#add0b4}th,td{border-color:#3e5344}footer{color:#b0c1b5}}@media print{body{padding:0;background:white;color:#000}.stat,.note{background:#eee}a{color:inherit}}
+</style>
+</head>
+<body>
+<header><p class="eyebrow">中文同步记录 · 2026-10-11</p><h1>从 1.2.3 到上游当前快照</h1><p>版本字段已升至 1.3.1，同时同步当前提交中的待发布改进。新增页面和指令已译为中文，旧内容按差分核对。</p><p><a href="translation.html">中文版本说明</a> · <a href="../README.md">项目 README</a> · <a href="../docs/localization/upstream-1.3.1.md">完整技术对比</a> · <a href="../docs/localization/validation.md">验收记录</a></p></header>
+<main>
+<div class="stats"><div class="stat"><strong>118</strong><span>源路径变更记录</span></div><div class="stat"><strong>190</strong><span>当前源路径</span></div><div class="stat"><strong>38</strong><span>技能总数</span></div><div class="stat"><strong>27</strong><span>正式发布技能</span></div></div>
+<p class="note">比较固定提交 <code>c55ee460</code> 与 <code>49dd158d</code>。后者的版本字段是 1.3.1，并包含 16 个待发布 changeset。本页描述该快照，未将全部增量视为已发布。</p>
+<h2>技能集合变了什么</h2>
+<div class="scroll"><table><thead><tr><th>技能</th><th>当前状态与用途</th></tr></thead><tbody>
+<tr><td><a href="../skills/engineering/implement-spec/SKILL.md">implement-spec</a></td><td>从 beta 转为正式技能。按工单依赖图并行实现，将各 worktree 的结果汇入一个集成分支。</td></tr>
+<tr><td><a href="../skills/engineering/pr/SKILL.md">pr</a></td><td>从 beta 转为正式技能。以 Summary、Evidence、Merge Danger 组织 PR 正文，突出变化、前后证据及合并风险。</td></tr>
+<tr><td><a href="../skills/engineering/retro/SKILL.md">retro</a></td><td>从 beta 转为正式技能。回顾会话，建议改进 agent 环境、自动检查、导航指针与编码标准。</td></tr>
+<tr><td>resolving-merge-conflicts</td><td>上游已移除技能；<a href="../docs/engineering/resolving-merge-conflicts.md">文档页</a>保留归档说明。</td></tr>
+<tr><td><a href="../skills/in-progress/chief-of-staff/SKILL.md">chief-of-staff</a></td><td>新增 beta 技能。在长时间运行的会话中协调子 agent 与定期计划，持续推进长期目标。中文分类索引已补齐，不进入正式插件。</td></tr>
+</tbody></table></div>
+<h2>现有技能的关键改进</h2>
+<div class="scroll"><table><thead><tr><th>范围</th><th>变化</th></tr></thead><tbody>
+<tr><td>路由与领域文档</td><td>ask-matt 在描述或推荐技能前先读取其正文，加入并行实现与复盘路线；当前领域文档约定从 CONTEXT.md 改为 GLOSSARY.md。</td></tr>
+<tr><td>审查与诊断</td><td>code-review 搜索全部编码标准，并同时启动两个前台审查子 agent；diagnosing-bugs 用 diff 证明强制变异确实生效，再信任 Red 结果。</td></tr>
+<tr><td>工单与执行</td><td>implement 先读取工单引用并核对标题；setup 创建缺失标签，修正 GitHub 外部 PR、sub-issues 与 GitLab JSON 命令。</td></tr>
+<tr><td>规划与测试</td><td>wayfinder 决策工单只用自身标签，交叉引用写真实 id，研究分支推送且不建 PR；tdd 明确每个 seam 的捕获能力与盲区。</td></tr>
+<tr><td>教学与交接</td><td>teach 区分工作目录与格式文件目录，测验改变正确答案位置；handoff 使用系统临时目录，后台交接通过文件传递摘要。</td></tr>
+<tr><td>向导与安装</td><td>wizard 模板修正 env、EOF、readline 与入口处理；安装说明同步 Claude、Codex、Copilot、VS Code、Gemini 路线及自动更新差异。</td></tr>
+<tr><td>贡献入口</td><td>新增 SCOPE.md、范围之外政策、bug/idea 表单和分流工作流。说明文字译为中文，机器标签和工作流代码保留。</td></tr>
+</tbody></table></div>
+<h2>翻译与检查结果</h2>
+<p>190 个源路径全部对应，其中 131 个全文翻译、44 个仅翻译展示字段、15 个原样保留。正式集合从 25 项增至 27 项，总技能数保持 38 项。</p>
+<p>全量结构、元数据、链接、英文保留项和版本检查通过；617 个英文 fragment 兼容锚点已登记，5 个 shell 文件通过语法检查。原仓库和两个用户既有文件保持不变。</p>
+<p>本机没有 Claude CLI 和 shellcheck，因此未完成相应平台或工具检查，也未实际安装、执行技能示例或运行工作流。部分上游 docs 仍保留旧问题描述，与已更新的技能正文不一致，详见<a href="../docs/localization/validation.md">验收记录</a>。</p>
+<h2>如何审阅本次交付</h2>
+<p>本次译文在分支 <code>codex/同步上游1.3.1中文翻译</code> 完成验收，维护者随后授权提交、合并至 <code>main</code> 并推送 <code>origin</code>。Git 状态以提交历史和 <code>origin/main</code> 为准；未安装技能。可以先阅读上方变化表，再按<a href="../docs/localization/upstream-1.3.1.md">完整技术对比</a>核对所有新增、删除、修改和重命名路径。</p>
+</main><footer>非官方简体中文翻译。作者身份、上游来源、命令和调用策略保持原意；具体基线见<a href="../docs/localization/source.md">来源记录</a>。</footer>
+</body>
+</html>

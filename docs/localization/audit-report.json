@@ -1,12 +1,12 @@
 {
-  "source_commit": "c55ee46073ed923f86ce59a5eb3b6d895095d1b7",
+  "source_commit": "49dd158d1076134a641b33efb035946536778336",
   "errors": [],
-  "reviewed_english_items": 195,
-  "english_occurrences": 218,
-  "preserved_fences": 58,
-  "translated_fences": 32,
-  "preserved_paths": 13,
-  "url_occurrences": 655,
+  "reviewed_english_items": 203,
+  "english_occurrences": 227,
+  "preserved_fences": 60,
+  "translated_fences": 38,
+  "preserved_paths": 15,
+  "url_occurrences": 767,
   "promoted_docs": [
     "ask-matt",
     "code-review",
@@ -18,10 +18,12 @@
     "grilling",
     "handoff",
     "implement",
+    "implement-spec",
     "improve-codebase-architecture",
+    "pr",
     "prototype",
     "research",
-    "resolving-merge-conflicts",
+    "retro",
     "setup-matt-pocock-skills",
     "tdd",
     "teach",
@@ -33,6 +35,9 @@
     "wayfinder",
     "wizard",
     "writing-for-agents"
+  ],
+  "archived_docs": [
+    "resolving-merge-conflicts"
   ],
   "skill_references": [
     {
@@ -48,29 +53,46 @@
       }
     },
     {
-      "path": ".changeset/add-implement-spec-skill.md",
-      "skill_invocations": {
-        "/code-review": 1
-      }
-    },
-    {
-      "path": ".changeset/skill-tool-invocation-terminology.md",
-      "skill_invocations": {
-        "/grilling": 1
-      }
-    },
-    {
-      "path": ".changeset/user-invoked-skill-invocation.md",
+      "path": ".changeset/github-tracker-external-pr-list.md",
       "skill_invocations": {
         "/setup-matt-pocock-skills": 1
       }
     },
     {
+      "path": ".changeset/setup-tracker-fixes.md",
+      "skill_invocations": {
+        "/setup-matt-pocock-skills": 1
+      }
+    },
+    {
+      "path": ".changeset/to-tickets-sub-issues.md",
+      "skill_invocations": {
+        "/setup-matt-pocock-skills": 1
+      }
+    },
+    {
+      "path": ".out-of-scope/harness-name-collisions.md",
+      "skill_invocations": {
+        "/code-review": 3,
+        "/prototype": 3,
+        "/research": 2
+      }
+    },
+    {
       "path": ".out-of-scope/mainstream-issue-trackers-only.md",
       "skill_invocations": {
+        "/setup-matt-pocock-skills": 1,
         "/to-spec": 1,
         "/to-tickets": 1,
         "/triage": 1
+      }
+    },
+    {
+      "path": ".out-of-scope/native-question-tool.md",
+      "skill_invocations": {
+        "/grill-me": 1,
+        "/grill-with-docs": 1,
+        "/grilling": 1
       }
     },
     {
@@ -86,6 +108,13 @@
       }
     },
     {
+      "path": ".out-of-scope/subagent-recursion.md",
+      "skill_invocations": {
+        "/code-review": 3,
+        "/research": 1
+      }
+    },
+    {
       "path": "CHANGELOG.md",
       "skill_invocations": {
         "$writing-for-agents": 1,
@@ -96,14 +125,14 @@
         "/domain-modeling": 3,
         "/grill-me": 1,
         "/grill-with-docs": 2,
-        "/grilling": 1,
+        "/grilling": 2,
         "/handoff": 3,
         "/implement": 4,
-        "/improve-codebase-architecture": 1,
+        "/improve-codebase-architecture": 2,
         "/prototype": 1,
         "/research": 1,
-        "/resolving-merge-conflicts": 1,
-        "/setup-matt-pocock-skills": 2,
+        "/retro": 1,
+        "/setup-matt-pocock-skills": 4,
         "/to-spec": 4,
         "/to-tickets": 3,
         "/triage": 1,
@@ -112,7 +141,7 @@
       }
     },
     {
-      "path": "CONTEXT.md",
+      "path": "GLOSSARY.md",
       "skill_invocations": {
         "/setup-matt-pocock-skills": 1
       }
@@ -120,7 +149,7 @@
     {
       "path": "README.md",
       "skill_invocations": {
-        "/code-review": 1,
+        "/code-review": 2,
         "/diagnosing-bugs": 1,
         "/grill-me": 3,
         "/grill-with-docs": 2,
@@ -137,7 +166,6 @@
         "/ask-matt": 1,
         "/grilling": 2,
         "/handoff": 1,
-        "/resolving-merge-conflicts": 1,
         "/tdd": 1
       }
     },
@@ -178,10 +206,17 @@
       }
     },
     {
+      "path": "docs/engineering/implement-spec.md",
+      "skill_invocations": {
+        "/implement": 1,
+        "/implement-spec": 3,
+        "/tdd": 1
+      }
+    },
+    {
       "path": "docs/engineering/implement.md",
       "skill_invocations": {
-        "/implement": 8,
-        "/tdd": 1
+        "/implement": 9
       }
     },
     {
@@ -190,6 +225,12 @@
         "/codebase-design": 3,
         "/improve-codebase-architecture": 1,
         "/to-spec": 1
+      }
+    },
+    {
+      "path": "docs/engineering/pr.md",
+      "skill_invocations": {
+        "/pr": 1
       }
     },
     {
@@ -207,9 +248,9 @@
       }
     },
     {
-      "path": "docs/engineering/resolving-merge-conflicts.md",
+      "path": "docs/engineering/retro.md",
       "skill_invocations": {
-        "/resolving-merge-conflicts": 1
+        "/retro": 2
       }
     },
     {
@@ -233,7 +274,7 @@
       "skill_invocations": {
         "/implement": 2,
         "/to-spec": 5,
-        "/to-tickets": 4
+        "/to-tickets": 5
       }
     },
     {
@@ -293,7 +334,7 @@
       "path": "docs/productivity/teach.md",
       "skill_invocations": {
         "/handoff": 1,
-        "/teach": 4
+        "/teach": 6
       }
     },
     {
@@ -318,7 +359,7 @@
     {
       "path": "skills/engineering/README.md",
       "skill_invocations": {
-        "/code-review": 1,
+        "/code-review": 2,
         "/tdd": 1
       }
     },
@@ -331,7 +372,7 @@
     {
       "path": "skills/engineering/ask-matt/SKILL.md",
       "skill_invocations": {
-        "/code-review": 2,
+        "/code-review": 4,
         "/codebase-design": 2,
         "/diagnosing-bugs": 1,
         "/domain-modeling": 1,
@@ -340,12 +381,14 @@
         "/grilling": 2,
         "/handoff": 5,
         "/implement": 8,
+        "/implement-spec": 2,
         "/improve-codebase-architecture": 4,
+        "/pr": 1,
         "/prototype": 2,
         "/research": 1,
-        "/resolving-merge-conflicts": 1,
+        "/retro": 3,
         "/setup-matt-pocock-skills": 1,
-        "/tdd": 3,
+        "/tdd": 4,
         "/teach": 1,
         "/to-questionnaire": 1,
         "/to-spec": 3,
@@ -364,10 +407,11 @@
       }
     },
     {
-      "path": "skills/engineering/implement/SKILL.md",
+      "path": "skills/engineering/implement-spec/SKILL.md",
       "skill_invocations": {
-        "/code-review": 1,
-        "/tdd": 1
+        "/setup-matt-pocock-skills": 1,
+        "/to-spec": 1,
+        "/to-tickets": 1
       }
     },
     {
@@ -442,15 +486,15 @@
       }
     },
     {
-      "path": "skills/in-progress/implement-spec/SKILL.md",
-      "skill_invocations": {
-        "/code-review": 1
-      }
-    },
-    {
       "path": "skills/in-progress/loop-me/SKILL.md",
       "skill_invocations": {
         "/grilling": 1
+      }
+    },
+    {
+      "path": "skills/productivity/teach/SKILL.md",
+      "skill_invocations": {
+        "/teach": 1
       }
     }
   ],

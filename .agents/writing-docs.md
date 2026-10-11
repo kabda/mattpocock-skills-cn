@@ -6,7 +6,7 @@
 
 大多数技能由**用户调用**：agent 绝不会替你触发，所以*你*就是必须记住其存在和适用时机的索引。这种记忆是**认知负荷**。文档页的职责是减轻负荷：围绕一个技能为一位读者建立方位感，让他们记得住、知道何时使用，并看见它在系统中的位置。所有页面共同构成分布式路由器，每页是一个节点。
 
-正式技能新增、改名或行为变化时，就创建或重新同步文档页。改名也要移动文件（`docs/<bucket>/<old>.md` → `docs/<bucket>/<new>.md`），因为发布 URL 跟随名称；技能在 `engineering/` 与 `productivity/` 之间移动时，文档也移到相应目录。`misc/`、`in-progress/` 和 `deprecated/` 不配页面，因为这些分类都未正式收录。技能从它们*移出*、进入 `engineering/` 或 `productivity/` 时新增页面，反向移动则移除页面。
+正式技能新增、重命名或行为改变时，创建或重新同步其文档页。重命名时也移动文件（`docs/<bucket>/<old>.md` → `docs/<bucket>/<new>.md`），因为发布 URL 跟随名称；技能在 `engineering/` 与 `productivity/` 之间移动时，其文档也移动到对应目录。`misc/`、`in-progress/` 和 `deprecated/` 不配文档页，因为它们都不是正式分类。技能从这些分类移入 `engineering/` 或 `productivity/` 时新增文档，反向移动时删除文档。直接移除的正式技能则保留**归档**页：保留原正文，并在开头加引用块声明（`> **Archived.** ...`），注明移除版本和替代项，使发布 URL 继续可用。
 
 页面发布于 `aihero.dev`，所以**所有链接都用绝对 URL**，绝不用仓库相对路径。其他技能的链接指向 `https://aihero.dev/skills-<name>`；仓库内容的链接指向完整的 `https://github.com/mattpocock/skills/...` URL。仓库中可用的相对链接发布后会失效。
 
@@ -37,7 +37,7 @@
 
 ## Prerequisites
 
-可选：仅在技能必须先具备某些条件才能工作时保留，否则整个标题都省略。涵盖：**写入的工作空间**（`grill-with-docs` 等有状态技能会写 `CONTEXT.md` 和 ADR；`teach` 构建整个目录，因此说明写什么、写在哪里）、**事先设置**（`triage`/`to-spec`/`to-tickets` 需要 `setup-matt-pocock-skills` 已配置 issue 跟踪器），或**仓库专用工具**。到处都能运行的无状态技能没有前置条件，删除此节。
+可选：仅在技能必须先具备某些条件才能工作时保留，否则整个标题都省略。涵盖：**写入的工作空间**（`grill-with-docs` 等有状态技能会写 `GLOSSARY.md` 和 ADR；`teach` 构建整个目录，因此说明写什么、写在哪里）、**事先设置**（`triage`/`to-spec`/`to-tickets` 需要 `setup-matt-pocock-skills` 已配置 issue 跟踪器），或**仓库专用工具**。到处都能运行的无状态技能没有前置条件，删除此节。
 
 ## <free-form middle>
 

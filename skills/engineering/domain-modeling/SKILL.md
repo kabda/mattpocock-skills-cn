@@ -1,13 +1,13 @@
 ---
 name: domain-modeling
-description: 构建并精炼项目的领域模型。在讨论代码库术语、编写或编辑 CONTEXT.md，或记录、编辑 ADR 时使用。
+description: 构建并精炼项目的领域模型。在讨论代码库术语、编写或编辑 GLOSSARY.md，或记录、编辑 ADR 时使用。
 ---
 
 <a id="domain-modeling"></a>
 
 # 领域建模
 
-设计时主动构建并精炼项目的领域模型。这是一项*主动*实践：质疑术语、构造边界情景，并在术语和决策明确的那一刻将它们写下来。（仅为获取词汇而*阅读* `CONTEXT.md` 不属于本技能：那是任何技能都能执行的一条简单习惯。本技能用于改变模型，而不是仅仅使用模型。）
+设计时主动构建并精炼项目的领域模型。这是一项*主动*实践：质疑术语、构造边界情景，并在术语和决策明确的那一刻将它们写下来。（仅为获取词汇而*阅读* `GLOSSARY.md` 不属于本技能：那是任何技能都能执行的一条简单习惯。本技能用于改变模型，而不是仅仅使用模型。）
 
 <a id="file-structure"></a>
 
@@ -17,7 +17,7 @@ description: 构建并精炼项目的领域模型。在讨论代码库术语、�
 
 ```
 /
-├── CONTEXT.md
+├── GLOSSARY.md
 ├── docs/
 │   └── adr/
 │       ├── 0001-event-sourced-orders.md
@@ -25,23 +25,23 @@ description: 构建并精炼项目的领域模型。在讨论代码库术语、�
 └── src/
 ```
 
-如果根目录存在 `CONTEXT-MAP.md`，仓库就有多个上下文。该映射文件指明各个上下文的位置：
+根目录存在 `GLOSSARY-MAP.md` 时，仓库包含多个上下文。地图指向各上下文的位置：
 
 ```
 /
-├── CONTEXT-MAP.md
+├── GLOSSARY-MAP.md
 ├── docs/
 │   └── adr/                          ← 系统级决策
 ├── src/
 │   ├── ordering/
-│   │   ├── CONTEXT.md
+│   │   ├── GLOSSARY.md
 │   │   └── docs/adr/                 ← 特定上下文的决策
 │   └── billing/
-│       ├── CONTEXT.md
+│       ├── GLOSSARY.md
 │       └── docs/adr/
 ```
 
-按需创建文件：有内容要写时才创建。如果不存在 `CONTEXT.md`，就在第一个术语明确时创建。如果不存在 `docs/adr/`，就在需要第一份 ADR 时创建。
+按需创建文件：有内容要写时才创建。如果不存在 `GLOSSARY.md`，就在第一个术语明确时创建。如果不存在 `docs/adr/`，就在需要第一份 ADR 时创建。
 
 <a id="during-the-session"></a>
 
@@ -51,7 +51,7 @@ description: 构建并精炼项目的领域模型。在讨论代码库术语、�
 
 ### 对照术语表提出质疑
 
-当用户使用的术语与 `CONTEXT.md` 中现有语言冲突时，立即指出。“你的术语表把 'cancellation' 定义为 X，但你似乎在说 Y。到底是哪一个？”
+当用户使用的术语与 `GLOSSARY.md` 中现有语言冲突时，立即指出。“你的术语表把 'cancellation' 定义为 X，但你似乎在说 Y。到底是哪一个？”
 
 <a id="sharpen-fuzzy-language"></a>
 
@@ -71,13 +71,13 @@ description: 构建并精炼项目的领域模型。在讨论代码库术语、�
 
 用户陈述某件事如何工作时，检查代码是否一致。发现矛盾就指出：“代码会取消整个 Orders，但你刚才说可以部分取消。哪个是对的？”
 
-<a id="update-contextmd-inline"></a>
+<a id="update-glossarymd-inline"></a>
 
-### 随时更新 CONTEXT.md
+### 随时更新 GLOSSARY.md
 
-术语一旦明确，就立即更新 `CONTEXT.md`。不要积攒起来批量处理：确定一项就记录一项。使用 [CONTEXT-FORMAT.md](./CONTEXT-FORMAT.md) 中的格式。
+术语一旦明确，就立即更新 `GLOSSARY.md`。不要积攒起来批量处理：确定一项就记录一项。使用 [GLOSSARY-FORMAT.md](./GLOSSARY-FORMAT.md) 中的格式。
 
-`CONTEXT.md` 应当完全不含实现细节。不要把 `CONTEXT.md` 当成规格说明、草稿纸或存放实现决策的地方。它只是术语表，仅此而已。
+`GLOSSARY.md` 应当完全不含实现细节。不要把 `GLOSSARY.md` 当成规格说明、草稿纸或存放实现决策的地方。它只是术语表，仅此而已。
 
 <a id="offer-adrs-sparingly"></a>
 

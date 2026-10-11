@@ -1,0 +1,40 @@
+name: 想法或反馈
+description: 基于实际遇到的失败，改进现有技能。
+body:
+  - type: markdown
+    attributes:
+      value: |
+        本仓库经过筛选维护。只有同时达到 [`SCOPE.md`](https://github.com/mattpocock/skills/blob/main/SCOPE.md) 中的**两项**门槛，建议才会保持开放：
+
+        1. **观察到的失败**：描述真实会话中发生的错误，而非假想的改进。
+        2. **符合理念**：不属于 [`.out-of-scope/`](https://github.com/mattpocock/skills/tree/main/.out-of-scope) 的情形，也不是配置选项、harness 专用分支或个人工作流调整。
+
+        不接受新技能。`misc/` 技能已冻结。
+  - type: checkboxes
+    id: read-scope
+    attributes:
+      label: 提交前
+      options:
+        - label: 我已阅读 `SCOPE.md` 并检查 `.out-of-scope/`，本建议不属于其中任何一项。
+          required: true
+  - type: input
+    id: skill
+    attributes:
+      label: 技能
+      description: 要修改哪项现有技能。
+    validations:
+      required: true
+  - type: textarea
+    id: observed
+    attributes:
+      label: 哪里出了问题
+      description: 技能未达到要求的真实会话。说明运行内容、实际行为及其为何有问题，并包含 harness 和模型。
+    validations:
+      required: true
+  - type: textarea
+    id: change
+    attributes:
+      label: 建议的修改
+      description: 尽量具体地说明你会怎样修改技能。
+    validations:
+      required: true

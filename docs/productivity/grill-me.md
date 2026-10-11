@@ -17,7 +17,7 @@
 该选三个追问技能中的哪一个，取决于眼前的情况：
 
 - **任何主题，任何地方**：`grill-me`。不需要仓库，不写文件，主题也不必是代码。
-- **需要对齐代码库**：[grill-with-docs](https://aihero.dev/skills-grill-with-docs)。同样的访谈，但[有状态](https://www.aihero.dev/ai-coding-dictionary/stateful)：它读取代码，并将所得记录到 `CONTEXT.md` 和 ADR 中。
+- **需要对齐代码库**：[grill-with-docs](https://aihero.dev/skills-grill-with-docs)。同样的访谈，但[有状态](https://www.aihero.dev/ai-coding-dictionary/stateful)：它读取代码，并将所得记录到 `GLOSSARY.md` 和 ADR 中。
 - **规模大到一场会话容纳不下**：[wayfinder](https://aihero.dev/skills-wayfinder)。它将工作绘成地图，并在地图中运行追问会话。
 
 保持[计划模式](https://www.aihero.dev/ai-coding-dictionary/agent-mode)关闭。计划模式会让 agent 急于产出计划，这与持续探究的方向相反。
@@ -85,6 +85,6 @@
 
 `grill-me` 是**可以在任何地方、针对任何主题运行的独立工具**。无状态让它易于迁移：不需要仓库、工作区或设置，也不假设想法与软件有关。人们用它讨论业务决策、写作、下一步做什么：任何在脑海中难以定形的事情。
 
-这种便携性就是它与 [grill-with-docs](https://aihero.dev/skills-grill-with-docs) 的全部区别，后者运行相同的访谈，但会读取代码库以便对齐，并将所得记录为 `CONTEXT.md` 和 ADR。两者都建立在 [grilling](https://aihero.dev/skills-grilling) 这个基础技能上；`grill-me` 是用户调用的入口，不附带其他东西。
+这种便携性就是它与 [grill-with-docs](https://aihero.dev/skills-grill-with-docs) 的全部区别，后者运行相同的访谈，但会读取代码库以便对齐，并将所得记录为 `GLOSSARY.md` 和 ADR。两者都建立在 [grilling](https://aihero.dev/skills-grilling) 这个基础技能上；`grill-me` 是用户调用的入口，不附带其他东西。
 
 如果追问的主题最终确实涉及软件，可以将同一段对话交给 [to-spec](https://aihero.dev/skills-to-spec)，继续进入构建流程（这是一个选项，不是本技能的目的）。不确定哪个流程适合时，[ask-matt](https://aihero.dev/skills-ask-matt) 会为你指路。

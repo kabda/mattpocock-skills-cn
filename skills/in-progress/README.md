@@ -16,6 +16,4 @@ npx skills@latest add mattpocock/skills --skill=<name>
 - **[writing-shape](./writing-shape/SKILL.md)**：读取原始素材 Markdown 文件，逐段塑成文章，每一步都讨论格式选择。
 - **[claude-handoff](./claude-handoff/SKILL.md)**：通过 `claude --bg` 把交接摘要作为提示词，将当前对话交给立即接手工作的全新后台 agent。由用户调用。
 - **[setup-ts-deep-modules](./setup-ts-deep-modules/SKILL.md)**：把 dependency-cruiser 接入 TypeScript 仓库，让每个包成为深模块：实现隐藏在子目录，只能经入口文件访问，测试也通过入口验证行为。由用户调用。
-- **[implement-spec](./implement-spec/SKILL.md)**：在一个分支实现整份规格说明。把工单当作任务图而非列表，在就绪前沿上运行实现子 agent 以获得最大并发度，最终通过单个 PR 交付。由用户调用。
-- **[pr](./pr/SKILL.md)**：pull request 正文形态的参考：基于一手来源（而非 diff）的摘要、展示变更的最小图示、前后成对证据、刻意排除的内容，以及单向门/双向门判断。由模型调用。
-- **[retro](./retro/SKILL.md)**：会话后提出对编码 agent 环境的改进建议（引导文件、编码标准、自动检查、工具）。STUB：仅有设计笔记，尚不可用。由用户调用。
+- **[chief-of-staff](./chief-of-staff/SKILL.md)**：在长时间运行的单个会话中，协调子 agent 和定期计划推进长期目标，并持续改善 agent 工作环境。由用户调用。

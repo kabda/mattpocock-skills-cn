@@ -29,4 +29,4 @@ Skill 工具每次调用只接受一项技能。某步骤需要两项技能，�
 
 ## 被动与主动领域工作
 
-仅为词汇而*阅读* `CONTEXT.md`，用一行文字指针即可，不是 `domain-modeling` 技能。只有主动构建/打磨的方法（质疑术语、边界场景、编写 ADR、同步更新 `CONTEXT.md`）才属于 `domain-modeling`。
+仅为词汇而*阅读* `GLOSSARY.md`，用一行文字指针即可，不是 `domain-modeling` 技能。只有主动构建/打磨的方法（质疑术语、边界场景、编写 ADR、同步更新 `GLOSSARY.md`）才属于 `domain-modeling`。

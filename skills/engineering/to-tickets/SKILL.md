@@ -74,7 +74,7 @@ disable-model-invocation: true
 发布已获批准的工单。**如何**发布取决于 `/setup-matt-pocock-skills` 配置的跟踪器；两种方式的工单相同，只有阻塞关系的形式不同：
 
 - **本地文件** → 在 `.scratch/<feature-slug>/issues/<NN>-<slug>.md` 下每张工单写一个文件，按依赖顺序从 `01` 开始编号（阻塞项在前）。每个文件的 "Blocked by" 列出其依赖的编号／标题。使用下面的单工单文件模板：每张工单一个文件，绝不合并为单个文件。
-- **真实 issue 跟踪器（GitHub、Linear 等）** → 按依赖顺序（阻塞项在前）将每张工单发布为一个 issue，让每张工单的阻塞关系都能引用真实标识符。平台有原生阻塞／子 issue 关系时使用原生关系；否则将各工单的 "Blocked by" 设为阻塞它的 issue。除非另有指示，否则添加 `ready-for-agent` 分流标签；这些工单从设计上就可由 agent 领取。
+- **真正的 issue 跟踪器（GitHub、Linear、…）** → 按依赖顺序发布，每张工单一个 issue，先发布阻塞项，使阻塞边能引用真实标识。平台支持时用原生阻塞关系，否则把阻塞 issue 写进各工单的 “Blocked by”。来源为既有 issue 时，把工单设为它的子 issue（按跟踪器文档操作）。除非另有指示，应用 `ready-for-agent` 分流标签；工单在构造时已可供 agent 接手。
 
 处理**前沿**：所有阻塞项均已完成的工单。对于纯线性链，这意味着从上到下处理。
 
@@ -112,7 +112,7 @@ disable-model-invocation: true
 
 ## Blocked by
 
-- 指向每张阻塞工单的引用，或 "None (can start immediately)"。
+- 引用每张阻塞工单，或写 “None (can start immediately)”。以原生边设置阻塞项时，省略本节。
 
 </issue-template>
 

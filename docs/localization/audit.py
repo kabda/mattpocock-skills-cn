@@ -61,6 +61,18 @@ def collect():
             values = V['flatten'](json.loads(target))
             for field in MANIFEST['mutable_json_paths'].get(path, []):
                 scan(path, field, values[field][1])
+        if path in MANIFEST.get('mutable_yaml_paths', {}):
+            source_values = V['flatten'](V['yaml'].safe_load(source))
+            values = V['flatten'](V['yaml'].safe_load(target))
+            for field in MANIFEST['mutable_yaml_paths'][path]:
+                original, translated = source_values[field][1], values[field][1]
+                scan(path, field, translated)
+                if V['inline_code'](original) != V['inline_code'](translated):
+                    errors.append(path + ': YAML 展示字段内技术字面量变化 ' + field)
+                if Counter(V['links'](original)) != Counter(V['links'](translated)):
+                    errors.append(path + ': YAML 展示字段内链接变化 ' + field)
+                if Counter(URL.findall(original)) != Counter(URL.findall(translated)):
+                    errors.append(path + ': YAML 展示字段内 URL 变化 ' + field)
         if not path.endswith('.md'):
             continue
         frontmatter, _ = V['split_frontmatter'](target)
@@ -102,11 +114,17 @@ def collect():
             references.append({'path': path, 'skill_invocations': dict(sorted(named.items()))})
     promoted = {e['path'].split('/')[-2] for e in MANIFEST['entries'] if e['path'].endswith('/SKILL.md') and e['path'].split('/')[1] in ['engineering', 'productivity']}
     docs = {Path(e['path']).stem for e in MANIFEST['entries'] if e['path'].startswith(('docs/engineering/', 'docs/productivity/')) and e['path'].endswith('.md')}
-    if promoted != docs:
-        errors.append('25 个正式技能与配套 docs 集合不符')
+    archived = {Path(path).stem for path in MANIFEST.get('archived_docs', [])}
+    for path in MANIFEST.get('archived_docs', []):
+        entry = next(e for e in MANIFEST['entries'] if e['path'] == path)
+        original = V['git']('cat-file', 'blob', entry['source_blob']).decode()
+        if 'archived' not in original.lower() or '归档' not in (ROOT / path).read_text():
+            errors.append(path + ': 已登记的归档页缺少源译归档说明')
+    if promoted != docs - archived or promoted & archived:
+        errors.append('正式技能与配套 docs 集合不符（归档页单独核对）')
     return {'source_commit': MANIFEST['source_commit'], 'candidates': sorted(candidates.values(), key=lambda x: x['id']),
             'preserved_fences': fences, 'preserved_paths': preserved, 'skill_references': references,
-            'promoted_docs': sorted(docs), 'url_occurrences': url_count, 'translated_fences': changed_fence_count, 'errors': errors}
+            'promoted_docs': sorted(docs - archived), 'archived_docs': sorted(archived), 'url_occurrences': url_count, 'translated_fences': changed_fence_count, 'errors': errors}
 
 
 def main():
@@ -131,7 +149,7 @@ def main():
               'english_occurrences': sum(x['occurrences'] for x in snapshot['candidates']),
               'preserved_fences': len(snapshot['preserved_fences']), 'translated_fences': snapshot['translated_fences'],
               'preserved_paths': len(snapshot['preserved_paths']), 'url_occurrences': snapshot['url_occurrences'],
-              'promoted_docs': snapshot['promoted_docs'], 'skill_references': snapshot['skill_references'],
+              'promoted_docs': snapshot['promoted_docs'], 'archived_docs': snapshot['archived_docs'], 'skill_references': snapshot['skill_references'],
               'limitations': ['英文扫描按连续三个以上英文单词找候选，短词和标识另由逐文件全文校对覆盖；扫描不证明译义',
                               '保留英文项必须与手工分类精确匹配；不会自动批准新增候选',
                               'URL 只检查本地字面量，外部地址可用性和平台运行情况未验证',

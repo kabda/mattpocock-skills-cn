@@ -81,4 +81,4 @@ v1.1 之前它叫 `writing-great-skills`。改名反映了它一直以来的本�
 
 ## 所处位置
 
-这是随时可用的独立参考。它在链条中没有相邻项，因为它位于整套技能之下，而非某项技能旁边：这里每个技能都依据它编写；其他技能留下的文档（`CONTEXT.md` 及其 ADR、规格说明、工单），一旦需要由 agent 阅读，就恰好属于它管辖的文本。不确定哪个技能或流程适合任务时，[ask-matt](https://aihero.dev/skills-ask-matt) 可以在整套技能中指路。
+这是随时可用的独立参考，适用于整套技能，而非其中一项。各技能都按它编写；其他技能产出的文档（`GLOSSARY.md` 和 ADR、规格说明、工单）需要 agent 阅读时也由它规范。唯一直接调用方是 [retro](https://aihero.dev/skills-retro)，在建议引导文件或技能前加载它。不确定任务需要哪项技能时，由 [ask-matt](https://aihero.dev/skills-ask-matt) 路由。

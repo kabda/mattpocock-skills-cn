@@ -1,4 +1,4 @@
-本仓库是 Matt Pocock 的 mattpocock/skills 项目的非官方简体中文翻译，基于冻结提交 c55ee46073ed923f86ce59a5eb3b6d895095d1b7。下文第一人称及安装来源均保留上游身份，安装命令指向英文上游。详见[中文版本说明](wiki/translation.html)。
+本仓库是 Matt Pocock 的 mattpocock/skills 项目的非官方简体中文翻译，基于冻结提交 49dd158d1076134a641b33efb035946536778336。下文第一人称及安装来源均保留上游身份，安装命令指向英文上游。详见[中文版本说明](wiki/translation.html)。
 
 <p>
   <a href="https://www.aihero.dev/s/skills-newsletter">
@@ -30,7 +30,7 @@
 
 ## 安装（30 秒设置）
 
-两种入口，两种理念。**[Claude Code 插件](https://code.claude.com/docs/en/plugins)** 将整套技能安装为受管理、只读的包，我发布时它就更新，因此你是在订阅，而非 fork。**[skills.sh](https://skills.sh/mattpocock/skills)** 将可编辑的技能文件复制到项目，让你修改并定制。选一种：两者都装，每项技能就会出现两份。
+插件会自动更新。[skills.sh](https://skills.sh/mattpocock/skills) 将可编辑文件复制到项目，由你手动更新。每个 agent 选择一种方式，因为两者都安装会让每项技能出现两份。
 
 <a id="1-get-the-skills"></a>
 
@@ -40,42 +40,67 @@
 <summary><strong>Claude Code</strong></summary>
 
 ```bash
-claude plugins install mattpocock-skills
+claude plugin install mattpocock-skills@claude-plugins-official
 ```
 
-或者在会话内：
-
-```
-/plugin install mattpocock-skills
-```
-
-它已在 Claude Code 官方 marketplace 中，无需先添加任何内容，更新会自动到达。
+默认自动更新。
 
 </details>
 
 <details>
-<summary><strong>Codex 及其他 agent</strong></summary>
+<summary><strong>Codex</strong></summary>
 
 ```bash
-npx skills@latest add mattpocock/skills
+codex plugin marketplace add mattpocock/skills
+codex plugin add mattpocock-skills@mattpocock
 ```
 
-选择想要的技能，以及安装到哪些编码 agent。**安装器允许选择技能，请务必选上 `setup-matt-pocock-skills`。**
-
-原生 Codex 插件已列入路线图（参见 [`.agents/adr/0002-ship-as-a-claude-code-plugin.md`](./.agents/adr/0002-ship-as-a-claude-code-plugin.md)）。
+启动时自动更新。
 
 </details>
 
 <details>
-<summary><strong>喜欢自行改造的用户</strong></summary>
-
-在任何 agent（包括 Claude Code）上使用同一个安装器：
+<summary><strong>GitHub Copilot</strong>（CLI 和 VS Code）</summary>
 
 ```bash
-npx skills@latest add mattpocock/skills
+copilot plugin marketplace add mattpocock/skills
+copilot plugin install mattpocock-skills@mattpocock
 ```
 
-它把技能作为普通文件写入仓库，归你所有、可以编辑。不会背着你更新；想获取我的最新改动时，运行 `npx skills update`。
+然后在 `~/.copilot/settings.json` 中添加以下内容，只需一次：
+
+```json
+{
+  "extraKnownMarketplaces": {
+    "mattpocock": { "source": { "source": "github", "repo": "mattpocock/skills" }, "autoUpdate": true }
+  }
+}
+```
+
+在 VS Code 中运行 **Chat: Install Plugin From Source**，输入 `https://github.com/mattpocock/skills`。它每天自动更新。
+
+</details>
+
+<details>
+<summary><strong>Gemini CLI</strong>（手动更新）</summary>
+
+```bash
+gemini skills install https://github.com/mattpocock/skills.git --path skills/engineering
+gemini skills install https://github.com/mattpocock/skills.git --path skills/productivity
+```
+
+重新运行这两条命令即可更新。
+
+</details>
+
+<details>
+<summary><strong>其他 agent，或可编辑文件</strong>（手动更新）</summary>
+
+```bash
+npx skills@latest add mattpocock/skills -a <agent>  # cursor, opencode, devin, windsurf, amp, pi; omit -a to choose
+```
+
+安装器询问要安装哪些技能时，请包含 `setup-matt-pocock-skills`。更新时运行 `npx skills@latest update`，并重新运行 `add` 获取新技能。
 
 </details>
 
@@ -85,7 +110,7 @@ npx skills@latest add mattpocock/skills
 
 在 agent 中，每个仓库运行一次。它会：
 
-- 询问你想用哪个 issue 跟踪器（GitHub、Linear 或本地文件）
+- 询问你想用哪个 issue 跟踪器（GitHub、GitLab、本地文件或你描述的其他跟踪器）
 - 询问分流工单时使用哪些标签（`/triage` 使用标签）
 - 询问创建的文档要保存在哪里
 
@@ -137,7 +162,7 @@ AI 时代也一样。你与 agent 之间有沟通鸿沟。解决方法是开展�
 示例
 </summary>
 
-这是我的 `course-video-manager` 仓库中的一份 [`CONTEXT.md`](https://github.com/mattpocock/course-video-manager/blob/076a5a7a182db0fe1e62971dd7a68bcadf010f1c/CONTEXT.md) 示例。哪一种更容易读？
+这是我的 `course-video-manager` 仓库中的[术语表](https://github.com/mattpocock/course-video-manager/blob/076a5a7a182db0fe1e62971dd7a68bcadf010f1c/CONTEXT.md)示例（在该固定提交中仍叫 `CONTEXT.md`，早于技能约定的改名）。哪一种更容易读？
 
 - **之前**：“把课程中某章节内的一课变成‘真实存在’的内容（也就是在文件系统中给它一个位置）时，出了问题。”
 - **之后**：“物化级联出了问题。”
@@ -220,14 +245,16 @@ AI 时代也一样。你与 agent 之间有沟通鸿沟。解决方法是开展�
 **用户调用**
 
 - **[ask-matt](./skills/engineering/ask-matt/SKILL.md)**：询问哪项技能或流程适合你的情境。本仓库用户调用技能的路由器。
-- **[grill-with-docs](./skills/engineering/grill-with-docs/SKILL.md)**：在追问会话中同时构建项目领域模型，打磨术语，并同步更新 `CONTEXT.md` 和 ADR。
+- **[grill-with-docs](./skills/engineering/grill-with-docs/SKILL.md)**：在追问会话中同时构建项目领域模型，打磨术语，并同步更新 `GLOSSARY.md` 和 ADR。
 - **[triage](./skills/engineering/triage/SKILL.md)**：让 issue 流转经过分流角色状态机。
 - **[improve-codebase-architecture](./skills/engineering/improve-codebase-architecture/SKILL.md)**：扫描代码库中的深化机会，以可视化 HTML 报告呈现，再对你选中的机会深入追问。
 - **[setup-matt-pocock-skills](./skills/engineering/setup-matt-pocock-skills/SKILL.md)**：为本仓库配置工程技能所需的 issue 跟踪器、分流标签和领域文档布局。使用其他工程技能前，每个仓库运行一次。
 - **[to-spec](./skills/engineering/to-spec/SKILL.md)**：把当前对话转为规格说明，发布到 issue 跟踪器。不做访谈，只综合已经讨论过的内容。
 - **[to-tickets](./skills/engineering/to-tickets/SKILL.md)**：把任意计划、规格说明或对话拆成曳光弹工单，每张声明阻塞关系；在本地文件中写成文本，或在真正的跟踪器中设为原生阻塞链接。
 - **[implement](./skills/engineering/implement/SKILL.md)**：实现规格说明或一组工单描述的工作，在事先约定的 seam 上驱动 `/tdd`，并在提交前用 `/code-review` 收尾。
+- **[implement-spec](./skills/engineering/implement-spec/SKILL.md)**：在一个集成分支上实现整份规格说明，把工单视为任务图，沿就绪前沿运行实现子 agent 以获得最大并行度，最后用 `/code-review` 收尾。
 - **[wayfinder](./skills/engineering/wayfinder/SKILL.md)**：把超过一个 agent 会话容量的大型工作规划为 issue 跟踪器上的共享决策工单地图，逐一解决，直到通往目标的道路清晰。
+- **[retro](./skills/engineering/retro/SKILL.md)**：会话后建议改进编码 agent 环境（导航、自动检查、编码标准、引导文件、工具），按严重程度排序。
 
 **模型调用**
 
@@ -235,10 +262,10 @@ AI 时代也一样。你与 agent 之间有沟通鸿沟。解决方法是开展�
 - **[diagnosing-bugs](./skills/engineering/diagnosing-bugs/SKILL.md)**：用于棘手 bug 和性能回归的严谨诊断循环：建立能因这个 bug 变 Red 的反馈循环 → 最小化 → 提出假设 → 加观测 → 修复 → 回归测试。
 - **[research](./skills/engineering/research/SKILL.md)**：由后台 agent 根据高可信一手来源调查问题，并在仓库中保存带引用的 Markdown 研究结果。
 - **[tdd](./skills/engineering/tdd/SKILL.md)**：采用 red-green-refactor 循环的测试驱动开发，每次一个纵向切片地构建功能或修复 bug。
-- **[domain-modeling](./skills/engineering/domain-modeling/SKILL.md)**：主动构建并打磨项目领域模型：对照术语表质疑用词，用边界场景做压力测试，并同步更新 `CONTEXT.md` 和 ADR。
+- **[domain-modeling](./skills/engineering/domain-modeling/SKILL.md)**：主动构建并打磨项目领域模型：对照术语表质疑用词，用边界场景做压力测试，并同步更新 `GLOSSARY.md` 和 ADR。
 - **[codebase-design](./skills/engineering/codebase-design/SKILL.md)**：设计深模块的共享方法与词汇：在清晰 seam 处，以小接口封装大量行为，并可通过接口测试。
 - **[code-review](./skills/engineering/code-review/SKILL.md)**：对固定基点以来的 diff 做双维度审查：**Standards**（是否遵守仓库编码标准及 Fowler 异味基线）和 **Spec**（是否忠实实现原始 issue/规格说明）。两个维度由并行子 agent 执行，避免相互干扰。
-- **[resolving-merge-conflicts](./skills/engineering/resolving-merge-conflicts/SKILL.md)**：逐块处理正在进行的 Git merge 或 rebase 冲突，追溯双方一手来源的意图来解决，再完成操作（绝不 `--abort`）。
+- **[pr](./skills/engineering/pr/SKILL.md)**：规定 PR 正文形式：用最小但清晰的视觉表达作摘要、提供生效的前后对照证据，以及合并风险评估（单向门或双向门及影响范围）。
 - **[wizard](./skills/engineering/wizard/SKILL.md)**：生成交互式 bash 向导，引导人完成只有人能执行的步骤：开通基础设施、设置凭据或 CI secrets、操作陌生第三方控制台，或执行一次性迁移或切换。
 
 <a id="productivity"></a>
@@ -253,7 +280,7 @@ AI 时代也一样。你与 agent 之间有沟通鸿沟。解决方法是开展�
 - **[handoff](./skills/productivity/handoff/SKILL.md)**：把当前对话压缩成交接文档，让另一个 agent 继续工作。
 - **[teach](./skills/productivity/teach/SKILL.md)**：以当前目录作为有状态教学工作空间，跨多个会话教用户新技能或概念。
 - **[to-questionnaire](./skills/productivity/to-questionnaire/SKILL.md)**：把你无法独自回答的决策转成 Markdown 问卷，交给能回答的那个人，异步填写或开会共同完成。它追问的是发送安排（给谁、需要什么回复），不是主题本身。
-- **[wait-what](./skills/productivity/wait-what/SKILL.md)**：消息没讲明白时立即调用。agent 会用通俗英语和你的 `CONTEXT.md` 词汇重新解释，补上缺失上下文。
+- **[wait-what](./skills/productivity/wait-what/SKILL.md)**：消息没讲明白时立即调用。agent 会用通俗英语和你的 `GLOSSARY.md` 词汇重新解释，补上缺失上下文。
 
 **模型调用**
 

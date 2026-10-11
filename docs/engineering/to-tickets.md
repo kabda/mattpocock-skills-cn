@@ -76,10 +76,10 @@
 这正是纵向切片规则要防止的失败，而技能有时仍会这样做。在核对步骤中，对每张工单问一个问题：完成后能演示什么？没有答案的工单就是横向切片。有人因此在每张工单中增加“演示路径”一行，并报告这能推动模型采用纵向拆分。
 
 **GitHub 上的工单没有创建为规格说明 issue 的子 issue。**
-这是已知且尚未修复的问题。多个模型、十几次运行都有报告，[issue #554 记录得最完整](https://github.com/mattpocock/skills/issues/554)，而且在 Codex 上比 Claude 更严重。`gh` 从 v2.94 起已原生支持：创建时使用 `gh issue create --parent <n>`，事后使用 `gh issue edit <parent> --add-sub-issue <n>`。在跟踪器模板优先采用这些命令之前，运行后自行补上父子链接是可靠办法。
+多个模型、十多轮运行都报告过，[issue #554 的记录最完整](https://github.com/mattpocock/skills/issues/554)。现已修复：`to-tickets` 把工单设为来源 issue 的子 issue，GitHub 模板给出命令（`gh issue create --parent <n>`，`gh` 2.94+）。重新运行 [setup-matt-pocock-skills](https://aihero.dev/skills-setup-matt-pocock-skills)，刷新旧 `docs/agents/issue-tracker.md`。
 
 **"Blocked by" 被写进 issue 正文，而没有建立真正的阻塞链接。**
-这是同一类问题，[issue #513 有报告](https://github.com/mattpocock/skills/issues/513)，其中 agent 甚至断言 GitHub 完全没有原生阻塞关系。实际上有：`gh issue create --blocked-by 12,15`。因为阻塞项先发布，所以创建时始终已有编号。正文文字本应只是没有原生关系的跟踪器的后备方案，不是默认方式。
+这是同类问题，[issue #513 曾报告](https://github.com/mattpocock/skills/issues/513)，agent 甚至断言 GitHub 没有原生阻塞关系。实际上有：`gh issue create --blocked-by 12,15`。技能先发布阻塞项，因此创建时已有编号。正文文字只是无原生边的跟踪器的回退方案，不是默认。模板现在会在采用原生边时省略 `## Blocked by`。
 
 **本地工单存在哪里？v1.1 说明说是根目录的 `tickets.md`。**
 确实如此，那是个 bug：多个 agent 并行写入单个共享文件时也会竞争。现在本地模式按依赖顺序，在 `.scratch/<feature-slug>/issues/<NN>-<slug>.md` 下每张工单写一个文件，与本地跟踪器模板原本描述的布局一致。`NN` 前缀是真正的工单 ID，因此可以用 `/implement 03`，无需重输长标题。
@@ -114,4 +114,4 @@
 grill-with-docs → to-spec → to-tickets → implement → code-review
 ```
 
-上游是 [to-spec](https://aihero.dev/skills-to-spec)，交给它一份已确定的规格说明供其切分；两者应当保持在同一个不中断的上下文窗口中。下游是 [implement](https://aihero.dev/skills-implement)，每场新会话构建一张工单，驱动 [tdd](https://aihero.dev/skills-tdd) 完成测试，并以 [code-review](https://aihero.dev/skills-code-review) 收尾。不确定哪个技能或流程适合时，[ask-matt](https://aihero.dev/skills-ask-matt) 会为你指路。
+上游 [to-spec](https://aihero.dev/skills-to-spec) 提供已确定的规格说明供拆分，两步应留在同一上下文窗口，中途不清空。下游 [implement](https://aihero.dev/skills-implement) 在各自新会话实现一张工单，以 [tdd](https://aihero.dev/skills-tdd) 驱动测试，用 [code-review](https://aihero.dev/skills-code-review) 收尾。[implement-spec](https://aihero.dev/skills-implement-spec) 是另一条下游路线，把同样的阻塞边读取为任务图，在一个集成分支并行实现就绪工单。不确定流程时，由 [ask-matt](https://aihero.dev/skills-ask-matt) 路由。

@@ -66,11 +66,11 @@
 
 **能一次把所有工单交给它，或并行运行几个吗？**
 
-不能。一次调用，一张工单。针对工单队列的批量分派和[子 agent](https://www.aihero.dev/ai-coding-dictionary/subagent)并行展开都被反复请求过，但都还不存在。在同一个 checkout 中并排运行多个 `/implement` 会话，比“不受支持”更糟：一份实际报告描述了同一下午、三个 issue 中发生的事故：某个会话的 `git commit --amend` 改到了另一个会话的提交，stash 从 `refs/stash` 消失，提交落到错误分支。这些会话共享一个工作目录、一个索引和一个 HEAD。社区的应对办法是 Git worktree；但要注意，`refs/stash` 在 worktree 之间也共享，所以仅有 worktree 无法解决 stash 问题。如果现在就要并行，只能自行组装流程。
+`/implement` 不会，每次调用只处理一张工单。希望一次实现整份规格说明时，用 [implement-spec](https://aihero.dev/skills-implement-spec)，它把每张就绪前沿工单交给独立 worktree 中的[子 agent](https://www.aihero.dev/ai-coding-dictionary/subagent)，再合入同一集成分支。在同一 checkout 并行多个 `/implement` 会话，会产生严重问题：一份报告描述同一下午、三个 issue 中，一个会话的 `git commit --amend` 改到另一会话的提交，stash 从 `refs/stash` 消失，提交落到错误分支。会话共享工作目录、index 和 HEAD。用户用 Git worktree 绕开，但 `refs/stash` 在 worktree 间仍共享，因此它无法单独解决 stash 问题。
 
 **它能创建 pull request，而不是直接提交吗？**
 
-没有内置支持。它直接提交到当前分支，有些人认为过于急切：还没来得及验证代码是否工作，就已经提交了。没有配置开关，也没有 PR 模式。人们会在调用中覆盖要求（“提交到一个分支并创建 PR”），或编辑本地技能副本。
+没有内置支持。它直接提交到当前分支，多位用户认为过于急切，因为验证有效前代码就已落地。没有配置开关或 PR 模式。用户在调用中覆盖（“提交到分支并创建 PR”），或编辑本地技能副本。agent 撰写 PR 时，由 [pr](https://aihero.dev/skills-pr) 规定正文形式。
 
 **`code-review` 说看不到我的改动。**
 
@@ -84,14 +84,14 @@
 
 **在新会话中运行 `/implement #2`，却做了完全无关的事情。**
 
-`#2` 会相对于 agent 能看到的编号列表解析；在新会话中，这可能是待办文件、检查清单或另一份工作列表，而不是已配置的跟踪器。解析方式是自信地选定，而不是遇到不确定就停止，所以往往开始之后才发现错误。请传入完整引用、issue URL 或 `owner/repo#2`，并要求开始前复述标题供你确认。
+Agent 把 `#2` 解析成上下文中的其他编号列表，例如 todo 文件或检查清单，而非配置的跟踪器。`implement` 现在从 issue 跟踪器获取传入引用，开始前说明标题，引用有歧义时询问。核对标题是否对应预期工单；提供 issue URL 或 `owner/repo#2` 可以完全消除歧义。
 
 <a id="its-working-if"></a>
 
 ## 如何判断它有效
 
 - 会话从阅读工单或规格说明、复述将要构建的内容开始，而不是问你要构建什么。
-- 运行记录中能看到实际的 `/tdd` 调用，而不只是 diff 中出现测试。
+- 执行轨迹中能看到实际调用 `tdd` 的 Skill 工具，而非只看到 diff 中出现测试。
 - 过程中反复运行类型检查和单个测试文件，在接近结束时运行一次完整套件。
 - 无需你催促继续，运行就能在当前分支产生一次提交。
 - diff 的范围等于一张工单：贯穿各层的纵向切片，而不是把几张工单混在一起。

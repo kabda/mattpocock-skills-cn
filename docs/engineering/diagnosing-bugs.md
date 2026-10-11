@@ -22,7 +22,8 @@
 | 他人提供的原始 bug 报告，尚未确认或整理 | 先用 [triage](https://aihero.dev/skills-triage) |
 | 用一次性代码回答设计问题，而不是追查缺陷 | [prototype](https://aihero.dev/skills-prototype) |
 | 以测试优先方式构建计划中的行为 | [tdd](https://aihero.dev/skills-tdd) |
-| 不存在能通过测试锁定 bug 的合适 seam | [improve-codebase-architecture](https://aihero.dev/skills-improve-codebase-architecture)：本技能会自行交接到那里 |
+| 修复后思考什么能预防该 bug | 在同一会话中运行 [retro](https://aihero.dev/skills-retro) |
+| 没有可锁定 bug 的合适 seam | 自行启动 [improve-codebase-architecture](https://aihero.dev/skills-improve-codebase-architecture) |
 
 <a id="the-tight-loop-is-the-skill"></a>
 
@@ -43,7 +44,7 @@
 
 目标不是拥有*一个*循环，而是**紧凑**：快速（秒级）、确定（每次结论相同）、准确（断言你的确切症状，而不是“没崩溃”），且 agent 能无人值守运行。30 秒且不稳定的循环几乎不比没有强。对于只偶尔出现的 bug，目标不是一次干净复现，而是**更高的复现率**：循环触发、并行、加压、注入 sleep，直到发生率足够高，能够调试。
 
-确实无法构建循环时，指令要求它停下来明确说明，列出尝试过的方法，并向你请求[环境](https://www.aihero.dev/ai-coding-dictionary/environment)访问权限、捕获材料，或添加临时埋点的许可。它不应仍然继续提出假设。
+无法建立循环时，技能要求 agent 停下并说明，列出尝试，向你请求[环境](https://www.aihero.dev/ai-coding-dictionary/environment)访问、捕获的交付物或添加临时观测的许可。它必须停止，不能继续提出假设。
 
 <a id="the-gates-between-phases"></a>
 
@@ -59,7 +60,7 @@
 | 进入阶段 5 | 探针对应具体预测，一次一个变量，每条调试日志都带有类似 `[DEBUG-a4f2]` 的标记，便于一次 grep 清理 |
 | 完成 | 原始复现不再复现，埋点已移除，最终正确的假设已写入提交信息 |
 
-阶段 5 有一个值得了解的例外。回归测试要在修复之前写，但只有存在**正确的 seam** 时才写：它必须让测试按调用点实际发生的方式，执行真实 bug 模式。如果唯一可用的 seam 太浅，技能被要求明确说明，而不是写一个制造虚假信心的测试。缺少 seam 本身就是发现，也正是将复盘导向 `improve-codebase-architecture` 的原因。
+阶段 5 有一个例外。agent 在修复前写回归测试，但仅当存在**正确 seam**，能测试调用点实际发生的 bug 模式时才写。唯一可用 seam 太浅时，技能要求说明情况，而非编写提供虚假信心的测试。缺失 seam 本身是一项发现，agent 会记录它，而非隐藏它。
 
 <a id="common-questions"></a>
 
@@ -104,4 +105,4 @@ Snyk 会标记它，而这个标记是误报。它是技能集中唯一一个附
 
 `diagnosing-bugs` 是随时可用的独立工具。某处坏了就进入，修复和回归测试落地后退出；它不保存状态，也不需要提前设置。[ask-matt](https://aihero.dev/skills-ask-matt) 将 "Something's broken"（某处坏了）路由到这里。
 
-有两个重要的相邻技能。当真正的发现是代码没有合适 seam 来通过测试锁定 bug 时，[improve-codebase-architecture](https://aihero.dev/skills-improve-codebase-architecture) 接收[交接](https://www.aihero.dev/ai-coding-dictionary/handoff)；这项建议会在修复完成、信息更充分之后提出。对于他人提供的原始 bug 报告，[triage](https://aihero.dev/skills-triage) 位于上游，对相同的前两个阶段做较浅的检查。
+两个相邻技能值得关注。[retro](https://aihero.dev/skills-retro) 在修复后使用：在同一会话中思考什么能预防 bug，此时会话拥有比开始时更多信息。`diagnosing-bugs` 不会自行调用 `retro`，因为 `retro` 是用户调用技能。[triage](https://aihero.dev/skills-triage) 则在收到他人的原始 bug 报告时先使用，较浅地完成同样的前两个阶段。

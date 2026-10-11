@@ -17,7 +17,7 @@
 | 你的情况 | 使用 |
 | --- | --- |
 | 不在工作目录中开展工作 | [grill-me](https://aihero.dev/skills-grill-me)：相同的[会话](https://www.aihero.dev/ai-coding-dictionary/session)，但这个名称永远不会由 agent 自行触发 |
-| 正在工作目录中 | [grill-with-docs](https://aihero.dev/skills-grill-with-docs)：相同的会话，同时不断写入 `CONTEXT.md` 和 ADR |
+| 正在工作目录中 | [grill-with-docs](https://aihero.dev/skills-grill-with-docs)：相同的会话，同时不断写入 `GLOSSARY.md` 和 ADR |
 | 工作量大到一场会话容纳不下 | [wayfinder](https://aihero.dev/skills-wayfinder)：绘制地图，并在决策工单内运行追问 |
 | 无法靠讨论解决的问题：某物应当看起来怎样或感觉如何 | [prototype](https://aihero.dev/skills-prototype)：先构建一次性版本，再回来 |
 | 你自己的技能需要访谈能力 | 从该技能调用 `/grilling`，而不是另写一套访谈流程 |
@@ -26,7 +26,7 @@
 
 ## 轮次、前沿，以及谁作决定
 
-三个概念支撑着整个技能。
+本技能建立在三个观念上。
 
 **设计树**是主题的模型：决策之下还有依赖它的决策。**前沿**是所有前提已确定的决策集合：也就是当前真正可以提出的那些问题。一**轮**对应一个前沿，完整提问，也完整作答。
 
@@ -40,13 +40,13 @@
 
 ## 本技能与外层封装各自负责什么
 
-本页介绍机制。人们最常关心的事项，记录在上一层的文档中。
+本页说明机制，包装技能的页面回答最常见的问题。
 
 | 问题 | 在哪里解答 |
 | --- | --- |
 | 设计树、前沿、轮次、问题格式、事实与决策的区别 | 本页 |
 | 会话应当持续多久、无法靠讨论回答的问题怎么办、如何避免一味点头 | [grill-me](https://aihero.dev/skills-grill-me) |
-| 哪些内容写入 `CONTEXT.md`，哪些形成 ADR | [grill-with-docs](https://aihero.dev/skills-grill-with-docs) |
+| 哪些内容写入 `GLOSSARY.md`，哪些形成 ADR | [grill-with-docs](https://aihero.dev/skills-grill-with-docs) |
 
 <a id="common-questions"></a>
 

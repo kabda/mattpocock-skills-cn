@@ -18,7 +18,7 @@
 | --- | --- |
 | 某个决策正在等待的外部事实 | `research` |
 | 通过访谈*与你一起*作出决策 | [grilling](https://aihero.dev/skills-grilling) |
-| 持久的架构决策，记录到 `CONTEXT.md` 和 ADR 中 | [grill-with-docs](https://aihero.dev/skills-grill-with-docs) |
+| 持久的架构决策，记录到 `GLOSSARY.md` 和 ADR 中 | [grill-with-docs](https://aihero.dev/skills-grill-with-docs) |
 | 查明某种方案在代码库中是否可行 | [prototype](https://aihero.dev/skills-prototype) |
 | 大到一场会话容纳不下的计划 | [wayfinder](https://aihero.dev/skills-wayfinder) |
 
@@ -66,7 +66,7 @@
 
 **`/wayfinder` 创建了研究工单，需要我自己解决吗？**
 
-不需要，现在它会替你启动。在 v1.1 之后尚未发布的改动中，绘图会话会为每张研究工单启动一个 `/research` 子 agent，并行解决它们，将发现记录在一次性的 `research/<name>` 分支上，并从工单添加[上下文指针](https://www.aihero.dev/ai-coding-dictionary/context-pointer)。研究工单是 wayfinder“每场会话一张工单”规则的唯一例外，因为它们属于 [AFK](https://www.aihero.dev/ai-coding-dictionary/afk) 工作：没有任何内容需要等待你。这些分支有两个已知问题：曾观察到子 agent 从一个本不打算合并的分支创建草稿 PR（[issue #576](https://github.com/mattpocock/skills/issues/576)）；之后删除分支，又会破坏工单中的上下文指针。
+不用，现在会自动启动。在 v1.1 之后尚未发布的改动中，绘图会话为每张研究工单启动一个 `/research` 子 agent，并行运行。各自把发现记录在一次性的 `research/<name>` 分支，通过工单中的[上下文指针](https://www.aihero.dev/ai-coding-dictionary/context-pointer)引用。研究工单是 wayfinder 每会话一张工单规则的唯一例外，因为它们是 [AFK](https://www.aihero.dev/ai-coding-dictionary/afk)，不需要等待你。一项已知问题是之后删除分支会破坏工单指针。
 
 <a id="its-working-if"></a>
 
@@ -82,4 +82,4 @@
 
 ## 它在流程中的位置
 
-这是随时可用的独立工具，为思考类技能提供输入，而不位于构建流程内部。它的文件是要带*入*流程的材料：当事实已经摆在面前，[grilling](https://aihero.dev/skills-grilling) 与 [grill-with-docs](https://aihero.dev/skills-grill-with-docs) 能提出更有力的问题，[to-spec](https://aihero.dev/skills-to-spec) 也可以据此综合整理。[wayfinder](https://aihero.dev/skills-wayfinder) 是唯一直接调用它的技能，用 `/research` 子 agent 解决地图上的每张研究工单。完整地图见 [ask-matt](https://aihero.dev/skills-ask-matt)。
+`research` 是随时可用的独立工具，为思考类技能提供输入，而不位于构建流程内部。它的文件是要带*入*流程的材料：当事实已经摆在面前，[grilling](https://aihero.dev/skills-grilling) 与 [grill-with-docs](https://aihero.dev/skills-grill-with-docs) 能提出更有力的问题，[to-spec](https://aihero.dev/skills-to-spec) 也可以据此综合整理。[wayfinder](https://aihero.dev/skills-wayfinder) 是唯一直接调用它的技能，用 `/research` 子 agent 解决地图上的每张研究工单。完整地图见 [ask-matt](https://aihero.dev/skills-ask-matt)。

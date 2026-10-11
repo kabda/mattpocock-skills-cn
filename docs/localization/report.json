@@ -1,13 +1,43 @@
 {
   "mode": "全量",
-  "source_commit": "c55ee46073ed923f86ce59a5eb3b6d895095d1b7",
-  "paths": 169,
+  "source_commit": "49dd158d1076134a641b33efb035946536778336",
+  "paths": 190,
   "skills": 38,
-  "reviewed_paths": 156,
+  "reviewed_paths": 175,
   "reviewed_skills": 38,
-  "preserved_paths": 13,
+  "preserved_paths": 15,
   "errors": [],
   "notes": [
+    {
+      "path": "docs/engineering/grill-with-docs.md",
+      "fence": 0,
+      "kind": "已登记的自然语言代码块翻译，语义由全文校对记录覆盖"
+    },
+    {
+      "path": "docs/engineering/implement.md",
+      "fence": 0,
+      "kind": "已登记的自然语言代码块翻译，语义由全文校对记录覆盖"
+    },
+    {
+      "path": "docs/engineering/retro.md",
+      "fence": 0,
+      "kind": "已登记的自然语言代码块翻译，语义由全文校对记录覆盖"
+    },
+    {
+      "path": "docs/engineering/tdd.md",
+      "fence": 0,
+      "kind": "已登记的自然语言代码块翻译，语义由全文校对记录覆盖"
+    },
+    {
+      "path": "docs/engineering/to-spec.md",
+      "fence": 0,
+      "kind": "已登记的自然语言代码块翻译，语义由全文校对记录覆盖"
+    },
+    {
+      "path": "docs/engineering/to-tickets.md",
+      "fence": 0,
+      "kind": "已登记的自然语言代码块翻译，语义由全文校对记录覆盖"
+    },
     {
       "path": "docs/productivity/grill-me.md",
       "fence": 0,
@@ -34,12 +64,12 @@
       "kind": "已登记的自然语言代码块翻译，语义由全文校对记录覆盖"
     },
     {
-      "path": "skills/engineering/domain-modeling/CONTEXT-FORMAT.md",
+      "path": "skills/engineering/domain-modeling/GLOSSARY-FORMAT.md",
       "fence": 0,
       "kind": "已登记的自然语言代码块翻译，语义由全文校对记录覆盖"
     },
     {
-      "path": "skills/engineering/domain-modeling/CONTEXT-FORMAT.md",
+      "path": "skills/engineering/domain-modeling/GLOSSARY-FORMAT.md",
       "fence": 1,
       "kind": "已登记的自然语言代码块翻译，语义由全文校对记录覆盖"
     },
@@ -50,6 +80,11 @@
     },
     {
       "path": "skills/engineering/improve-codebase-architecture/HTML-REPORT.md",
+      "fence": 0,
+      "kind": "已登记的自然语言代码块翻译，语义由全文校对记录覆盖"
+    },
+    {
+      "path": "skills/engineering/pr/SKILL.md",
       "fence": 0,
       "kind": "已登记的自然语言代码块翻译，语义由全文校对记录覆盖"
     },
@@ -111,11 +146,6 @@
     {
       "path": "skills/engineering/wayfinder/SKILL.md",
       "fence": 1,
-      "kind": "已登记的自然语言代码块翻译，语义由全文校对记录覆盖"
-    },
-    {
-      "path": "skills/in-progress/pr/SKILL.md",
-      "fence": 0,
       "kind": "已登记的自然语言代码块翻译，语义由全文校对记录覆盖"
     },
     {

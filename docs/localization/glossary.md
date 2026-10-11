@@ -14,7 +14,8 @@
 | mock / fixture | mock / fixture | 不改代码标识和示例输出 |
 | frontmatter | frontmatter | YAML 元数据块，键与类型不变 |
 | ADR | ADR | 架构决策记录；固定模板字段保留 |
-| context / CONTEXT.md | 上下文 / CONTEXT.md | 文件名保留 |
+| context | 上下文 | 依文意区分会话上下文与领域上下文 |
+| glossary / GLOSSARY.md | 术语表 / GLOSSARY.md | 当前文件名按上游迁移；历史记录中的 CONTEXT.md 保留 |
 | tracer bullet | 曳光弹 | 最小端到端路径，用于尽早取得反馈 |
 | vertical slice | 纵向切片 | 跨层的完整行为切片 |
 | horizontal slice | 横向切片 | 按技术层拆分 |
@@ -57,3 +58,8 @@
 | beat | 节拍 / 叙事节拍 | 文章旅程的一次推进，不等同固定段数 |
 | grounding / grounded | 奠基 / 已奠基 | 读者事先已知或文章已引入概念 |
 | triage | 分流 | 指 issue 分类、验证和流转；slug、状态角色和标签保留原文 |
+| integration branch | 集成分支 | 汇集 implement-spec 实现者分支的共同分支 |
+| task graph | 任务图 | 工单与阻塞边构成的执行依赖图 |
+| one-way door / two-way door | 单向门 / 双向门 | 难以撤销与低成本撤销的变更，服务于 PR 风险判断 |
+| Directly Responsible Individual | 直接责任人 | chief-of-staff 的目标责任角色 |
+| pit of success | 成功之坑 | 通过环境和约束让正确做法自然发生 |

@@ -1,0 +1,43 @@
+name: 缺陷
+description: 技能在真实会话中做出了错误行为。
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        不修复 `skills/misc/` 中的 bug（参见 [`.out-of-scope/frozen-misc-skills.md`](https://github.com/mattpocock/skills/blob/main/.out-of-scope/frozen-misc-skills.md)）。`npx skills` 安装器的问题应向 skills.sh 反馈。
+  - type: input
+    id: skill
+    attributes:
+      label: 技能
+      description: 哪项技能，例如 `to-tickets`、`grilling`。
+    validations:
+      required: true
+  - type: input
+    id: harness
+    attributes:
+      label: Harness 及版本
+      description: 例如 Claude Code 2.3.1、Codex CLI 0.40、Cursor。说明安装方式（插件或 skills.sh）及技能版本。
+    validations:
+      required: true
+  - type: input
+    id: model
+    attributes:
+      label: 模型及推理强度
+      description: 例如 Opus、高推理强度。发生时上下文大约已使用多少？
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: 发生了什么
+      description: 你运行了什么，技能做了什么。粘贴会话的相关部分。
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 预期行为
+      description: 技能本应做什么，SKILL.md 的哪一行（如有）规定了这一点。
+    validations:
+      required: true

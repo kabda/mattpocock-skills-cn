@@ -5,7 +5,7 @@ argument-hint: "下一会话将用于什么？"
 disable-model-invocation: true
 ---
 
-为当前对话编写交接摘要，让全新 agent 能继续工作。不保存摘要，而是以摘要作为提示词启动后台 agent：`claude --bg --name "<descriptive name>" "<handoff summary>"`。它从当前工作目录启动并立即返回；用户通过 `claude agents` 管理。
+编写当前对话的交接摘要，使新 agent 能继续工作。保存到用户操作系统的临时目录，再以文件内容为提示词启动后台 agent：`claude --bg --name "<descriptive name>" -- "$(cat <summary file>)"`。通过文件传入可避免 shell 执行摘要中的反引号或展开 `$`。它在当前工作目录启动，立即返回；用户通过 `claude agents` 管理。
 
 始终用 `-n`/`--name` 传入描述性名称（例如 `--name "Fix login bug"`）；它决定任务列表、会话选择器和终端标题中显示的名称。
 

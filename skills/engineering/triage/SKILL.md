@@ -85,7 +85,7 @@ disable-model-invocation: true
 
 3. **验证说法。** 任何追问之前，先检查说法是否成立。对于 bug，按报告者的步骤复现。对于 PR，确认 diff 实现了它声称的功能：检出并运行相关测试或命令。报告结果：已确认（附代码路径）、失败，或信息不足（这是很强的 `needs-info` 信号）。经过确认的验证能使 agent 简报可靠得多。
 
-4. **追问（如有需要）。** 如果请求需要细化，调用两次 Skill 工具，分别加载 "grilling" 和 "domain-modeling"，逐轮追问使其成形；决策确定时，同步打磨领域术语并更新 `CONTEXT.md`/ADR。
+4. **追问（如有需要）。** 如果请求需要细化，调用两次 Skill 工具，分别加载 "grilling" 和 "domain-modeling"，逐轮追问使其成形；决策确定时，同步打磨领域术语并更新 `GLOSSARY.md`/ADR。
 
 5. **应用结果：**
    - `ready-for-agent`：发布 agent 简报评论（[AGENT-BRIEF.md](AGENT-BRIEF.md)）。

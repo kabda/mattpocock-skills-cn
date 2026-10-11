@@ -14,7 +14,7 @@
 
 当你已经知道要重新设计哪些代码，需要思考其形态时使用：seam 放在哪里、接口能缩小到什么程度、一次提取是否有价值。需要解决对某个词含义的争论时，也可以使用它。
 
-有几个技能与它相近。应该选哪一个，取决于实际问题：
+几个技能与它相近，请按问题选择：
 
 | 问题 | 技能 |
 |---|---|
@@ -59,7 +59,7 @@
 
 **如何在 TypeScript 中实际构建深模块？**
 
-这是关于本技能最常见的问题，而技能并没有回答。它定义深模块*是什么*，却没有说明如何阻止一个不当的 import 绕过接口。[Issue #458](https://github.com/mattpocock/skills/issues/458) 说得很直接：“假设我们满意这个接口，它隐藏了细节等等。但要怎样强制执行？我认为，没有 lint 或清晰的约束，人和 LLM 都会逐渐把它弄乱。”Matt 在该讨论中给出三个选项：包进一个类或 IIFE，接受类变得庞大；将它做成 monorepo 中的包，接受 monorepo 工具链；或用 [dependency-cruiser](https://github.com/sverweij/dependency-cruiser) 这样的 linter 禁止绕过接口的 import。他还在别处称 Effect 是最佳机制，dependency-cruiser 次之。仓库的 `in-progress/` 分类里有一个 `setup-ts-deep-modules` 技能，建立了 `src/packages/<name>/index.ts` 约定，但它属于 beta 渠道，没有文档页，也没有随附 lint 规则。
+这是最常见的问题，但技能没有回答。它定义深模块*是什么*，却不说明怎样阻止不当 import 绕过接口。[Issue #458](https://github.com/mattpocock/skills/issues/458) 说：“假设接口隐藏细节且令人满意，但怎样强制执行？没有 lint 或清晰约束，人和 LLM 都会逐渐把它弄乱。”讨论给出三个选项：包进类或 IIFE，接受类变大；做成 monorepo 包，接受工具链；或用 [dependency-cruiser](https://github.com/sverweij/dependency-cruiser) 禁止绕过接口的 import。其中 Effect 最好，dependency-cruiser 次之。`in-progress/` 的 `setup-ts-deep-modules` 建立 `src/packages/<name>/index.ts` 约定，但属 beta，没有文档页，也不附带 lint 规则。
 
 **我把会话指向它，它却花了 100k [token](https://www.aihero.dev/ai-coding-dictionary/token) 重新设计我从未要求处理的东西。**
 
@@ -75,7 +75,7 @@
 
 **`tdd` 真的使用这套词汇吗？**
 
-现在是的。过去很长时间并没有。`tdd` 原有的内嵌深模块笔记在 v1.0 中被移除，改用这个共享技能，但替代笔记的引用却一直没有加上，因此 `tdd` 自行定义了 "seam"，也没有引用其他内容。这个缺口已经补上：如今技能中有了引用，当未决问题是接口形态而不是测试时，就会查阅它。`tdd` 仍负责将 "seam" 作为开展*测试*的边界；本技能负责 seam 背后的模块形态。
+现在是的。过去很长时间并没有。`tdd` 原有的内嵌深模块笔记在 v1.0 中被移除，改用这个共享技能，但替代笔记的引用却一直没有加上，因此 `tdd` 自行定义了 "seam"，也没有引用其他内容。这个缺口已经补上：如今 `tdd` 中有了引用，当未决问题是接口形态而不是测试时，就会查阅它。`tdd` 仍负责将 "seam" 作为开展*测试*的边界；本技能负责 seam 背后的模块形态。
 
 **“设计两次”模式在 Claude Code 之外能正常使用吗？**
 

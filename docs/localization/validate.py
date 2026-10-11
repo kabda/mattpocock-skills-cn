@@ -197,6 +197,10 @@ def check_doc(path, source, target):
         if notice:
             check(target.startswith(notice), 'README.md: 中文声明与登记内容不一致')
             target = target.removeprefix(notice)
+    for addition in MANIFEST.get('localized_additions', {}).get(path, []):
+        check(target.count(addition['text']) == 1, path + ': 登记的本地索引补充缺失或重复')
+        check(addition['text'] not in source, path + ': 本地补充已存在于源文件，应重新审查例外')
+        target = target.replace(addition['text'], '')
     a, b = tokens(source), tokens(target)
     check([t.tag for t in a if t.type == 'heading_open'] == [t.tag for t in b if t.type == 'heading_open'], path + ': 标题数量或层级变化')
     table_types = {'table_open','thead_open','tbody_open','tr_open','th_open','td_open'}
@@ -252,8 +256,10 @@ def main():
             head,path = row.split(b'\t')
             mode,kind,blob = head.decode().split()
             tree[path.decode()] = (mode,blob)
-    check(len(tree) == 169, '冻结树路径数不是 169')
+    snapshot_counts = MANIFEST['snapshot_counts']
+    check(len(tree) == snapshot_counts['paths'], '冻结树路径数与登记快照不一致')
     check(git('rev-parse', MANIFEST['source_commit'] + '^{tree}').decode().strip() == MANIFEST['source_tree'], '冻结 Git tree 标识不符')
+    check(git('rev-parse', 'HEAD').decode().strip() == MANIFEST['source_commit'], '源仓库 HEAD 已离开冻结提交')
     check(set(tree) == {e['path'] for e in entries}, 'manifest 路径集合与冻结树不一致')
     contents = {}
     targets = {}
@@ -291,7 +297,7 @@ def main():
             if path.endswith('.json'):
                 compare_metadata(path,json.loads(source),json.loads(target),MANIFEST['mutable_json_paths'].get(path,[]))
             elif path.endswith(('.yaml','.yml')):
-                allowed = ['$.interface.short_description'] if path.endswith('agents/openai.yaml') else []
+                allowed = ['$.interface.short_description'] if path.endswith('agents/openai.yaml') else MANIFEST.get('mutable_yaml_paths', {}).get(path, [])
                 compare_metadata(path,yaml.safe_load(source),yaml.safe_load(target),allowed)
             elif path.endswith('.md'):
                 sm, sb = split_frontmatter(source); tm, tb = split_frontmatter(target)
@@ -321,16 +327,37 @@ def main():
                 check((wiki.parent / unquote(url.path)).resolve().exists(), 'wiki/translation.html: 本地链接不存在 ' + anchor['href'])
     elif not args.partial:
         check(False, '缺少 wiki/translation.html')
+    for path in MANIFEST['additional_path_allowlist']:
+        if not path.startswith('wiki/') or not path.endswith('.html') or path in MANIFEST['existing_files']:
+            continue
+        page_path = ROOT / path
+        check(page_path.is_file(), path + ': 缺少已登记的用户说明页')
+        if not page_path.is_file():
+            continue
+        page = page_path.read_text()
+        html_check = Markup().finish(page)
+        check(not html_check.problems, path + ': HTML 嵌套错误 ' + str(html_check.problems))
+        soup = BeautifulSoup(page, 'html.parser')
+        check(bool(soup.html) and soup.html.get('lang') == 'zh-CN', path + ': 缺少中文语言标记')
+        for anchor in soup.find_all('a', href=True):
+            url = urlsplit(anchor['href'])
+            if not url.scheme and url.path:
+                check((page_path.parent / unquote(url.path)).resolve().exists(), path + ': 本地链接不存在 ' + anchor['href'])
     skill_paths = [p for p in tree if p.endswith('/SKILL.md')]
-    check(len(skill_paths) == 38, '技能数量不是 38')
-    check(Counter(p.split('/')[1] for p in skill_paths) == {'engineering':18, 'productivity':7, 'misc':4, 'in-progress':9}, '分类技能数量不符')
-    check(sum(p.endswith('/agents/openai.yaml') for p in tree) == 38, 'agent 元数据数量不是 38')
+    check(len(skill_paths) == snapshot_counts['skills'], '技能数量与登记快照不一致')
+    check(Counter(p.split('/')[1] for p in skill_paths) == snapshot_counts['buckets'], '分类技能数量不符')
+    check(sum(p.endswith('/agents/openai.yaml') for p in tree) == snapshot_counts['agents'], 'agent 元数据数量不符')
     promoted = {'./' + str(PurePosixPath(p).parent) for p in skill_paths if p.split('/')[1] in ['engineering','productivity']}
     registered = json.loads(targets['.claude-plugin/plugin.json'])['skills']
-    check(len(registered) == 25 and set(registered) == promoted, '插件正式技能集合不一致')
+    check(len(registered) == snapshot_counts['promoted'] and set(registered) == promoted, '插件正式技能集合不一致')
     readme_links = links(targets['README.md'])
     indexed = {link.removeprefix('./').removesuffix('/SKILL.md') for link in readme_links if link.endswith('/SKILL.md')}
     check(indexed == {p.removeprefix('./') for p in promoted}, '根 README 技能索引与正式集合不一致')
+    for bucket in snapshot_counts['buckets']:
+        category = 'skills/' + bucket + '/README.md'
+        category_index = {link.removeprefix('./').removesuffix('/SKILL.md') for link in links(targets[category]) if link.endswith('/SKILL.md')}
+        category_skills = {PurePosixPath(p).parent.name for p in skill_paths if p.split('/')[1] == bucket}
+        check(category_index == category_skills, category + ': 分类索引未完整覆盖技能集合')
     for path in contents:
         if not path.endswith('.md'):
             continue

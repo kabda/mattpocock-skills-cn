@@ -1,10 +1,10 @@
 {
   "skills/engineering/tdd/SKILL.md": {
-    "source_sha256": "cb01f66bebfaa25fa1f88e6b7e769cd9fd9f35b1120b8563749820738814c927",
-    "target_sha256": "cb099e08a4512d46d3a2977f8e0d52e0bae64302d57b8899b806c19ca661515a",
-    "review": "全文对照校对完成；保留触发词、测试示例与技术代码，翻译说明图和自然语言简报。保留上游 TDD 重构描述差异、内部 seam 表述差异，以及 codebase-design 文档与现有 beta 技能的时点差异。锚点和元数据待全量脚本验收。",
+    "source_sha256": "5505d25bbaa8fc14a79e4d20163936958992a2995b7f1dd1d6197edc9ed722e0",
+    "target_sha256": "1615a0da05d453aa2d769fdc0eea95324c7c46e4695040df72a80992c7be8585",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
     "checks": [
-      "全文逐段对照",
+      "全文及增量逐段对照",
       "前提及规范强度",
       "术语与触发词",
       "接口与固定字面量",
@@ -12,9 +12,9 @@
     ],
     "fences": [],
     "post_review_changes": [
-      "仅添加 5 个源标题兼容锚点；正文未变，映射见 anchors.json"
+      "仅添加 5 个原标题兼容锚点，见 anchors.json"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/engineering/tdd/mocking.md": {
     "source_sha256": "3ceb807fdf4a47d6a93d4d9a891e5ba6d362a6247bd08adc451feebfc17361ef",
@@ -40,7 +40,7 @@
     "post_review_changes": [
       "仅添加 2 个源标题兼容锚点；正文未变，映射见 anchors.json"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/engineering/tdd/tests.md": {
     "source_sha256": "859f9e592c188fda4fc7277dd180e4ce9c7a2e13f6efe1f6f29eccc9d28c106a",
@@ -74,7 +74,7 @@
     "post_review_changes": [
       "仅添加 3 个源标题兼容锚点；正文未变，映射见 anchors.json"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/engineering/tdd/agents/openai.yaml": {
     "source_sha256": "ea6f01cf1b8c06a4b0f5b649d74b1b8ce8685e72af1b38d70d877693e092af0b",
@@ -88,14 +88,14 @@
       "链接及代码块用途"
     ],
     "fences": [],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "docs/engineering/tdd.md": {
-    "source_sha256": "879c4bad53e79f3972dd3b37438330f9ff86035843f3bf83ef41ff51e8337860",
-    "target_sha256": "b5baf1c820f992139e92f404d02daac5fac23f74541c73dbbe3f7498b8b0bc18",
-    "review": "全文对照校对完成；保留触发词、测试示例与技术代码，翻译说明图和自然语言简报。保留上游 TDD 重构描述差异、内部 seam 表述差异，以及 codebase-design 文档与现有 beta 技能的时点差异。锚点和元数据待全量脚本验收。",
+    "source_sha256": "63bc8fe89693efa68ca0859398155c761f031af1fdbc4419d498b78d9cc2cdc9",
+    "target_sha256": "e84e07fd9e3c1976ebde6fc8eddb804a23aedf4a7a35afa85cad0e6b35683339",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
     "checks": [
-      "全文逐段对照",
+      "全文及增量逐段对照",
       "前提及规范强度",
       "术语与触发词",
       "接口与固定字面量",
@@ -104,13 +104,13 @@
     "fences": [
       {
         "index": 0,
-        "method": "原样代码块"
+        "method": "仅翻译自然语言的代码块；技术字面量由自动结构检查核对"
       }
     ],
     "post_review_changes": [
-      "仅添加 7 个源标题兼容锚点；正文未变，映射见 anchors.json"
+      "仅添加 7 个原标题兼容锚点，见 anchors.json"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/engineering/codebase-design/SKILL.md": {
     "source_sha256": "2c20617f87ec8af6a434859f381b2f061a69b530444e74eb39e78bb016a6d1e2",
@@ -144,7 +144,7 @@
     "post_review_changes": [
       "仅添加 8 个源标题兼容锚点；正文未变，映射见 anchors.json"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/engineering/codebase-design/DEEPENING.md": {
     "source_sha256": "f3dd099ce99289bd213914d8ee3e2429b78309c3957ca4583f7659551b1d53c1",
@@ -161,14 +161,14 @@
     "post_review_changes": [
       "仅添加 8 个源标题兼容锚点；正文未变，映射见 anchors.json"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/engineering/codebase-design/DESIGN-IT-TWICE.md": {
-    "source_sha256": "8e740bf98446dbd4dfdc132ac4346d9a7eedaf93de6a495889171cf7f99f16bd",
-    "target_sha256": "e1723f94e4a6478c258e6d72c7d81462226ef724ee9474c031f86596a94aba87",
-    "review": "全文对照校对完成；保留触发词、测试示例与技术代码，翻译说明图和自然语言简报。保留上游 TDD 重构描述差异、内部 seam 表述差异，以及 codebase-design 文档与现有 beta 技能的时点差异。锚点和元数据待全量脚本验收。",
+    "source_sha256": "52b52e75655a27aea59c6966b410bac82448968ad46ef1ebb9f07c274e3ae010",
+    "target_sha256": "a6f24a100515a75d857dd7fac35bda6782d6b3fef4e567137a8caccedf18b0c4",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
     "checks": [
-      "全文逐段对照",
+      "全文及增量逐段对照",
       "前提及规范强度",
       "术语与触发词",
       "接口与固定字面量",
@@ -176,9 +176,9 @@
     ],
     "fences": [],
     "post_review_changes": [
-      "仅添加 5 个源标题兼容锚点；正文未变，映射见 anchors.json"
+      "仅添加 5 个原标题兼容锚点，见 anchors.json"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/engineering/codebase-design/agents/openai.yaml": {
     "source_sha256": "edebc9e4fcfe102114012575eaa9600b9b5fd08c311664f389c36e7bc717740f",
@@ -192,14 +192,14 @@
       "链接及代码块用途"
     ],
     "fences": [],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "docs/engineering/codebase-design.md": {
-    "source_sha256": "80a8c23d4729447bd8934127b03f1a38d41ff62283deaade95ca6d118307397c",
-    "target_sha256": "313dda7b1686d7231ad6f7c55112701101f309c2c30a483e7a74d35414590b31",
-    "review": "全文对照校对完成；保留触发词、测试示例与技术代码，翻译说明图和自然语言简报。保留上游 TDD 重构描述差异、内部 seam 表述差异，以及 codebase-design 文档与现有 beta 技能的时点差异。锚点和元数据待全量脚本验收。",
+    "source_sha256": "06ae3f8d86a89d0a6cf98d36c36605564c6e219aebe5214aa37b476337573f3d",
+    "target_sha256": "2047abf4ee729e24a75780768fc86ebb492aacfd6674bba657c71f1fdd3052b4",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
     "checks": [
-      "全文逐段对照",
+      "全文及增量逐段对照",
       "前提及规范强度",
       "术语与触发词",
       "接口与固定字面量",
@@ -207,16 +207,17 @@
     ],
     "fences": [],
     "post_review_changes": [
-      "仅添加 7 个源标题兼容锚点；正文未变，映射见 anchors.json"
+      "仅添加 7 个原标题兼容锚点，见 anchors.json",
+      "2026-10-11 终检：同步源文新增的内联代码标记，并核对自然语言表头引用。"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/engineering/domain-modeling/SKILL.md": {
-    "source_sha256": "327a2b50620e2fd70abc6893cd6965e76b20f8d0adb0dc2c8d5eb3845efb643e",
-    "target_sha256": "ca50d9c4c06d1bc0b4a785a35bd36b9d63ba58c74e02319f41404880544cdcbf",
-    "review": "全文对照校对完成；ADR 三项同时满足的门槛、懒创建、仅词汇表的边界均保留。模板的 Language、_Avoid_、Context Map、Contexts、Relationships、Status 和状态枚举作为固定契约保留；模板说明与领域定义已翻译。命令示例、路径与 URL 原样。",
+    "source_sha256": "7b925d7b1e341a2eeae33ad68a8a8c0ab889a38ddd22a7598e4c240e5a7556a3",
+    "target_sha256": "146351382a0028c0978f914076848cc3f04ba22af7e6fc0b41cdc2c8885b92cc",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
     "checks": [
-      "全文逐段对照",
+      "全文及增量逐段对照",
       "前提及规范强度",
       "术语与触发词",
       "接口与固定字面量",
@@ -229,13 +230,13 @@
       },
       {
         "index": 1,
-        "method": "仅翻译自然语言的代码块；结构与保护项自动检查通过"
+        "method": "仅翻译自然语言的代码块；技术字面量由自动结构检查核对"
       }
     ],
     "post_review_changes": [
-      "仅添加 9 个源标题兼容锚点；正文未变，映射见 anchors.json"
+      "仅添加 9 个原标题兼容锚点，见 anchors.json"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/engineering/domain-modeling/ADR-FORMAT.md": {
     "source_sha256": "944c92aa790e8fbdc9199640b170979abb8a34ba8d0fe18c2a01a63bce140ca0",
@@ -257,14 +258,14 @@
     "post_review_changes": [
       "仅添加 6 个源标题兼容锚点；正文未变，映射见 anchors.json"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
-  "skills/engineering/domain-modeling/CONTEXT-FORMAT.md": {
-    "source_sha256": "17ab16ce783e4d2801ee52fd9acdf550cbf44de65ae76797a93943bbedf22a13",
-    "target_sha256": "58bd82a243bd5e647829294d0a18010b124c5db434fa20ad0d8e6932f501772a",
-    "review": "全文对照校对完成；ADR 三项同时满足的门槛、懒创建、仅词汇表的边界均保留。模板的 Language、_Avoid_、Context Map、Contexts、Relationships、Status 和状态枚举作为固定契约保留；模板说明与领域定义已翻译。命令示例、路径与 URL 原样。",
+  "skills/engineering/domain-modeling/GLOSSARY-FORMAT.md": {
+    "source_sha256": "21dcc40cdec8e151a829b98ab1517c1867bc444e3665134a98c6983411996801",
+    "target_sha256": "c95ebd3eaaa1c6c41862c9ba32d07bbd6070aa5d78cf5cb8834ac3777a632c87",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
     "checks": [
-      "全文逐段对照",
+      "全文及增量逐段对照",
       "前提及规范强度",
       "术语与触发词",
       "接口与固定字面量",
@@ -273,17 +274,17 @@
     "fences": [
       {
         "index": 0,
-        "method": "仅翻译自然语言的代码块；结构与保护项自动检查通过"
+        "method": "仅翻译自然语言的代码块；技术字面量由自动结构检查核对"
       },
       {
         "index": 1,
-        "method": "仅翻译自然语言的代码块；结构与保护项自动检查通过"
+        "method": "仅翻译自然语言的代码块；技术字面量由自动结构检查核对"
       }
     ],
     "post_review_changes": [
-      "仅添加 4 个源标题兼容锚点；正文未变，映射见 anchors.json"
+      "仅添加 4 个原标题兼容锚点，见 anchors.json"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/engineering/domain-modeling/agents/openai.yaml": {
     "source_sha256": "f6bf2aa996c6e6f53fdd0708e18a0d16a56aed8322cca59fedbe3c0d2c75f06b",
@@ -297,14 +298,14 @@
       "链接及代码块用途"
     ],
     "fences": [],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "docs/engineering/domain-modeling.md": {
-    "source_sha256": "31ceeec5fd53ca542230d89f3ef3d827408f2639919337003b771ac5a93c0027",
-    "target_sha256": "b2017aa4ab536aa525c65e68300cc26183c5430409d99f50de77063c7c0aa920",
-    "review": "全文对照校对完成；ADR 三项同时满足的门槛、懒创建、仅词汇表的边界均保留。模板的 Language、_Avoid_、Context Map、Contexts、Relationships、Status 和状态枚举作为固定契约保留；模板说明与领域定义已翻译。命令示例、路径与 URL 原样。",
+    "source_sha256": "c5bc4c5cc72814ab242e4a7bc411d44938ec758eba2fcb66a1fb4ebd7f048b37",
+    "target_sha256": "8c2f92277825854c68775459fcbc473f421949cd579b8c65ae3fcd1d08e44cd5",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
     "checks": [
-      "全文逐段对照",
+      "全文及增量逐段对照",
       "前提及规范强度",
       "术语与触发词",
       "接口与固定字面量",
@@ -312,17 +313,16 @@
     ],
     "fences": [],
     "post_review_changes": [
-      "仅添加 8 个源标题兼容锚点；正文未变，映射见 anchors.json",
-      "终检逐处复核 triage 上下文，将说明性术语“分诊”统一为“分流”；无技术字面量变化。"
+      "仅添加 8 个原标题兼容锚点，见 anchors.json"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/productivity/grilling/SKILL.md": {
-    "source_sha256": "10ff989e7498b23b5acb49d5048f11dcd906757d2f79c5cdf8a00001381296f2",
-    "target_sha256": "381605dc31053f6bd60e5491d653615a6a6d453c02fca814430fee058823f53d",
-    "review": "全文对照校对完成；按轮前沿、事实与决策区分、最终确认条件未弱化。保留 Q1/Q2、emoji、分隔线及 grill 触发词；问题占位说明和 CLAUDE.md 自然语言提示块已翻译，引用技能名与调用策略不变。",
+    "source_sha256": "befdff1e27a1dfe2a294d5871169ac1afe16d983911daa4f32627514a48c1e15",
+    "target_sha256": "69e094f365d1e22a12bcb56014afae3e1b541483c5b4960fcb862ccc0c9ec01f",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
     "checks": [
-      "全文逐段对照",
+      "全文及增量逐段对照",
       "前提及规范强度",
       "术语与触发词",
       "接口与固定字面量",
@@ -331,10 +331,10 @@
     "fences": [
       {
         "index": 0,
-        "method": "仅翻译自然语言的代码块；结构与保护项自动检查通过"
+        "method": "仅翻译自然语言的代码块；技术字面量由自动结构检查核对"
       }
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/productivity/grilling/agents/openai.yaml": {
     "source_sha256": "1411d7df7d99b7e621a1ff8283c8133cc2464be63d064e52d8ce169c6800ee9b",
@@ -348,14 +348,14 @@
       "链接及代码块用途"
     ],
     "fences": [],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "docs/productivity/grilling.md": {
-    "source_sha256": "5bd89a79cfc03e2a105e5da59da598e0834cf55df9c029daca950e98d3ff76f1",
-    "target_sha256": "47d471895073e1246f854366782472a849e94e406112e953997b4bf1e0caed3c",
-    "review": "全文对照校对完成；按轮前沿、事实与决策区分、最终确认条件未弱化。保留 Q1/Q2、emoji、分隔线及 grill 触发词；问题占位说明和 CLAUDE.md 自然语言提示块已翻译，引用技能名与调用策略不变。",
+    "source_sha256": "091d40afb66804d1b7f7e65745ee4b911edddc18d76faf9e9ba9f210f0570bb8",
+    "target_sha256": "dc39f1bbf10c8ce15b1fe532dffd67f0893dab286a7d3613a1cb02b5a4729169",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
     "checks": [
-      "全文逐段对照",
+      "全文及增量逐段对照",
       "前提及规范强度",
       "术语与触发词",
       "接口与固定字面量",
@@ -364,13 +364,13 @@
     "fences": [
       {
         "index": 0,
-        "method": "仅翻译自然语言的代码块；结构与保护项自动检查通过"
+        "method": "仅翻译自然语言的代码块；技术字面量由自动结构检查核对"
       }
     ],
     "post_review_changes": [
-      "仅添加 7 个源标题兼容锚点；正文未变，映射见 anchors.json"
+      "仅添加 7 个原标题兼容锚点，见 anchors.json"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/productivity/grill-me/SKILL.md": {
     "source_sha256": "caaf8b8de1684f96e26b28f3c29189db5c89cce4b73e1c93d86164f66ef88637",
@@ -384,7 +384,7 @@
       "链接及代码块用途"
     ],
     "fences": [],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/productivity/grill-me/agents/openai.yaml": {
     "source_sha256": "c061e39c3e0f9d865fb1b97556d485704af2a8a58f4b8221a8917a5c2074a32b",
@@ -398,14 +398,14 @@
       "链接及代码块用途"
     ],
     "fences": [],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "docs/productivity/grill-me.md": {
-    "source_sha256": "20608431988f36024435ba01a02b2fc2e159a558465c8f0d680acdf41cc0e78c",
-    "target_sha256": "8a503e17d95adde244b184582f94d5981d9f4edc6ffb80ae7836ce39ee205755",
-    "review": "全文对照校对完成；按轮前沿、事实与决策区分、最终确认条件未弱化。保留 Q1/Q2、emoji、分隔线及 grill 触发词；问题占位说明和 CLAUDE.md 自然语言提示块已翻译，引用技能名与调用策略不变。",
+    "source_sha256": "3ad2294740ad7de999cbaa1e99badd8b2b1461359639749dea379bfc8b6341dc",
+    "target_sha256": "e07e73bf396a4b1a12496432bb50ed271bb17c9d6bdc2c697a1986956cce37c9",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
     "checks": [
-      "全文逐段对照",
+      "全文及增量逐段对照",
       "前提及规范强度",
       "术语与触发词",
       "接口与固定字面量",
@@ -414,13 +414,13 @@
     "fences": [
       {
         "index": 0,
-        "method": "仅翻译自然语言的代码块；结构与保护项自动检查通过"
+        "method": "仅翻译自然语言的代码块；技术字面量由自动结构检查核对"
       }
     ],
     "post_review_changes": [
-      "仅添加 7 个源标题兼容锚点；正文未变，映射见 anchors.json"
+      "仅添加 7 个原标题兼容锚点，见 anchors.json"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/engineering/grill-with-docs/SKILL.md": {
     "source_sha256": "7de372c13488f1ee96cc11cd8907b56b6809cc93eef776eeddd37de6b6cbe3fe",
@@ -434,7 +434,7 @@
       "链接及代码块用途"
     ],
     "fences": [],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/engineering/grill-with-docs/agents/openai.yaml": {
     "source_sha256": "94cd0ab161fb468a836349f5ed482ba58ce8e709a05c57ce533d739dbd35cca9",
@@ -448,14 +448,14 @@
       "链接及代码块用途"
     ],
     "fences": [],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "docs/engineering/grill-with-docs.md": {
-    "source_sha256": "31382fa1ad6af50ccd2d6cb396d3d9774ccef31c90c77d50f52936d5e021219d",
-    "target_sha256": "00d1317f6038b188fbb913426d5094348b5ffc6bbffc3a3ec33ce71b14ffbeb0",
-    "review": "全文对照校对完成；一行技能引用、用户调用限制、提交行为均按原文保留。docs 中关于实现前审查 diff、工单收尾和缺失依赖的已知问题保留。流程代码块逐字保留，命令与技能名未改。",
+    "source_sha256": "b15edc0ac4bb4bc2b4cb6f32307d03255108ed282290b10ea83ed9170bbc2181",
+    "target_sha256": "e74ae3a348d3c7207bf7a48be99395464c70477848078b1e375fbb7c27812f54",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
     "checks": [
-      "全文逐段对照",
+      "全文及增量逐段对照",
       "前提及规范强度",
       "术语与触发词",
       "接口与固定字面量",
@@ -464,27 +464,27 @@
     "fences": [
       {
         "index": 0,
-        "method": "原样代码块"
+        "method": "仅翻译自然语言的代码块；技术字面量由自动结构检查核对"
       }
     ],
     "post_review_changes": [
-      "仅添加 7 个源标题兼容锚点；正文未变，映射见 anchors.json"
+      "仅添加 7 个原标题兼容锚点，见 anchors.json"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/engineering/implement/SKILL.md": {
-    "source_sha256": "6d3fd9e83b8f36e5213854779db49b256a457a7ebb4a503e53fa7dcff696adc3",
-    "target_sha256": "c4b7cb4a78cec0e94b13f77e8f4ca76b7e019657cdb8959a4b6b532ab985cd37",
-    "review": "全文对照校对完成；一行技能引用、用户调用限制、提交行为均按原文保留。docs 中关于实现前审查 diff、工单收尾和缺失依赖的已知问题保留。流程代码块逐字保留，命令与技能名未改。",
+    "source_sha256": "483bdc4ccf4ac31d86ac7beeaa0d0db80313e71e120bb8c59b3196ae5decd53d",
+    "target_sha256": "c8f8776828954e742207e803b08d8d61ac532619f6d933b35af211b4213813b6",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
     "checks": [
-      "全文逐段对照",
+      "全文及增量逐段对照",
       "前提及规范强度",
       "术语与触发词",
       "接口与固定字面量",
       "链接及代码块用途"
     ],
     "fences": [],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/engineering/implement/agents/openai.yaml": {
     "source_sha256": "8970a8596ade0c28ab427f41a4ea242d6bdf6186c59ebf55e1238dbecaab79dc",
@@ -498,14 +498,14 @@
       "链接及代码块用途"
     ],
     "fences": [],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "docs/engineering/implement.md": {
-    "source_sha256": "d1beab1efe64eb339e30d22318a95bc035f264d4ff7c98441c19eabd901b6767",
-    "target_sha256": "6c97b304e3fe3880dc2df911f93616ac2c5da8aedbdd5619bfc5689cc6040af6",
-    "review": "全文对照校对完成；一行技能引用、用户调用限制、提交行为均按原文保留。docs 中关于实现前审查 diff、工单收尾和缺失依赖的已知问题保留。流程代码块逐字保留，命令与技能名未改。",
+    "source_sha256": "8106f9328412a97f4cad3fad9ff4ccf61e609e9a3d384407c78a4ac6e02609f0",
+    "target_sha256": "25cd8ad0b3e3ea9cd8583ff43ffc1a17b689daf6adad41aae36a914b7f88c5b9",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
     "checks": [
-      "全文逐段对照",
+      "全文及增量逐段对照",
       "前提及规范强度",
       "术语与触发词",
       "接口与固定字面量",
@@ -514,27 +514,27 @@
     "fences": [
       {
         "index": 0,
-        "method": "原样代码块"
+        "method": "仅翻译自然语言的代码块；技术字面量由自动结构检查核对"
       }
     ],
     "post_review_changes": [
-      "仅添加 8 个源标题兼容锚点；正文未变，映射见 anchors.json"
+      "仅添加 8 个原标题兼容锚点，见 anchors.json"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/productivity/wait-what/SKILL.md": {
-    "source_sha256": "e3f44e3ccbc0e7b62f20ba70b295fc9c9f4aa3f96c77168faee1c71bacbf4215",
-    "target_sha256": "a898a87cd0ff4532c9501baaad606db3ea27d1107bfb730e1eb8404b390b0d32",
-    "review": "全文对照校对完成；wait-what 仍要求 ASD-STE100 简化技术英语，未改变输出语言契约。handoff 的临时目录、脱敏、引用而不复制、参数意图和 suggested skills 固定章节均保留。保留原文关于 compact/clear 的表述，不修正上游观点。",
+    "source_sha256": "d961bb37defd975c539427edb8f450cdbccdcdd552e213c1ece46676a7970905",
+    "target_sha256": "0aa37f72c57f0b423dd9965f19179a4b4bb8a037a75c59b350b81702f764b39e",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
     "checks": [
-      "全文逐段对照",
+      "全文及增量逐段对照",
       "前提及规范强度",
       "术语与触发词",
       "接口与固定字面量",
       "链接及代码块用途"
     ],
     "fences": [],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/productivity/wait-what/agents/openai.yaml": {
     "source_sha256": "b41faadf741d51e4ea184148b2d1854d93f947aaf754c7844f70a00f04194999",
@@ -548,14 +548,14 @@
       "链接及代码块用途"
     ],
     "fences": [],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "docs/productivity/wait-what.md": {
-    "source_sha256": "5523a8be6520dc2aa09e1aab9ea3e5e59e6f0d41ffefa5130c3404dd2e34c677",
-    "target_sha256": "6c578e0deffafd33ce7f3bba2472995c23c79aa9dd96d197e048801d952125d5",
-    "review": "全文对照校对完成；wait-what 仍要求 ASD-STE100 简化技术英语，未改变输出语言契约。handoff 的临时目录、脱敏、引用而不复制、参数意图和 suggested skills 固定章节均保留。保留原文关于 compact/clear 的表述，不修正上游观点。",
+    "source_sha256": "2725483b1ba687fe31e2178e89d265a7ea34e51c88aeef9b6b6f35bfe0339fa8",
+    "target_sha256": "581f6bc8c7cd08fba8672ff0e59ee57af574602815cc0a9890a868477383d2b9",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
     "checks": [
-      "全文逐段对照",
+      "全文及增量逐段对照",
       "前提及规范强度",
       "术语与触发词",
       "接口与固定字面量",
@@ -563,23 +563,23 @@
     ],
     "fences": [],
     "post_review_changes": [
-      "仅添加 6 个源标题兼容锚点；正文未变，映射见 anchors.json"
+      "仅添加 6 个原标题兼容锚点，见 anchors.json"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/productivity/handoff/SKILL.md": {
-    "source_sha256": "7c62de979fdc7ac32fb5ddb2146156c917f80ee070d30fadc9d40343c4b6ed25",
-    "target_sha256": "af1166cbc0a5c17bcc6bb37023158de2d2223edadfb116540da34863780347ec",
-    "review": "全文对照校对完成；wait-what 仍要求 ASD-STE100 简化技术英语，未改变输出语言契约。handoff 的临时目录、脱敏、引用而不复制、参数意图和 suggested skills 固定章节均保留。保留原文关于 compact/clear 的表述，不修正上游观点。",
+    "source_sha256": "4cbb043950dad2ffd3662ff1a5a0b51ae676004b5cae10e3787e8ee7a4ee69d3",
+    "target_sha256": "c3b2e352beaaf2d86c5cf43508b8dd907ad694e38965a9bda5a37e9a69d8e37c",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
     "checks": [
-      "全文逐段对照",
+      "全文及增量逐段对照",
       "前提及规范强度",
       "术语与触发词",
       "接口与固定字面量",
       "链接及代码块用途"
     ],
     "fences": [],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/productivity/handoff/agents/openai.yaml": {
     "source_sha256": "5c479fd562c691851690e8b18c8501045bef0943c10743d636b2fae26add1d28",
@@ -593,14 +593,14 @@
       "链接及代码块用途"
     ],
     "fences": [],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "docs/productivity/handoff.md": {
-    "source_sha256": "a8020faa68d0077e8a5701e817817c8858a5f1a70d5b3f16dc8034e7d8df0b44",
-    "target_sha256": "4c9184e0dc6d0700cbf61b2e31232e0e1c8fac3fb9c54598b8c14c89952192e0",
-    "review": "全文对照校对完成；wait-what 仍要求 ASD-STE100 简化技术英语，未改变输出语言契约。handoff 的临时目录、脱敏、引用而不复制、参数意图和 suggested skills 固定章节均保留。保留原文关于 compact/clear 的表述，不修正上游观点。",
+    "source_sha256": "8f372c040ce1c785eb1894d5ce2468df29956ed9fb353ac3e0b79449d87bb9a7",
+    "target_sha256": "c477fd0d763b4d146f74543059609e41aef82ef9e1f9c5e55dbb55ac23930191",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
     "checks": [
-      "全文逐段对照",
+      "全文及增量逐段对照",
       "前提及规范强度",
       "术语与触发词",
       "接口与固定字面量",
@@ -608,37 +608,38 @@
     ],
     "fences": [],
     "post_review_changes": [
-      "仅添加 7 个源标题兼容锚点；正文未变，映射见 anchors.json"
+      "仅添加 7 个原标题兼容锚点，见 anchors.json",
+      "2026-10-11 终检：同步源文新增的内联代码标记，并核对自然语言表头引用。"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "package.json": {
-    "source_sha256": "167010d1c535a085be165835a4cc89e1de2760c2bf3b6e43c6ae045e41d0587b",
-    "target_sha256": "4b91536e60a92328a1ad3eaad40238d462f129733984f273a38710853048f5ab",
-    "review": "逐字段对照完整 JSON；仅翻译 manifest 中登记的 description 展示字段，包名、版本、作者、URL、依赖、脚本、25 个技能路径与顺序逐项保留。",
+    "source_sha256": "95475078ea00a7d064fed8e296ca6c18022240a0d826d8e63ae8401f2b148d6f",
+    "target_sha256": "e5cc64e6551cb1136ef7ae523b6a6975573a28a0199ffe5c33114be4ec8f202a",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
     "checks": [
-      "全文逐段对照",
+      "全文及增量逐段对照",
       "前提及规范强度",
       "术语与触发词",
       "接口与固定字面量",
       "链接及代码块用途"
     ],
     "fences": [],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   ".claude-plugin/plugin.json": {
-    "source_sha256": "e531ddc6560515397ac32d93334fa3eb586b6b6bcc2e472c3646641fd3d2b951",
-    "target_sha256": "c0ad1c5e3a2787d58559f392bc75f396ed32ff669e8f0f39e2d0a73d58136317",
-    "review": "逐字段对照完整 JSON；仅翻译 manifest 中登记的 description 展示字段，包名、版本、作者、URL、依赖、脚本、25 个技能路径与顺序逐项保留。",
+    "source_sha256": "15a5a7227915917856ea019ad82584ee877309b5bc3cabfb86b83b7e2cc6e238",
+    "target_sha256": "a6f279473c14a7720a1e8ebe1b50a4e2b1d466dbe9057f312f28d89a3a93d8de",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
     "checks": [
-      "全文逐段对照",
+      "全文及增量逐段对照",
       "前提及规范强度",
       "术语与触发词",
       "接口与固定字面量",
       "链接及代码块用途"
     ],
     "fences": [],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   ".claude-plugin/marketplace.json": {
     "source_sha256": "83e889fed719fc92dc17a4accc69beed7d6c28bc87ec064b515a90a030f72e13",
@@ -652,7 +653,7 @@
       "链接及代码块用途"
     ],
     "fences": [],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/engineering/research/SKILL.md": {
     "source_sha256": "985569f15739c713d6784887c3d186d4ef9ac85bec5ad9c068d25bf0739928e4",
@@ -666,7 +667,7 @@
       "链接及代码块用途"
     ],
     "fences": [],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/engineering/research/agents/openai.yaml": {
     "source_sha256": "9b4c470d63221c1f68f22df70b83e2f12401b317babe0d1b7b5f24a974474d0d",
@@ -680,14 +681,14 @@
       "链接及代码块用途"
     ],
     "fences": [],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "docs/engineering/research.md": {
-    "source_sha256": "f3d352a6fb31997c84b0f1ba771e78230985ac4b640c1f0e6fa87ef049dfdf49",
-    "target_sha256": "19c0baa23d5feaeadf7468ea966037dddbae82324c1f86fa7944d2ae40146b6c",
-    "review": "全文对照校对完成；research 后台委派、一手来源、单文件交付，以及上游嵌套问题均保留；merge 始终解决而不 abort、保留双方意图、检查后提交的要求未弱化。所有命令、路径、链接和模型名保留。",
+    "source_sha256": "9953179696fa5d4e8ea82aaf900aaa08d84ce2a43b0a3f87213a73bb9bc60c40",
+    "target_sha256": "3d4f40346ca6001bbfddc102b0ed8ee7c7ad410617c71e1f673bb06e51dd5277",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
     "checks": [
-      "全文逐段对照",
+      "全文及增量逐段对照",
       "前提及规范强度",
       "术语与触发词",
       "接口与固定字面量",
@@ -695,44 +696,17 @@
     ],
     "fences": [],
     "post_review_changes": [
-      "仅添加 6 个源标题兼容锚点；正文未变，映射见 anchors.json"
+      "仅添加 6 个原标题兼容锚点，见 anchors.json",
+      "2026-10-11 终检：同步源文新增的内联代码标记，并核对自然语言表头引用。"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
-  },
-  "skills/engineering/resolving-merge-conflicts/SKILL.md": {
-    "source_sha256": "9d8114f8ef0b31f535a265fc05c364bd8cf2e2895a830040e06c22acb11f54b0",
-    "target_sha256": "f73ffcc4732911a57255ce89ec7a8189669e1b17c0c3b84835ec8701c4781924",
-    "review": "全文对照校对完成；research 后台委派、一手来源、单文件交付，以及上游嵌套问题均保留；merge 始终解决而不 abort、保留双方意图、检查后提交的要求未弱化。所有命令、路径、链接和模型名保留。",
-    "checks": [
-      "全文逐段对照",
-      "前提及规范强度",
-      "术语与触发词",
-      "接口与固定字面量",
-      "链接及代码块用途"
-    ],
-    "fences": [],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
-  },
-  "skills/engineering/resolving-merge-conflicts/agents/openai.yaml": {
-    "source_sha256": "a1f4f96838f2ed6282eb28abbbf99029cb8fadce552baf53da90a025b8bffddf",
-    "target_sha256": "a03cc06dac7788d84b0f7cd1df52100dcd7c7f175d993e21083281e8533817b0",
-    "review": "全文对照校对完成；research 后台委派、一手来源、单文件交付，以及上游嵌套问题均保留；merge 始终解决而不 abort、保留双方意图、检查后提交的要求未弱化。所有命令、路径、链接和模型名保留。",
-    "checks": [
-      "全文逐段对照",
-      "前提及规范强度",
-      "术语与触发词",
-      "接口与固定字面量",
-      "链接及代码块用途"
-    ],
-    "fences": [],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "docs/engineering/resolving-merge-conflicts.md": {
-    "source_sha256": "08e538aa0d35e65e26063ad44351cb429d84afb5eae5b3add02f6a08cba868f6",
-    "target_sha256": "dddcb104516667fb6f93b5cb821efd28976c9f5baba6f410e1fc2b13c3b9c8da",
-    "review": "全文对照校对完成；research 后台委派、一手来源、单文件交付，以及上游嵌套问题均保留；merge 始终解决而不 abort、保留双方意图、检查后提交的要求未弱化。所有命令、路径、链接和模型名保留。",
+    "source_sha256": "4b302655469683cdfc5e130ea4d4d2341ececd91525e28ee9d3fc9cb566a46c8",
+    "target_sha256": "b10094f079ba40c7a11e44075ed412ff594780740a96c4c163aeb87753d3f7b6",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
     "checks": [
-      "全文逐段对照",
+      "全文及增量逐段对照",
       "前提及规范强度",
       "术语与触发词",
       "接口与固定字面量",
@@ -740,9 +714,9 @@
     ],
     "fences": [],
     "post_review_changes": [
-      "仅添加 6 个源标题兼容锚点；正文未变，映射见 anchors.json"
+      "仅添加 6 个原标题兼容锚点，见 anchors.json"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/engineering/to-spec/SKILL.md": {
     "source_sha256": "43ad9cf318e5e7d3d1fa360253a37021796dc87a0c2e595ad262661a10f85088",
@@ -760,7 +734,7 @@
       "仅添加 1 个源标题兼容锚点；正文未变，映射见 anchors.json",
       "终检逐处复核 triage 上下文，将说明性术语“分诊”统一为“分流”；无技术字面量变化。"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/engineering/to-spec/agents/openai.yaml": {
     "source_sha256": "1c5b4d1e3d8e52287ef19cc2742fdbbfae1914ac75d33af3e4c8174f08cc55bb",
@@ -774,14 +748,14 @@
       "链接及代码块用途"
     ],
     "fences": [],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "docs/engineering/to-spec.md": {
-    "source_sha256": "47dbcde3e8ba381dc6650206bf36c64336c91f2d9de86ab1898355155081fe5a",
-    "target_sha256": "44df3430847aa753d1a32e8f52075c096c2fd79f8f976599d6dc6b208c1cc04d",
-    "review": "全文对照校对完成；不重新访谈与单独确认测试 seam 的区别保留。spec-template/user-story-example 标签、actor/feature/benefit 占位符和七个固定模板标题原样保留以维持下游契约；模板说明、用户故事格式与示例已翻译。ready-for-agent、命令与 URL 原样。",
+    "source_sha256": "f623ea0bbe94e9b314657dd0c9da4c4b7dbb71830cba78af7c2bb70ca79ffa90",
+    "target_sha256": "01d0793779b5adbca9232b85df32daca0a98765a3086ee39ab8ce20d04141c8b",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
     "checks": [
-      "全文逐段对照",
+      "全文及增量逐段对照",
       "前提及规范强度",
       "术语与触发词",
       "接口与固定字面量",
@@ -790,21 +764,21 @@
     "fences": [
       {
         "index": 0,
-        "method": "原样代码块"
+        "method": "仅翻译自然语言的代码块；技术字面量由自动结构检查核对"
       }
     ],
     "post_review_changes": [
-      "仅添加 8 个源标题兼容锚点；正文未变，映射见 anchors.json",
-      "终检逐处复核 triage 上下文，将说明性术语“分诊”统一为“分流”；无技术字面量变化。"
+      "仅添加 8 个原标题兼容锚点，见 anchors.json",
+      "2026-10-11 终检：同步源文新增的内联代码标记，并核对自然语言表头引用。"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/engineering/to-tickets/SKILL.md": {
-    "source_sha256": "5c9fba69845c2519b9b35b9af42ae5142c21f8ca15ac2123dc2722002c8058ae",
-    "target_sha256": "8b3b2320ad0ee5c258edef68d6e08ac5a60415be8fa4086b73ae57b30f82438e",
-    "review": "全文对照校对完成；纵向切片、大范围重构的 expand-contract 例外、用户批准后发布和不修改父 issue 均保留。模板标签、固定字段标题、NN/Ticket title 占位符、None (can start immediately)、状态值保留。命令和路径原样，正文/模板说明已翻译。",
+    "source_sha256": "56ec23c5b2782785d4e65bff9e315b6d3aeb4ef977c174a219e99489fada1995",
+    "target_sha256": "d619d7226f23b8321cb5d9e899ed02336da77d8b21d23a3d10f48c34ccfe63c9",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
     "checks": [
-      "全文逐段对照",
+      "全文及增量逐段对照",
       "前提及规范强度",
       "术语与触发词",
       "接口与固定字面量",
@@ -812,10 +786,9 @@
     ],
     "fences": [],
     "post_review_changes": [
-      "仅添加 7 个源标题兼容锚点；正文未变，映射见 anchors.json",
-      "终检逐处复核 triage 上下文，将说明性术语“分诊”统一为“分流”；无技术字面量变化。"
+      "仅添加 7 个原标题兼容锚点，见 anchors.json"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/engineering/to-tickets/agents/openai.yaml": {
     "source_sha256": "21bc6215fffcd7614e9f772bb1760e87cc5fc7dcc707e7d282bc9414267a6090",
@@ -829,14 +802,14 @@
       "链接及代码块用途"
     ],
     "fences": [],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "docs/engineering/to-tickets.md": {
-    "source_sha256": "122b190edd6d2529a8a2e2413b53235f0195c48970e8e59be221057f17a1b9fa",
-    "target_sha256": "c453c2f4551f63c3d9b5c40c2a1609d14194c7039d467efe28eed3e211f50481",
-    "review": "全文对照校对完成；纵向切片、大范围重构的 expand-contract 例外、用户批准后发布和不修改父 issue 均保留。模板标签、固定字段标题、NN/Ticket title 占位符、None (can start immediately)、状态值保留。命令和路径原样，正文/模板说明已翻译。",
+    "source_sha256": "e0f2812c8e47c5951a0efd2715062ed93a4f47e2bfce47cf20960e2ffbb6e72a",
+    "target_sha256": "e971fd06550c552eadbb5d639de6b210839f19b6b5208ecaa921b2cb5eeb89b0",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
     "checks": [
-      "全文逐段对照",
+      "全文及增量逐段对照",
       "前提及规范强度",
       "术语与触发词",
       "接口与固定字面量",
@@ -845,14 +818,13 @@
     "fences": [
       {
         "index": 0,
-        "method": "原样代码块"
+        "method": "仅翻译自然语言的代码块；技术字面量由自动结构检查核对"
       }
     ],
     "post_review_changes": [
-      "仅添加 9 个源标题兼容锚点；正文未变，映射见 anchors.json",
-      "终检逐处复核 triage 上下文，将说明性术语“分诊”统一为“分流”；无技术字面量变化。"
+      "仅添加 9 个原标题兼容锚点，见 anchors.json"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/productivity/to-questionnaire/SKILL.md": {
     "source_sha256": "b5eb929842ee0e93d867c5e906d183d350f2f2d149eaeaa86967d94d8eda1d3b",
@@ -869,7 +841,7 @@
     "post_review_changes": [
       "仅添加 1 个源标题兼容锚点；正文未变，映射见 anchors.json"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/productivity/to-questionnaire/agents/openai.yaml": {
     "source_sha256": "9e8a06c38c8842eea8d4922cb9d1ead8e3ace647bab259b943c994a1b4742bc2",
@@ -883,14 +855,14 @@
       "链接及代码块用途"
     ],
     "fences": [],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "docs/productivity/to-questionnaire.md": {
-    "source_sha256": "875abaef1ed5842ca5f008956288192341b48e4e71904ef4151a56560c3c58eb",
+    "source_sha256": "0a6de031ecf541cc0b84433ed6658f18a3de45042857841e4e0f78fd846ac23a",
     "target_sha256": "8935b7c646e3a5a034ec9b8ea4c9ec7c2093623da724bd26c01f85b88cc2301a",
-    "review": "全文对照校对完成；只追问发送安排、两次交流、单接收者、静态文档和不发送的边界保持。固定模板字段、主题/人物占位符、标签和答题 stub 保留；问题示例与所有说明已翻译。",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
     "checks": [
-      "全文逐段对照",
+      "全文及增量逐段对照",
       "前提及规范强度",
       "术语与触发词",
       "接口与固定字面量",
@@ -898,16 +870,16 @@
     ],
     "fences": [],
     "post_review_changes": [
-      "仅添加 7 个源标题兼容锚点；正文未变，映射见 anchors.json"
+      "仅添加 7 个原标题兼容锚点，见 anchors.json"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/engineering/code-review/SKILL.md": {
-    "source_sha256": "47f4e52c21694def9c7c11cbfbf891ca35eac7a93e395797515be3c8a409ae50",
-    "target_sha256": "51b5feb8b7a1bbf159ec081dcbde6f4ebef24c10d0cecc3257a9c30ba140aac3",
-    "review": "全文对照校对完成；双维度隔离、不合并重排、固定基准点与三点 diff、来源顺序、十二种 Fowler 坏味道及仓库覆盖原则、400 words 上限完整保留。review since X 触发词、Standards/Spec 固定报告标题和 no spec available 输出保留。",
+    "source_sha256": "09eb147f793e4647949edd32dbad278f0554dfb56e0d46b699cd4c2c55bf0357",
+    "target_sha256": "80c4ba817e8d4fc6bf8082ff84bf437a298361dfbb49902e49c74a9a2297d729",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
     "checks": [
-      "全文逐段对照",
+      "全文及增量逐段对照",
       "前提及规范强度",
       "术语与触发词",
       "接口与固定字面量",
@@ -915,9 +887,9 @@
     ],
     "fences": [],
     "post_review_changes": [
-      "仅添加 7 个源标题兼容锚点；正文未变，映射见 anchors.json"
+      "仅添加 7 个原标题兼容锚点，见 anchors.json"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/engineering/code-review/agents/openai.yaml": {
     "source_sha256": "8229ca854e11dc8e6aef2131ee03f31fb1561cf905fab9ccc325180cf3331352",
@@ -931,14 +903,14 @@
       "链接及代码块用途"
     ],
     "fences": [],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "docs/engineering/code-review.md": {
-    "source_sha256": "124f2e73633621d31e199b6e3ccf05df0fca692c79080f1ebf1222688e098dd0",
-    "target_sha256": "14487e2b4d9ab7bab0c8597e8645ec1d54450bca08061915fe35036ee0e9f2ae",
-    "review": "全文对照校对完成；双维度隔离、不合并重排、固定基准点与三点 diff、来源顺序、十二种 Fowler 坏味道及仓库覆盖原则、400 words 上限完整保留。review since X 触发词、Standards/Spec 固定报告标题和 no spec available 输出保留。",
+    "source_sha256": "2c14aa2f82064132ee3a5ab16cf3ccb0bc5679801b1e3dcdf4e33b4b738c9330",
+    "target_sha256": "41fd71aab69aa024074fd7a5a79e458aa0b9a9c0653d473ff04d7aa81b24ef38",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
     "checks": [
-      "全文逐段对照",
+      "全文及增量逐段对照",
       "前提及规范强度",
       "术语与触发词",
       "接口与固定字面量",
@@ -946,16 +918,17 @@
     ],
     "fences": [],
     "post_review_changes": [
-      "仅添加 7 个源标题兼容锚点；正文未变，映射见 anchors.json"
+      "仅添加 7 个原标题兼容锚点，见 anchors.json",
+      "2026-10-11 终检：同步源文新增的内联代码标记，并核对自然语言表头引用。"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/engineering/diagnosing-bugs/SKILL.md": {
-    "source_sha256": "77f3cf31bc99b2f49af943222526531fcc9fc41d047626d3640e875e85af3e84",
-    "target_sha256": "62c46fbdab020cc64ae44e12583ff74bee9fa8029156bdb7d5c2b12afe3bf721",
-    "review": "全文对照校对完成；六阶段门槛、无循环不假设、3-5 假设、AFK 继续、正确 seam 例外与脱敏条款完整保留。HITL 脚本原样保留。上游 docs 称脱敏未实现，而当前 SKILL 已有 Redact；docs 称脚本可执行而 Git mode 为 100644，均保留并列为基线差异。",
+    "source_sha256": "849198df88cdb65fd0d97236604c1fca7ff2f22d2f705f9724a800d0266b118d",
+    "target_sha256": "4aa88fd142b0cd3ef8e690febf91a6bccc076facac55adcc2fbb95fdf0b09c11",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
     "checks": [
-      "全文逐段对照",
+      "全文及增量逐段对照",
       "前提及规范强度",
       "术语与触发词",
       "接口与固定字面量",
@@ -963,9 +936,9 @@
     ],
     "fences": [],
     "post_review_changes": [
-      "仅添加 14 个源标题兼容锚点；正文未变，映射见 anchors.json"
+      "仅添加 14 个原标题兼容锚点，见 anchors.json"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/engineering/diagnosing-bugs/agents/openai.yaml": {
     "source_sha256": "3e430dbe4334a87597488c060cb3dc3786bb00c9182877d6f5ec41f62490e90b",
@@ -979,14 +952,14 @@
       "链接及代码块用途"
     ],
     "fences": [],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "docs/engineering/diagnosing-bugs.md": {
-    "source_sha256": "beaa81743d3343e8192e7a6feba8e0c95e4a044ce71ef3c6503f8323902f7c90",
-    "target_sha256": "fc9d751dbdc994d8cbfd405a1d91f8e5141410b6b03fb2cc1bd84f1a2bf381d7",
-    "review": "全文对照校对完成；六阶段门槛、无循环不假设、3-5 假设、AFK 继续、正确 seam 例外与脱敏条款完整保留。HITL 脚本原样保留。上游 docs 称脱敏未实现，而当前 SKILL 已有 Redact；docs 称脚本可执行而 Git mode 为 100644，均保留并列为基线差异。",
+    "source_sha256": "0d2f5ab04d9c2af36168ab43e30ac63e3156b732c0a445b5b5ddd81d3f98ead0",
+    "target_sha256": "4c1448bdbd9cf35f29fddb16bbd723f902adb357d0a1f1416a6c88e13871eab8",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
     "checks": [
-      "全文逐段对照",
+      "全文及增量逐段对照",
       "前提及规范强度",
       "术语与触发词",
       "接口与固定字面量",
@@ -994,9 +967,10 @@
     ],
     "fences": [],
     "post_review_changes": [
-      "仅添加 7 个源标题兼容锚点；正文未变，映射见 anchors.json"
+      "仅添加 7 个原标题兼容锚点，见 anchors.json",
+      "2026-10-11 终检：同步源文新增的内联代码标记，并核对自然语言表头引用。"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/engineering/prototype/SKILL.md": {
     "source_sha256": "714de632d116bb73f65cdb5a882db15b9369a6713b9a47c0fad827848f0bfbe3",
@@ -1013,7 +987,7 @@
     "post_review_changes": [
       "仅添加 3 个源标题兼容锚点；正文未变，映射见 anchors.json"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/engineering/prototype/LOGIC.md": {
     "source_sha256": "f61c7d249e786a79ef289018901c348271e1798dd0b0bc5607b5c6f4d4a01ab9",
@@ -1030,7 +1004,7 @@
     "post_review_changes": [
       "仅添加 9 个源标题兼容锚点；正文未变，映射见 anchors.json"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/engineering/prototype/UI.md": {
     "source_sha256": "723211e878acbc7b6ff09755263f3295cde724ba902ff0064da41eed51d45ad3",
@@ -1052,7 +1026,7 @@
     "post_review_changes": [
       "仅添加 13 个源标题兼容锚点；正文未变，映射见 anchors.json"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/engineering/prototype/agents/openai.yaml": {
     "source_sha256": "5af65e43ab41a350436697b81e27b7f848d36782043b73c322bb2c9fa9cc55dc",
@@ -1066,14 +1040,14 @@
       "链接及代码块用途"
     ],
     "fences": [],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "docs/engineering/prototype.md": {
-    "source_sha256": "dba351ad5a0c4763e295b8c01b72bf57e2a757c1b642c18305939f0ad0090871",
+    "source_sha256": "339d6ac4917d1c129860788d6d6aad308299996c3ee034646055d4c91e9df6b5",
     "target_sha256": "6fd9d7c5d45a8f86926f684a28f2c6f2ea53755c1ba7ddd0313336d0ef6fefaa",
-    "review": "全文对照校对完成；逻辑/UI 分支、现有页面优先、默认3最大5变体、纯逻辑模块边界、键盘输入豁免、生产隐藏与一次性分支留存均保留。TSX 代码块原样；UI 示例输出 B (Sidebar layout)、占位符和 URL 参数保留。上游正文就近放置与 docs 独立目录的差异保持。",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
     "checks": [
-      "全文逐段对照",
+      "全文及增量逐段对照",
       "前提及规范强度",
       "术语与触发词",
       "接口与固定字面量",
@@ -1081,9 +1055,9 @@
     ],
     "fences": [],
     "post_review_changes": [
-      "仅添加 7 个源标题兼容锚点；正文未变，映射见 anchors.json"
+      "仅添加 7 个原标题兼容锚点，见 anchors.json"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/engineering/wizard/SKILL.md": {
     "source_sha256": "bdf31d48211ea559878f95a4f344aeabf8d85897488ba564382bab0b000daac1",
@@ -1100,7 +1074,7 @@
     "post_review_changes": [
       "仅添加 6 个源标题兼容锚点；正文未变，映射见 anchors.json"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/engineering/wizard/agents/openai.yaml": {
     "source_sha256": "98f44d682d58e262f160dc59a8befc365e0aa65820dd0261864af26aa8e59d83",
@@ -1114,14 +1088,14 @@
       "链接及代码块用途"
     ],
     "fences": [],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "docs/engineering/wizard.md": {
-    "source_sha256": "d9936487d804e953412f0f932dd5d273c29643b1995e1a5d443624b3f9059210",
-    "target_sha256": "262f98a8e018ecf87939b24c15106a4cb2cf2849a11a831acca9bd80ff5d2f4b",
-    "review": "全文对照校对完成；STAGES 上方固定库不改、先确认范围、秘密隐藏输入、不可逆前确认、不端到端运行和临时/可重复交付区别完整保留。template.sh 全文读取并原样保留。菜单路径英文作为外部 UI 固定标签保留。docs 说剩余时间而模板仅展示阶段计数的差异未擅自修正。",
+    "source_sha256": "286831fa86754efd12b94899be87fe8223ed607882e0c37580dab852db8dc5a3",
+    "target_sha256": "94d8108bba0a3297b14e1f7417b7bdae666547cbedda445c52c3461a665caa49",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
     "checks": [
-      "全文逐段对照",
+      "全文及增量逐段对照",
       "前提及规范强度",
       "术语与触发词",
       "接口与固定字面量",
@@ -1129,16 +1103,16 @@
     ],
     "fences": [],
     "post_review_changes": [
-      "仅添加 9 个源标题兼容锚点；正文未变，映射见 anchors.json"
+      "仅添加 9 个原标题兼容锚点，见 anchors.json"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/engineering/improve-codebase-architecture/SKILL.md": {
-    "source_sha256": "d1ac25511a936ff4250a48dbcefda363837d6bb9321b3cba73df99fa37270a75",
-    "target_sha256": "7e78e88338d3b51347dfd1c22a2139b0e97b160431e9d73516ba8fa87f241a4b",
-    "review": "全文对照校对完成；YAGNI 范围、删除检验、用户选项后才追问、ADR 冲突处理和固定强度枚举保留。HTML 骨架仅翻译 title 展示文本，lang/属性/URL/脚本/CSS/Mermaid 原样。上游 docs 的 Agent/subagent_type 说法与正文不同，以及只产出 HTML 与写 CONTEXT/ADR 的表述差异保留。",
+    "source_sha256": "552240a5ab5cec6b67c15dd1ad6e9f6962b1bca6ce870059a8c2713760c20392",
+    "target_sha256": "5c4bc59d1af744223990b1743ba03bcbefa5113ff0f2a5100b31048ae83a20d8",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
     "checks": [
-      "全文逐段对照",
+      "全文及增量逐段对照",
       "前提及规范强度",
       "术语与触发词",
       "接口与固定字面量",
@@ -1146,9 +1120,9 @@
     ],
     "fences": [],
     "post_review_changes": [
-      "仅添加 5 个源标题兼容锚点；正文未变，映射见 anchors.json"
+      "仅添加 5 个原标题兼容锚点，见 anchors.json"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/engineering/improve-codebase-architecture/HTML-REPORT.md": {
     "source_sha256": "581e8bb5a521e46bbda8ca7e19b15948bed882187108092ebb90c62513b77528",
@@ -1174,7 +1148,7 @@
     "post_review_changes": [
       "仅添加 13 个源标题兼容锚点；正文未变，映射见 anchors.json"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/engineering/improve-codebase-architecture/agents/openai.yaml": {
     "source_sha256": "c8cb20f68ebf0edb4e497bc11ae5fcaa196004e661cd189015b04f4109ced7f1",
@@ -1188,14 +1162,14 @@
       "链接及代码块用途"
     ],
     "fences": [],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "docs/engineering/improve-codebase-architecture.md": {
-    "source_sha256": "19d114c3e0f6000bac7233d1fb52b9cef63c72c12d8026a55218ef8200c9cbd3",
-    "target_sha256": "4a0e2588d03dae6fe229ec5794c3a420195ee1c1c4f791cf84b8b4b487bf08d2",
-    "review": "全文对照校对完成；YAGNI 范围、删除检验、用户选项后才追问、ADR 冲突处理和固定强度枚举保留。HTML 骨架仅翻译 title 展示文本，lang/属性/URL/脚本/CSS/Mermaid 原样。上游 docs 的 Agent/subagent_type 说法与正文不同，以及只产出 HTML 与写 CONTEXT/ADR 的表述差异保留。",
+    "source_sha256": "abefc0f2577bbc7cdf586581993f2025b0dc8284f2c2371aa308de567cf5eea8",
+    "target_sha256": "3e53a30c7ad62042547ee382ab0b8d62a0ecac695f3aa44119c8013d23be68c7",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
     "checks": [
-      "全文逐段对照",
+      "全文及增量逐段对照",
       "前提及规范强度",
       "术语与触发词",
       "接口与固定字面量",
@@ -1203,16 +1177,17 @@
     ],
     "fences": [],
     "post_review_changes": [
-      "仅添加 8 个源标题兼容锚点；正文未变，映射见 anchors.json"
+      "仅添加 8 个原标题兼容锚点，见 anchors.json",
+      "2026-10-11 终检：同步源文新增的内联代码标记，并核对自然语言表头引用。"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/engineering/setup-matt-pocock-skills/SKILL.md": {
-    "source_sha256": "2bcd89e97777cdb705914424e39c97d5db524c8eb4eafac8120778a07774f0ec",
-    "target_sha256": "23525c9f5092686f4d72794572097af3d4df0e16d2dc901ef8c1d3988e22f5c5",
-    "review": "全文对照校对完成；A/B/C 条件、确认后写入、已有文件优先、默认关闭 PR/MR 分诊开关、单上下文默认均保留。固定 Agent skills/Issue tracker/Triage labels/Domain docs 模板标题、Wayfinding operations、PRs/MRs as a request surface: no.、状态及全部 CLI 字面量不变。本地/GitHub/GitLab 前沿、领取和解决协议逐项比对。",
+    "source_sha256": "f148858ffb7f63c03c06fca06e6fdb1d91a35c6b293244b8fdfacd5f4cc028c4",
+    "target_sha256": "961aeaa1420bf288969a4b56fc8110803035363a6a94d96b697d98fc06bc6964",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
     "checks": [
-      "全文逐段对照",
+      "全文及增量逐段对照",
       "前提及规范强度",
       "术语与触发词",
       "接口与固定字面量",
@@ -1221,14 +1196,13 @@
     "fences": [
       {
         "index": 0,
-        "method": "仅翻译自然语言的代码块；结构与保护项自动检查通过"
+        "method": "仅翻译自然语言的代码块；技术字面量由自动结构检查核对"
       }
     ],
     "post_review_changes": [
-      "仅添加 7 个源标题兼容锚点；正文未变，映射见 anchors.json",
-      "终检逐处复核 triage 上下文，将说明性术语“分诊”统一为“分流”；无技术字面量变化。"
+      "仅添加 7 个原标题兼容锚点，见 anchors.json"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/engineering/setup-matt-pocock-skills/agents/openai.yaml": {
     "source_sha256": "9527de0110541c45712319025155aeab8dc7d77c6ed6e5e83271bab1851ab939",
@@ -1242,14 +1216,14 @@
       "链接及代码块用途"
     ],
     "fences": [],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/engineering/setup-matt-pocock-skills/domain.md": {
-    "source_sha256": "edc6d6131fdffc4b7135704f5262124fc43355c95f61b7399dc5a4db643e28ca",
-    "target_sha256": "3044d4abb9bac22042fdb7d52b9066a5b01043d82dad3334205d2477ef46d279",
-    "review": "全文对照校对完成；A/B/C 条件、确认后写入、已有文件优先、默认关闭 PR/MR 分诊开关、单上下文默认均保留。固定 Agent skills/Issue tracker/Triage labels/Domain docs 模板标题、Wayfinding operations、PRs/MRs as a request surface: no.、状态及全部 CLI 字面量不变。本地/GitHub/GitLab 前沿、领取和解决协议逐项比对。",
+    "source_sha256": "593a7042218689f1d24df89df14eaf0a20e19e0d0a7d479a01947ac78f0784b9",
+    "target_sha256": "faf64af204272cf3a60db1dcb4713c5eaab96d10e4fe6c1fcafcfa6f91e70565",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
     "checks": [
-      "全文逐段对照",
+      "全文及增量逐段对照",
       "前提及规范强度",
       "术语与触发词",
       "接口与固定字面量",
@@ -1262,20 +1236,20 @@
       },
       {
         "index": 1,
-        "method": "仅翻译自然语言的代码块；结构与保护项自动检查通过"
+        "method": "仅翻译自然语言的代码块；技术字面量由自动结构检查核对"
       }
     ],
     "post_review_changes": [
-      "仅添加 5 个源标题兼容锚点；正文未变，映射见 anchors.json"
+      "仅添加 5 个原标题兼容锚点，见 anchors.json"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/engineering/setup-matt-pocock-skills/triage-labels.md": {
-    "source_sha256": "4f53c9b40ce2651e3611aa090eaedbd6dbc9b71ef8c5f7e65eac0d8263190d0d",
-    "target_sha256": "dd79374448617d1729be5435c262dde349a53e751087dc3280f9bd918f2147c6",
-    "review": "全文对照校对完成；A/B/C 条件、确认后写入、已有文件优先、默认关闭 PR/MR 分诊开关、单上下文默认均保留。固定 Agent skills/Issue tracker/Triage labels/Domain docs 模板标题、Wayfinding operations、PRs/MRs as a request surface: no.、状态及全部 CLI 字面量不变。本地/GitHub/GitLab 前沿、领取和解决协议逐项比对。",
+    "source_sha256": "ae512af838c78b8750471c42cd2b20fa32319553e61d84c9a23d171b40ce14aa",
+    "target_sha256": "9fc69a671beb0bdf0822d23f18f47036249e35c8028a863ada335e7767d99de1",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
     "checks": [
-      "全文逐段对照",
+      "全文及增量逐段对照",
       "前提及规范强度",
       "术语与触发词",
       "接口与固定字面量",
@@ -1283,10 +1257,10 @@
     ],
     "fences": [],
     "post_review_changes": [
-      "仅添加 1 个源标题兼容锚点；正文未变，映射见 anchors.json",
-      "终检逐处复核 triage 上下文，将说明性术语“分诊”统一为“分流”；无技术字面量变化。"
+      "仅添加 1 个原标题兼容锚点，见 anchors.json",
+      "2026-10-11 终检：同步源文新增的内联代码标记，并核对自然语言表头引用。"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/engineering/setup-matt-pocock-skills/issue-tracker-local.md": {
     "source_sha256": "7dcda20a2eb4bdc89b95d1143423c0691309921cadae3132e6424f371030506e",
@@ -1304,14 +1278,14 @@
       "仅添加 4 个源标题兼容锚点；正文未变，映射见 anchors.json",
       "终检逐处复核 triage 上下文，将说明性术语“分诊”统一为“分流”；无技术字面量变化。"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/engineering/setup-matt-pocock-skills/issue-tracker-github.md": {
-    "source_sha256": "afd6852a80185217bd28aa5cbe456bef1e85be25be7bd1fba382d5b8ee428325",
-    "target_sha256": "d59caf88d93d0e15fd9170e864425be5e4617d03c9489c5a3e8b7a14b6e45b0b",
-    "review": "全文对照校对完成；A/B/C 条件、确认后写入、已有文件优先、默认关闭 PR/MR 分诊开关、单上下文默认均保留。固定 Agent skills/Issue tracker/Triage labels/Domain docs 模板标题、Wayfinding operations、PRs/MRs as a request surface: no.、状态及全部 CLI 字面量不变。本地/GitHub/GitLab 前沿、领取和解决协议逐项比对。",
+    "source_sha256": "f0653fe106dd8ee7b33be27bd7fe3104b40555896cb45f61997aed20467020c3",
+    "target_sha256": "1519f14a775d736e455004075848e7d1619a25f37f6b412c5ba659e2ac163562",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
     "checks": [
-      "全文逐段对照",
+      "全文及增量逐段对照",
       "前提及规范强度",
       "术语与触发词",
       "接口与固定字面量",
@@ -1319,17 +1293,16 @@
     ],
     "fences": [],
     "post_review_changes": [
-      "仅添加 5 个源标题兼容锚点；正文未变，映射见 anchors.json",
-      "终检逐处复核 triage 上下文，将说明性术语“分诊”统一为“分流”；无技术字面量变化。"
+      "仅添加 5 个原标题兼容锚点，见 anchors.json"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/engineering/setup-matt-pocock-skills/issue-tracker-gitlab.md": {
-    "source_sha256": "ea175f73d193b3f55819c0ed9bbccf6ee0e70ad8f928e3d7607596c53380acd6",
-    "target_sha256": "1357f22729a832b8edaa44bf6c920df73cb64fe224444c352bdbf8ee6df3bbbf",
-    "review": "全文对照校对完成；A/B/C 条件、确认后写入、已有文件优先、默认关闭 PR/MR 分诊开关、单上下文默认均保留。固定 Agent skills/Issue tracker/Triage labels/Domain docs 模板标题、Wayfinding operations、PRs/MRs as a request surface: no.、状态及全部 CLI 字面量不变。本地/GitHub/GitLab 前沿、领取和解决协议逐项比对。",
+    "source_sha256": "591a9e7057382aaccdfbed3f7ea3f2ad07e0cd29f012d18b82ee4e485fd81e24",
+    "target_sha256": "2ded3e613abca4d58eed573a455c049d42054c3a290f1c0f6e18df089508edd6",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
     "checks": [
-      "全文逐段对照",
+      "全文及增量逐段对照",
       "前提及规范强度",
       "术语与触发词",
       "接口与固定字面量",
@@ -1337,17 +1310,16 @@
     ],
     "fences": [],
     "post_review_changes": [
-      "仅添加 5 个源标题兼容锚点；正文未变，映射见 anchors.json",
-      "终检逐处复核 triage 上下文，将说明性术语“分诊”统一为“分流”；无技术字面量变化。"
+      "仅添加 5 个原标题兼容锚点，见 anchors.json"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "docs/engineering/setup-matt-pocock-skills.md": {
-    "source_sha256": "4a4129edb23d9ba1491e2ef9ccba964ebc3d85830b013c089f0b8b4dd58ebbe6",
-    "target_sha256": "8469081d91537db7b89e814434417d88b345c5968afa70008fedfe8eba0442aa",
-    "review": "全文对照校对完成；A/B/C 条件、确认后写入、已有文件优先、默认关闭 PR/MR 分诊开关、单上下文默认均保留。固定 Agent skills/Issue tracker/Triage labels/Domain docs 模板标题、Wayfinding operations、PRs/MRs as a request surface: no.、状态及全部 CLI 字面量不变。本地/GitHub/GitLab 前沿、领取和解决协议逐项比对。",
+    "source_sha256": "ee9a734b73a5c0cd851904fd073255248af7889ca8cb03b33f9207bf211227b6",
+    "target_sha256": "a9275db22a1da2e46532a7f857aba891ad07cb00cfdedc399464ef69afa51660",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
     "checks": [
-      "全文逐段对照",
+      "全文及增量逐段对照",
       "前提及规范强度",
       "术语与触发词",
       "接口与固定字面量",
@@ -1355,17 +1327,16 @@
     ],
     "fences": [],
     "post_review_changes": [
-      "仅添加 7 个源标题兼容锚点；正文未变，映射见 anchors.json",
-      "终检逐处复核 triage 上下文，将说明性术语“分诊”统一为“分流”；无技术字面量变化。"
+      "仅添加 7 个原标题兼容锚点，见 anchors.json"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/engineering/ask-matt/SKILL.md": {
-    "source_sha256": "b25d86fb36b1d294eeead5d7db529f86135f9671f2afcd607579a63bb2213769",
-    "target_sha256": "c044040f73cac69801e73a34201f03803d3bb6b7c41e4f8685a29382d1dc299a",
-    "review": "全文对照完成：保留五项上下文决策的顺序、handoff四种范围、所有技能调用、命令和URL；保留原文两条入口却列三项及docs旧22/13统计，不按当前25擅改。",
+    "source_sha256": "1371f5ce005de0992a44b137748bfb960a56948aa9871b405fe9d90b24332e3c",
+    "target_sha256": "1d2a64967578a9ae9dfd2cdc4fcd0cc5aa2bc26a163600ba5dc51eb700e10f8f",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
     "checks": [
-      "全文逐段对照",
+      "全文及增量逐段对照",
       "前提及规范强度",
       "术语与触发词",
       "接口与固定字面量",
@@ -1373,9 +1344,9 @@
     ],
     "fences": [],
     "post_review_changes": [
-      "仅添加 9 个源标题兼容锚点；正文未变，映射见 anchors.json"
+      "仅添加 9 个原标题兼容锚点，见 anchors.json"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/engineering/ask-matt/PHASE-BOUNDARIES.md": {
     "source_sha256": "a8aa20158609ef39e2b308b6ba0660c91066838d07a867202e63a7744a88a3ed",
@@ -1392,7 +1363,7 @@
     "post_review_changes": [
       "仅添加 5 个源标题兼容锚点；正文未变，映射见 anchors.json"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/engineering/ask-matt/agents/openai.yaml": {
     "source_sha256": "bdffbc5a0a99ed1b6ef3253d251d755fd18162b9845972e380007f844b09b05c",
@@ -1406,14 +1377,14 @@
       "链接及代码块用途"
     ],
     "fences": [],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "docs/engineering/ask-matt.md": {
-    "source_sha256": "813a78e29b999d895cbd2e7d95e09339e4d6dbf935c09133ac8dbd8dc3299299",
-    "target_sha256": "02e72e387bc326b6556d6b0582f8e41e01138626d475836ae80ecd8e9f1b35b9",
-    "review": "全文对照完成：保留五项上下文决策的顺序、handoff四种范围、所有技能调用、命令和URL；保留原文两条入口却列三项及docs旧22/13统计，不按当前25擅改。",
+    "source_sha256": "ecefe252d5e91a079350d564ebd0a3c3ea8c4dc3274bebb332f3ce5223757bfa",
+    "target_sha256": "b404b2b28f5ebdffd9a4e5739e83b0562493572c77cdccd11d22b47211005a14",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
     "checks": [
-      "全文逐段对照",
+      "全文及增量逐段对照",
       "前提及规范强度",
       "术语与触发词",
       "接口与固定字面量",
@@ -1421,16 +1392,16 @@
     ],
     "fences": [],
     "post_review_changes": [
-      "仅添加 8 个源标题兼容锚点；正文未变，映射见 anchors.json"
+      "仅添加 8 个原标题兼容锚点，见 anchors.json"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/engineering/triage/SKILL.md": {
-    "source_sha256": "623a2ed692bdc77d2090e2a3dea3b627dd722ad3bbaca0be83aada75292c8fc4",
-    "target_sha256": "1f5bfcb9bd4b0dcd18791a301f46d203a57712a908649b20eba6d235bc3cd4c6",
-    "review": "全文逐段校对：保留类别/状态枚举、分流免责声明固定输出、模板字段标题、所有示例命令/类型/路径；翻译模板自然语言；PR发现与显式指定差异及三类wontfix边界不变。OUT-OF-SCOPE上游嵌套fence长度相同造成结构异常，保留原结构及内部TS。",
+    "source_sha256": "917b0baf74be583e74f110857ed45df2766617f75c00baf61fd136d7af515edf",
+    "target_sha256": "33e129dba1330c38d7defbac8622d8062854274c495650968233d34c6181945c",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
     "checks": [
-      "全文逐段对照",
+      "全文及增量逐段对照",
       "前提及规范强度",
       "术语与触发词",
       "接口与固定字面量",
@@ -1443,13 +1414,13 @@
       },
       {
         "index": 1,
-        "method": "仅翻译自然语言的代码块；结构与保护项自动检查通过"
+        "method": "仅翻译自然语言的代码块；技术字面量由自动结构检查核对"
       }
     ],
     "post_review_changes": [
-      "仅添加 9 个源标题兼容锚点；正文未变，映射见 anchors.json"
+      "仅添加 9 个原标题兼容锚点，见 anchors.json"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/engineering/triage/AGENT-BRIEF.md": {
     "source_sha256": "7f5f87fed3033df1b06e083c480f3e847b1fbb0647746b8a4c6a50f9f26ef44f",
@@ -1487,7 +1458,7 @@
     "post_review_changes": [
       "仅添加 12 个源标题兼容锚点；正文未变，映射见 anchors.json"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/engineering/triage/OUT-OF-SCOPE.md": {
     "source_sha256": "1fbf9b432130c6380aa65813b55553cfda150309b27c595e183f8e335b8a190d",
@@ -1517,7 +1488,7 @@
     "post_review_changes": [
       "仅添加 3 个源标题兼容锚点；正文未变，映射见 anchors.json"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/engineering/triage/agents/openai.yaml": {
     "source_sha256": "2e683717720cf456d165d0bb1a68bb600d0b6a8ccb61841c172e50d26f95351c",
@@ -1531,14 +1502,14 @@
       "链接及代码块用途"
     ],
     "fences": [],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "docs/engineering/triage.md": {
-    "source_sha256": "7bdab6379baf24a6617db8349b53f332f1837227add23144d61ba9245eb15d14",
-    "target_sha256": "2beb25b6eff2e3575a037730600ee12e029e78f7e5a92f2967f2f408d3f66682",
-    "review": "全文逐段校对：保留类别/状态枚举、分流免责声明固定输出、模板字段标题、所有示例命令/类型/路径；翻译模板自然语言；PR发现与显式指定差异及三类wontfix边界不变。OUT-OF-SCOPE上游嵌套fence长度相同造成结构异常，保留原结构及内部TS。",
+    "source_sha256": "88cb240a6e3d9961732d1b537b8a4fc402d938db7ce1d91425be32ee5d67fdba",
+    "target_sha256": "3ec0e7cf805073a30b5a18240d6321ba796439f974291b2889615f6f3099e7e4",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
     "checks": [
-      "全文逐段对照",
+      "全文及增量逐段对照",
       "前提及规范强度",
       "术语与触发词",
       "接口与固定字面量",
@@ -1546,16 +1517,17 @@
     ],
     "fences": [],
     "post_review_changes": [
-      "仅添加 9 个源标题兼容锚点；正文未变，映射见 anchors.json"
+      "仅添加 9 个原标题兼容锚点，见 anchors.json",
+      "2026-10-11 终检：同步源文新增的内联代码标记，并核对自然语言表头引用。"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/engineering/wayfinder/SKILL.md": {
-    "source_sha256": "fee6e1d0c50f0e736b4ef8a599060c959afae904c9a97d82c97f049fcc3aa0f1",
-    "target_sha256": "53255599a87bde5f454f7f97772159d29ef77a11bf6d4fd36179d61c06d2f21e",
-    "review": "全文对照完成：保留地图/工单模板固定标题、标签类型、claim/阻塞关系、先创建后连线、HITL不代答、默认只规划及Notes可覆盖条件、单会话单工单研究例外；保持全部链接及技能命令。",
+    "source_sha256": "9be7b478c389605a24517d27752f278933588da97a1b5921b165f455edf4c5b7",
+    "target_sha256": "af5bc1546e6d5617f3c113eab2ab0ec2027ede7102a90656312555077ee61e83",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
     "checks": [
-      "全文逐段对照",
+      "全文及增量逐段对照",
       "前提及规范强度",
       "术语与触发词",
       "接口与固定字面量",
@@ -1564,17 +1536,17 @@
     "fences": [
       {
         "index": 0,
-        "method": "仅翻译自然语言的代码块；结构与保护项自动检查通过"
+        "method": "仅翻译自然语言的代码块；技术字面量由自动结构检查核对"
       },
       {
         "index": 1,
-        "method": "仅翻译自然语言的代码块；结构与保护项自动检查通过"
+        "method": "仅翻译自然语言的代码块；技术字面量由自动结构检查核对"
       }
     ],
     "post_review_changes": [
-      "仅添加 11 个源标题兼容锚点；正文未变，映射见 anchors.json"
+      "仅添加 11 个原标题兼容锚点，见 anchors.json"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/engineering/wayfinder/agents/openai.yaml": {
     "source_sha256": "88bc81a11a6d52ac67aeaa76b8b619e387020d47c5133a4dd4927fd15c4ad073",
@@ -1588,14 +1560,14 @@
       "链接及代码块用途"
     ],
     "fences": [],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "docs/engineering/wayfinder.md": {
-    "source_sha256": "5e186ef2b90a77ccf7b48ff7c72bbc97fc5c2ba0abe316b91fefa206cb18430e",
-    "target_sha256": "ae84e31bd09696371662e6ad091ed6ed57f52c95b979ef98cca618895144de7c",
-    "review": "全文对照完成：保留地图/工单模板固定标题、标签类型、claim/阻塞关系、先创建后连线、HITL不代答、默认只规划及Notes可覆盖条件、单会话单工单研究例外；保持全部链接及技能命令。",
+    "source_sha256": "7b123473848da896714e3bd3dbea6fe02341c40c186cb7c9c1f0b3735a12c376",
+    "target_sha256": "dfc27ca48d353313cc2e0c184cae04809010313a09fff4776470bce69260ca3c",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
     "checks": [
-      "全文逐段对照",
+      "全文及增量逐段对照",
       "前提及规范强度",
       "术语与触发词",
       "接口与固定字面量",
@@ -1603,16 +1575,16 @@
     ],
     "fences": [],
     "post_review_changes": [
-      "仅添加 8 个源标题兼容锚点；正文未变，映射见 anchors.json"
+      "仅添加 8 个原标题兼容锚点，见 anchors.json"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/productivity/teach/SKILL.md": {
-    "source_sha256": "a32df9dcdfc0c4fdc1c98e1ed3940c5f56b84c1aa90ff60346f32b8b53915b43",
-    "target_sha256": "026bc43c24a0b85eee321b3d94934b67505083b97f448ef2071caf2503659c84",
-    "review": "全文对照完成：知识/技能/智慧及两类记忆强度区分，学习使命变更前确认、社区偏好、单工作空间单使命不变；格式模板自然说明和示例均翻译，固定章节/Status枚举/占位符及原URL保留；原文GLOSSARY缺入口及两种./根目录歧义按原文记录。",
+    "source_sha256": "550482c2d674b085c9043b87bfdc14a8f2ec453c736119e7fcbb1e9332bffeba",
+    "target_sha256": "051bf809b62c9cee789f56125c619ba486fcf1236c3e9b67ba1935882996a32a",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
     "checks": [
-      "全文逐段对照",
+      "全文及增量逐段对照",
       "前提及规范强度",
       "术语与触发词",
       "接口与固定字面量",
@@ -1620,9 +1592,9 @@
     ],
     "fences": [],
     "post_review_changes": [
-      "仅添加 11 个源标题兼容锚点；正文未变，映射见 anchors.json"
+      "仅添加 11 个原标题兼容锚点，见 anchors.json"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/productivity/teach/MISSION-FORMAT.md": {
     "source_sha256": "8cacbb3c0644d3ae0ea4965564797099401a6930a23f7cf462918576587f2418",
@@ -1644,7 +1616,7 @@
     "post_review_changes": [
       "仅添加 3 个源标题兼容锚点；正文未变，映射见 anchors.json"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/productivity/teach/GLOSSARY-FORMAT.md": {
     "source_sha256": "9b99859ec28437668130d8f2ce5a342938970f8a1ed4fd38c3eab4f4b5fff210",
@@ -1666,7 +1638,7 @@
     "post_review_changes": [
       "仅添加 3 个源标题兼容锚点；正文未变，映射见 anchors.json"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/productivity/teach/LEARNING-RECORD-FORMAT.md": {
     "source_sha256": "701fa34b6748aa89e6c960ffb815257f481a7d77fb2900f9028f7edf3fdd6052",
@@ -1688,7 +1660,7 @@
     "post_review_changes": [
       "仅添加 7 个源标题兼容锚点；正文未变，映射见 anchors.json"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/productivity/teach/RESOURCES-FORMAT.md": {
     "source_sha256": "e9cacf34026e11a8d1c8f9de88abe5bcbf654f4ebdb25cae8c0de0d5f48f44ec",
@@ -1710,7 +1682,7 @@
     "post_review_changes": [
       "仅添加 3 个源标题兼容锚点；正文未变，映射见 anchors.json"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/productivity/teach/agents/openai.yaml": {
     "source_sha256": "5856f3ae8aec742f1499c640aecdd5f1d6af5fa210a7c6ec794de8263a6f733f",
@@ -1724,14 +1696,14 @@
       "链接及代码块用途"
     ],
     "fences": [],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "docs/productivity/teach.md": {
-    "source_sha256": "2ac7f1d694fdd744a5c5157477d5459e3d25876e0b65388d5441f934916b4970",
-    "target_sha256": "0129fd9e5affb6cc8fa6885ddd617c607562af602413bc638e57a1b83b833fee",
-    "review": "全文对照完成：知识/技能/智慧及两类记忆强度区分，学习使命变更前确认、社区偏好、单工作空间单使命不变；格式模板自然说明和示例均翻译，固定章节/Status枚举/占位符及原URL保留；原文GLOSSARY缺入口及两种./根目录歧义按原文记录。",
+    "source_sha256": "eccbc2f26a22a71f330b21701eeddd6b6fd4534fb09b5cd8ffdc30cff7e6bda7",
+    "target_sha256": "4d076e38b49b2d7243b478a2d1e21ca8238b8b02424f56cb5decceef8f619ab5",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
     "checks": [
-      "全文逐段对照",
+      "全文及增量逐段对照",
       "前提及规范强度",
       "术语与触发词",
       "接口与固定字面量",
@@ -1739,9 +1711,10 @@
     ],
     "fences": [],
     "post_review_changes": [
-      "仅添加 8 个源标题兼容锚点；正文未变，映射见 anchors.json"
+      "仅添加 8 个原标题兼容锚点，见 anchors.json",
+      "2026-10-11 终检：同步源文新增的内联代码标记，并核对自然语言表头引用。"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/productivity/writing-for-agents/SKILL.md": {
     "source_sha256": "551adca942227b44192edba88acd4e8db911f0121ce58ad16944ccf6a896a74a",
@@ -1758,7 +1731,7 @@
     "post_review_changes": [
       "仅添加 7 个源标题兼容锚点；正文未变，映射见 anchors.json"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/productivity/writing-for-agents/SKILL-MECHANICS.md": {
     "source_sha256": "c768e6307c7c10728c401c213f2c4ba71c542127eeb7ad2956aabd15a0fa0059",
@@ -1775,7 +1748,7 @@
     "post_review_changes": [
       "仅添加 4 个源标题兼容锚点；正文未变，映射见 anchors.json"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/productivity/writing-for-agents/agents/openai.yaml": {
     "source_sha256": "eacb24b2a618cfb81dacb0416f4fdd75ddf3a8060f8ddb99aae1b1e301907e4b",
@@ -1789,14 +1762,14 @@
       "链接及代码块用途"
     ],
     "fences": [],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "docs/productivity/writing-for-agents.md": {
-    "source_sha256": "009831d67d288eb2cb9494660f744affdef625d8e5eb041d75c4ee630a47ac73",
-    "target_sha256": "f9081eda2f0071b3d1927ebcf89b25bf79717f5f7373d2ec6200f2ead96bd58f",
-    "review": "全文对照校对：保留模型/用户调用选择、是否省略字段、router只能建议的边界；clarity/demand、co-location/duplication、context/cognitive load等区分完整；leading words示例英文保留以维护触发概念，未执行技能要求的删减重构。",
+    "source_sha256": "c2f3971e2f4bc1c901c59f5dbbb9343276e601f618bee1d40b1927afe3678365",
+    "target_sha256": "175c9e79425bdaf61557da212a79f32e113a09c7068bb8f93a684b917351fd28",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
     "checks": [
-      "全文逐段对照",
+      "全文及增量逐段对照",
       "前提及规范强度",
       "术语与触发词",
       "接口与固定字面量",
@@ -1804,9 +1777,9 @@
     ],
     "fences": [],
     "post_review_changes": [
-      "仅添加 7 个源标题兼容锚点；正文未变，映射见 anchors.json"
+      "仅添加 7 个原标题兼容锚点，见 anchors.json"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/misc/git-guardrails-claude-code/SKILL.md": {
     "source_sha256": "69b291d655626a01602b998a1836fcb93c058ede68dfafddfd71e87f17074764",
@@ -1836,7 +1809,7 @@
     "post_review_changes": [
       "仅添加 8 个源标题兼容锚点；正文未变，映射见 anchors.json"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/misc/git-guardrails-claude-code/agents/openai.yaml": {
     "source_sha256": "d53cd783fc0ac208dec9a4c267989284384785aab6422dccdaed42f9e40243ec",
@@ -1850,7 +1823,7 @@
       "链接及代码块用途"
     ],
     "fences": [],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/misc/migrate-to-shoehorn/SKILL.md": {
     "source_sha256": "de4da4c11d924fac79c924b2ee3d2db4a5cb98386eb490a599119463d036ae72",
@@ -1896,7 +1869,7 @@
     "post_review_changes": [
       "仅添加 7 个源标题兼容锚点；正文未变，映射见 anchors.json"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/misc/migrate-to-shoehorn/agents/openai.yaml": {
     "source_sha256": "395c2db852e66a199f1cd07f7ed92d66cb6f0787460c5475926f1a5e778b699d",
@@ -1910,7 +1883,7 @@
       "链接及代码块用途"
     ],
     "fences": [],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/misc/scaffold-exercises/SKILL.md": {
     "source_sha256": "75f5c9d771606fb9762f16522efc954df11c324f87148d8ff069bce166257de9",
@@ -1948,7 +1921,7 @@
     "post_review_changes": [
       "仅添加 8 个源标题兼容锚点；正文未变，映射见 anchors.json"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/misc/scaffold-exercises/agents/openai.yaml": {
     "source_sha256": "525b33913340bea7947ad2de17f2a7c5fb94be543345fe80ae753b9a44ba601d",
@@ -1962,7 +1935,7 @@
       "链接及代码块用途"
     ],
     "fences": [],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/misc/setup-pre-commit/SKILL.md": {
     "source_sha256": "c9819d7f1e3b198064edc1faa3154224ed67395e9f07f5d3cea4b67cf0a11a98",
@@ -2000,7 +1973,7 @@
     "post_review_changes": [
       "仅添加 12 个源标题兼容锚点；正文未变，映射见 anchors.json"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/misc/setup-pre-commit/agents/openai.yaml": {
     "source_sha256": "acf41db398c5c43afe504008bb7d615a97b6498b0f1f6c5b2395254c0bfb57d1",
@@ -2014,21 +1987,21 @@
       "链接及代码块用途"
     ],
     "fences": [],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/in-progress/claude-handoff/SKILL.md": {
-    "source_sha256": "6738e8b7c7899ea0038fb7a5c859ca1b90c7b1eb40123dcdbe94c51b5b119f12",
-    "target_sha256": "989ff7cbddf545473f607981bbdfaafdc87944876590c719ed8f5e4fff8d12aa",
-    "review": "逐技能全文对照完成：保留后台agent命令/name、impl-spec任务图并发顺序和PR边界、loop-me无强制结构/检查点右移要求、retro机械检查优先；PR模板仅译自然说明，所有代码/伪代码/diff/Mermaid原样，credits身份元数据及URL不变。",
+    "source_sha256": "79357a18425d66d4c24048bedf83dceb79d3bba356f38014950f764a7fab4026",
+    "target_sha256": "1420fe0b04c22fb5c4527bdb9adae7a009bb4e62bab0a519d16692c97c37ab60",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
     "checks": [
-      "全文逐段对照",
+      "全文及增量逐段对照",
       "前提及规范强度",
       "术语与触发词",
       "接口与固定字面量",
       "链接及代码块用途"
     ],
     "fences": [],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/in-progress/claude-handoff/agents/openai.yaml": {
     "source_sha256": "2308a672978864633286fb9f0792b08657e501426b3f7883fc418d5d2eac5eb0",
@@ -2042,14 +2015,14 @@
       "链接及代码块用途"
     ],
     "fences": [],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
-  "skills/in-progress/implement-spec/SKILL.md": {
-    "source_sha256": "f703b5f41df9c2202e19540d203e0d5fc32613572a838a070136cc22e712b129",
-    "target_sha256": "e96636a689d1c0c2e9d5e6061227f5e6ec025aa42ee5f520ffb8066b610781cf",
-    "review": "逐技能全文对照完成：保留后台agent命令/name、impl-spec任务图并发顺序和PR边界、loop-me无强制结构/检查点右移要求、retro机械检查优先；PR模板仅译自然说明，所有代码/伪代码/diff/Mermaid原样，credits身份元数据及URL不变。",
+  "skills/engineering/implement-spec/SKILL.md": {
+    "source_sha256": "7a22dd2e60b8fcece478ced9d2533582adf3520d695acd3ab715341535c9e56d",
+    "target_sha256": "4ce703a75d7d777ff98b7b37bf6b28ae1c340452f3fd99166206e9f59f787b52",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
     "checks": [
-      "全文逐段对照",
+      "全文及增量逐段对照",
       "前提及规范强度",
       "术语与触发词",
       "接口与固定字面量",
@@ -2057,23 +2030,23 @@
     ],
     "fences": [],
     "post_review_changes": [
-      "仅添加 1 个源标题兼容锚点；正文未变，映射见 anchors.json"
+      "仅添加 1 个原标题兼容锚点，见 anchors.json"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
-  "skills/in-progress/implement-spec/agents/openai.yaml": {
-    "source_sha256": "d457ae78ff282b8798380b0c2e393c9798bc2bf5ee7dfe9ca31607714c6cd7d3",
-    "target_sha256": "5c50257d6dccc6b81744417c84be985a2ac0ffdca010461b49ccd1a0e657791d",
-    "review": "逐技能全文对照完成：保留后台agent命令/name、impl-spec任务图并发顺序和PR边界、loop-me无强制结构/检查点右移要求、retro机械检查优先；PR模板仅译自然说明，所有代码/伪代码/diff/Mermaid原样，credits身份元数据及URL不变。",
+  "skills/engineering/implement-spec/agents/openai.yaml": {
+    "source_sha256": "fd41efb42c60c96320d6531be7e4bf15cbf5518cd652d57dff27ccffa46988e9",
+    "target_sha256": "87db31a56cc7594bd5714b6f1054042c8f9dd36bd066299160d245ab928eb9f0",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
     "checks": [
-      "全文逐段对照",
+      "全文及增量逐段对照",
       "前提及规范强度",
       "术语与触发词",
       "接口与固定字面量",
       "链接及代码块用途"
     ],
     "fences": [],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/in-progress/loop-me/SKILL.md": {
     "source_sha256": "e44d1cc3e760fb86ac42964c2a5f1fcac511715db50fb375f3f7be814de1eaa7",
@@ -2090,7 +2063,7 @@
     "post_review_changes": [
       "仅添加 4 个源标题兼容锚点；正文未变，映射见 anchors.json"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/in-progress/loop-me/agents/openai.yaml": {
     "source_sha256": "b66fa10079957051be6a812f45e55b67ac394b71d5ba88349962b4c9205802c3",
@@ -2104,14 +2077,14 @@
       "链接及代码块用途"
     ],
     "fences": [],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
-  "skills/in-progress/pr/SKILL.md": {
-    "source_sha256": "e91dc57fa0ee1d8d2fd35562425c943d377f0acdfba6245858a619990fcff0e8",
-    "target_sha256": "6f5423f95a9099512cc91be6b39d7d9f193e570f767663aad25a23bcfaea1a15",
-    "review": "逐技能全文对照完成：保留后台agent命令/name、impl-spec任务图并发顺序和PR边界、loop-me无强制结构/检查点右移要求、retro机械检查优先；PR模板仅译自然说明，所有代码/伪代码/diff/Mermaid原样，credits身份元数据及URL不变。",
+  "skills/engineering/pr/SKILL.md": {
+    "source_sha256": "ab63f1cf78647389edcd386c9427c5dfca27ed2836930c24773ffee834c19bcd",
+    "target_sha256": "a63338d1b2698d5185c37ff2d0b2f200f6f408b7f1344a1e2d99be4f0cc430fa",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
     "checks": [
-      "全文逐段对照",
+      "全文及增量逐段对照",
       "前提及规范强度",
       "术语与触发词",
       "接口与固定字面量",
@@ -2120,7 +2093,7 @@
     "fences": [
       {
         "index": 0,
-        "method": "仅翻译自然语言的代码块；结构与保护项自动检查通过"
+        "method": "仅翻译自然语言的代码块；技术字面量由自动结构检查核对"
       },
       {
         "index": 1,
@@ -2164,30 +2137,30 @@
       }
     ],
     "post_review_changes": [
-      "仅添加 5 个源标题兼容锚点；正文未变，映射见 anchors.json"
+      "仅添加 5 个原标题兼容锚点，见 anchors.json"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
-  "skills/in-progress/pr/agents/openai.yaml": {
+  "skills/engineering/pr/agents/openai.yaml": {
     "source_sha256": "2295b586624db4ef546f3fd4695492f039d941a46d8a1593a702ce3ca511b8ad",
     "target_sha256": "3c49658ce111b93bd3abdeba8c7f81331fbcc56f83c108ee43fe55eeb5757f63",
-    "review": "逐技能全文对照完成：保留后台agent命令/name、impl-spec任务图并发顺序和PR边界、loop-me无强制结构/检查点右移要求、retro机械检查优先；PR模板仅译自然说明，所有代码/伪代码/diff/Mermaid原样，credits身份元数据及URL不变。",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
     "checks": [
-      "全文逐段对照",
+      "全文及增量逐段对照",
       "前提及规范强度",
       "术语与触发词",
       "接口与固定字面量",
       "链接及代码块用途"
     ],
     "fences": [],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
-  "skills/in-progress/retro/SKILL.md": {
+  "skills/engineering/retro/SKILL.md": {
     "source_sha256": "33fbc28568e3146f20fd908b12998bc0ab30aa4f4c87288199a40793efa94696",
     "target_sha256": "3377693186385f22c6155dc0f39c79cb2798a0b9818c850b2495d9df23c35dc1",
-    "review": "逐技能全文对照完成：保留后台agent命令/name、impl-spec任务图并发顺序和PR边界、loop-me无强制结构/检查点右移要求、retro机械检查优先；PR模板仅译自然说明，所有代码/伪代码/diff/Mermaid原样，credits身份元数据及URL不变。",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
     "checks": [
-      "全文逐段对照",
+      "全文及增量逐段对照",
       "前提及规范强度",
       "术语与触发词",
       "接口与固定字面量",
@@ -2195,30 +2168,30 @@
     ],
     "fences": [],
     "post_review_changes": [
-      "仅添加 4 个源标题兼容锚点；正文未变，映射见 anchors.json"
+      "仅添加 4 个原标题兼容锚点，见 anchors.json"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
-  "skills/in-progress/retro/agents/openai.yaml": {
+  "skills/engineering/retro/agents/openai.yaml": {
     "source_sha256": "cb6fb9d7e6b4be5975f41f6def1dd00a1255bad5d9b02696b124c924a8b8745c",
     "target_sha256": "7d396f3f16a6e31db74d8bf008087e5ececfa497bff68236d731dc1f57c0d09f",
-    "review": "逐技能全文对照完成：保留后台agent命令/name、impl-spec任务图并发顺序和PR边界、loop-me无强制结构/检查点右移要求、retro机械检查优先；PR模板仅译自然说明，所有代码/伪代码/diff/Mermaid原样，credits身份元数据及URL不变。",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
     "checks": [
-      "全文逐段对照",
+      "全文及增量逐段对照",
       "前提及规范强度",
       "术语与触发词",
       "接口与固定字面量",
       "链接及代码块用途"
     ],
     "fences": [],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
-  "skills/in-progress/pr/CREDITS.md": {
-    "source_sha256": "d316306f029b9dc9552d6aa5e5454bd95550da45c6325dbe41f86fc256f2dd14",
-    "target_sha256": "2d8fe1e6e81c8c32263984e2173d6796e2280bc1c1e07b52b920962cd0f43a38",
-    "review": "逐技能全文对照完成：保留后台agent命令/name、impl-spec任务图并发顺序和PR边界、loop-me无强制结构/检查点右移要求、retro机械检查优先；PR模板仅译自然说明，所有代码/伪代码/diff/Mermaid原样，credits身份元数据及URL不变。",
+  "skills/engineering/pr/CREDITS.md": {
+    "source_sha256": "a7a087127665d7298a72280ef6e19c41ad8404523712a788c8dc3ab414bc2497",
+    "target_sha256": "4a42a61f144bf2ea7e1cfc848a88e4c020bda8a791e91a00262a07545bbb054a",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
     "checks": [
-      "全文逐段对照",
+      "全文及增量逐段对照",
       "前提及规范强度",
       "术语与触发词",
       "接口与固定字面量",
@@ -2226,9 +2199,9 @@
     ],
     "fences": [],
     "post_review_changes": [
-      "仅添加 1 个源标题兼容锚点；正文未变，映射见 anchors.json"
+      "仅添加 1 个原标题兼容锚点，见 anchors.json"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/in-progress/setup-ts-deep-modules/SKILL.md": {
     "source_sha256": "29acca66ac99d4532e2a6f0370d8125d7cba1e87c9ac66573203c75189d3e6c7",
@@ -2251,7 +2224,7 @@
       "仅添加 11 个源标题兼容锚点；正文未变，映射见 anchors.json",
       "终检翻译反引号中的普通文档指针句；链接目标和文件名不变，精确可变文本登记于 manifest.inline_code_translations。"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/in-progress/setup-ts-deep-modules/agents/openai.yaml": {
     "source_sha256": "159f680217d50747702620c05fd65734a152185b3219a8ca5ee4630878a354fa",
@@ -2265,7 +2238,7 @@
       "链接及代码块用途"
     ],
     "fences": [],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/in-progress/writing-beats/SKILL.md": {
     "source_sha256": "a96abafa2372eede8267d770138b322d6125da8adaa7ccf0a5e08e4ee13ee71e",
@@ -2282,7 +2255,7 @@
     "post_review_changes": [
       "仅添加 5 个源标题兼容锚点；正文未变，映射见 anchors.json"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/in-progress/writing-beats/agents/openai.yaml": {
     "source_sha256": "ddaef01da61d8e3c5f482c4403033c20cf5823f08a1dbf1d4c871670831d01e2",
@@ -2296,7 +2269,7 @@
       "链接及代码块用途"
     ],
     "fences": [],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/in-progress/writing-fragments/SKILL.md": {
     "source_sha256": "298b0edd23df229183630de592ed8aa4289233560f2040691f6eb77caeaad4ea",
@@ -2318,7 +2291,7 @@
     "post_review_changes": [
       "仅添加 3 个源标题兼容锚点；正文未变，映射见 anchors.json"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/in-progress/writing-fragments/agents/openai.yaml": {
     "source_sha256": "81167f25ee8ea1bb4b4958f12b6702ea972ad31b05e03ec91e39fa4bae0c2641",
@@ -2332,7 +2305,7 @@
       "链接及代码块用途"
     ],
     "fences": [],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/in-progress/writing-shape/SKILL.md": {
     "source_sha256": "f5e6c57bdd85178ace4a260c92f46da6b64ddee18215b461d875739c68976f72",
@@ -2349,7 +2322,7 @@
     "post_review_changes": [
       "仅添加 7 个源标题兼容锚点；正文未变，映射见 anchors.json"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "skills/in-progress/writing-shape/agents/openai.yaml": {
     "source_sha256": "56de45430e23104ff178415f5ecf7821d51a9cfabd8814b1607ebf39da2ef5cd",
@@ -2363,203 +2336,14 @@
       "链接及代码块用途"
     ],
     "fences": [],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "README.md": {
-    "source_sha256": "4079d981bc2ac0a52aaf2c76d1c1476f4297937a8ff3a2e2322b6b730dc2d4f6",
-    "target_sha256": "c9cda19acb7a99f894835b0da79553afdd30ce855d8b72542cc7ad6135182d1f",
-    "review": "全文校对根文档：README仅添加获授权中文声明，徽章及安装来源保持上游，25正式技能引用及调用分组不变；banner alt自然文字翻译登记；CLAUDE语义完整且AGENTS符号链接保留；CONTEXT固定Language/_Avoid_与领域英文别名保留，旧ready-for-afk及单角色说法不修补。",
+    "source_sha256": "345041d56cf1411b6b3ca1cc54014d26c563890f817f4cb9e2cb193dcd771a3e",
+    "target_sha256": "1573137558f4755fe25d96d3f590285e13cd2c9b64aec3fcb9445c3ca94f9e2e",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
     "checks": [
-      "全文逐段对照",
-      "前提及规范强度",
-      "术语与触发词",
-      "接口与固定字面量",
-      "链接及代码块用途"
-    ],
-    "fences": [
-      {
-        "index": 0,
-        "method": "原样代码块"
-      },
-      {
-        "index": 1,
-        "method": "原样代码块"
-      },
-      {
-        "index": 2,
-        "method": "原样代码块"
-      },
-      {
-        "index": 3,
-        "method": "原样代码块"
-      }
-    ],
-    "post_review_changes": [
-      "仅添加 14 个源标题兼容锚点；正文未变，映射见 anchors.json"
-    ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
-  },
-  "CLAUDE.md": {
-    "source_sha256": "f5d151bce841cd2a3d2d9e5028e65f10c08d033bb0a7b9ef59dc06521f1ebac4",
-    "target_sha256": "4faa6d2ac3f55a3448ee17dfb34b09ee3a9a6d459e84190261d90523c7e1c03a",
-    "review": "全文复核：恢复原文重复出现的两个分类路径字面量，避免用指代省去受保护路径；其余约束完整保留，AGENTS symlink不变。",
-    "checks": [
-      "全文逐段对照",
-      "前提及规范强度",
-      "术语与触发词",
-      "接口与固定字面量",
-      "链接及代码块用途"
-    ],
-    "fences": [],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
-  },
-  "CONTEXT.md": {
-    "source_sha256": "4b5291aae26ee0cca5ee31c20b4652d3988a063b2348ed48a751ce9c660a5614",
-    "target_sha256": "45ed54b3c1d2eaa5d9d34e83a16c65d273199bb8966b6e333d0715d934948f21",
-    "review": "全文校对根文档：README仅添加获授权中文声明，徽章及安装来源保持上游，25正式技能引用及调用分组不变；banner alt自然文字翻译登记；CLAUDE语义完整且AGENTS符号链接保留；CONTEXT固定Language/_Avoid_与领域英文别名保留，旧ready-for-afk及单角色说法不修补。",
-    "checks": [
-      "全文逐段对照",
-      "前提及规范强度",
-      "术语与触发词",
-      "接口与固定字面量",
-      "链接及代码块用途"
-    ],
-    "fences": [],
-    "post_review_changes": [
-      "仅添加 2 个源标题兼容锚点；正文未变，映射见 anchors.json"
-    ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
-  },
-  "skills/engineering/README.md": {
-    "source_sha256": "713826c94f7858c28067238ce6c7021783e4da0dc0beef58a2af72cf75268fda",
-    "target_sha256": "e65a4210cbf32ad1c3c15db13047e5ca70dffd98a51bbb1a3ef778760add77ab",
-    "review": "全文对照分类索引：18/7/4/9技能集合与每个href不变，正式分类调用分组不变；保留beta警示、retro原有STUB说明及pr索引与实际模板的不同，未将上游状态当作本次翻译未完成标记。",
-    "checks": [
-      "全文逐段对照",
-      "前提及规范强度",
-      "术语与触发词",
-      "接口与固定字面量",
-      "链接及代码块用途"
-    ],
-    "fences": [],
-    "post_review_changes": [
-      "仅添加 3 个源标题兼容锚点；正文未变，映射见 anchors.json"
-    ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
-  },
-  "skills/productivity/README.md": {
-    "source_sha256": "bef3901088b409f00cb1ce6e94f4cf3f4e4865969d8b19330f375cd535b10e37",
-    "target_sha256": "68942acfa73737e839d89fcdfc40aa2b266fff11c53ff3aa3259e9b68cebb4c1",
-    "review": "全文对照分类索引：18/7/4/9技能集合与每个href不变，正式分类调用分组不变；保留beta警示、retro原有STUB说明及pr索引与实际模板的不同，未将上游状态当作本次翻译未完成标记。",
-    "checks": [
-      "全文逐段对照",
-      "前提及规范强度",
-      "术语与触发词",
-      "接口与固定字面量",
-      "链接及代码块用途"
-    ],
-    "fences": [],
-    "post_review_changes": [
-      "仅添加 3 个源标题兼容锚点；正文未变，映射见 anchors.json"
-    ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
-  },
-  "skills/misc/README.md": {
-    "source_sha256": "95f0b467b7f3a2bb27421c6536f35392b6846f5ad26b44ab7df00380ed02edf0",
-    "target_sha256": "8aaab7b5292474656e70c30373d82ba5da1a34f59d38f642b02f180fcd0388c0",
-    "review": "全文对照分类索引：18/7/4/9技能集合与每个href不变，正式分类调用分组不变；保留beta警示、retro原有STUB说明及pr索引与实际模板的不同，未将上游状态当作本次翻译未完成标记。",
-    "checks": [
-      "全文逐段对照",
-      "前提及规范强度",
-      "术语与触发词",
-      "接口与固定字面量",
-      "链接及代码块用途"
-    ],
-    "fences": [],
-    "post_review_changes": [
-      "仅添加 1 个源标题兼容锚点；正文未变，映射见 anchors.json"
-    ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
-  },
-  "skills/in-progress/README.md": {
-    "source_sha256": "5eebe7bc74e0df103dbb03a99201695be2b85c3ee7ab0afc44e4fe833f19dce0",
-    "target_sha256": "0c3cac1209c0e37c4b49af7adbb110409e529cf9baf8048e72c9d6d36f740701",
-    "review": "全文对照分类索引：18/7/4/9技能集合与每个href不变，正式分类调用分组不变；保留beta警示、retro原有STUB说明及pr索引与实际模板的不同，未将上游状态当作本次翻译未完成标记。",
-    "checks": [
-      "全文逐段对照",
-      "前提及规范强度",
-      "术语与触发词",
-      "接口与固定字面量",
-      "链接及代码块用途"
-    ],
-    "fences": [
-      {
-        "index": 0,
-        "method": "原样代码块"
-      }
-    ],
-    "post_review_changes": [
-      "仅添加 1 个源标题兼容锚点；正文未变，映射见 anchors.json"
-    ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
-  },
-  "skills/deprecated/README.md": {
-    "source_sha256": "8b2009e31b7353f318a4321901b1141377e4d395f092934bacde7e9c5b070e26",
-    "target_sha256": "5c3fc3a1ea346e557d000a2414c9207601985e233101ea3eaa062c3dbd78f6c9",
-    "review": "全文对照分类索引：18/7/4/9技能集合与每个href不变，正式分类调用分组不变；保留beta警示、retro原有STUB说明及pr索引与实际模板的不同，未将上游状态当作本次翻译未完成标记。",
-    "checks": [
-      "全文逐段对照",
-      "前提及规范强度",
-      "术语与触发词",
-      "接口与固定字面量",
-      "链接及代码块用途"
-    ],
-    "fences": [],
-    "post_review_changes": [
-      "仅添加 1 个源标题兼容锚点；正文未变，映射见 anchors.json"
-    ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
-  },
-  ".agents/adr/0001-explicit-setup-pointer-only-for-hard-dependencies.md": {
-    "source_sha256": "8f60cf9bf19f1ee8cc09a15c2e06e1d7a9cb51f79d9a273dd9b20b8a2a494f80",
-    "target_sha256": "d99f92aa613345f68f6570a212ab4eb4415ca634d344705cc99719b14e59ca1d",
-    "review": "全文对照隐藏研发文档：安装命令原样、canonical-block/page-template标签不变、写作模板固定章节保留；ADR日期版本/历史验证不当本次验证，旧diagnose/personal目录名及22/24统计保留；自然段说明与规范强度完整翻译。",
-    "checks": [
-      "全文逐段对照",
-      "前提及规范强度",
-      "术语与触发词",
-      "接口与固定字面量",
-      "链接及代码块用途"
-    ],
-    "fences": [],
-    "post_review_changes": [
-      "仅添加 1 个源标题兼容锚点；正文未变，映射见 anchors.json"
-    ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
-  },
-  ".agents/adr/0002-ship-as-a-claude-code-plugin.md": {
-    "source_sha256": "c8f8f946db9fee714fc55270caf6107e749e30316d43fb80cb3ce2f048dd949d",
-    "target_sha256": "765046041c66e3a2cceb0d14c381606e3f6c71dc58a1ce1e9f141bbb6e1fb03f",
-    "review": "全文对照隐藏研发文档：安装命令原样、canonical-block/page-template标签不变、写作模板固定章节保留；ADR日期版本/历史验证不当本次验证，旧diagnose/personal目录名及22/24统计保留；自然段说明与规范强度完整翻译。",
-    "checks": [
-      "全文逐段对照",
-      "前提及规范强度",
-      "术语与触发词",
-      "接口与固定字面量",
-      "链接及代码块用途"
-    ],
-    "fences": [],
-    "post_review_changes": [
-      "仅添加 5 个源标题兼容锚点；正文未变，映射见 anchors.json"
-    ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
-  },
-  ".agents/install-block.md": {
-    "source_sha256": "23f776c69d4b8688e18fd2a29d51ed4f2cb40132f0c3acb3a1ca6d45c1d18f65",
-    "target_sha256": "73fb46a7790d6f16ad16cf891ea7780b3c0b21b3d8df81df8d9d866dc1525991",
-    "review": "全文对照隐藏研发文档：安装命令原样、canonical-block/page-template标签不变、写作模板固定章节保留；ADR日期版本/历史验证不当本次验证，旧diagnose/personal目录名及22/24统计保留；自然段说明与规范强度完整翻译。",
-    "checks": [
-      "全文逐段对照",
+      "全文及增量逐段对照",
       "前提及规范强度",
       "术语与触发词",
       "接口与固定字面量",
@@ -2585,19 +2369,231 @@
       {
         "index": 4,
         "method": "原样代码块"
+      },
+      {
+        "index": 5,
+        "method": "原样代码块"
       }
     ],
     "post_review_changes": [
-      "仅添加 5 个源标题兼容锚点；正文未变，映射见 anchors.json"
+      "仅添加 14 个原标题兼容锚点，见 anchors.json"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
+  },
+  "CLAUDE.md": {
+    "source_sha256": "cd5ad06f3a1f8aa7548e749b12e85f6c2bc4d3911e25853eea3d4324ad742dcb",
+    "target_sha256": "7c016bdb20bc413317c1460a840ec87254a55444df4843de4e45bc23c6c6a9b0",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
+    "checks": [
+      "全文及增量逐段对照",
+      "前提及规范强度",
+      "术语与触发词",
+      "接口与固定字面量",
+      "链接及代码块用途"
+    ],
+    "fences": [],
+    "post_review_changes": [
+      "2026-10-11 终检：同步源文新增的内联代码标记，并核对自然语言表头引用。"
+    ],
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
+  },
+  "GLOSSARY.md": {
+    "source_sha256": "4b5291aae26ee0cca5ee31c20b4652d3988a063b2348ed48a751ce9c660a5614",
+    "target_sha256": "45ed54b3c1d2eaa5d9d34e83a16c65d273199bb8966b6e333d0715d934948f21",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
+    "checks": [
+      "全文及增量逐段对照",
+      "前提及规范强度",
+      "术语与触发词",
+      "接口与固定字面量",
+      "链接及代码块用途"
+    ],
+    "fences": [],
+    "post_review_changes": [
+      "仅添加 2 个原标题兼容锚点，见 anchors.json"
+    ],
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
+  },
+  "skills/engineering/README.md": {
+    "source_sha256": "32d9469dda4e6103d952909cb83e657b7bec01bc582b6be4cec3b493f66920fd",
+    "target_sha256": "8f913a43ae6afa8d8f97e44d5602b4fea0eb2cf51fafb8a453ec780981456c45",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
+    "checks": [
+      "全文及增量逐段对照",
+      "前提及规范强度",
+      "术语与触发词",
+      "接口与固定字面量",
+      "链接及代码块用途"
+    ],
+    "fences": [],
+    "post_review_changes": [
+      "仅添加 3 个原标题兼容锚点，见 anchors.json"
+    ],
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
+  },
+  "skills/productivity/README.md": {
+    "source_sha256": "8e39d23dc60e4b3e433ea17f0ed79510c73873a2779e9852920c9791a217efc8",
+    "target_sha256": "7912092b3ddfbd13b84258475a99b1016faba70b3bdd77d549cc85637062fd9a",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
+    "checks": [
+      "全文及增量逐段对照",
+      "前提及规范强度",
+      "术语与触发词",
+      "接口与固定字面量",
+      "链接及代码块用途"
+    ],
+    "fences": [],
+    "post_review_changes": [
+      "仅添加 3 个原标题兼容锚点，见 anchors.json"
+    ],
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
+  },
+  "skills/misc/README.md": {
+    "source_sha256": "95f0b467b7f3a2bb27421c6536f35392b6846f5ad26b44ab7df00380ed02edf0",
+    "target_sha256": "8aaab7b5292474656e70c30373d82ba5da1a34f59d38f642b02f180fcd0388c0",
+    "review": "全文对照分类索引：18/7/4/9技能集合与每个href不变，正式分类调用分组不变；保留beta警示、retro原有STUB说明及pr索引与实际模板的不同，未将上游状态当作本次翻译未完成标记。",
+    "checks": [
+      "全文逐段对照",
+      "前提及规范强度",
+      "术语与触发词",
+      "接口与固定字面量",
+      "链接及代码块用途"
+    ],
+    "fences": [],
+    "post_review_changes": [
+      "仅添加 1 个源标题兼容锚点；正文未变，映射见 anchors.json"
+    ],
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
+  },
+  "skills/in-progress/README.md": {
+    "source_sha256": "740e1d097748d68ebc00cb98de7b2dadbbac0e714af37a0d6a251819c0073584",
+    "target_sha256": "cca19bff4c49c5cd70a27b2ad32e6795d84e66a54d5eacabd7e377b14e6bd2f3",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
+    "checks": [
+      "全文及增量逐段对照",
+      "前提及规范强度",
+      "术语与触发词",
+      "接口与固定字面量",
+      "链接及代码块用途"
+    ],
+    "fences": [
+      {
+        "index": 0,
+        "method": "原样代码块"
+      }
+    ],
+    "post_review_changes": [
+      "仅添加 1 个原标题兼容锚点，见 anchors.json"
+    ],
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
+  },
+  "skills/deprecated/README.md": {
+    "source_sha256": "8b2009e31b7353f318a4321901b1141377e4d395f092934bacde7e9c5b070e26",
+    "target_sha256": "5c3fc3a1ea346e557d000a2414c9207601985e233101ea3eaa062c3dbd78f6c9",
+    "review": "全文对照分类索引：18/7/4/9技能集合与每个href不变，正式分类调用分组不变；保留beta警示、retro原有STUB说明及pr索引与实际模板的不同，未将上游状态当作本次翻译未完成标记。",
+    "checks": [
+      "全文逐段对照",
+      "前提及规范强度",
+      "术语与触发词",
+      "接口与固定字面量",
+      "链接及代码块用途"
+    ],
+    "fences": [],
+    "post_review_changes": [
+      "仅添加 1 个源标题兼容锚点；正文未变，映射见 anchors.json"
+    ],
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
+  },
+  ".agents/adr/0001-explicit-setup-pointer-only-for-hard-dependencies.md": {
+    "source_sha256": "8f60cf9bf19f1ee8cc09a15c2e06e1d7a9cb51f79d9a273dd9b20b8a2a494f80",
+    "target_sha256": "d99f92aa613345f68f6570a212ab4eb4415ca634d344705cc99719b14e59ca1d",
+    "review": "全文对照隐藏研发文档：安装命令原样、canonical-block/page-template标签不变、写作模板固定章节保留；ADR日期版本/历史验证不当本次验证，旧diagnose/personal目录名及22/24统计保留；自然段说明与规范强度完整翻译。",
+    "checks": [
+      "全文逐段对照",
+      "前提及规范强度",
+      "术语与触发词",
+      "接口与固定字面量",
+      "链接及代码块用途"
+    ],
+    "fences": [],
+    "post_review_changes": [
+      "仅添加 1 个源标题兼容锚点；正文未变，映射见 anchors.json"
+    ],
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
+  },
+  ".agents/adr/0002-ship-as-a-claude-code-plugin.md": {
+    "source_sha256": "75216252f259880e7121b75bab2b8d9a571dcbd0bc4dafcc014232c73e295fd4",
+    "target_sha256": "8cbb1866efc5ed362d22df2a6e7feb8ffecf549b5c0acc7ee5eddf65c8911d1e",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
+    "checks": [
+      "全文及增量逐段对照",
+      "前提及规范强度",
+      "术语与触发词",
+      "接口与固定字面量",
+      "链接及代码块用途"
+    ],
+    "fences": [],
+    "post_review_changes": [
+      "仅添加 7 个原标题兼容锚点，见 anchors.json"
+    ],
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
+  },
+  ".agents/install-block.md": {
+    "source_sha256": "1cc0c600e68b745613c2d9b0b348c28da28b53e16bd99301c8e5c586ff0dfdc9",
+    "target_sha256": "9d5496ffbe8473eff2d0e7f83cd0cf07d854dbcb5d5f730c376fd83a3521c18b",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
+    "checks": [
+      "全文及增量逐段对照",
+      "前提及规范强度",
+      "术语与触发词",
+      "接口与固定字面量",
+      "链接及代码块用途"
+    ],
+    "fences": [
+      {
+        "index": 0,
+        "method": "原样代码块"
+      },
+      {
+        "index": 1,
+        "method": "原样代码块"
+      },
+      {
+        "index": 2,
+        "method": "原样代码块"
+      },
+      {
+        "index": 3,
+        "method": "原样代码块"
+      },
+      {
+        "index": 4,
+        "method": "原样代码块"
+      },
+      {
+        "index": 5,
+        "method": "原样代码块"
+      },
+      {
+        "index": 6,
+        "method": "原样代码块"
+      },
+      {
+        "index": 7,
+        "method": "原样代码块"
+      }
+    ],
+    "post_review_changes": [
+      "仅添加 5 个原标题兼容锚点，见 anchors.json"
+    ],
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   ".agents/invocation.md": {
-    "source_sha256": "41f2f02a15d9c93818c209c4320184ceab75aa45bce6c93a8df7f27935ec3cbb",
-    "target_sha256": "a66db0a7b17730e2f76be4ce2a3ede741078b54ff39cd3720f55f7a1fbef66f0",
-    "review": "全文对照隐藏研发文档：安装命令原样、canonical-block/page-template标签不变、写作模板固定章节保留；ADR日期版本/历史验证不当本次验证，旧diagnose/personal目录名及22/24统计保留；自然段说明与规范强度完整翻译。",
+    "source_sha256": "a8ee3ff9cab8fe247c5de4312320117c001df548960970a2769856349ec09402",
+    "target_sha256": "ef2de4ba815840940c0d0e92625c7debe34dc283d443dfb9663035d0e1ca6ced",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
     "checks": [
-      "全文逐段对照",
+      "全文及增量逐段对照",
       "前提及规范强度",
       "术语与触发词",
       "接口与固定字面量",
@@ -2605,16 +2601,16 @@
     ],
     "fences": [],
     "post_review_changes": [
-      "仅添加 3 个源标题兼容锚点；正文未变，映射见 anchors.json"
+      "仅添加 3 个原标题兼容锚点，见 anchors.json"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   ".agents/writing-docs.md": {
-    "source_sha256": "f1a008576e185e5ff232e45504886273948a9323a7ace26652816f2b2bd38922",
-    "target_sha256": "1ecad55953f7efcfabfb52e2783baf5cb03d8a954d4bc7f8ec51152c5ba35d63",
-    "review": "全文对照隐藏研发文档：安装命令原样、canonical-block/page-template标签不变、写作模板固定章节保留；ADR日期版本/历史验证不当本次验证，旧diagnose/personal目录名及22/24统计保留；自然段说明与规范强度完整翻译。",
+    "source_sha256": "5ab85d0351589f5d9bc3b05b3735d7cbe342b75cf2fb5dc6b489e6099566bfd0",
+    "target_sha256": "2b783ed564457b80e9c91fa76aee347f043c9c870e8c371a3bc81895d88b1c84",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
     "checks": [
-      "全文逐段对照",
+      "全文及增量逐段对照",
       "前提及规范强度",
       "术语与触发词",
       "接口与固定字面量",
@@ -2622,9 +2618,9 @@
     ],
     "fences": [],
     "post_review_changes": [
-      "仅添加 4 个源标题兼容锚点；正文未变，映射见 anchors.json"
+      "仅添加 4 个原标题兼容锚点，见 anchors.json"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   ".changeset/README.md": {
     "source_sha256": "495bd4805f8362853bce99689c1cd75db8c475dfa38930619d2e197d7554db27",
@@ -2638,168 +2634,14 @@
       "链接及代码块用途"
     ],
     "fences": [],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
-  },
-  ".changeset/add-implement-spec-skill.md": {
-    "source_sha256": "abbf2ece03c6629782df0f815603378f275252c92379529eae0268e101721246",
-    "target_sha256": "249aa9e99d367d66db25d5cd59deab47fc2f07dbd4bb0f36ce65515427c82c5d",
-    "review": "全文对照changeset与范围决策记录：保留mattpocock-skills/patch frontmatter、issue/PR编号、历史技能名、命令及固定字段；pr changeset描述超出实际SKILL的部分保留；拒绝理由、替代入口和权限语气完整。",
-    "checks": [
-      "全文逐段对照",
-      "前提及规范强度",
-      "术语与触发词",
-      "接口与固定字面量",
-      "链接及代码块用途"
-    ],
-    "fences": [],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
-  },
-  ".changeset/add-pr-skill.md": {
-    "source_sha256": "74a85148eba2e100dd25ca170751f2f87ca3d9d59056662b956ed486df8aec51",
-    "target_sha256": "c775299f147c8eb0a380c087765f3bf8037a5d366e7fdffec404bba46a85f044",
-    "review": "全文对照changeset与范围决策记录：保留mattpocock-skills/patch frontmatter、issue/PR编号、历史技能名、命令及固定字段；pr changeset描述超出实际SKILL的部分保留；拒绝理由、替代入口和权限语气完整。",
-    "checks": [
-      "全文逐段对照",
-      "前提及规范强度",
-      "术语与触发词",
-      "接口与固定字面量",
-      "链接及代码块用途"
-    ],
-    "fences": [],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
-  },
-  ".changeset/domain-modeling-trigger-context-adr.md": {
-    "source_sha256": "ec97502246b5d9cfc3aeea3ed584ca8ac0b43c82ec8389ff2ed96c231b76062d",
-    "target_sha256": "0ca305a8888bae21d5ae510379420e7f30154fde4de1e1869a45e901ecef720c",
-    "review": "全文对照changeset与范围决策记录：保留mattpocock-skills/patch frontmatter、issue/PR编号、历史技能名、命令及固定字段；pr changeset描述超出实际SKILL的部分保留；拒绝理由、替代入口和权限语气完整。",
-    "checks": [
-      "全文逐段对照",
-      "前提及规范强度",
-      "术语与触发词",
-      "接口与固定字面量",
-      "链接及代码块用途"
-    ],
-    "fences": [],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
-  },
-  ".changeset/fix-yaml-frontmatter-colons.md": {
-    "source_sha256": "fb4975a991e85ec802044c96350038db3343be5a604b38a9b5f323bd56223652",
-    "target_sha256": "7e5413c4c5b93920ee059a51c580d6bb74646bc19db85ded04bc84969d740cb7",
-    "review": "全文对照changeset与范围决策记录：保留mattpocock-skills/patch frontmatter、issue/PR编号、历史技能名、命令及固定字段；pr changeset描述超出实际SKILL的部分保留；拒绝理由、替代入口和权限语气完整。",
-    "checks": [
-      "全文逐段对照",
-      "前提及规范强度",
-      "术语与触发词",
-      "接口与固定字面量",
-      "链接及代码块用途"
-    ],
-    "fences": [],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
-  },
-  ".changeset/grilling-add-hr-between-questions.md": {
-    "source_sha256": "bcc1cc80f58662c9d2b40680bced44da7fa273f689a2b7eaf863a0da65790433",
-    "target_sha256": "2774c9545354401ef24f557729eeb96332ed0d9c30ec156bbac32f151c842ab5",
-    "review": "全文对照changeset与范围决策记录：保留mattpocock-skills/patch frontmatter、issue/PR编号、历史技能名、命令及固定字段；pr changeset描述超出实际SKILL的部分保留；拒绝理由、替代入口和权限语气完整。",
-    "checks": [
-      "全文逐段对照",
-      "前提及规范强度",
-      "术语与触发词",
-      "接口与固定字面量",
-      "链接及代码块用途"
-    ],
-    "fences": [],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
-  },
-  ".changeset/grilling-remove-em-dashes.md": {
-    "source_sha256": "149094700d65fd5a4660e710603a70d65e24a3e12b755ffb54b51eaf0534303f",
-    "target_sha256": "7a503c62081c1cbba0fdd332b2dcfd16d91672aa69c94eb946db1b80c35c5c51",
-    "review": "全文对照changeset与范围决策记录：保留mattpocock-skills/patch frontmatter、issue/PR编号、历史技能名、命令及固定字段；pr changeset描述超出实际SKILL的部分保留；拒绝理由、替代入口和权限语气完整。",
-    "checks": [
-      "全文逐段对照",
-      "前提及规范强度",
-      "术语与触发词",
-      "接口与固定字面量",
-      "链接及代码块用途"
-    ],
-    "fences": [],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
-  },
-  ".changeset/remove-em-dashes-repo-wide.md": {
-    "source_sha256": "bf463a1fc067e2a0752a952c247169e1ba1e0bc81fc542d434eb42a99de317bd",
-    "target_sha256": "5ce37fd790c4dbc1b8eda0e8f106600912fa15315f3409dd41086e9be167f21b",
-    "review": "全文对照changeset与范围决策记录：保留mattpocock-skills/patch frontmatter、issue/PR编号、历史技能名、命令及固定字段；pr changeset描述超出实际SKILL的部分保留；拒绝理由、替代入口和权限语气完整。",
-    "checks": [
-      "全文逐段对照",
-      "前提及规范强度",
-      "术语与触发词",
-      "接口与固定字面量",
-      "链接及代码块用途"
-    ],
-    "fences": [],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
-  },
-  ".changeset/retro-deterministic-checks.md": {
-    "source_sha256": "ed64855df84306a89780b60e63865b9b66a899bf40d3c45a11a99bb0db8c8380",
-    "target_sha256": "3f5483bc0ac99b8bfe84c731228e8d03b7bc035ce14c32ca58635c5599077284",
-    "review": "全文对照changeset与范围决策记录：保留mattpocock-skills/patch frontmatter、issue/PR编号、历史技能名、命令及固定字段；pr changeset描述超出实际SKILL的部分保留；拒绝理由、替代入口和权限语气完整。",
-    "checks": [
-      "全文逐段对照",
-      "前提及规范强度",
-      "术语与触发词",
-      "接口与固定字面量",
-      "链接及代码块用途"
-    ],
-    "fences": [],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
-  },
-  ".changeset/skill-tool-invocation-terminology.md": {
-    "source_sha256": "3fb3ccf597c7975987c671483f337a9e4d2804bf595e4bec0d854fbaffc6c8c1",
-    "target_sha256": "18b2841fcf5f9706ad75c29ceb2599b8c152713329940f78333ce3b2c5639fcb",
-    "review": "全文对照changeset与范围决策记录：保留mattpocock-skills/patch frontmatter、issue/PR编号、历史技能名、命令及固定字段；pr changeset描述超出实际SKILL的部分保留；拒绝理由、替代入口和权限语气完整。",
-    "checks": [
-      "全文逐段对照",
-      "前提及规范强度",
-      "术语与触发词",
-      "接口与固定字面量",
-      "链接及代码块用途"
-    ],
-    "fences": [],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
-  },
-  ".changeset/user-invoked-skill-invocation.md": {
-    "source_sha256": "4ddc0960266b40cedd4087c91c0e1e30fb294f2d0d1fcd96e391b27d3a74d365",
-    "target_sha256": "5ebd3b59dd94c288a1f22539474833d7b64484ac0d4ae48ea2eb6f5bab446782",
-    "review": "全文对照changeset与范围决策记录：保留mattpocock-skills/patch frontmatter、issue/PR编号、历史技能名、命令及固定字段；pr changeset描述超出实际SKILL的部分保留；拒绝理由、替代入口和权限语气完整。",
-    "checks": [
-      "全文逐段对照",
-      "前提及规范强度",
-      "术语与触发词",
-      "接口与固定字面量",
-      "链接及代码块用途"
-    ],
-    "fences": [],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
-  },
-  ".changeset/wait-what-context-map.md": {
-    "source_sha256": "6a01f1b4b3686179ceca13206e1bf3cb3cc8e1413ba71a47b15ab780ffd04e2a",
-    "target_sha256": "2f70d018388c0e6538d4d27a7cf1539f4ee3f44b62beacbb43484d64e5dde7fe",
-    "review": "全文对照changeset与范围决策记录：保留mattpocock-skills/patch frontmatter、issue/PR编号、历史技能名、命令及固定字段；pr changeset描述超出实际SKILL的部分保留；拒绝理由、替代入口和权限语气完整。",
-    "checks": [
-      "全文逐段对照",
-      "前提及规范强度",
-      "术语与触发词",
-      "接口与固定字面量",
-      "链接及代码块用途"
-    ],
-    "fences": [],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   ".out-of-scope/mainstream-issue-trackers-only.md": {
-    "source_sha256": "b640f37fb4dd35b88eeddd1438bd637dc3f813facfc668074c9a71f82d38847f",
-    "target_sha256": "f3aec6739ffc502273ccf5b46f9fe100abac03ad33f2be38a9de2c5aeea75f6a",
-    "review": "全文对照changeset与范围决策记录：保留mattpocock-skills/patch frontmatter、issue/PR编号、历史技能名、命令及固定字段；pr changeset描述超出实际SKILL的部分保留；拒绝理由、替代入口和权限语气完整。",
+    "source_sha256": "1a0f3c328099efb3810186fb347a29170e93d4c098ec0b19a376fbc9de36f790",
+    "target_sha256": "28b07b2d436bf8873fbeae92589aa3b0129e64878ea55b15b4018ed314533ebc",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
     "checks": [
-      "全文逐段对照",
+      "全文及增量逐段对照",
       "前提及规范强度",
       "术语与触发词",
       "接口与固定字面量",
@@ -2807,9 +2649,9 @@
     ],
     "fences": [],
     "post_review_changes": [
-      "仅添加 3 个源标题兼容锚点；正文未变，映射见 anchors.json"
+      "仅添加 3 个原标题兼容锚点，见 anchors.json"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   ".out-of-scope/question-limits.md": {
     "source_sha256": "a4c7ab33523e8f88b75be6549f657cf086b86d77be48b87d48276311e368cc9d",
@@ -2826,7 +2668,7 @@
     "post_review_changes": [
       "仅添加 3 个源标题兼容锚点；正文未变，映射见 anchors.json"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   ".out-of-scope/setup-skill-verify-mode.md": {
     "source_sha256": "aba793ba7b3457fd75e7c2560ec0e98e75a051ecfc5f91f73f16fc97475919bd",
@@ -2843,14 +2685,14 @@
     "post_review_changes": [
       "仅添加 3 个源标题兼容锚点；正文未变，映射见 anchors.json"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   },
   "CHANGELOG.md": {
-    "source_sha256": "ef5b5c5dfab4103bebcff8820eadbc9634b45fb06c2098c5ce39fb83039b4bcd",
-    "target_sha256": "5cc7ec83f746260e57601ef3edd0a459336861ba713de11817fce20a3efa0bb1",
-    "review": "分两批全文逐段对照270源行：全部自然段/列表/变更标题翻译；只保留包名、版本标题、安装命令和围栏；所有PR/commit/作者链接由源行前缀原样继承，Thanks翻译为感谢；历史改名、旧行为、Breaking强度及数量不更新为现行状态；行级映射见changelog-lines.json。",
+    "source_sha256": "d1fc00f3751b6ef35935251dd461fb126381631be277aec1d21edd485b4ae89a",
+    "target_sha256": "6ece2f0f6e1d1dc21226cdb6a6e65b18d81882002a1ef73b3bdf3cdf120d9c73",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
     "checks": [
-      "全文逐段对照",
+      "全文及增量逐段对照",
       "前提及规范强度",
       "术语与触发词",
       "接口与固定字面量",
@@ -2867,8 +2709,510 @@
       }
     ],
     "post_review_changes": [
-      "仅添加 10 个源标题兼容锚点；正文未变，映射见 anchors.json"
+      "仅添加 13 个原标题兼容锚点，见 anchors.json"
     ],
-    "final_validation": "2026-09-25：原译 hash、元数据、文档结构、锚点、受保护字面量及英文分类均通过本地验收。"
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
+  },
+  ".changeset/ask-matt-read-skill-first.md": {
+    "source_sha256": "a9a8434022e8ba4334c41f80f8f01a04f4a6cd19b8f9b9415f6ab67922979e08",
+    "target_sha256": "2a3dd629718294010fab2e964ac3b8c2c5a7f82b0bf50e000c67b9a78ae44862",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
+    "checks": [
+      "全文及增量逐段对照",
+      "前提及规范强度",
+      "术语与触发词",
+      "接口与固定字面量",
+      "链接及代码块用途"
+    ],
+    "fences": [],
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
+  },
+  ".changeset/code-review-standards-and-subagents.md": {
+    "source_sha256": "c5fb24a1b485436d13a67513d4386705d6a2191685d1e71d521c3083b1157de4",
+    "target_sha256": "fa825a6d54258e4029be67c9d13b3129f4e0941c8634c627a960721f764507e7",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
+    "checks": [
+      "全文及增量逐段对照",
+      "前提及规范强度",
+      "术语与触发词",
+      "接口与固定字面量",
+      "链接及代码块用途"
+    ],
+    "fences": [],
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
+  },
+  ".changeset/diagnosing-bugs-prove-mutation.md": {
+    "source_sha256": "644051db39329181784bd1e403520b32c3e5e0a04f9421ae21dc2f52e33a4f08",
+    "target_sha256": "bdaa7aa2b4ca6ba4294d8939fa67440e1f6264cd94f88af5664a234a89662b81",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
+    "checks": [
+      "全文及增量逐段对照",
+      "前提及规范强度",
+      "术语与触发词",
+      "接口与固定字面量",
+      "链接及代码块用途"
+    ],
+    "fences": [],
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
+  },
+  ".changeset/github-tracker-external-pr-list.md": {
+    "source_sha256": "68ee9e72fe623788e5f43dafaa8ba7fee68369ac994f1404fe6dbd9381f0caf6",
+    "target_sha256": "bd2f613026c958311abd66b6703d113e45c0de643d4a273e7b662c615421f1ba",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
+    "checks": [
+      "全文及增量逐段对照",
+      "前提及规范强度",
+      "术语与触发词",
+      "接口与固定字面量",
+      "链接及代码块用途"
+    ],
+    "fences": [],
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
+  },
+  ".changeset/grilling-yes-accepts-recommendation.md": {
+    "source_sha256": "434cfe97ec2d4dbe2ca7ab004c55a46a8db6ee08228299161ad24b5e186422af",
+    "target_sha256": "b263e8cb41384ebb7232ab56ffa05cded1add567d6387f40ffe0a8b675cba462",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
+    "checks": [
+      "全文及增量逐段对照",
+      "前提及规范强度",
+      "术语与触发词",
+      "接口与固定字面量",
+      "链接及代码块用途"
+    ],
+    "fences": [],
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
+  },
+  ".changeset/handoff-temp-dir.md": {
+    "source_sha256": "757c5b99ee36b11040294daa37bda957e7ebe30e1fa0c5114dc5bcfa561ac55a",
+    "target_sha256": "fbafa0d84a610c9f80e391409da7356368e6057ec84bd194625a46bf670ed77c",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
+    "checks": [
+      "全文及增量逐段对照",
+      "前提及规范强度",
+      "术语与触发词",
+      "接口与固定字面量",
+      "链接及代码块用途"
+    ],
+    "fences": [],
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
+  },
+  ".changeset/implement-skill-tool-wording.md": {
+    "source_sha256": "8c1dd792b7d2880778fe21d2e921db657cb206293fdd01c1f8069c379c60a5c1",
+    "target_sha256": "231532e493eb86077d1c4a40ba9f5c10ea8c46e565981d99477d27916d8826b3",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
+    "checks": [
+      "全文及增量逐段对照",
+      "前提及规范强度",
+      "术语与触发词",
+      "接口与固定字面量",
+      "链接及代码块用途"
+    ],
+    "fences": [],
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
+  },
+  ".changeset/implement-ticket-reference.md": {
+    "source_sha256": "16d871f6ef8194ce116cc1685b06374affa38cde41ab9c5a7eb3691f9ebe0b07",
+    "target_sha256": "a8804bef7c9ffff17bd78247a200e3f25e9b56856ba34c0c93aacb975ba5a963",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
+    "checks": [
+      "全文及增量逐段对照",
+      "前提及规范强度",
+      "术语与触发词",
+      "接口与固定字面量",
+      "链接及代码块用途"
+    ],
+    "fences": [],
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
+  },
+  ".changeset/setup-tracker-fixes.md": {
+    "source_sha256": "e42b94eb34df86c315f91a4164b3ae132398a142eb2c56b9f4482d1c2b0244ac",
+    "target_sha256": "7890cb13d7d77d6a04cd5d2387f87fc9770b0fde0a9943dae7e7e7c621c539e3",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
+    "checks": [
+      "全文及增量逐段对照",
+      "前提及规范强度",
+      "术语与触发词",
+      "接口与固定字面量",
+      "链接及代码块用途"
+    ],
+    "fences": [],
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
+  },
+  ".changeset/tdd-seam-tradeoffs.md": {
+    "source_sha256": "403a418164dd58068949b26e0fd0d32bf40e5082334e127e540783159cb04f33",
+    "target_sha256": "610aed490fa9f1c6f2f23f60e27fa9a85519628109fef5b490dc642a046185ee",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
+    "checks": [
+      "全文及增量逐段对照",
+      "前提及规范强度",
+      "术语与触发词",
+      "接口与固定字面量",
+      "链接及代码块用途"
+    ],
+    "fences": [],
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
+  },
+  ".changeset/teach-quiz-answer-position.md": {
+    "source_sha256": "23998e0c26d91a7c0fab1b20f3504af1d131ff56117493b4739aa676afd5732a",
+    "target_sha256": "5a3124114446f08014c18d43c2621b86afcddaf2a6a60e48c9d3cc4b25d2d06b",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
+    "checks": [
+      "全文及增量逐段对照",
+      "前提及规范强度",
+      "术语与触发词",
+      "接口与固定字面量",
+      "链接及代码块用途"
+    ],
+    "fences": [],
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
+  },
+  ".changeset/teach-workspace-root.md": {
+    "source_sha256": "444f6b2cf0e39057200ad91260bac553bd41a954ca47aa7014e6b11520c3a801",
+    "target_sha256": "e3f9a689dcdf1123fe45126b7332f5c78f8d1c990f5a476950d25304889cefc2",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
+    "checks": [
+      "全文及增量逐段对照",
+      "前提及规范强度",
+      "术语与触发词",
+      "接口与固定字面量",
+      "链接及代码块用途"
+    ],
+    "fences": [],
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
+  },
+  ".changeset/to-tickets-sub-issues.md": {
+    "source_sha256": "004c4f10285ffcd6e6c80509046ca50057a8791e1701dfaf60b6385ce4a28a41",
+    "target_sha256": "690f9ac4f3b6a08c21ac674afea7623abaf8e9bd2f0cdb0254179d06a36e5380",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
+    "checks": [
+      "全文及增量逐段对照",
+      "前提及规范强度",
+      "术语与触发词",
+      "接口与固定字面量",
+      "链接及代码块用途"
+    ],
+    "fences": [],
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
+  },
+  ".changeset/wayfinder-labels-refs-research-prs.md": {
+    "source_sha256": "eb40737504c340c3795b6cc9854282f680b65b4ff8771812c3316c54100cf915",
+    "target_sha256": "b0fba578f4f07791dcdc7078700ef0f0fb7375fb0e79b43042d9438b87ba7517",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
+    "checks": [
+      "全文及增量逐段对照",
+      "前提及规范强度",
+      "术语与触发词",
+      "接口与固定字面量",
+      "链接及代码块用途"
+    ],
+    "fences": [],
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
+  },
+  ".changeset/wizard-template-fixes-2.md": {
+    "source_sha256": "39b8d00c160176be980e5796964199dbdc94d264a23e9b838c29e9d1b775ae77",
+    "target_sha256": "7fdf7f363974aacf9c2301db0005a70a60b4f10571283b2a07da0d6487a99579",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
+    "checks": [
+      "全文及增量逐段对照",
+      "前提及规范强度",
+      "术语与触发词",
+      "接口与固定字面量",
+      "链接及代码块用途"
+    ],
+    "fences": [],
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
+  },
+  ".changeset/wizard-template-fixes.md": {
+    "source_sha256": "1bd42c9701b035d9e658325eb0cc1ad2ec3fdf7145af287e7fa702ecb86b1e99",
+    "target_sha256": "b0da4d556d263f4b03c63e3441487d58a6be197bd2b8e6a48708cfeb031d8db6",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
+    "checks": [
+      "全文及增量逐段对照",
+      "前提及规范强度",
+      "术语与触发词",
+      "接口与固定字面量",
+      "链接及代码块用途"
+    ],
+    "fences": [],
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
+  },
+  ".github/ISSUE_TEMPLATE/bug.yml": {
+    "source_sha256": "c80f1a2a403e9df89be8d2ae705f72d4b2234e7d9faa14d2f43dd9081205e735",
+    "target_sha256": "5b860c7aa7b9161a571280d7b6f707355ce68365680c6214b432beaf92e13c94",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
+    "checks": [
+      "全文及增量逐段对照",
+      "前提及规范强度",
+      "术语与触发词",
+      "接口与固定字面量",
+      "链接及代码块用途"
+    ],
+    "fences": [],
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
+  },
+  ".github/ISSUE_TEMPLATE/config.yml": {
+    "source_sha256": "28bccadc3e34198eb01e7cd368db628b7b528a69f11a86e6d08577e969e56a99",
+    "target_sha256": "297156db3e38923db8b527637ad90080ae464149423b719b7e3b6a9e4ff0b4c7",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
+    "checks": [
+      "全文及增量逐段对照",
+      "前提及规范强度",
+      "术语与触发词",
+      "接口与固定字面量",
+      "链接及代码块用途"
+    ],
+    "fences": [],
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
+  },
+  ".github/ISSUE_TEMPLATE/idea.yml": {
+    "source_sha256": "fe1f9d7efcfd0062e467bf4783787f53bf6e01322c89c226ff2048abcd3f9bd0",
+    "target_sha256": "5371eac0b0222cf8c6146cc4267f5295cf60df3e0f0c1f029e5b67a16e63e2bc",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
+    "checks": [
+      "全文及增量逐段对照",
+      "前提及规范强度",
+      "术语与触发词",
+      "接口与固定字面量",
+      "链接及代码块用途"
+    ],
+    "fences": [],
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
+  },
+  ".out-of-scope/frozen-misc-skills.md": {
+    "source_sha256": "df55c265d366a5365437c8402bfc6376f0095b4d2d0d9772abaae4dfb731db4e",
+    "target_sha256": "d007b761604efcb09229f89140bd1d0675c2e7f604a22115075f7bbcf5b3aed9",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
+    "checks": [
+      "全文及增量逐段对照",
+      "前提及规范强度",
+      "术语与触发词",
+      "接口与固定字面量",
+      "链接及代码块用途"
+    ],
+    "fences": [],
+    "post_review_changes": [
+      "仅添加 3 个原标题兼容锚点，见 anchors.json"
+    ],
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
+  },
+  ".out-of-scope/harness-name-collisions.md": {
+    "source_sha256": "d4fae0db17921efb822edcad7af449c700a62beea3a4f3193d73655817580b2c",
+    "target_sha256": "97c233c37411f2a0ffa508ffa37bad150a1bf51fe78c3f4c565fd6338000ae6f",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
+    "checks": [
+      "全文及增量逐段对照",
+      "前提及规范强度",
+      "术语与触发词",
+      "接口与固定字面量",
+      "链接及代码块用途"
+    ],
+    "fences": [
+      {
+        "index": 0,
+        "method": "原样代码块"
+      }
+    ],
+    "post_review_changes": [
+      "仅添加 3 个原标题兼容锚点，见 anchors.json"
+    ],
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
+  },
+  ".out-of-scope/lazy-load-writing-for-agents.md": {
+    "source_sha256": "632d9a790290c4eaec5a4d972e2a157994abd7f4bf940a81406177bb55fde811",
+    "target_sha256": "ab0482ea9f8d0dd8a12ef0ba89c44a052e1963a96152c78f77fddcfd1ed849dd",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
+    "checks": [
+      "全文及增量逐段对照",
+      "前提及规范强度",
+      "术语与触发词",
+      "接口与固定字面量",
+      "链接及代码块用途"
+    ],
+    "fences": [],
+    "post_review_changes": [
+      "仅添加 3 个原标题兼容锚点，见 anchors.json"
+    ],
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
+  },
+  ".out-of-scope/native-question-tool.md": {
+    "source_sha256": "24b3780c245e514c6fc8a015cbe701a35b8dae0b65f91518c27631cd1843b9fc",
+    "target_sha256": "1d285260c2ec247e1f68e88a27656138c9abf7216c0dd2dbf6f17a67623b64a4",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
+    "checks": [
+      "全文及增量逐段对照",
+      "前提及规范强度",
+      "术语与触发词",
+      "接口与固定字面量",
+      "链接及代码块用途"
+    ],
+    "fences": [],
+    "post_review_changes": [
+      "仅添加 3 个原标题兼容锚点，见 anchors.json"
+    ],
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
+  },
+  ".out-of-scope/new-skills.md": {
+    "source_sha256": "4c82c95cf84ae340a09513db8764848c2e144f94d183ae0407e90eba44c8c52f",
+    "target_sha256": "e269334e9c79807db6bdcee63809169cb5750fa24c18128caafee07c44885102",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
+    "checks": [
+      "全文及增量逐段对照",
+      "前提及规范强度",
+      "术语与触发词",
+      "接口与固定字面量",
+      "链接及代码块用途"
+    ],
+    "fences": [],
+    "post_review_changes": [
+      "仅添加 3 个原标题兼容锚点，见 anchors.json"
+    ],
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
+  },
+  ".out-of-scope/subagent-recursion.md": {
+    "source_sha256": "27f48a714d63e1a0f5e6ed827855ba45183622429f8ece30036de15573b170cc",
+    "target_sha256": "920649f2a47b755ca63eb724285aeb658dc5517579d64b6624bb9bdb88ff466f",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
+    "checks": [
+      "全文及增量逐段对照",
+      "前提及规范强度",
+      "术语与触发词",
+      "接口与固定字面量",
+      "链接及代码块用途"
+    ],
+    "fences": [],
+    "post_review_changes": [
+      "仅添加 3 个原标题兼容锚点，见 anchors.json"
+    ],
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
+  },
+  "SCOPE.md": {
+    "source_sha256": "4d5c09ef33193d9db3dac2e6e11e5d6b1abcfe08135d20c8a6d9cd3b0d6ed866",
+    "target_sha256": "0dcfb615eca4ebbd5c10b1a7ad828fcb033ac279f0245bf75228bd0b1eed11f7",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
+    "checks": [
+      "全文及增量逐段对照",
+      "前提及规范强度",
+      "术语与触发词",
+      "接口与固定字面量",
+      "链接及代码块用途"
+    ],
+    "fences": [],
+    "post_review_changes": [
+      "仅添加 5 个原标题兼容锚点，见 anchors.json"
+    ],
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
+  },
+  "docs/agents/triage-labels.md": {
+    "source_sha256": "a44f6ede99c2f01e969685d7b33e53d47386d74d6a365adedb8a42c3b329bcce",
+    "target_sha256": "575ec03e8d67988ff7562ac39ff18ee071a7d168c4ecbdb4f9c1bf94d0a6bd90",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
+    "checks": [
+      "全文及增量逐段对照",
+      "前提及规范强度",
+      "术语与触发词",
+      "接口与固定字面量",
+      "链接及代码块用途"
+    ],
+    "fences": [],
+    "post_review_changes": [
+      "仅添加 1 个原标题兼容锚点，见 anchors.json"
+    ],
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
+  },
+  "docs/engineering/implement-spec.md": {
+    "source_sha256": "6778976cfef5fccf6a4b8974f32517e119dd18fe0bbd00f233f13fa1f00194b7",
+    "target_sha256": "a716784dcec77580a30f57be877ce82f35ea0fb6ce2d929484e8553a6458954f",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
+    "checks": [
+      "全文及增量逐段对照",
+      "前提及规范强度",
+      "术语与触发词",
+      "接口与固定字面量",
+      "链接及代码块用途"
+    ],
+    "fences": [
+      {
+        "index": 0,
+        "method": "原样代码块"
+      }
+    ],
+    "post_review_changes": [
+      "仅添加 1 个原标题兼容锚点，见 anchors.json",
+      "终检补齐新增文档的六节中文标题及对应兼容锚点。"
+    ],
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
+  },
+  "docs/engineering/pr.md": {
+    "source_sha256": "6ddd7b93d01efc16dfb4e28106f8f75b02b61f3049c22cb39117209549acb226",
+    "target_sha256": "b47f83e85d027a4d9e1de6e3ab48c271909a905d46c8f79b3bbe4365d6f9ad21",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
+    "checks": [
+      "全文及增量逐段对照",
+      "前提及规范强度",
+      "术语与触发词",
+      "接口与固定字面量",
+      "链接及代码块用途"
+    ],
+    "fences": [],
+    "post_review_changes": [
+      "仅添加 1 个原标题兼容锚点，见 anchors.json",
+      "终检补齐新增文档的六节中文标题及对应兼容锚点。"
+    ],
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
+  },
+  "docs/engineering/retro.md": {
+    "source_sha256": "fbe0893f6e95e6110a18a22246dbfb940f1a0ee9a1c804dce883546c9ef899f8",
+    "target_sha256": "e66f1b05bc9764d5cfa9407313f50383a9cd2b290b9be74cfb3193b079cea64f",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
+    "checks": [
+      "全文及增量逐段对照",
+      "前提及规范强度",
+      "术语与触发词",
+      "接口与固定字面量",
+      "链接及代码块用途"
+    ],
+    "fences": [
+      {
+        "index": 0,
+        "method": "仅翻译自然语言的代码块；技术字面量由自动结构检查核对"
+      }
+    ],
+    "post_review_changes": [
+      "仅添加 1 个原标题兼容锚点，见 anchors.json",
+      "终检补齐新增文档的六节中文标题及对应兼容锚点。"
+    ],
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
+  },
+  "skills/in-progress/chief-of-staff/SKILL.md": {
+    "source_sha256": "6cc6e47ab5022f3e45e5be0fedbb0f6e645f4f0190d6b0c51c7cd60c2d7c1d98",
+    "target_sha256": "d338c9a6d6b5a17e5dfe4afb0980202257b142dca4f0ed4700b6520197eba341",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
+    "checks": [
+      "全文及增量逐段对照",
+      "前提及规范强度",
+      "术语与触发词",
+      "接口与固定字面量",
+      "链接及代码块用途"
+    ],
+    "fences": [],
+    "post_review_changes": [
+      "仅添加 3 个原标题兼容锚点，见 anchors.json"
+    ],
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
+  },
+  "skills/in-progress/chief-of-staff/agents/openai.yaml": {
+    "source_sha256": "c0f68ed9da6977adc97a791be3bb0830d301b2d27f9c635d92d6f325bffefb83",
+    "target_sha256": "ee5a04eb60966f079b9f7fa821ef66900a1e6f99b179fe5cef320b7a67467b77",
+    "review": "2026-10-11：对照 1.2.3 至 1.3.1 的逐行差分翻译；新增页面全文逐段校对，未改变语义的编辑性调整沿用已校对译文；核对路径迁移、规范强度、固定输出、命令及元数据。自动结构验收另记。",
+    "checks": [
+      "全文及增量逐段对照",
+      "前提及规范强度",
+      "术语与触发词",
+      "接口与固定字面量",
+      "链接及代码块用途"
+    ],
+    "fences": [],
+    "final_validation": "2026-10-11：源译 hash、元数据、结构、链接、英文保留分类与技术字面量通过全量本地验收；译义记录按增量校对或继承注明。"
   }
 }

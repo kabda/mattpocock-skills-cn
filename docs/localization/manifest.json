@@ -2,8 +2,8 @@
   "source_repository": "mattpocock/skills",
   "target_repository": "kabda/mattpocock-skills-cn",
   "source_path": "/Users/zxj/Developer/open-source/skills",
-  "source_commit": "c55ee46073ed923f86ce59a5eb3b6d895095d1b7",
-  "source_tree": "0345ebb740dc47c09176a3b41a49cc11f4900073",
+  "source_commit": "49dd158d1076134a641b33efb035946536778336",
+  "source_tree": "3ce485319972aae46dec0c2ac34cf4a7f28f7414",
   "source_initial_status": "",
   "existing_files": {
     "wiki/translation-goal.html": "a31327e6640477d955d50041e4d84712b4c4301b2a210945003419a734454f99",
@@ -26,7 +26,10 @@
     "docs/localization/changelog-lines.json",
     "docs/localization/audit.py",
     "docs/localization/english-retained.json",
-    "docs/localization/audit-report.json"
+    "docs/localization/audit-report.json",
+    "docs/localization/validation-1.2.3.md",
+    "docs/localization/upstream-1.3.1.md",
+    "wiki/upstream-1.3.1.html"
   ],
   "mutable_json_paths": {
     ".claude-plugin/plugin.json": [
@@ -51,55 +54,55 @@
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
       "validated_target_sha256": "d99f92aa613345f68f6570a212ab4eb4415ca634d344705cc99719b14e59ca1d",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": ".agents/adr/0002-ship-as-a-claude-code-plugin.md",
       "mode": "100644",
-      "source_blob": "263d10290d60ea15119d2d3c51af5f4f08b5f178",
-      "source_sha256": "c8f8f946db9fee714fc55270caf6107e749e30316d43fb80cb3ce2f048dd949d",
+      "source_blob": "177405976b3474f0833b82d7a67f272f87564600",
+      "source_sha256": "75216252f259880e7121b75bab2b8d9a571dcbd0bc4dafcc014232c73e295fd4",
       "category": ".agents",
       "method": "全文翻译",
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
-      "validated_target_sha256": "765046041c66e3a2cceb0d14c381606e3f6c71dc58a1ce1e9f141bbb6e1fb03f",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validated_target_sha256": "8cbb1866efc5ed362d22df2a6e7feb8ffecf549b5c0acc7ee5eddf65c8911d1e",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": ".agents/install-block.md",
       "mode": "100644",
-      "source_blob": "a93751108599407637bec35c08dde6c4eb1afefe",
-      "source_sha256": "23f776c69d4b8688e18fd2a29d51ed4f2cb40132f0c3acb3a1ca6d45c1d18f65",
+      "source_blob": "29e5fb1370973a341793a477d18d52f276873ce7",
+      "source_sha256": "1cc0c600e68b745613c2d9b0b348c28da28b53e16bd99301c8e5c586ff0dfdc9",
       "category": ".agents",
       "method": "全文翻译",
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
-      "validated_target_sha256": "73fb46a7790d6f16ad16cf891ea7780b3c0b21b3d8df81df8d9d866dc1525991",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validated_target_sha256": "9d5496ffbe8473eff2d0e7f83cd0cf07d854dbcb5d5f730c376fd83a3521c18b",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": ".agents/invocation.md",
       "mode": "100644",
-      "source_blob": "c13b8a5ea97466e14259de602c6b66e72133fef1",
-      "source_sha256": "41f2f02a15d9c93818c209c4320184ceab75aa45bce6c93a8df7f27935ec3cbb",
+      "source_blob": "4877b32cd55bf708be61d90b95b720003f0ffdb5",
+      "source_sha256": "a8ee3ff9cab8fe247c5de4312320117c001df548960970a2769856349ec09402",
       "category": ".agents",
       "method": "全文翻译",
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
-      "validated_target_sha256": "a66db0a7b17730e2f76be4ce2a3ede741078b54ff39cd3720f55f7a1fbef66f0",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validated_target_sha256": "ef2de4ba815840940c0d0e92625c7debe34dc283d443dfb9663035d0e1ca6ced",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": ".agents/writing-docs.md",
       "mode": "100644",
-      "source_blob": "68f9216230f2bbafefc985eccf81fcc506c14b3b",
-      "source_sha256": "f1a008576e185e5ff232e45504886273948a9323a7ace26652816f2b2bd38922",
+      "source_blob": "1614ee71dccb1443a56f6c714c0204f7ffae808e",
+      "source_sha256": "5ab85d0351589f5d9bc3b05b3735d7cbe342b75cf2fb5dc6b489e6099566bfd0",
       "category": ".agents",
       "method": "全文翻译",
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
-      "validated_target_sha256": "1ecad55953f7efcfabfb52e2783baf5cb03d8a954d4bc7f8ec51152c5ba35d63",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validated_target_sha256": "2b783ed564457b80e9c91fa76aee347f043c9c870e8c371a3bc81895d88b1c84",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": ".changeset/README.md",
@@ -111,31 +114,31 @@
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
       "validated_target_sha256": "fca7e364a8ccd3064cff8ea820756ee972ae5ac005050c82707745642a902776",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
-      "path": ".changeset/add-implement-spec-skill.md",
+      "path": ".changeset/ask-matt-read-skill-first.md",
       "mode": "100644",
-      "source_blob": "2128b7d4220ed30503e957fe8c8bbcf9b521931d",
-      "source_sha256": "abbf2ece03c6629782df0f815603378f275252c92379529eae0268e101721246",
+      "source_blob": "9f2178ee8db7c4d7dcc5e0d87c3f2a0d8287ee8e",
+      "source_sha256": "a9a8434022e8ba4334c41f80f8f01a04f4a6cd19b8f9b9415f6ab67922979e08",
       "category": ".changeset",
       "method": "全文翻译",
-      "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
+      "preserve_reason": "保留命令、路径、URL、技术标识及不可变元数据；自然语言译为中文",
       "status": "已验证",
-      "validated_target_sha256": "249aa9e99d367d66db25d5cd59deab47fc2f07dbd4bb0f36ce65515427c82c5d",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validated_target_sha256": "2a3dd629718294010fab2e964ac3b8c2c5a7f82b0bf50e000c67b9a78ae44862",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
-      "path": ".changeset/add-pr-skill.md",
+      "path": ".changeset/code-review-standards-and-subagents.md",
       "mode": "100644",
-      "source_blob": "7539375d458a18a51a333ca11711b14fc21d8a8c",
-      "source_sha256": "74a85148eba2e100dd25ca170751f2f87ca3d9d59056662b956ed486df8aec51",
+      "source_blob": "b0d1563e17cf1284b8aa2608ab2b55e097ff40f9",
+      "source_sha256": "c5fb24a1b485436d13a67513d4386705d6a2191685d1e71d521c3083b1157de4",
       "category": ".changeset",
       "method": "全文翻译",
-      "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
+      "preserve_reason": "保留命令、路径、URL、技术标识及不可变元数据；自然语言译为中文",
       "status": "已验证",
-      "validated_target_sha256": "c775299f147c8eb0a380c087765f3bf8037a5d366e7fdffec404bba46a85f044",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validated_target_sha256": "fa825a6d54258e4029be67c9d13b3129f4e0941c8634c627a960721f764507e7",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": ".changeset/config.json",
@@ -145,117 +148,177 @@
       "category": ".changeset",
       "method": "原样保留",
       "preserve_reason": "保留可执行代码、配置、许可证或符号链接契约",
-      "status": "原样保留已验证",
+      "status": "已验证",
       "validated_target_sha256": "61717b21675ba9d99f0fc363253ead2716895a4c043c779727d8c685d48684e8",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
-      "path": ".changeset/domain-modeling-trigger-context-adr.md",
+      "path": ".changeset/diagnosing-bugs-prove-mutation.md",
       "mode": "100644",
-      "source_blob": "8ab6722a781dedf4d52456d6a02f83e358e62f1f",
-      "source_sha256": "ec97502246b5d9cfc3aeea3ed584ca8ac0b43c82ec8389ff2ed96c231b76062d",
+      "source_blob": "75fc13166f988eefdc3902d5cad077c13e11d9c6",
+      "source_sha256": "644051db39329181784bd1e403520b32c3e5e0a04f9421ae21dc2f52e33a4f08",
       "category": ".changeset",
       "method": "全文翻译",
-      "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
+      "preserve_reason": "保留命令、路径、URL、技术标识及不可变元数据；自然语言译为中文",
       "status": "已验证",
-      "validated_target_sha256": "0ca305a8888bae21d5ae510379420e7f30154fde4de1e1869a45e901ecef720c",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validated_target_sha256": "bdaa7aa2b4ca6ba4294d8939fa67440e1f6264cd94f88af5664a234a89662b81",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
-      "path": ".changeset/fix-yaml-frontmatter-colons.md",
+      "path": ".changeset/github-tracker-external-pr-list.md",
       "mode": "100644",
-      "source_blob": "64f830b202aaef799c5dabe2ba53d0ab05f87efa",
-      "source_sha256": "fb4975a991e85ec802044c96350038db3343be5a604b38a9b5f323bd56223652",
+      "source_blob": "86f5992735ab0cb1474fdd4f4555242d908ba70a",
+      "source_sha256": "68ee9e72fe623788e5f43dafaa8ba7fee68369ac994f1404fe6dbd9381f0caf6",
       "category": ".changeset",
       "method": "全文翻译",
-      "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
+      "preserve_reason": "保留命令、路径、URL、技术标识及不可变元数据；自然语言译为中文",
       "status": "已验证",
-      "validated_target_sha256": "7e5413c4c5b93920ee059a51c580d6bb74646bc19db85ded04bc84969d740cb7",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validated_target_sha256": "bd2f613026c958311abd66b6703d113e45c0de643d4a273e7b662c615421f1ba",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
-      "path": ".changeset/grilling-add-hr-between-questions.md",
+      "path": ".changeset/grilling-yes-accepts-recommendation.md",
       "mode": "100644",
-      "source_blob": "0fc8ee080d9d5b7ed6709af70a5d66a4b65ca5cb",
-      "source_sha256": "bcc1cc80f58662c9d2b40680bced44da7fa273f689a2b7eaf863a0da65790433",
+      "source_blob": "e188254a21cd49bf17cf471fc3c36d7f837734b6",
+      "source_sha256": "434cfe97ec2d4dbe2ca7ab004c55a46a8db6ee08228299161ad24b5e186422af",
       "category": ".changeset",
       "method": "全文翻译",
-      "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
+      "preserve_reason": "保留命令、路径、URL、技术标识及不可变元数据；自然语言译为中文",
       "status": "已验证",
-      "validated_target_sha256": "2774c9545354401ef24f557729eeb96332ed0d9c30ec156bbac32f151c842ab5",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validated_target_sha256": "b263e8cb41384ebb7232ab56ffa05cded1add567d6387f40ffe0a8b675cba462",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
-      "path": ".changeset/grilling-remove-em-dashes.md",
+      "path": ".changeset/handoff-temp-dir.md",
       "mode": "100644",
-      "source_blob": "6cd562fb6a8b46afb9db06756deb76a2bd6688aa",
-      "source_sha256": "149094700d65fd5a4660e710603a70d65e24a3e12b755ffb54b51eaf0534303f",
+      "source_blob": "ed2b3c36bc269e59b861c035106572c778d658a8",
+      "source_sha256": "757c5b99ee36b11040294daa37bda957e7ebe30e1fa0c5114dc5bcfa561ac55a",
       "category": ".changeset",
       "method": "全文翻译",
-      "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
+      "preserve_reason": "保留命令、路径、URL、技术标识及不可变元数据；自然语言译为中文",
       "status": "已验证",
-      "validated_target_sha256": "7a503c62081c1cbba0fdd332b2dcfd16d91672aa69c94eb946db1b80c35c5c51",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validated_target_sha256": "fbafa0d84a610c9f80e391409da7356368e6057ec84bd194625a46bf670ed77c",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
-      "path": ".changeset/remove-em-dashes-repo-wide.md",
+      "path": ".changeset/implement-skill-tool-wording.md",
       "mode": "100644",
-      "source_blob": "a3909afb95f471194fe96430127799bb7e7df5b1",
-      "source_sha256": "bf463a1fc067e2a0752a952c247169e1ba1e0bc81fc542d434eb42a99de317bd",
+      "source_blob": "ec6dfaa3479c4cf13e7fc5edbf7a06fc253c4d29",
+      "source_sha256": "8c1dd792b7d2880778fe21d2e921db657cb206293fdd01c1f8069c379c60a5c1",
       "category": ".changeset",
       "method": "全文翻译",
-      "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
+      "preserve_reason": "保留命令、路径、URL、技术标识及不可变元数据；自然语言译为中文",
       "status": "已验证",
-      "validated_target_sha256": "5ce37fd790c4dbc1b8eda0e8f106600912fa15315f3409dd41086e9be167f21b",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validated_target_sha256": "231532e493eb86077d1c4a40ba9f5c10ea8c46e565981d99477d27916d8826b3",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
-      "path": ".changeset/retro-deterministic-checks.md",
+      "path": ".changeset/implement-ticket-reference.md",
       "mode": "100644",
-      "source_blob": "d4865b040f73137a130320a3047f906b58ef3d8a",
-      "source_sha256": "ed64855df84306a89780b60e63865b9b66a899bf40d3c45a11a99bb0db8c8380",
+      "source_blob": "e171339a670b70f5c864b8a0315cc90ef16c7dd0",
+      "source_sha256": "16d871f6ef8194ce116cc1685b06374affa38cde41ab9c5a7eb3691f9ebe0b07",
       "category": ".changeset",
       "method": "全文翻译",
-      "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
+      "preserve_reason": "保留命令、路径、URL、技术标识及不可变元数据；自然语言译为中文",
       "status": "已验证",
-      "validated_target_sha256": "3f5483bc0ac99b8bfe84c731228e8d03b7bc035ce14c32ca58635c5599077284",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validated_target_sha256": "a8804bef7c9ffff17bd78247a200e3f25e9b56856ba34c0c93aacb975ba5a963",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
-      "path": ".changeset/skill-tool-invocation-terminology.md",
+      "path": ".changeset/setup-tracker-fixes.md",
       "mode": "100644",
-      "source_blob": "153b5564e6ab98f85ddb36988f72a00adfe1a716",
-      "source_sha256": "3fb3ccf597c7975987c671483f337a9e4d2804bf595e4bec0d854fbaffc6c8c1",
+      "source_blob": "1a87b509f26e941f027662090de297f80293e2bc",
+      "source_sha256": "e42b94eb34df86c315f91a4164b3ae132398a142eb2c56b9f4482d1c2b0244ac",
       "category": ".changeset",
       "method": "全文翻译",
-      "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
+      "preserve_reason": "保留命令、路径、URL、技术标识及不可变元数据；自然语言译为中文",
       "status": "已验证",
-      "validated_target_sha256": "18b2841fcf5f9706ad75c29ceb2599b8c152713329940f78333ce3b2c5639fcb",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validated_target_sha256": "7890cb13d7d77d6a04cd5d2387f87fc9770b0fde0a9943dae7e7e7c621c539e3",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
-      "path": ".changeset/user-invoked-skill-invocation.md",
+      "path": ".changeset/tdd-seam-tradeoffs.md",
       "mode": "100644",
-      "source_blob": "18e6a7c38d55a5fb75f3b4bfceb6807e95060032",
-      "source_sha256": "4ddc0960266b40cedd4087c91c0e1e30fb294f2d0d1fcd96e391b27d3a74d365",
+      "source_blob": "5c9f66c5890965551063bcdbc9f7644be12732d2",
+      "source_sha256": "403a418164dd58068949b26e0fd0d32bf40e5082334e127e540783159cb04f33",
       "category": ".changeset",
       "method": "全文翻译",
-      "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
+      "preserve_reason": "保留命令、路径、URL、技术标识及不可变元数据；自然语言译为中文",
       "status": "已验证",
-      "validated_target_sha256": "5ebd3b59dd94c288a1f22539474833d7b64484ac0d4ae48ea2eb6f5bab446782",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validated_target_sha256": "610aed490fa9f1c6f2f23f60e27fa9a85519628109fef5b490dc642a046185ee",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
-      "path": ".changeset/wait-what-context-map.md",
+      "path": ".changeset/teach-quiz-answer-position.md",
       "mode": "100644",
-      "source_blob": "edaa4d6a86c16095fef8e18f8214487627a9cba2",
-      "source_sha256": "6a01f1b4b3686179ceca13206e1bf3cb3cc8e1413ba71a47b15ab780ffd04e2a",
+      "source_blob": "7bbb0a5b65806d09b6b9adc680290da2dd4ccef3",
+      "source_sha256": "23998e0c26d91a7c0fab1b20f3504af1d131ff56117493b4739aa676afd5732a",
       "category": ".changeset",
       "method": "全文翻译",
-      "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
+      "preserve_reason": "保留命令、路径、URL、技术标识及不可变元数据；自然语言译为中文",
       "status": "已验证",
-      "validated_target_sha256": "2f70d018388c0e6538d4d27a7cf1539f4ee3f44b62beacbb43484d64e5dde7fe",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validated_target_sha256": "5a3124114446f08014c18d43c2621b86afcddaf2a6a60e48c9d3cc4b25d2d06b",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
+    },
+    {
+      "path": ".changeset/teach-workspace-root.md",
+      "mode": "100644",
+      "source_blob": "8f763a9878f9e67ed9d9d16bbfab1fa3961368cb",
+      "source_sha256": "444f6b2cf0e39057200ad91260bac553bd41a954ca47aa7014e6b11520c3a801",
+      "category": ".changeset",
+      "method": "全文翻译",
+      "preserve_reason": "保留命令、路径、URL、技术标识及不可变元数据；自然语言译为中文",
+      "status": "已验证",
+      "validated_target_sha256": "e3f9a689dcdf1123fe45126b7332f5c78f8d1c990f5a476950d25304889cefc2",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
+    },
+    {
+      "path": ".changeset/to-tickets-sub-issues.md",
+      "mode": "100644",
+      "source_blob": "cc9099b79ce0fd683aea3f668c3a18567f723f79",
+      "source_sha256": "004c4f10285ffcd6e6c80509046ca50057a8791e1701dfaf60b6385ce4a28a41",
+      "category": ".changeset",
+      "method": "全文翻译",
+      "preserve_reason": "保留命令、路径、URL、技术标识及不可变元数据；自然语言译为中文",
+      "status": "已验证",
+      "validated_target_sha256": "690f9ac4f3b6a08c21ac674afea7623abaf8e9bd2f0cdb0254179d06a36e5380",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
+    },
+    {
+      "path": ".changeset/wayfinder-labels-refs-research-prs.md",
+      "mode": "100644",
+      "source_blob": "20a016909bec5b1d76e6d8080804cab4c19adf82",
+      "source_sha256": "eb40737504c340c3795b6cc9854282f680b65b4ff8771812c3316c54100cf915",
+      "category": ".changeset",
+      "method": "全文翻译",
+      "preserve_reason": "保留命令、路径、URL、技术标识及不可变元数据；自然语言译为中文",
+      "status": "已验证",
+      "validated_target_sha256": "b0fba578f4f07791dcdc7078700ef0f0fb7375fb0e79b43042d9438b87ba7517",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
+    },
+    {
+      "path": ".changeset/wizard-template-fixes-2.md",
+      "mode": "100644",
+      "source_blob": "937cf02dad5aa6379b6acb458b8c2d0790601457",
+      "source_sha256": "39b8d00c160176be980e5796964199dbdc94d264a23e9b838c29e9d1b775ae77",
+      "category": ".changeset",
+      "method": "全文翻译",
+      "preserve_reason": "保留命令、路径、URL、技术标识及不可变元数据；自然语言译为中文",
+      "status": "已验证",
+      "validated_target_sha256": "7fdf7f363974aacf9c2301db0005a70a60b4f10571283b2a07da0d6487a99579",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
+    },
+    {
+      "path": ".changeset/wizard-template-fixes.md",
+      "mode": "100644",
+      "source_blob": "d7e4dce2d14d63ba5199dae424c1ed441a3da417",
+      "source_sha256": "1bd42c9701b035d9e658325eb0cc1ad2ec3fdf7145af287e7fa702ecb86b1e99",
+      "category": ".changeset",
+      "method": "全文翻译",
+      "preserve_reason": "保留命令、路径、URL、技术标识及不可变元数据；自然语言译为中文",
+      "status": "已验证",
+      "validated_target_sha256": "b0da4d556d263f4b03c63e3441487d58a6be197bd2b8e6a48708cfeb031d8db6",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": ".claude-plugin/marketplace.json",
@@ -267,19 +330,67 @@
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
       "validated_target_sha256": "7367be54e2903e46a4f9517227cddebbe8f7949f842c96cd004f579b9d56235e",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": ".claude-plugin/plugin.json",
       "mode": "100644",
-      "source_blob": "0a2e3088d2bcaaabcc02ff1c691c5e6c0f81d01d",
-      "source_sha256": "e531ddc6560515397ac32d93334fa3eb586b6b6bcc2e472c3646641fd3d2b951",
+      "source_blob": "4f5ee1cc3ca58cad722dc5f1fe083ac9926d33bf",
+      "source_sha256": "15a5a7227915917856ea019ad82584ee877309b5bc3cabfb86b83b7e2cc6e238",
       "category": ".claude-plugin",
       "method": "部分字段翻译",
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
-      "validated_target_sha256": "c0ad1c5e3a2787d58559f392bc75f396ed32ff669e8f0f39e2d0a73d58136317",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validated_target_sha256": "a6f279473c14a7720a1e8ebe1b50a4e2b1d466dbe9057f312f28d89a3a93d8de",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/bug.yml",
+      "mode": "100644",
+      "source_blob": "e63032ad38bf970bf320ba94c24e68fae86c6866",
+      "source_sha256": "c80f1a2a403e9df89be8d2ae705f72d4b2234e7d9faa14d2f43dd9081205e735",
+      "category": ".github",
+      "method": "部分字段翻译",
+      "preserve_reason": "保留命令、路径、URL、技术标识及不可变元数据；自然语言译为中文",
+      "status": "已验证",
+      "validated_target_sha256": "5b860c7aa7b9161a571280d7b6f707355ce68365680c6214b432beaf92e13c94",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/config.yml",
+      "mode": "100644",
+      "source_blob": "9bebabba0b404eaf0a44d08711237f550af4c35b",
+      "source_sha256": "28bccadc3e34198eb01e7cd368db628b7b528a69f11a86e6d08577e969e56a99",
+      "category": ".github",
+      "method": "部分字段翻译",
+      "preserve_reason": "保留命令、路径、URL、技术标识及不可变元数据；自然语言译为中文",
+      "status": "已验证",
+      "validated_target_sha256": "297156db3e38923db8b527637ad90080ae464149423b719b7e3b6a9e4ff0b4c7",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/idea.yml",
+      "mode": "100644",
+      "source_blob": "2734c8c612887f1d4c17aaf1b24215b3039557cf",
+      "source_sha256": "fe1f9d7efcfd0062e467bf4783787f53bf6e01322c89c226ff2048abcd3f9bd0",
+      "category": ".github",
+      "method": "部分字段翻译",
+      "preserve_reason": "保留命令、路径、URL、技术标识及不可变元数据；自然语言译为中文",
+      "status": "已验证",
+      "validated_target_sha256": "5371eac0b0222cf8c6146cc4267f5295cf60df3e0f0c1f029e5b67a16e63e2bc",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
+    },
+    {
+      "path": ".github/workflows/needs-info.yml",
+      "mode": "100644",
+      "source_blob": "02dc891d2e83f883838495647821cbf9924361c4",
+      "source_sha256": "d1f57c0e864694e66f319bf9c3d7096a019b47bcf4d59fe5e747074c429a2f67",
+      "category": ".github",
+      "method": "原样保留",
+      "preserve_reason": "可执行脚本、自动化工作流、配置或符号链接原样同步上游",
+      "status": "已验证",
+      "validated_target_sha256": "d1f57c0e864694e66f319bf9c3d7096a019b47bcf4d59fe5e747074c429a2f67",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": ".github/workflows/release.yml",
@@ -289,33 +400,105 @@
       "category": ".github",
       "method": "原样保留",
       "preserve_reason": "保留可执行代码、配置、许可证或符号链接契约",
-      "status": "原样保留已验证",
+      "status": "已验证",
       "validated_target_sha256": "73ce81a83de90d93a63272dae7e1a3ff8d57dc2f8e99424694289dc7174eec46",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
+    },
+    {
+      "path": ".github/workflows/triage-label.yml",
+      "mode": "100644",
+      "source_blob": "3e88fae95bbac82f35704032fc8da5e875b49d89",
+      "source_sha256": "d17784874e9b37e7e90743f5fa019ecd3a9b31e0623a4014a2aa68782eef330e",
+      "category": ".github",
+      "method": "原样保留",
+      "preserve_reason": "可执行脚本、自动化工作流、配置或符号链接原样同步上游",
+      "status": "已验证",
+      "validated_target_sha256": "d17784874e9b37e7e90743f5fa019ecd3a9b31e0623a4014a2aa68782eef330e",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": ".gitignore",
       "mode": "100644",
       "source_blob": "98dd2d8dd55043ee7a28c5ecbf08cc6a18afacaf",
       "source_sha256": "a7e7370254fc919ab78ddf61e0e3763b80ea7ade18863c6650c329da44b8ec7b",
-      "category": ".gitignore",
+      "category": "根目录",
       "method": "原样保留",
       "preserve_reason": "保留可执行代码、配置、许可证或符号链接契约",
-      "status": "原样保留已验证",
+      "status": "已验证",
       "validated_target_sha256": "a7e7370254fc919ab78ddf61e0e3763b80ea7ade18863c6650c329da44b8ec7b",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
+    },
+    {
+      "path": ".out-of-scope/frozen-misc-skills.md",
+      "mode": "100644",
+      "source_blob": "18569548173d51dcad2bf9c1ebf3c614428313ff",
+      "source_sha256": "df55c265d366a5365437c8402bfc6376f0095b4d2d0d9772abaae4dfb731db4e",
+      "category": ".out-of-scope",
+      "method": "全文翻译",
+      "preserve_reason": "保留命令、路径、URL、技术标识及不可变元数据；自然语言译为中文",
+      "status": "已验证",
+      "validated_target_sha256": "d007b761604efcb09229f89140bd1d0675c2e7f604a22115075f7bbcf5b3aed9",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
+    },
+    {
+      "path": ".out-of-scope/harness-name-collisions.md",
+      "mode": "100644",
+      "source_blob": "bf309722209b76e3c20b7cc530fc63ba3f684c57",
+      "source_sha256": "d4fae0db17921efb822edcad7af449c700a62beea3a4f3193d73655817580b2c",
+      "category": ".out-of-scope",
+      "method": "全文翻译",
+      "preserve_reason": "保留命令、路径、URL、技术标识及不可变元数据；自然语言译为中文",
+      "status": "已验证",
+      "validated_target_sha256": "97c233c37411f2a0ffa508ffa37bad150a1bf51fe78c3f4c565fd6338000ae6f",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
+    },
+    {
+      "path": ".out-of-scope/lazy-load-writing-for-agents.md",
+      "mode": "100644",
+      "source_blob": "eb5a7fbef98febfa0497137a508e148c7ed98651",
+      "source_sha256": "632d9a790290c4eaec5a4d972e2a157994abd7f4bf940a81406177bb55fde811",
+      "category": ".out-of-scope",
+      "method": "全文翻译",
+      "preserve_reason": "保留命令、路径、URL、技术标识及不可变元数据；自然语言译为中文",
+      "status": "已验证",
+      "validated_target_sha256": "ab0482ea9f8d0dd8a12ef0ba89c44a052e1963a96152c78f77fddcfd1ed849dd",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": ".out-of-scope/mainstream-issue-trackers-only.md",
       "mode": "100644",
-      "source_blob": "72f09fe5a9cb64bd55a46d45e116cd538d48fe20",
-      "source_sha256": "b640f37fb4dd35b88eeddd1438bd637dc3f813facfc668074c9a71f82d38847f",
+      "source_blob": "74aa31a7428fce5f4ea1647a0bf361937c6d1162",
+      "source_sha256": "1a0f3c328099efb3810186fb347a29170e93d4c098ec0b19a376fbc9de36f790",
       "category": ".out-of-scope",
       "method": "全文翻译",
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
-      "validated_target_sha256": "f3aec6739ffc502273ccf5b46f9fe100abac03ad33f2be38a9de2c5aeea75f6a",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validated_target_sha256": "28b07b2d436bf8873fbeae92589aa3b0129e64878ea55b15b4018ed314533ebc",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
+    },
+    {
+      "path": ".out-of-scope/native-question-tool.md",
+      "mode": "100644",
+      "source_blob": "a6102b8a96dd67010b1d41200a9691c3df059a81",
+      "source_sha256": "24b3780c245e514c6fc8a015cbe701a35b8dae0b65f91518c27631cd1843b9fc",
+      "category": ".out-of-scope",
+      "method": "全文翻译",
+      "preserve_reason": "保留命令、路径、URL、技术标识及不可变元数据；自然语言译为中文",
+      "status": "已验证",
+      "validated_target_sha256": "1d285260c2ec247e1f68e88a27656138c9abf7216c0dd2dbf6f17a67623b64a4",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
+    },
+    {
+      "path": ".out-of-scope/new-skills.md",
+      "mode": "100644",
+      "source_blob": "e0829a22ebb51264a6676323c2c0d50487313283",
+      "source_sha256": "4c82c95cf84ae340a09513db8764848c2e144f94d183ae0407e90eba44c8c52f",
+      "category": ".out-of-scope",
+      "method": "全文翻译",
+      "preserve_reason": "保留命令、路径、URL、技术标识及不可变元数据；自然语言译为中文",
+      "status": "已验证",
+      "validated_target_sha256": "e269334e9c79807db6bdcee63809169cb5750fa24c18128caafee07c44885102",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": ".out-of-scope/question-limits.md",
@@ -327,7 +510,7 @@
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
       "validated_target_sha256": "2dd741c525afbdb190207b62f120f453a0f4f6beac6e2920c140de239644ba43",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": ".out-of-scope/setup-skill-verify-mode.md",
@@ -339,404 +522,475 @@
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
       "validated_target_sha256": "de754e4e809e759ab66c24ee687b8624a3604ae811ba1a59869144db2e789d65",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
+    },
+    {
+      "path": ".out-of-scope/subagent-recursion.md",
+      "mode": "100644",
+      "source_blob": "7363704e50f0ca0f8bdb742bce6bad756f83433b",
+      "source_sha256": "27f48a714d63e1a0f5e6ed827855ba45183622429f8ece30036de15573b170cc",
+      "category": ".out-of-scope",
+      "method": "全文翻译",
+      "preserve_reason": "保留命令、路径、URL、技术标识及不可变元数据；自然语言译为中文",
+      "status": "已验证",
+      "validated_target_sha256": "920649f2a47b755ca63eb724285aeb658dc5517579d64b6624bb9bdb88ff466f",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "AGENTS.md",
       "mode": "120000",
       "source_blob": "681311eb9cf453d0faddf3aacaec7357e97ba8e9",
       "source_sha256": "6ebdb617a8104a7756d0cf36578ab01103dc9f07e4dc6feb751296b9c402faf7",
-      "category": "AGENTS.md",
+      "category": "根目录",
       "method": "原样保留",
       "preserve_reason": "保留可执行代码、配置、许可证或符号链接契约",
-      "status": "原样保留已验证",
-      "link_target": "CLAUDE.md",
+      "status": "已验证",
       "validated_target_sha256": "6ebdb617a8104a7756d0cf36578ab01103dc9f07e4dc6feb751296b9c402faf7",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "CHANGELOG.md",
       "mode": "100644",
-      "source_blob": "26d68ffa7cf2f58471abd578042dded7b75675aa",
-      "source_sha256": "ef5b5c5dfab4103bebcff8820eadbc9634b45fb06c2098c5ce39fb83039b4bcd",
-      "category": "CHANGELOG.md",
+      "source_blob": "5784f6c9f5412f9e9235d2972231244c920976cd",
+      "source_sha256": "d1fc00f3751b6ef35935251dd461fb126381631be277aec1d21edd485b4ae89a",
+      "category": "根目录",
       "method": "全文翻译",
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
-      "validated_target_sha256": "5cc7ec83f746260e57601ef3edd0a459336861ba713de11817fce20a3efa0bb1",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validated_target_sha256": "6ece2f0f6e1d1dc21226cdb6a6e65b18d81882002a1ef73b3bdf3cdf120d9c73",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "CLAUDE.md",
       "mode": "100644",
-      "source_blob": "6de72d80dfdfbba9c8ce93d69a85254fdaebf2b6",
-      "source_sha256": "f5d151bce841cd2a3d2d9e5028e65f10c08d033bb0a7b9ef59dc06521f1ebac4",
-      "category": "CLAUDE.md",
+      "source_blob": "fc5db874293f5e307ebee3f8ca5bd5409d5ea329",
+      "source_sha256": "cd5ad06f3a1f8aa7548e749b12e85f6c2bc4d3911e25853eea3d4324ad742dcb",
+      "category": "根目录",
       "method": "全文翻译",
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
-      "validated_target_sha256": "4faa6d2ac3f55a3448ee17dfb34b09ee3a9a6d459e84190261d90523c7e1c03a",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validated_target_sha256": "7c016bdb20bc413317c1460a840ec87254a55444df4843de4e45bc23c6c6a9b0",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
-      "path": "CONTEXT.md",
+      "path": "GLOSSARY.md",
       "mode": "100644",
       "source_blob": "76ebd23dbb8266dab9491425b39f3c4857fb4a52",
       "source_sha256": "4b5291aae26ee0cca5ee31c20b4652d3988a063b2348ed48a751ce9c660a5614",
-      "category": "CONTEXT.md",
+      "category": "根目录",
       "method": "全文翻译",
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
       "validated_target_sha256": "45ed54b3c1d2eaa5d9d34e83a16c65d273199bb8966b6e333d0715d934948f21",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "LICENSE",
       "mode": "100644",
       "source_blob": "f1dd2c09108dde1a5f56097cee8461b3ea834499",
       "source_sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
-      "category": "LICENSE",
+      "category": "根目录",
       "method": "原样保留",
       "preserve_reason": "保留可执行代码、配置、许可证或符号链接契约",
-      "status": "原样保留已验证",
+      "status": "已验证",
       "validated_target_sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "README.md",
       "mode": "100644",
-      "source_blob": "ff9b797a342d3a64b52f9f5a83d9fc4ce28709dc",
-      "source_sha256": "4079d981bc2ac0a52aaf2c76d1c1476f4297937a8ff3a2e2322b6b730dc2d4f6",
-      "category": "README.md",
+      "source_blob": "f7038f139299985eea6c3e18398dbafb379a0010",
+      "source_sha256": "345041d56cf1411b6b3ca1cc54014d26c563890f817f4cb9e2cb193dcd771a3e",
+      "category": "根目录",
       "method": "全文翻译",
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
-      "validated_target_sha256": "c9cda19acb7a99f894835b0da79553afdd30ce855d8b72542cc7ad6135182d1f",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validated_target_sha256": "1573137558f4755fe25d96d3f590285e13cd2c9b64aec3fcb9445c3ca94f9e2e",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
+    },
+    {
+      "path": "SCOPE.md",
+      "mode": "100644",
+      "source_blob": "2f09e43ee39df11557aea4f23e613b163ec5f628",
+      "source_sha256": "4d5c09ef33193d9db3dac2e6e11e5d6b1abcfe08135d20c8a6d9cd3b0d6ed866",
+      "category": "根目录",
+      "method": "全文翻译",
+      "preserve_reason": "保留命令、路径、URL、技术标识及不可变元数据；自然语言译为中文",
+      "status": "已验证",
+      "validated_target_sha256": "0dcfb615eca4ebbd5c10b1a7ad828fcb033ac279f0245bf75228bd0b1eed11f7",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
+    },
+    {
+      "path": "docs/agents/triage-labels.md",
+      "mode": "100644",
+      "source_blob": "6f223d54f1e1a07056ddf09972a0704c6256d913",
+      "source_sha256": "a44f6ede99c2f01e969685d7b33e53d47386d74d6a365adedb8a42c3b329bcce",
+      "category": "docs",
+      "method": "全文翻译",
+      "preserve_reason": "保留命令、路径、URL、技术标识及不可变元数据；自然语言译为中文",
+      "status": "已验证",
+      "validated_target_sha256": "575ec03e8d67988ff7562ac39ff18ee071a7d168c4ecbdb4f9c1bf94d0a6bd90",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "docs/engineering/ask-matt.md",
       "mode": "100644",
-      "source_blob": "67d1e46192cc22f2f93f6d463dbd831ce174518e",
-      "source_sha256": "813a78e29b999d895cbd2e7d95e09339e4d6dbf935c09133ac8dbd8dc3299299",
+      "source_blob": "d5e2830bd75078dd91754a0f7f426541e7a3ced8",
+      "source_sha256": "ecefe252d5e91a079350d564ebd0a3c3ea8c4dc3274bebb332f3ce5223757bfa",
       "category": "docs",
       "method": "全文翻译",
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
-      "validated_target_sha256": "02e72e387bc326b6556d6b0582f8e41e01138626d475836ae80ecd8e9f1b35b9",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validated_target_sha256": "b404b2b28f5ebdffd9a4e5739e83b0562493572c77cdccd11d22b47211005a14",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "docs/engineering/code-review.md",
       "mode": "100644",
-      "source_blob": "46353162627210af65296c6dee62e422a3400373",
-      "source_sha256": "124f2e73633621d31e199b6e3ccf05df0fca692c79080f1ebf1222688e098dd0",
+      "source_blob": "12283d7f86d73f91030f6ff6ffe1c5ad6c5831e8",
+      "source_sha256": "2c14aa2f82064132ee3a5ab16cf3ccb0bc5679801b1e3dcdf4e33b4b738c9330",
       "category": "docs",
       "method": "全文翻译",
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
-      "validated_target_sha256": "14487e2b4d9ab7bab0c8597e8645ec1d54450bca08061915fe35036ee0e9f2ae",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validated_target_sha256": "41fd71aab69aa024074fd7a5a79e458aa0b9a9c0653d473ff04d7aa81b24ef38",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "docs/engineering/codebase-design.md",
       "mode": "100644",
-      "source_blob": "706365ca56fc2c5253fe407a72c494c51cb91c2e",
-      "source_sha256": "80a8c23d4729447bd8934127b03f1a38d41ff62283deaade95ca6d118307397c",
+      "source_blob": "bf2fa9d0e31c63e5faf655c4b13f85f650c979d5",
+      "source_sha256": "06ae3f8d86a89d0a6cf98d36c36605564c6e219aebe5214aa37b476337573f3d",
       "category": "docs",
       "method": "全文翻译",
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
-      "validated_target_sha256": "313dda7b1686d7231ad6f7c55112701101f309c2c30a483e7a74d35414590b31",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validated_target_sha256": "2047abf4ee729e24a75780768fc86ebb492aacfd6674bba657c71f1fdd3052b4",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "docs/engineering/diagnosing-bugs.md",
       "mode": "100644",
-      "source_blob": "cd6887ac414d40695b52c6a121ba033cb8d5ce98",
-      "source_sha256": "beaa81743d3343e8192e7a6feba8e0c95e4a044ce71ef3c6503f8323902f7c90",
+      "source_blob": "a92bd56a0fcf7485e954958d46a5bf34573ca33d",
+      "source_sha256": "0d2f5ab04d9c2af36168ab43e30ac63e3156b732c0a445b5b5ddd81d3f98ead0",
       "category": "docs",
       "method": "全文翻译",
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
-      "validated_target_sha256": "fc9d751dbdc994d8cbfd405a1d91f8e5141410b6b03fb2cc1bd84f1a2bf381d7",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validated_target_sha256": "4c1448bdbd9cf35f29fddb16bbd723f902adb357d0a1f1416a6c88e13871eab8",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "docs/engineering/domain-modeling.md",
       "mode": "100644",
-      "source_blob": "fb8100db71dca3bb044076f537a2e6ba1ed7c3ef",
-      "source_sha256": "31ceeec5fd53ca542230d89f3ef3d827408f2639919337003b771ac5a93c0027",
+      "source_blob": "36168486f1d89ff7210a00299274091518e1ecb3",
+      "source_sha256": "c5bc4c5cc72814ab242e4a7bc411d44938ec758eba2fcb66a1fb4ebd7f048b37",
       "category": "docs",
       "method": "全文翻译",
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
-      "validated_target_sha256": "b2017aa4ab536aa525c65e68300cc26183c5430409d99f50de77063c7c0aa920",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validated_target_sha256": "8c2f92277825854c68775459fcbc473f421949cd579b8c65ae3fcd1d08e44cd5",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "docs/engineering/grill-with-docs.md",
       "mode": "100644",
-      "source_blob": "26ac9de3bbdf49db18c7a1aa0ff508c6bf680cda",
-      "source_sha256": "31382fa1ad6af50ccd2d6cb396d3d9774ccef31c90c77d50f52936d5e021219d",
+      "source_blob": "9ba50958efc3928cde01662701c53b7935cdbb1e",
+      "source_sha256": "b15edc0ac4bb4bc2b4cb6f32307d03255108ed282290b10ea83ed9170bbc2181",
       "category": "docs",
       "method": "全文翻译",
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
-      "validated_target_sha256": "00d1317f6038b188fbb913426d5094348b5ffc6bbffc3a3ec33ce71b14ffbeb0",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validated_target_sha256": "e74ae3a348d3c7207bf7a48be99395464c70477848078b1e375fbb7c27812f54",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
+    },
+    {
+      "path": "docs/engineering/implement-spec.md",
+      "mode": "100644",
+      "source_blob": "771a7ca285be1c474e91014d384b748b36f99709",
+      "source_sha256": "6778976cfef5fccf6a4b8974f32517e119dd18fe0bbd00f233f13fa1f00194b7",
+      "category": "docs",
+      "method": "全文翻译",
+      "preserve_reason": "保留命令、路径、URL、技术标识及不可变元数据；自然语言译为中文",
+      "status": "已验证",
+      "validated_target_sha256": "a716784dcec77580a30f57be877ce82f35ea0fb6ce2d929484e8553a6458954f",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "docs/engineering/implement.md",
       "mode": "100644",
-      "source_blob": "25f9980d382ba65d1fa44fc8849412469200d626",
-      "source_sha256": "d1beab1efe64eb339e30d22318a95bc035f264d4ff7c98441c19eabd901b6767",
+      "source_blob": "b08985c7fcc951ad3ec0812914073852e2449210",
+      "source_sha256": "8106f9328412a97f4cad3fad9ff4ccf61e609e9a3d384407c78a4ac6e02609f0",
       "category": "docs",
       "method": "全文翻译",
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
-      "validated_target_sha256": "6c97b304e3fe3880dc2df911f93616ac2c5da8aedbdd5619bfc5689cc6040af6",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validated_target_sha256": "25cd8ad0b3e3ea9cd8583ff43ffc1a17b689daf6adad41aae36a914b7f88c5b9",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "docs/engineering/improve-codebase-architecture.md",
       "mode": "100644",
-      "source_blob": "076fad04c9d16903334baf8ecee8e14b47fd2d1b",
-      "source_sha256": "19d114c3e0f6000bac7233d1fb52b9cef63c72c12d8026a55218ef8200c9cbd3",
+      "source_blob": "974ae0aa708f66d90a7acd1ceed181836e276a04",
+      "source_sha256": "abefc0f2577bbc7cdf586581993f2025b0dc8284f2c2371aa308de567cf5eea8",
       "category": "docs",
       "method": "全文翻译",
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
-      "validated_target_sha256": "4a0e2588d03dae6fe229ec5794c3a420195ee1c1c4f791cf84b8b4b487bf08d2",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validated_target_sha256": "3e53a30c7ad62042547ee382ab0b8d62a0ecac695f3aa44119c8013d23be68c7",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
+    },
+    {
+      "path": "docs/engineering/pr.md",
+      "mode": "100644",
+      "source_blob": "368394b2dbbb0930a7fdf5c4ff3a19142dd54a76",
+      "source_sha256": "6ddd7b93d01efc16dfb4e28106f8f75b02b61f3049c22cb39117209549acb226",
+      "category": "docs",
+      "method": "全文翻译",
+      "preserve_reason": "保留命令、路径、URL、技术标识及不可变元数据；自然语言译为中文",
+      "status": "已验证",
+      "validated_target_sha256": "b47f83e85d027a4d9e1de6e3ab48c271909a905d46c8f79b3bbe4365d6f9ad21",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "docs/engineering/prototype.md",
       "mode": "100644",
-      "source_blob": "03703cac77b4d361e7b06c9e6ef4366501c12087",
-      "source_sha256": "dba351ad5a0c4763e295b8c01b72bf57e2a757c1b642c18305939f0ad0090871",
+      "source_blob": "c6e23539b47ff40f8405e3163d5e42711f99d1b6",
+      "source_sha256": "339d6ac4917d1c129860788d6d6aad308299996c3ee034646055d4c91e9df6b5",
       "category": "docs",
       "method": "全文翻译",
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
       "validated_target_sha256": "6fd9d7c5d45a8f86926f684a28f2c6f2ea53755c1ba7ddd0313336d0ef6fefaa",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "docs/engineering/research.md",
       "mode": "100644",
-      "source_blob": "a2b2074c426720af9ef50dc1cd697b3064eb8844",
-      "source_sha256": "f3d352a6fb31997c84b0f1ba771e78230985ac4b640c1f0e6fa87ef049dfdf49",
+      "source_blob": "29ab8d3dbd2ff838d50f3c637e5c32ceee3fe6ce",
+      "source_sha256": "9953179696fa5d4e8ea82aaf900aaa08d84ce2a43b0a3f87213a73bb9bc60c40",
       "category": "docs",
       "method": "全文翻译",
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
-      "validated_target_sha256": "19c0baa23d5feaeadf7468ea966037dddbae82324c1f86fa7944d2ae40146b6c",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validated_target_sha256": "3d4f40346ca6001bbfddc102b0ed8ee7c7ad410617c71e1f673bb06e51dd5277",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "docs/engineering/resolving-merge-conflicts.md",
       "mode": "100644",
-      "source_blob": "ee5e0e2db00c994a1cb5eaf4a49efdc379f93ac7",
-      "source_sha256": "08e538aa0d35e65e26063ad44351cb429d84afb5eae5b3add02f6a08cba868f6",
+      "source_blob": "4b277f95db47425b38a06c0f5b69c8e2a5795bfa",
+      "source_sha256": "4b302655469683cdfc5e130ea4d4d2341ececd91525e28ee9d3fc9cb566a46c8",
       "category": "docs",
       "method": "全文翻译",
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
-      "validated_target_sha256": "dddcb104516667fb6f93b5cb821efd28976c9f5baba6f410e1fc2b13c3b9c8da",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validated_target_sha256": "b10094f079ba40c7a11e44075ed412ff594780740a96c4c163aeb87753d3f7b6",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
+    },
+    {
+      "path": "docs/engineering/retro.md",
+      "mode": "100644",
+      "source_blob": "442599e9c42cc5fd86ea474eb800e9664eb902fd",
+      "source_sha256": "fbe0893f6e95e6110a18a22246dbfb940f1a0ee9a1c804dce883546c9ef899f8",
+      "category": "docs",
+      "method": "全文翻译",
+      "preserve_reason": "保留命令、路径、URL、技术标识及不可变元数据；自然语言译为中文",
+      "status": "已验证",
+      "validated_target_sha256": "e66f1b05bc9764d5cfa9407313f50383a9cd2b290b9be74cfb3193b079cea64f",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "docs/engineering/setup-matt-pocock-skills.md",
       "mode": "100644",
-      "source_blob": "d7f4933af11e6dfaf2dd307b7a69d3edb2b74dbc",
-      "source_sha256": "4a4129edb23d9ba1491e2ef9ccba964ebc3d85830b013c089f0b8b4dd58ebbe6",
+      "source_blob": "4b255af85948cad4caab93484a186b0ed05edf4c",
+      "source_sha256": "ee9a734b73a5c0cd851904fd073255248af7889ca8cb03b33f9207bf211227b6",
       "category": "docs",
       "method": "全文翻译",
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
-      "validated_target_sha256": "8469081d91537db7b89e814434417d88b345c5968afa70008fedfe8eba0442aa",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validated_target_sha256": "a9275db22a1da2e46532a7f857aba891ad07cb00cfdedc399464ef69afa51660",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "docs/engineering/tdd.md",
       "mode": "100644",
-      "source_blob": "63aae75be887420c21bad0f837c444332ec683c1",
-      "source_sha256": "879c4bad53e79f3972dd3b37438330f9ff86035843f3bf83ef41ff51e8337860",
+      "source_blob": "6fd8a5c722c75de1207b30d66874e969b65b5a30",
+      "source_sha256": "63bc8fe89693efa68ca0859398155c761f031af1fdbc4419d498b78d9cc2cdc9",
       "category": "docs",
       "method": "全文翻译",
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
-      "validated_target_sha256": "b5baf1c820f992139e92f404d02daac5fac23f74541c73dbbe3f7498b8b0bc18",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validated_target_sha256": "e84e07fd9e3c1976ebde6fc8eddb804a23aedf4a7a35afa85cad0e6b35683339",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "docs/engineering/to-spec.md",
       "mode": "100644",
-      "source_blob": "e72c71c44c170114d7d83ebbda594a772f955441",
-      "source_sha256": "47dbcde3e8ba381dc6650206bf36c64336c91f2d9de86ab1898355155081fe5a",
+      "source_blob": "824cd18204f4a39c50ada128c27675b35bc59b7e",
+      "source_sha256": "f623ea0bbe94e9b314657dd0c9da4c4b7dbb71830cba78af7c2bb70ca79ffa90",
       "category": "docs",
       "method": "全文翻译",
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
-      "validated_target_sha256": "44df3430847aa753d1a32e8f52075c096c2fd79f8f976599d6dc6b208c1cc04d",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validated_target_sha256": "01d0793779b5adbca9232b85df32daca0a98765a3086ee39ab8ce20d04141c8b",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "docs/engineering/to-tickets.md",
       "mode": "100644",
-      "source_blob": "6f6f894fe0bfecd2a8b05fb1053b22da74985d90",
-      "source_sha256": "122b190edd6d2529a8a2e2413b53235f0195c48970e8e59be221057f17a1b9fa",
+      "source_blob": "8b93a6d4c56e4c398e6ab3defd6da1552c784599",
+      "source_sha256": "e0f2812c8e47c5951a0efd2715062ed93a4f47e2bfce47cf20960e2ffbb6e72a",
       "category": "docs",
       "method": "全文翻译",
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
-      "validated_target_sha256": "c453c2f4551f63c3d9b5c40c2a1609d14194c7039d467efe28eed3e211f50481",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validated_target_sha256": "e971fd06550c552eadbb5d639de6b210839f19b6b5208ecaa921b2cb5eeb89b0",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "docs/engineering/triage.md",
       "mode": "100644",
-      "source_blob": "10ddf79c6fbfb8c27e86f2e03998905fefa90ec1",
-      "source_sha256": "7bdab6379baf24a6617db8349b53f332f1837227add23144d61ba9245eb15d14",
+      "source_blob": "0b20a8eee7f3472ef664f7f8a7569608dd5bc8e0",
+      "source_sha256": "88cb240a6e3d9961732d1b537b8a4fc402d938db7ce1d91425be32ee5d67fdba",
       "category": "docs",
       "method": "全文翻译",
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
-      "validated_target_sha256": "2beb25b6eff2e3575a037730600ee12e029e78f7e5a92f2967f2f408d3f66682",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validated_target_sha256": "3ec0e7cf805073a30b5a18240d6321ba796439f974291b2889615f6f3099e7e4",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "docs/engineering/wayfinder.md",
       "mode": "100644",
-      "source_blob": "1efc4b18bd8a1d7733852813873474475abb3a2b",
-      "source_sha256": "5e186ef2b90a77ccf7b48ff7c72bbc97fc5c2ba0abe316b91fefa206cb18430e",
+      "source_blob": "607f6556d56bc1b96b86baba442cc9cda451ba93",
+      "source_sha256": "7b123473848da896714e3bd3dbea6fe02341c40c186cb7c9c1f0b3735a12c376",
       "category": "docs",
       "method": "全文翻译",
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
-      "validated_target_sha256": "ae84e31bd09696371662e6ad091ed6ed57f52c95b979ef98cca618895144de7c",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validated_target_sha256": "dfc27ca48d353313cc2e0c184cae04809010313a09fff4776470bce69260ca3c",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "docs/engineering/wizard.md",
       "mode": "100644",
-      "source_blob": "84e047b2481c2afe4e5247231a8600d9721f1b88",
-      "source_sha256": "d9936487d804e953412f0f932dd5d273c29643b1995e1a5d443624b3f9059210",
+      "source_blob": "b4e76b686379507717f05caf41f3dfa73924bd79",
+      "source_sha256": "286831fa86754efd12b94899be87fe8223ed607882e0c37580dab852db8dc5a3",
       "category": "docs",
       "method": "全文翻译",
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
-      "validated_target_sha256": "262f98a8e018ecf87939b24c15106a4cb2cf2849a11a831acca9bd80ff5d2f4b",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validated_target_sha256": "94d8108bba0a3297b14e1f7417b7bdae666547cbedda445c52c3461a665caa49",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "docs/productivity/grill-me.md",
       "mode": "100644",
-      "source_blob": "d79d4864eca912ed2ed4ea3c13137c384e0868fb",
-      "source_sha256": "20608431988f36024435ba01a02b2fc2e159a558465c8f0d680acdf41cc0e78c",
+      "source_blob": "65aec2448e4c27187455965336bd3b767b8ffa47",
+      "source_sha256": "3ad2294740ad7de999cbaa1e99badd8b2b1461359639749dea379bfc8b6341dc",
       "category": "docs",
       "method": "全文翻译",
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
-      "validated_target_sha256": "8a503e17d95adde244b184582f94d5981d9f4edc6ffb80ae7836ce39ee205755",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validated_target_sha256": "e07e73bf396a4b1a12496432bb50ed271bb17c9d6bdc2c697a1986956cce37c9",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "docs/productivity/grilling.md",
       "mode": "100644",
-      "source_blob": "512d76af564bc0899c59c90a5287a442f7846530",
-      "source_sha256": "5bd89a79cfc03e2a105e5da59da598e0834cf55df9c029daca950e98d3ff76f1",
+      "source_blob": "eff7c56a3eb64285f17dd0759aadd27ca23ae82a",
+      "source_sha256": "091d40afb66804d1b7f7e65745ee4b911edddc18d76faf9e9ba9f210f0570bb8",
       "category": "docs",
       "method": "全文翻译",
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
-      "validated_target_sha256": "47d471895073e1246f854366782472a849e94e406112e953997b4bf1e0caed3c",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validated_target_sha256": "dc39f1bbf10c8ce15b1fe532dffd67f0893dab286a7d3613a1cb02b5a4729169",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "docs/productivity/handoff.md",
       "mode": "100644",
-      "source_blob": "72aa2f0d292a2b6f22c12ac54e9e0c9afa42f672",
-      "source_sha256": "a8020faa68d0077e8a5701e817817c8858a5f1a70d5b3f16dc8034e7d8df0b44",
+      "source_blob": "d106b37e9fcb0ef9e7765be5a62f28451ac62fc8",
+      "source_sha256": "8f372c040ce1c785eb1894d5ce2468df29956ed9fb353ac3e0b79449d87bb9a7",
       "category": "docs",
       "method": "全文翻译",
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
-      "validated_target_sha256": "4c9184e0dc6d0700cbf61b2e31232e0e1c8fac3fb9c54598b8c14c89952192e0",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validated_target_sha256": "c477fd0d763b4d146f74543059609e41aef82ef9e1f9c5e55dbb55ac23930191",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "docs/productivity/teach.md",
       "mode": "100644",
-      "source_blob": "012113bd2379a4318ad3c1c7e4f4e848bbc29990",
-      "source_sha256": "2ac7f1d694fdd744a5c5157477d5459e3d25876e0b65388d5441f934916b4970",
+      "source_blob": "dac7e1422c9342444e8b40e2757f81c569c69d48",
+      "source_sha256": "eccbc2f26a22a71f330b21701eeddd6b6fd4534fb09b5cd8ffdc30cff7e6bda7",
       "category": "docs",
       "method": "全文翻译",
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
-      "validated_target_sha256": "0129fd9e5affb6cc8fa6885ddd617c607562af602413bc638e57a1b83b833fee",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validated_target_sha256": "4d076e38b49b2d7243b478a2d1e21ca8238b8b02424f56cb5decceef8f619ab5",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "docs/productivity/to-questionnaire.md",
       "mode": "100644",
-      "source_blob": "52f0e437bb241630c9960f02c7e6fd7091a3030f",
-      "source_sha256": "875abaef1ed5842ca5f008956288192341b48e4e71904ef4151a56560c3c58eb",
+      "source_blob": "e4f40f4b2370d095fa6987325192eaa2cda2ac2e",
+      "source_sha256": "0a6de031ecf541cc0b84433ed6658f18a3de45042857841e4e0f78fd846ac23a",
       "category": "docs",
       "method": "全文翻译",
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
       "validated_target_sha256": "8935b7c646e3a5a034ec9b8ea4c9ec7c2093623da724bd26c01f85b88cc2301a",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "docs/productivity/wait-what.md",
       "mode": "100644",
-      "source_blob": "0b14100932844507dc8b3de6e3b6bc2002d493e1",
-      "source_sha256": "5523a8be6520dc2aa09e1aab9ea3e5e59e6f0d41ffefa5130c3404dd2e34c677",
+      "source_blob": "38384d7918b151f41ecf5fd731066e2f7c3c6e75",
+      "source_sha256": "2725483b1ba687fe31e2178e89d265a7ea34e51c88aeef9b6b6f35bfe0339fa8",
       "category": "docs",
       "method": "全文翻译",
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
-      "validated_target_sha256": "6c578e0deffafd33ce7f3bba2472995c23c79aa9dd96d197e048801d952125d5",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validated_target_sha256": "581f6bc8c7cd08fba8672ff0e59ee57af574602815cc0a9890a868477383d2b9",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "docs/productivity/writing-for-agents.md",
       "mode": "100644",
-      "source_blob": "de12e66714721f305af1ded601f7a570c6331a72",
-      "source_sha256": "009831d67d288eb2cb9494660f744affdef625d8e5eb041d75c4ee630a47ac73",
+      "source_blob": "b8604e71aea05be04590690e46af13c620432437",
+      "source_sha256": "c2f3971e2f4bc1c901c59f5dbbb9343276e601f618bee1d40b1927afe3678365",
       "category": "docs",
       "method": "全文翻译",
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
-      "validated_target_sha256": "f9081eda2f0071b3d1927ebcf89b25bf79717f5f7373d2ec6200f2ead96bd58f",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validated_target_sha256": "175c9e79425bdaf61557da212a79f32e113a09c7068bb8f93a684b917351fd28",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "package-lock.json",
       "mode": "100644",
       "source_blob": "db12f086c92da55b5d724f0dd3afecfebd2d793f",
       "source_sha256": "b89967d44b654ceb7b9fcc7e0d6c3f74fb110bb96eb66c65bac14099c729338d",
-      "category": "package-lock.json",
+      "category": "根目录",
       "method": "原样保留",
       "preserve_reason": "保留可执行代码、配置、许可证或符号链接契约",
-      "status": "原样保留已验证",
+      "status": "已验证",
       "validated_target_sha256": "b89967d44b654ceb7b9fcc7e0d6c3f74fb110bb96eb66c65bac14099c729338d",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "package.json",
       "mode": "100644",
-      "source_blob": "2200fefca3d8c1ebac5a823681915eec736dfa07",
-      "source_sha256": "167010d1c535a085be165835a4cc89e1de2760c2bf3b6e43c6ae045e41d0587b",
-      "category": "package.json",
+      "source_blob": "fc954629d8d974406d96c33888f3ec1c977f0302",
+      "source_sha256": "95475078ea00a7d064fed8e296ca6c18022240a0d826d8e63ae8401f2b148d6f",
+      "category": "根目录",
       "method": "部分字段翻译",
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
-      "validated_target_sha256": "4b91536e60a92328a1ad3eaad40238d462f129733984f273a38710853048f5ab",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validated_target_sha256": "e5cc64e6551cb1136ef7ae523b6a6975573a28a0199ffe5c33114be4ec8f202a",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "scripts/link-skills.sh",
@@ -746,9 +1000,9 @@
       "category": "scripts",
       "method": "原样保留",
       "preserve_reason": "保留可执行代码、配置、许可证或符号链接契约",
-      "status": "原样保留已验证",
+      "status": "已验证",
       "validated_target_sha256": "ae1ce5404a1eb90c1e80f6b6ecf101ed05e4efbc5ef62d6d83f896a9377b3878",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "scripts/list-skills.sh",
@@ -758,9 +1012,9 @@
       "category": "scripts",
       "method": "原样保留",
       "preserve_reason": "保留可执行代码、配置、许可证或符号链接契约",
-      "status": "原样保留已验证",
+      "status": "已验证",
       "validated_target_sha256": "9968c1b679e2a08a8e3204f6e72afeea3b51df50299faec12a4c8eed6bcf2f6a",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "scripts/sync-plugin-version.mjs",
@@ -770,9 +1024,9 @@
       "category": "scripts",
       "method": "原样保留",
       "preserve_reason": "保留可执行代码、配置、许可证或符号链接契约",
-      "status": "原样保留已验证",
+      "status": "已验证",
       "validated_target_sha256": "1ef892ec79e2f41ffe4c4d051f0e29d70401219499b6a11e717e5db337d78984",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/deprecated/README.md",
@@ -784,19 +1038,19 @@
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
       "validated_target_sha256": "5c3fc3a1ea346e557d000a2414c9207601985e233101ea3eaa062c3dbd78f6c9",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/engineering/README.md",
       "mode": "100644",
-      "source_blob": "676977ee31f86172f4a5653ab719f6b5be3072d1",
-      "source_sha256": "713826c94f7858c28067238ce6c7021783e4da0dc0beef58a2af72cf75268fda",
+      "source_blob": "381c82ac4e54427ba73d0569fdf712187ddcc724",
+      "source_sha256": "32d9469dda4e6103d952909cb83e657b7bec01bc582b6be4cec3b493f66920fd",
       "category": "engineering",
       "method": "全文翻译",
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
-      "validated_target_sha256": "e65a4210cbf32ad1c3c15db13047e5ca70dffd98a51bbb1a3ef778760add77ab",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validated_target_sha256": "8f913a43ae6afa8d8f97e44d5602b4fea0eb2cf51fafb8a453ec780981456c45",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/engineering/ask-matt/PHASE-BOUNDARIES.md",
@@ -808,19 +1062,19 @@
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
       "validated_target_sha256": "4b2d50203df3e8d08e1141b1ebe39179e93afc89e36dcc95e2ba10a05768c0e4",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/engineering/ask-matt/SKILL.md",
       "mode": "100644",
-      "source_blob": "ae8eb9b211972d9ae584b41d0f1439c644494fc7",
-      "source_sha256": "b25d86fb36b1d294eeead5d7db529f86135f9671f2afcd607579a63bb2213769",
+      "source_blob": "4bfeeb61dae548b8b7754c4fba7bd40ab3926099",
+      "source_sha256": "1371f5ce005de0992a44b137748bfb960a56948aa9871b405fe9d90b24332e3c",
       "category": "engineering",
       "method": "全文翻译",
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
-      "validated_target_sha256": "c044040f73cac69801e73a34201f03803d3bb6b7c41e4f8685a29382d1dc299a",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validated_target_sha256": "1d2a64967578a9ae9dfd2cdc4fcd0cc5aa2bc26a163600ba5dc51eb700e10f8f",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/engineering/ask-matt/agents/openai.yaml",
@@ -832,19 +1086,19 @@
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
       "validated_target_sha256": "6b5bbd3688875397e29419fb658fdc98a1eac6145780a2bbee063bfbaf710cda",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/engineering/code-review/SKILL.md",
       "mode": "100644",
-      "source_blob": "e28d7acbf7b3bb4d7817b7eb5d9c105af03f6ec4",
-      "source_sha256": "47f4e52c21694def9c7c11cbfbf891ca35eac7a93e395797515be3c8a409ae50",
+      "source_blob": "373a4f26e6cfa3617778397945bb069d9cb184bc",
+      "source_sha256": "09eb147f793e4647949edd32dbad278f0554dfb56e0d46b699cd4c2c55bf0357",
       "category": "engineering",
       "method": "全文翻译",
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
-      "validated_target_sha256": "51b5feb8b7a1bbf159ec081dcbde6f4ebef24c10d0cecc3257a9c30ba140aac3",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validated_target_sha256": "80c4ba817e8d4fc6bf8082ff84bf437a298361dfbb49902e49c74a9a2297d729",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/engineering/code-review/agents/openai.yaml",
@@ -856,7 +1110,7 @@
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
       "validated_target_sha256": "d8ea8e3bfb64709d0b77cda7107ac737fba1d0e3308a2833eb26e70ee92a17f2",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/engineering/codebase-design/DEEPENING.md",
@@ -868,19 +1122,19 @@
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
       "validated_target_sha256": "15a928e8d6c2ebfade8fc490199b00745039ba00ba80be48e4ba5f0aa5b6ef1f",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/engineering/codebase-design/DESIGN-IT-TWICE.md",
       "mode": "100644",
-      "source_blob": "7edc861a31b1b219b933af18079f66b564c5de67",
-      "source_sha256": "8e740bf98446dbd4dfdc132ac4346d9a7eedaf93de6a495889171cf7f99f16bd",
+      "source_blob": "d0990138c35c800bd821289a73115e52680c1620",
+      "source_sha256": "52b52e75655a27aea59c6966b410bac82448968ad46ef1ebb9f07c274e3ae010",
       "category": "engineering",
       "method": "全文翻译",
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
-      "validated_target_sha256": "e1723f94e4a6478c258e6d72c7d81462226ef724ee9474c031f86596a94aba87",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validated_target_sha256": "a6f24a100515a75d857dd7fac35bda6782d6b3fef4e567137a8caccedf18b0c4",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/engineering/codebase-design/SKILL.md",
@@ -892,7 +1146,7 @@
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
       "validated_target_sha256": "7331dceff026c281946e31eba296df492dca4d2ce03f8d0b4ccaac58f93f5f1d",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/engineering/codebase-design/agents/openai.yaml",
@@ -904,19 +1158,19 @@
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
       "validated_target_sha256": "600324031e1470b5d5b6363bab61e0c945c8f56af6f15dd49b9c54a9bf98d4fb",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/engineering/diagnosing-bugs/SKILL.md",
       "mode": "100644",
-      "source_blob": "061c25a524acaa93d4534e9e08a793c0a5fe45fd",
-      "source_sha256": "77f3cf31bc99b2f49af943222526531fcc9fc41d047626d3640e875e85af3e84",
+      "source_blob": "d039541ddd1c46e6ddbd662fe99d49b686fc5e12",
+      "source_sha256": "849198df88cdb65fd0d97236604c1fca7ff2f22d2f705f9724a800d0266b118d",
       "category": "engineering",
       "method": "全文翻译",
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
-      "validated_target_sha256": "62c46fbdab020cc64ae44e12583ff74bee9fa8029156bdb7d5c2b12afe3bf721",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validated_target_sha256": "4aa88fd142b0cd3ef8e690febf91a6bccc076facac55adcc2fbb95fdf0b09c11",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/engineering/diagnosing-bugs/agents/openai.yaml",
@@ -928,7 +1182,7 @@
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
       "validated_target_sha256": "e888de771a69a92a28d90e1b115f4d66c535c1d62f70cfdff677c9d4a9f58538",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/engineering/diagnosing-bugs/scripts/hitl-loop.template.sh",
@@ -938,9 +1192,9 @@
       "category": "engineering",
       "method": "原样保留",
       "preserve_reason": "保留可执行代码、配置、许可证或符号链接契约",
-      "status": "原样保留已验证",
+      "status": "已验证",
       "validated_target_sha256": "35103539fc36873eea36074769ad454f9379d6fc8b2dc0e26ce987fd3bfe5503",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/engineering/domain-modeling/ADR-FORMAT.md",
@@ -952,31 +1206,31 @@
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
       "validated_target_sha256": "7f2b8ccfe98e083d849995bfd4b1aad3c9d1325b1784b09582d95ca2d14bc942",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
-      "path": "skills/engineering/domain-modeling/CONTEXT-FORMAT.md",
+      "path": "skills/engineering/domain-modeling/GLOSSARY-FORMAT.md",
       "mode": "100644",
-      "source_blob": "79bbb32f6fda55758b377c980f72a6cb2b8c670e",
-      "source_sha256": "17ab16ce783e4d2801ee52fd9acdf550cbf44de65ae76797a93943bbedf22a13",
+      "source_blob": "9c0b4c7a2e8507c23cbb5e0baa66d81699321cc6",
+      "source_sha256": "21dcc40cdec8e151a829b98ab1517c1867bc444e3665134a98c6983411996801",
       "category": "engineering",
       "method": "全文翻译",
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
-      "validated_target_sha256": "58bd82a243bd5e647829294d0a18010b124c5db434fa20ad0d8e6932f501772a",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validated_target_sha256": "c95ebd3eaaa1c6c41862c9ba32d07bbd6070aa5d78cf5cb8834ac3777a632c87",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/engineering/domain-modeling/SKILL.md",
       "mode": "100644",
-      "source_blob": "9b97707e19ef1f590aada356f2b3f6bb881f91be",
-      "source_sha256": "327a2b50620e2fd70abc6893cd6965e76b20f8d0adb0dc2c8d5eb3845efb643e",
+      "source_blob": "a4438c6879c517d1a08e2b5fbca049b632688dfe",
+      "source_sha256": "7b925d7b1e341a2eeae33ad68a8a8c0ab889a38ddd22a7598e4c240e5a7556a3",
       "category": "engineering",
       "method": "全文翻译",
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
-      "validated_target_sha256": "ca50d9c4c06d1bc0b4a785a35bd36b9d63ba58c74e02319f41404880544cdcbf",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validated_target_sha256": "146351382a0028c0978f914076848cc3f04ba22af7e6fc0b41cdc2c8885b92cc",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/engineering/domain-modeling/agents/openai.yaml",
@@ -988,7 +1242,7 @@
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
       "validated_target_sha256": "22cb4bea1f6b54d24343873065a4e2cf7075997fd3da0491dcde8ac5262bc937",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/engineering/grill-with-docs/SKILL.md",
@@ -1000,7 +1254,7 @@
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
       "validated_target_sha256": "9c13d350de06ac96367a8f2a2c011ddd7a846414c10053c01a19f7057c37d0be",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/engineering/grill-with-docs/agents/openai.yaml",
@@ -1012,19 +1266,43 @@
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
       "validated_target_sha256": "fb82c8019b670ad797891cb3341e21b8204b458105617af88bdd4bfe1d341673",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
-      "path": "skills/engineering/implement/SKILL.md",
+      "path": "skills/engineering/implement-spec/SKILL.md",
       "mode": "100644",
-      "source_blob": "7a0b11f5f4fe9505ea5c7983c3083ba1bf754f69",
-      "source_sha256": "6d3fd9e83b8f36e5213854779db49b256a457a7ebb4a503e53fa7dcff696adc3",
+      "source_blob": "183923797ab58f1b3ef09e03bc1f1f203c309f37",
+      "source_sha256": "7a22dd2e60b8fcece478ced9d2533582adf3520d695acd3ab715341535c9e56d",
       "category": "engineering",
       "method": "全文翻译",
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
-      "validated_target_sha256": "c4b7cb4a78cec0e94b13f77e8f4ca76b7e019657cdb8959a4b6b532ab985cd37",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validated_target_sha256": "4ce703a75d7d777ff98b7b37bf6b28ae1c340452f3fd99166206e9f59f787b52",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
+    },
+    {
+      "path": "skills/engineering/implement-spec/agents/openai.yaml",
+      "mode": "100644",
+      "source_blob": "f5e91af21e38eb1a167ea5aa93dfc7da3c4637b4",
+      "source_sha256": "fd41efb42c60c96320d6531be7e4bf15cbf5518cd652d57dff27ccffa46988e9",
+      "category": "engineering",
+      "method": "部分字段翻译",
+      "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
+      "status": "已验证",
+      "validated_target_sha256": "87db31a56cc7594bd5714b6f1054042c8f9dd36bd066299160d245ab928eb9f0",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
+    },
+    {
+      "path": "skills/engineering/implement/SKILL.md",
+      "mode": "100644",
+      "source_blob": "bd49e472984c7b99aac40286fdae749bb955a842",
+      "source_sha256": "483bdc4ccf4ac31d86ac7beeaa0d0db80313e71e120bb8c59b3196ae5decd53d",
+      "category": "engineering",
+      "method": "全文翻译",
+      "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
+      "status": "已验证",
+      "validated_target_sha256": "c8f8776828954e742207e803b08d8d61ac532619f6d933b35af211b4213813b6",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/engineering/implement/agents/openai.yaml",
@@ -1036,7 +1314,7 @@
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
       "validated_target_sha256": "7f031d0fef324789e6a5cd59e0cfc6aa6e34735300c2b7a404a125ece7ffe202",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/engineering/improve-codebase-architecture/HTML-REPORT.md",
@@ -1048,19 +1326,19 @@
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
       "validated_target_sha256": "ac1b759a717cb5f6c4b8f80303023becdb320e1c7caa716ebc82aba8f07460d5",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/engineering/improve-codebase-architecture/SKILL.md",
       "mode": "100644",
-      "source_blob": "a578dd0a34ad0a8886abe7e7642b100106ba86d6",
-      "source_sha256": "d1ac25511a936ff4250a48dbcefda363837d6bb9321b3cba73df99fa37270a75",
+      "source_blob": "44cc7d3136c44534d68ac523fa6cd37e759d2846",
+      "source_sha256": "552240a5ab5cec6b67c15dd1ad6e9f6962b1bca6ce870059a8c2713760c20392",
       "category": "engineering",
       "method": "全文翻译",
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
-      "validated_target_sha256": "7e78e88338d3b51347dfd1c22a2139b0e97b160431e9d73516ba8fa87f241a4b",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validated_target_sha256": "5c4bc59d1af744223990b1743ba03bcbefa5113ff0f2a5100b31048ae83a20d8",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/engineering/improve-codebase-architecture/agents/openai.yaml",
@@ -1072,7 +1350,43 @@
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
       "validated_target_sha256": "69a642e4a9855f0eb41e39b58cdef396aabdb5e72799d4b1d2ea54fd12475ba8",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
+    },
+    {
+      "path": "skills/engineering/pr/CREDITS.md",
+      "mode": "100644",
+      "source_blob": "5314bda2fa6005e264c9b5c1de7c425e719dc91f",
+      "source_sha256": "a7a087127665d7298a72280ef6e19c41ad8404523712a788c8dc3ab414bc2497",
+      "category": "engineering",
+      "method": "全文翻译",
+      "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
+      "status": "已验证",
+      "validated_target_sha256": "4a42a61f144bf2ea7e1cfc848a88e4c020bda8a791e91a00262a07545bbb054a",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
+    },
+    {
+      "path": "skills/engineering/pr/SKILL.md",
+      "mode": "100644",
+      "source_blob": "84dd4fb2f068e9f6282690235d20dd505b418119",
+      "source_sha256": "ab63f1cf78647389edcd386c9427c5dfca27ed2836930c24773ffee834c19bcd",
+      "category": "engineering",
+      "method": "全文翻译",
+      "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
+      "status": "已验证",
+      "validated_target_sha256": "a63338d1b2698d5185c37ff2d0b2f200f6f408b7f1344a1e2d99be4f0cc430fa",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
+    },
+    {
+      "path": "skills/engineering/pr/agents/openai.yaml",
+      "mode": "100644",
+      "source_blob": "48286f48f53b937cc19c0e39899b5f956271a98d",
+      "source_sha256": "2295b586624db4ef546f3fd4695492f039d941a46d8a1593a702ce3ca511b8ad",
+      "category": "engineering",
+      "method": "部分字段翻译",
+      "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
+      "status": "已验证",
+      "validated_target_sha256": "3c49658ce111b93bd3abdeba8c7f81331fbcc56f83c108ee43fe55eeb5757f63",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/engineering/prototype/LOGIC.md",
@@ -1084,7 +1398,7 @@
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
       "validated_target_sha256": "5b4653e82ce9e91a2a6140bc4e2eecb5df04219301917638f2d5e7319bebbf9b",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/engineering/prototype/SKILL.md",
@@ -1096,7 +1410,7 @@
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
       "validated_target_sha256": "7a244a8a16aee82393ca1d5da7eb490b3535b3e037c985806cc3dd41c579acb7",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/engineering/prototype/UI.md",
@@ -1108,7 +1422,7 @@
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
       "validated_target_sha256": "07ef68469cfe794b4405c0670316432b0516bf2bf7820eb8992fafe032ee9e03",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/engineering/prototype/agents/openai.yaml",
@@ -1120,7 +1434,7 @@
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
       "validated_target_sha256": "e811c13fe09d46a05fc43e7ad2646bdfc6e42ca2088e48ef964631b2933a7450",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/engineering/research/SKILL.md",
@@ -1132,7 +1446,7 @@
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
       "validated_target_sha256": "5ba10f2027e12b24abd27bca3404666b3baad2587e984630a29b4aae531a4c26",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/engineering/research/agents/openai.yaml",
@@ -1144,43 +1458,43 @@
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
       "validated_target_sha256": "10dddef7272df92644f16a3de92bcc30cd64fd6f9ff97520cca71fcfbc1c1acf",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
-      "path": "skills/engineering/resolving-merge-conflicts/SKILL.md",
+      "path": "skills/engineering/retro/SKILL.md",
       "mode": "100644",
-      "source_blob": "bfb7e5606e231e6808979f623fce76a9aad4b71c",
-      "source_sha256": "9d8114f8ef0b31f535a265fc05c364bd8cf2e2895a830040e06c22acb11f54b0",
+      "source_blob": "12149acf2dd23b4514dec57b04a6293eaa1352fa",
+      "source_sha256": "33fbc28568e3146f20fd908b12998bc0ab30aa4f4c87288199a40793efa94696",
       "category": "engineering",
       "method": "全文翻译",
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
-      "validated_target_sha256": "f73ffcc4732911a57255ce89ec7a8189669e1b17c0c3b84835ec8701c4781924",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validated_target_sha256": "3377693186385f22c6155dc0f39c79cb2798a0b9818c850b2495d9df23c35dc1",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
-      "path": "skills/engineering/resolving-merge-conflicts/agents/openai.yaml",
+      "path": "skills/engineering/retro/agents/openai.yaml",
       "mode": "100644",
-      "source_blob": "331ffb9d38937877f51a5f867a66dc61eee259ae",
-      "source_sha256": "a1f4f96838f2ed6282eb28abbbf99029cb8fadce552baf53da90a025b8bffddf",
+      "source_blob": "a2f0bac3f9cebf29beee2e79960cb876e0adc65d",
+      "source_sha256": "cb6fb9d7e6b4be5975f41f6def1dd00a1255bad5d9b02696b124c924a8b8745c",
       "category": "engineering",
       "method": "部分字段翻译",
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
-      "validated_target_sha256": "a03cc06dac7788d84b0f7cd1df52100dcd7c7f175d993e21083281e8533817b0",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validated_target_sha256": "7d396f3f16a6e31db74d8bf008087e5ececfa497bff68236d731dc1f57c0d09f",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/engineering/setup-matt-pocock-skills/SKILL.md",
       "mode": "100644",
-      "source_blob": "7f6f576e2e54e0d287cbb9731ebe0343f54e50cf",
-      "source_sha256": "2bcd89e97777cdb705914424e39c97d5db524c8eb4eafac8120778a07774f0ec",
+      "source_blob": "293c25b75590119794af03b037ba4288054a32b3",
+      "source_sha256": "f148858ffb7f63c03c06fca06e6fdb1d91a35c6b293244b8fdfacd5f4cc028c4",
       "category": "engineering",
       "method": "全文翻译",
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
-      "validated_target_sha256": "23525c9f5092686f4d72794572097af3d4df0e16d2dc901ef8c1d3988e22f5c5",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validated_target_sha256": "961aeaa1420bf288969a4b56fc8110803035363a6a94d96b697d98fc06bc6964",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/engineering/setup-matt-pocock-skills/agents/openai.yaml",
@@ -1192,43 +1506,43 @@
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
       "validated_target_sha256": "eeff5e8fba97678e5cff0ebf0023e7cef989d3266e24129d391362fd66c0adf8",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/engineering/setup-matt-pocock-skills/domain.md",
       "mode": "100644",
-      "source_blob": "35249041162b1eed5b873d97fc430fb3e4adb18f",
-      "source_sha256": "edc6d6131fdffc4b7135704f5262124fc43355c95f61b7399dc5a4db643e28ca",
+      "source_blob": "4032de016c1e91119d33d477633e2b8f265f4195",
+      "source_sha256": "593a7042218689f1d24df89df14eaf0a20e19e0d0a7d479a01947ac78f0784b9",
       "category": "engineering",
       "method": "全文翻译",
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
-      "validated_target_sha256": "3044d4abb9bac22042fdb7d52b9066a5b01043d82dad3334205d2477ef46d279",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validated_target_sha256": "faf64af204272cf3a60db1dcb4713c5eaab96d10e4fe6c1fcafcfa6f91e70565",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/engineering/setup-matt-pocock-skills/issue-tracker-github.md",
       "mode": "100644",
-      "source_blob": "b258aeb3c44420a2464b72ba228b77b4b3abbaea",
-      "source_sha256": "afd6852a80185217bd28aa5cbe456bef1e85be25be7bd1fba382d5b8ee428325",
+      "source_blob": "a63510f74038300d8da354553f9d31d1bd954d94",
+      "source_sha256": "f0653fe106dd8ee7b33be27bd7fe3104b40555896cb45f61997aed20467020c3",
       "category": "engineering",
       "method": "全文翻译",
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
-      "validated_target_sha256": "d59caf88d93d0e15fd9170e864425be5e4617d03c9489c5a3e8b7a14b6e45b0b",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validated_target_sha256": "1519f14a775d736e455004075848e7d1619a25f37f6b412c5ba659e2ac163562",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/engineering/setup-matt-pocock-skills/issue-tracker-gitlab.md",
       "mode": "100644",
-      "source_blob": "251035a6d74b4af8d68f066b8d7f1cef90904570",
-      "source_sha256": "ea175f73d193b3f55819c0ed9bbccf6ee0e70ad8f928e3d7607596c53380acd6",
+      "source_blob": "81499dca459e8097d560b641f8ba7c2e1c7c9da4",
+      "source_sha256": "591a9e7057382aaccdfbed3f7ea3f2ad07e0cd29f012d18b82ee4e485fd81e24",
       "category": "engineering",
       "method": "全文翻译",
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
-      "validated_target_sha256": "1357f22729a832b8edaa44bf6c920df73cb64fe224444c352bdbf8ee6df3bbbf",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validated_target_sha256": "2ded3e613abca4d58eed573a455c049d42054c3a290f1c0f6e18df089508edd6",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/engineering/setup-matt-pocock-skills/issue-tracker-local.md",
@@ -1240,31 +1554,31 @@
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
       "validated_target_sha256": "78fe08d7aa151bf656b4272575e46014ea8e8033e4657fb936b997b03d918b38",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/engineering/setup-matt-pocock-skills/triage-labels.md",
       "mode": "100644",
-      "source_blob": "b716855d485f3865f9dfde2a82141721f065b2e7",
-      "source_sha256": "4f53c9b40ce2651e3611aa090eaedbd6dbc9b71ef8c5f7e65eac0d8263190d0d",
+      "source_blob": "5276464244857a3cc29890ff4a978a197b21f3fc",
+      "source_sha256": "ae512af838c78b8750471c42cd2b20fa32319553e61d84c9a23d171b40ce14aa",
       "category": "engineering",
       "method": "全文翻译",
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
-      "validated_target_sha256": "dd79374448617d1729be5435c262dde349a53e751087dc3280f9bd918f2147c6",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validated_target_sha256": "9fc69a671beb0bdf0822d23f18f47036249e35c8028a863ada335e7767d99de1",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/engineering/tdd/SKILL.md",
       "mode": "100644",
-      "source_blob": "8fc086710806190ee7c4baa32089cb877a75736a",
-      "source_sha256": "cb01f66bebfaa25fa1f88e6b7e769cd9fd9f35b1120b8563749820738814c927",
+      "source_blob": "01eadaa34e7c9a63a67d6dc3cce1cc81b0e49985",
+      "source_sha256": "5505d25bbaa8fc14a79e4d20163936958992a2995b7f1dd1d6197edc9ed722e0",
       "category": "engineering",
       "method": "全文翻译",
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
-      "validated_target_sha256": "cb099e08a4512d46d3a2977f8e0d52e0bae64302d57b8899b806c19ca661515a",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validated_target_sha256": "1615a0da05d453aa2d769fdc0eea95324c7c46e4695040df72a80992c7be8585",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/engineering/tdd/agents/openai.yaml",
@@ -1276,7 +1590,7 @@
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
       "validated_target_sha256": "0f1ec049713cc1a28e2ce99429f981619bd47f7b7c9546ea6b3d518ad6ad62ae",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/engineering/tdd/mocking.md",
@@ -1288,7 +1602,7 @@
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
       "validated_target_sha256": "0f3313de1f46730297a5434b38b53b4a4590bfa0008f74552a9635454de8e45a",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/engineering/tdd/tests.md",
@@ -1300,7 +1614,7 @@
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
       "validated_target_sha256": "9a7d3790161ebebcd064850f0f39c80f06fbfd2089b3b1d039c0fa89ced29ebc",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/engineering/to-spec/SKILL.md",
@@ -1312,7 +1626,7 @@
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
       "validated_target_sha256": "b30b64a520c4bb2eddd63fd2f97364b5f7cf126361fdbfc332d01de5f96fb031",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/engineering/to-spec/agents/openai.yaml",
@@ -1324,19 +1638,19 @@
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
       "validated_target_sha256": "e21bedbf22f324f5681f3b048a185b018aa44144fb8a543780befbad3d2fe34b",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/engineering/to-tickets/SKILL.md",
       "mode": "100644",
-      "source_blob": "e868c831fcfb1e124e010bcdf84a429ec879160f",
-      "source_sha256": "5c9fba69845c2519b9b35b9af42ae5142c21f8ca15ac2123dc2722002c8058ae",
+      "source_blob": "9b77a01db9460c99c22d03c910c349f890f12c0e",
+      "source_sha256": "56ec23c5b2782785d4e65bff9e315b6d3aeb4ef977c174a219e99489fada1995",
       "category": "engineering",
       "method": "全文翻译",
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
-      "validated_target_sha256": "8b3b2320ad0ee5c258edef68d6e08ac5a60415be8fa4086b73ae57b30f82438e",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validated_target_sha256": "d619d7226f23b8321cb5d9e899ed02336da77d8b21d23a3d10f48c34ccfe63c9",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/engineering/to-tickets/agents/openai.yaml",
@@ -1348,7 +1662,7 @@
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
       "validated_target_sha256": "0cf93372a46697724ab8f5338bac14cc9229f1de1909771ea609e4133393b870",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/engineering/triage/AGENT-BRIEF.md",
@@ -1360,7 +1674,7 @@
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
       "validated_target_sha256": "63599bdd2737ae4e3f258776d064a04b45abff8b3c6f264be0417968e2f7f03f",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/engineering/triage/OUT-OF-SCOPE.md",
@@ -1372,19 +1686,19 @@
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
       "validated_target_sha256": "a706b4c424006476a09b671fc56112bd2b6092f5d5361ba5222d4053c81ea214",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/engineering/triage/SKILL.md",
       "mode": "100644",
-      "source_blob": "37ddea1e3dcf8fb5be5b92e4e45f2c34b8e61d3e",
-      "source_sha256": "623a2ed692bdc77d2090e2a3dea3b627dd722ad3bbaca0be83aada75292c8fc4",
+      "source_blob": "3fd5617e906cf9b71a6b17424791adb905fc248b",
+      "source_sha256": "917b0baf74be583e74f110857ed45df2766617f75c00baf61fd136d7af515edf",
       "category": "engineering",
       "method": "全文翻译",
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
-      "validated_target_sha256": "1f5bfcb9bd4b0dcd18791a301f46d203a57712a908649b20eba6d235bc3cd4c6",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validated_target_sha256": "33e129dba1330c38d7defbac8622d8062854274c495650968233d34c6181945c",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/engineering/triage/agents/openai.yaml",
@@ -1396,19 +1710,19 @@
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
       "validated_target_sha256": "90cacdcac5860b28b705a854d78c90a471414d6a32b3baa5e2041625a581263e",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/engineering/wayfinder/SKILL.md",
       "mode": "100644",
-      "source_blob": "812805b760baf328db0ebdef6f3807e381f97016",
-      "source_sha256": "fee6e1d0c50f0e736b4ef8a599060c959afae904c9a97d82c97f049fcc3aa0f1",
+      "source_blob": "e28cf3018906d6d60fc5b25390b4eeea035dd290",
+      "source_sha256": "9be7b478c389605a24517d27752f278933588da97a1b5921b165f455edf4c5b7",
       "category": "engineering",
       "method": "全文翻译",
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
-      "validated_target_sha256": "53255599a87bde5f454f7f97772159d29ef77a11bf6d4fd36179d61c06d2f21e",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validated_target_sha256": "af5bc1546e6d5617f3c113eab2ab0ec2027ede7102a90656312555077ee61e83",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/engineering/wayfinder/agents/openai.yaml",
@@ -1420,7 +1734,7 @@
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
       "validated_target_sha256": "8ca87125d283818f15c4feb37b549bd9d4de71f90dd2120a285ff72503274068",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/engineering/wizard/SKILL.md",
@@ -1432,7 +1746,7 @@
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
       "validated_target_sha256": "5084e70ebbcaa4f770b50a88f736f5b2075db29fdc84b68b663ade6ebbf7b2da",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/engineering/wizard/agents/openai.yaml",
@@ -1444,43 +1758,67 @@
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
       "validated_target_sha256": "e5c7b8814e07401902e6e21fa16da360e5dea285379201ebaf6af174fa0f1fed",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/engineering/wizard/template.sh",
       "mode": "100644",
-      "source_blob": "1b3cdf40ad4923a9845fd682653d8cc4510f516e",
-      "source_sha256": "33cbe9dfb1d0e9185b60248a52aabed14bc64785a00cac695e302e739dd6c153",
+      "source_blob": "081ed3da860729c5e6fb1e7126c86b07b0ed56f0",
+      "source_sha256": "6566f147299bc6f1d941e64591ed04385416d543e11f96f564c7228f5018d0ed",
       "category": "engineering",
       "method": "原样保留",
       "preserve_reason": "保留可执行代码、配置、许可证或符号链接契约",
-      "status": "原样保留已验证",
-      "validated_target_sha256": "33cbe9dfb1d0e9185b60248a52aabed14bc64785a00cac695e302e739dd6c153",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "status": "已验证",
+      "validated_target_sha256": "6566f147299bc6f1d941e64591ed04385416d543e11f96f564c7228f5018d0ed",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/in-progress/README.md",
       "mode": "100644",
-      "source_blob": "6b33e7e480470bf22d4730592a71dbd0a6dbffd3",
-      "source_sha256": "5eebe7bc74e0df103dbb03a99201695be2b85c3ee7ab0afc44e4fe833f19dce0",
+      "source_blob": "792ebaa0aecbc24bf02742558df8873c9df72af2",
+      "source_sha256": "740e1d097748d68ebc00cb98de7b2dadbbac0e714af37a0d6a251819c0073584",
       "category": "in-progress",
       "method": "全文翻译",
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
-      "validated_target_sha256": "0c3cac1209c0e37c4b49af7adbb110409e529cf9baf8048e72c9d6d36f740701",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validated_target_sha256": "cca19bff4c49c5cd70a27b2ad32e6795d84e66a54d5eacabd7e377b14e6bd2f3",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
+    },
+    {
+      "path": "skills/in-progress/chief-of-staff/SKILL.md",
+      "mode": "100644",
+      "source_blob": "97da622d09acaaacebbb4482663c907e241f4594",
+      "source_sha256": "6cc6e47ab5022f3e45e5be0fedbb0f6e645f4f0190d6b0c51c7cd60c2d7c1d98",
+      "category": "in-progress",
+      "method": "全文翻译",
+      "preserve_reason": "保留命令、路径、URL、技术标识及不可变元数据；自然语言译为中文",
+      "status": "已验证",
+      "validated_target_sha256": "d338c9a6d6b5a17e5dfe4afb0980202257b142dca4f0ed4700b6520197eba341",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
+    },
+    {
+      "path": "skills/in-progress/chief-of-staff/agents/openai.yaml",
+      "mode": "100644",
+      "source_blob": "080598b44ad9c843dc3457b6e0e32368aaeec84d",
+      "source_sha256": "c0f68ed9da6977adc97a791be3bb0830d301b2d27f9c635d92d6f325bffefb83",
+      "category": "in-progress",
+      "method": "部分字段翻译",
+      "preserve_reason": "保留命令、路径、URL、技术标识及不可变元数据；自然语言译为中文",
+      "status": "已验证",
+      "validated_target_sha256": "ee5a04eb60966f079b9f7fa821ef66900a1e6f99b179fe5cef320b7a67467b77",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/in-progress/claude-handoff/SKILL.md",
       "mode": "100644",
-      "source_blob": "9ab14e312a0d5cffe926eeeab12cef7dc8f84d54",
-      "source_sha256": "6738e8b7c7899ea0038fb7a5c859ca1b90c7b1eb40123dcdbe94c51b5b119f12",
+      "source_blob": "77f82fc59c89c3a83ed5a92521dc2869f0533724",
+      "source_sha256": "79357a18425d66d4c24048bedf83dceb79d3bba356f38014950f764a7fab4026",
       "category": "in-progress",
       "method": "全文翻译",
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
-      "validated_target_sha256": "989ff7cbddf545473f607981bbdfaafdc87944876590c719ed8f5e4fff8d12aa",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validated_target_sha256": "1420fe0b04c22fb5c4527bdb9adae7a009bb4e62bab0a519d16692c97c37ab60",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/in-progress/claude-handoff/agents/openai.yaml",
@@ -1492,31 +1830,7 @@
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
       "validated_target_sha256": "96369362865359c0b0af2fb6f3b68ab7b3c50015b09d3b0803f4d74e6f28b2eb",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
-    },
-    {
-      "path": "skills/in-progress/implement-spec/SKILL.md",
-      "mode": "100644",
-      "source_blob": "d5097f847fc003935599a7f7bf8f0f7186427910",
-      "source_sha256": "f703b5f41df9c2202e19540d203e0d5fc32613572a838a070136cc22e712b129",
-      "category": "in-progress",
-      "method": "全文翻译",
-      "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
-      "status": "已验证",
-      "validated_target_sha256": "e96636a689d1c0c2e9d5e6061227f5e6ec025aa42ee5f520ffb8066b610781cf",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
-    },
-    {
-      "path": "skills/in-progress/implement-spec/agents/openai.yaml",
-      "mode": "100644",
-      "source_blob": "043f27f43eed1a8a3c0e3fdbf920f07935faf05d",
-      "source_sha256": "d457ae78ff282b8798380b0c2e393c9798bc2bf5ee7dfe9ca31607714c6cd7d3",
-      "category": "in-progress",
-      "method": "部分字段翻译",
-      "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
-      "status": "已验证",
-      "validated_target_sha256": "5c50257d6dccc6b81744417c84be985a2ac0ffdca010461b49ccd1a0e657791d",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/in-progress/loop-me/SKILL.md",
@@ -1528,7 +1842,7 @@
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
       "validated_target_sha256": "1412de5bfe7f2080bee2c4bd06cfc63c6f88a9fc2bd70c37552a0bf87f6907cc",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/in-progress/loop-me/agents/openai.yaml",
@@ -1540,67 +1854,7 @@
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
       "validated_target_sha256": "ff53baff7900f41bd65776f165bb1850c8bd2389886c0bd990a5840910eb1974",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
-    },
-    {
-      "path": "skills/in-progress/pr/CREDITS.md",
-      "mode": "100644",
-      "source_blob": "32f5db39e080594cc38bea519b372c5a60943d22",
-      "source_sha256": "d316306f029b9dc9552d6aa5e5454bd95550da45c6325dbe41f86fc256f2dd14",
-      "category": "in-progress",
-      "method": "全文翻译",
-      "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
-      "status": "已验证",
-      "validated_target_sha256": "2d8fe1e6e81c8c32263984e2173d6796e2280bc1c1e07b52b920962cd0f43a38",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
-    },
-    {
-      "path": "skills/in-progress/pr/SKILL.md",
-      "mode": "100644",
-      "source_blob": "8d71b376a71f40511a66b4b67f9e9ea5d64ada79",
-      "source_sha256": "e91dc57fa0ee1d8d2fd35562425c943d377f0acdfba6245858a619990fcff0e8",
-      "category": "in-progress",
-      "method": "全文翻译",
-      "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
-      "status": "已验证",
-      "validated_target_sha256": "6f5423f95a9099512cc91be6b39d7d9f193e570f767663aad25a23bcfaea1a15",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
-    },
-    {
-      "path": "skills/in-progress/pr/agents/openai.yaml",
-      "mode": "100644",
-      "source_blob": "48286f48f53b937cc19c0e39899b5f956271a98d",
-      "source_sha256": "2295b586624db4ef546f3fd4695492f039d941a46d8a1593a702ce3ca511b8ad",
-      "category": "in-progress",
-      "method": "部分字段翻译",
-      "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
-      "status": "已验证",
-      "validated_target_sha256": "3c49658ce111b93bd3abdeba8c7f81331fbcc56f83c108ee43fe55eeb5757f63",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
-    },
-    {
-      "path": "skills/in-progress/retro/SKILL.md",
-      "mode": "100644",
-      "source_blob": "12149acf2dd23b4514dec57b04a6293eaa1352fa",
-      "source_sha256": "33fbc28568e3146f20fd908b12998bc0ab30aa4f4c87288199a40793efa94696",
-      "category": "in-progress",
-      "method": "全文翻译",
-      "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
-      "status": "已验证",
-      "validated_target_sha256": "3377693186385f22c6155dc0f39c79cb2798a0b9818c850b2495d9df23c35dc1",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
-    },
-    {
-      "path": "skills/in-progress/retro/agents/openai.yaml",
-      "mode": "100644",
-      "source_blob": "a2f0bac3f9cebf29beee2e79960cb876e0adc65d",
-      "source_sha256": "cb6fb9d7e6b4be5975f41f6def1dd00a1255bad5d9b02696b124c924a8b8745c",
-      "category": "in-progress",
-      "method": "部分字段翻译",
-      "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
-      "status": "已验证",
-      "validated_target_sha256": "7d396f3f16a6e31db74d8bf008087e5ececfa497bff68236d731dc1f57c0d09f",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/in-progress/setup-ts-deep-modules/SKILL.md",
@@ -1612,7 +1866,7 @@
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
       "validated_target_sha256": "fd565754875406e6571211451d4263bf2e51ff88a0d3bd5746b612bed3bb4cd3",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/in-progress/setup-ts-deep-modules/agents/openai.yaml",
@@ -1624,7 +1878,7 @@
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
       "validated_target_sha256": "ff1c72a9a7539f5c2c971a63dedd14518f70ff101ab2cb8925654a00bfe6a0d0",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/in-progress/setup-ts-deep-modules/dependency-cruiser.config.cjs",
@@ -1634,9 +1888,9 @@
       "category": "in-progress",
       "method": "原样保留",
       "preserve_reason": "保留可执行代码、配置、许可证或符号链接契约",
-      "status": "原样保留已验证",
+      "status": "已验证",
       "validated_target_sha256": "3c4973bec69f73b2117654abf9e666a7c28665b213be20e6d39869e29842428e",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/in-progress/writing-beats/SKILL.md",
@@ -1648,7 +1902,7 @@
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
       "validated_target_sha256": "f26640b80384f7ec19d74648d06c9c5b6bbbd676621e3ed64b556951b2c00e9c",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/in-progress/writing-beats/agents/openai.yaml",
@@ -1660,7 +1914,7 @@
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
       "validated_target_sha256": "158d42c16502273d43f2c8dd31667a00a1ce1642f3e43b0e61acbd28546aa437",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/in-progress/writing-fragments/SKILL.md",
@@ -1672,7 +1926,7 @@
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
       "validated_target_sha256": "1ee42aa9d166fe3afc79f328423d71795461e6729f8928e7de46e9d193a78a58",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/in-progress/writing-fragments/agents/openai.yaml",
@@ -1684,7 +1938,7 @@
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
       "validated_target_sha256": "261d796aeb6922fae46b5d37a423a8ca34f960ee9b8d5d3eb593dadecd94d300",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/in-progress/writing-shape/SKILL.md",
@@ -1696,7 +1950,7 @@
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
       "validated_target_sha256": "3022954724362181c5f477d394918eff30b129d246e8c6ff7c3c0e396c778af4",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/in-progress/writing-shape/agents/openai.yaml",
@@ -1708,7 +1962,7 @@
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
       "validated_target_sha256": "611b5e792b6a0ad588d143daecccb1b7e9ee7e38f94634977d11a49e5597e579",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/misc/README.md",
@@ -1720,7 +1974,7 @@
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
       "validated_target_sha256": "8aaab7b5292474656e70c30373d82ba5da1a34f59d38f642b02f180fcd0388c0",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/misc/git-guardrails-claude-code/SKILL.md",
@@ -1732,7 +1986,7 @@
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
       "validated_target_sha256": "1bfa3fbbd70102471224deed1d60575fd0be72ad47a0843d6198d7203dc5d027",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/misc/git-guardrails-claude-code/agents/openai.yaml",
@@ -1744,7 +1998,7 @@
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
       "validated_target_sha256": "14514bf21916bf6ed08b4d1ca6625772df703bf20c7f445d61fe6451e3e0b941",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/misc/git-guardrails-claude-code/scripts/block-dangerous-git.sh",
@@ -1754,9 +2008,9 @@
       "category": "misc",
       "method": "原样保留",
       "preserve_reason": "保留可执行代码、配置、许可证或符号链接契约",
-      "status": "原样保留已验证",
+      "status": "已验证",
       "validated_target_sha256": "234922b83c0a1737ee7300806c21ac0f389b07aaeb65c2d71ccedafbc5e1ea4b",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/misc/migrate-to-shoehorn/SKILL.md",
@@ -1768,7 +2022,7 @@
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
       "validated_target_sha256": "4dd6903c29c9e94ef248a2b69a2f6f2c20b8ef08e1ccc28641a8a44f2145e0b3",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/misc/migrate-to-shoehorn/agents/openai.yaml",
@@ -1780,7 +2034,7 @@
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
       "validated_target_sha256": "73020792bcd9d7e26ced3d63e4a428ddd4c8119d19b15673be162b8af1d50ff5",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/misc/scaffold-exercises/SKILL.md",
@@ -1792,7 +2046,7 @@
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
       "validated_target_sha256": "00f55bd328a7a4379484fe22b81d13074e0eb4265158df05e5ec26e2f378ffaf",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/misc/scaffold-exercises/agents/openai.yaml",
@@ -1804,7 +2058,7 @@
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
       "validated_target_sha256": "87f1c08395e4b35e7cfec1f143a1dfec9385464a3a31c4c3b6dcf8b25a39b2c1",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/misc/setup-pre-commit/SKILL.md",
@@ -1816,7 +2070,7 @@
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
       "validated_target_sha256": "e15b5c2970e962a616050ca3677d649a992e87c9384ff2a3a677e3abaac42af0",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/misc/setup-pre-commit/agents/openai.yaml",
@@ -1828,19 +2082,19 @@
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
       "validated_target_sha256": "eb4b721167886011e7be7abc9db1a281e0be102f1e0584847d8584e5beba1770",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/productivity/README.md",
       "mode": "100644",
-      "source_blob": "0ac94ab2de3dfa98639c2cc17c12a291f4924f54",
-      "source_sha256": "bef3901088b409f00cb1ce6e94f4cf3f4e4865969d8b19330f375cd535b10e37",
+      "source_blob": "6fd3754541f59ef90b420f51603cc061f92f9b7e",
+      "source_sha256": "8e39d23dc60e4b3e433ea17f0ed79510c73873a2779e9852920c9791a217efc8",
       "category": "productivity",
       "method": "全文翻译",
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
-      "validated_target_sha256": "68942acfa73737e839d89fcdfc40aa2b266fff11c53ff3aa3259e9b68cebb4c1",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validated_target_sha256": "7912092b3ddfbd13b84258475a99b1016faba70b3bdd77d549cc85637062fd9a",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/productivity/grill-me/SKILL.md",
@@ -1852,7 +2106,7 @@
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
       "validated_target_sha256": "33dac1a82d83687bf70809297475eab96a90c1ea599b0574ae31236918381d8f",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/productivity/grill-me/agents/openai.yaml",
@@ -1864,19 +2118,19 @@
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
       "validated_target_sha256": "93e2872af9777a007b8f2b85e46c8f7f7028f600c1f88c3967201f53c3b482a6",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/productivity/grilling/SKILL.md",
       "mode": "100644",
-      "source_blob": "8ca78c6d8f901aab0c5a1f896034b70e666ff2a3",
-      "source_sha256": "10ff989e7498b23b5acb49d5048f11dcd906757d2f79c5cdf8a00001381296f2",
+      "source_blob": "df69d9936880cd3314c28858c6c52f48db23b856",
+      "source_sha256": "befdff1e27a1dfe2a294d5871169ac1afe16d983911daa4f32627514a48c1e15",
       "category": "productivity",
       "method": "全文翻译",
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
-      "validated_target_sha256": "381605dc31053f6bd60e5491d653615a6a6d453c02fca814430fee058823f53d",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validated_target_sha256": "69e094f365d1e22a12bcb56014afae3e1b541483c5b4960fcb862ccc0c9ec01f",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/productivity/grilling/agents/openai.yaml",
@@ -1888,19 +2142,19 @@
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
       "validated_target_sha256": "5b16f3595607b3acfa26b2142bccfcb28a57ee3b085d55a16678bd09fa8f6b80",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/productivity/handoff/SKILL.md",
       "mode": "100644",
-      "source_blob": "2eb98a51b97bb5bac461a26ad14828eeac827909",
-      "source_sha256": "7c62de979fdc7ac32fb5ddb2146156c917f80ee070d30fadc9d40343c4b6ed25",
+      "source_blob": "a224edc643a20ddb989f9bca1547440169159810",
+      "source_sha256": "4cbb043950dad2ffd3662ff1a5a0b51ae676004b5cae10e3787e8ee7a4ee69d3",
       "category": "productivity",
       "method": "全文翻译",
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
-      "validated_target_sha256": "af1166cbc0a5c17bcc6bb37023158de2d2223edadfb116540da34863780347ec",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validated_target_sha256": "c3b2e352beaaf2d86c5cf43508b8dd907ad694e38965a9bda5a37e9a69d8e37c",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/productivity/handoff/agents/openai.yaml",
@@ -1912,7 +2166,7 @@
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
       "validated_target_sha256": "928d2d1e47ebf19361c694e3d2a09af126d4df1620b7df32fecd430359a9bb14",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/productivity/teach/GLOSSARY-FORMAT.md",
@@ -1924,7 +2178,7 @@
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
       "validated_target_sha256": "1a6fbf31648c1dab479a7d19435beace0564e2b5e15b0433b06456582de4924e",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/productivity/teach/LEARNING-RECORD-FORMAT.md",
@@ -1936,7 +2190,7 @@
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
       "validated_target_sha256": "46a7f4e3a2fea4c7b1776f0320041c6268675f4403124ab40675d61bb47b8ea5",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/productivity/teach/MISSION-FORMAT.md",
@@ -1948,7 +2202,7 @@
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
       "validated_target_sha256": "0eb52550c9f1e011fc64aed3956d26618ee3c4e1739bb2016abef3b5797b5cc0",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/productivity/teach/RESOURCES-FORMAT.md",
@@ -1960,19 +2214,19 @@
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
       "validated_target_sha256": "2a8ee0f46dc49e48427bde0b0b132722be1db06d62d665c67491d3a1046cf6f8",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/productivity/teach/SKILL.md",
       "mode": "100644",
-      "source_blob": "c679eeccd48ca720c8196e5d9a9e58223abf213b",
-      "source_sha256": "a32df9dcdfc0c4fdc1c98e1ed3940c5f56b84c1aa90ff60346f32b8b53915b43",
+      "source_blob": "493fa3bae0dada971c4dfb965790e56920b1dced",
+      "source_sha256": "550482c2d674b085c9043b87bfdc14a8f2ec453c736119e7fcbb1e9332bffeba",
       "category": "productivity",
       "method": "全文翻译",
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
-      "validated_target_sha256": "026bc43c24a0b85eee321b3d94934b67505083b97f448ef2071caf2503659c84",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validated_target_sha256": "051bf809b62c9cee789f56125c619ba486fcf1236c3e9b67ba1935882996a32a",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/productivity/teach/agents/openai.yaml",
@@ -1984,7 +2238,7 @@
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
       "validated_target_sha256": "df3b5afc5f12f9f4995068fec45caabd6640e8244e56a8bd96b1da68e9f4a612",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/productivity/to-questionnaire/SKILL.md",
@@ -1996,7 +2250,7 @@
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
       "validated_target_sha256": "6ac197f6a6cb9bda6326cbf83d980ab8cbc174fc37f9b81ecb5be46b317f2a2c",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/productivity/to-questionnaire/agents/openai.yaml",
@@ -2008,19 +2262,19 @@
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
       "validated_target_sha256": "6c7f4d90624c1492b38ac1fef975d366a8cbbc8dcf522531b160d05a93a69b5e",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/productivity/wait-what/SKILL.md",
       "mode": "100644",
-      "source_blob": "f8854f1b4527bca90378baf5430557172136a1bf",
-      "source_sha256": "e3f44e3ccbc0e7b62f20ba70b295fc9c9f4aa3f96c77168faee1c71bacbf4215",
+      "source_blob": "9b15cd1a7dda0854ca093e29e3e0de57e241b2ac",
+      "source_sha256": "d961bb37defd975c539427edb8f450cdbccdcdd552e213c1ece46676a7970905",
       "category": "productivity",
       "method": "全文翻译",
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
-      "validated_target_sha256": "a898a87cd0ff4532c9501baaad606db3ea27d1107bfb730e1eb8404b390b0d32",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validated_target_sha256": "0aa37f72c57f0b423dd9965f19179a4b4bb8a037a75c59b350b81702f764b39e",
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/productivity/wait-what/agents/openai.yaml",
@@ -2032,7 +2286,7 @@
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
       "validated_target_sha256": "d25fc822a7ff277acc64192a55f7ef385aff5f6a3d7986232f64942c983a32fb",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/productivity/writing-for-agents/SKILL-MECHANICS.md",
@@ -2044,7 +2298,7 @@
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
       "validated_target_sha256": "275eb126bf43383a3718efbebfc43393a05602ced804e12785fd15f7c3371622",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/productivity/writing-for-agents/SKILL.md",
@@ -2056,7 +2310,7 @@
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
       "validated_target_sha256": "fb213685c62b39f11721695a0bf58213007ba20957f8c05b5e0bdee43473e590",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     },
     {
       "path": "skills/productivity/writing-for-agents/agents/openai.yaml",
@@ -2068,10 +2322,10 @@
       "preserve_reason": "保留技术标识、命令、URL、固定输出和元数据结构",
       "status": "已验证",
       "validated_target_sha256": "867cfd7fc0c5540c5261e5ddc6195fe89597d7df5ef32cc439820af8c92bca2c",
-      "validation": "2026-09-25 全量 validate.py / audit.py 与逐文件全文校对记录"
+      "validation": "2026-10-11 全量 validate.py / audit.py、版本及 shell 语法检查；平台运行边界见 validation.md"
     }
   ],
-  "readme_notice": "本仓库是 Matt Pocock 的 mattpocock/skills 项目的非官方简体中文翻译，基于冻结提交 c55ee46073ed923f86ce59a5eb3b6d895095d1b7。下文第一人称及安装来源均保留上游身份，安装命令指向英文上游。详见[中文版本说明](wiki/translation.html)。\n\n",
+  "readme_notice": "本仓库是 Matt Pocock 的 mattpocock/skills 项目的非官方简体中文翻译，基于冻结提交 49dd158d1076134a641b33efb035946536778336。下文第一人称及安装来源均保留上游身份，安装命令指向英文上游。详见[中文版本说明](wiki/translation.html)。\n\n",
   "html_attribute_translations": {
     "README.md": [
       {
@@ -2092,12 +2346,70 @@
     ]
   },
   "completion": {
-    "date": "2026-09-25",
+    "date": "2026-10-11",
     "status": "完成",
-    "scope": "冻结树完整中文翻译与本地验收；未运行 Claude 平台验证或安装。验收后用户另行授权提交并推送至 main，具体 Git 状态以仓库记录为准。",
-    "source_paths": 169,
-    "translated_paths": 156,
+    "scope": "上游当前 1.3.1 快照及 16 个待发布 changeset 已同步中文，完成全量本地验收。Claude CLI 与 shellcheck 未安装；用户已授权随后提交、合并至 main 并推送 origin。未安装或实际调用技能，Git 交付状态以提交历史与 origin/main 为准。",
+    "source_paths": 190,
+    "translated_paths": 175,
     "skills": 38,
-    "preserved_paths": 13
+    "preserved_paths": 15
+  },
+  "previous_source_commit": "c55ee46073ed923f86ce59a5eb3b6d895095d1b7",
+  "mutable_yaml_paths": {
+    ".github/ISSUE_TEMPLATE/bug.yml": [
+      "$.name",
+      "$.description",
+      "$.body[0].attributes.value",
+      "$.body[1].attributes.label",
+      "$.body[1].attributes.description",
+      "$.body[2].attributes.label",
+      "$.body[2].attributes.description",
+      "$.body[3].attributes.label",
+      "$.body[3].attributes.description",
+      "$.body[4].attributes.label",
+      "$.body[4].attributes.description",
+      "$.body[5].attributes.label",
+      "$.body[5].attributes.description"
+    ],
+    ".github/ISSUE_TEMPLATE/idea.yml": [
+      "$.name",
+      "$.description",
+      "$.body[0].attributes.value",
+      "$.body[1].attributes.label",
+      "$.body[1].attributes.options[0].label",
+      "$.body[2].attributes.label",
+      "$.body[2].attributes.description",
+      "$.body[3].attributes.label",
+      "$.body[3].attributes.description",
+      "$.body[4].attributes.label",
+      "$.body[4].attributes.description"
+    ],
+    ".github/ISSUE_TEMPLATE/config.yml": [
+      "$.contact_links[0].name",
+      "$.contact_links[0].about"
+    ]
+  },
+  "localized_additions": {
+    "skills/in-progress/README.md": [
+      {
+        "text": "- **[chief-of-staff](./chief-of-staff/SKILL.md)**：在长时间运行的单个会话中，协调子 agent 和定期计划推进长期目标，并持续改善 agent 工作环境。由用户调用。\n",
+        "reason": "上游新增了 chief-of-staff，但未将其加入分类索引；按本仓库 AGENTS.md 补齐 beta 分类清单，不纳入正式插件。"
+      }
+    ]
+  },
+  "archived_docs": [
+    "docs/engineering/resolving-merge-conflicts.md"
+  ],
+  "snapshot_counts": {
+    "paths": 190,
+    "skills": 38,
+    "agents": 38,
+    "buckets": {
+      "engineering": 20,
+      "in-progress": 7,
+      "misc": 4,
+      "productivity": 7
+    },
+    "promoted": 27
   }
 }

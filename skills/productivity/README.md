@@ -14,7 +14,7 @@
 - **[handoff](./handoff/SKILL.md)**：把当前对话压缩成交接文档，让另一个 agent 继续工作。
 - **[teach](./teach/SKILL.md)**：以当前目录作为有状态教学工作空间，跨多个会话教用户新技能或概念。
 - **[to-questionnaire](./to-questionnaire/SKILL.md)**：把你无法独自回答的决策转成 Markdown 问卷，交给能回答的那个人（异步填写，或开会共同完成）。
-- **[wait-what](./wait-what/SKILL.md)**：消息没讲明白时立即调用。agent 会用通俗英语和你的 `CONTEXT.md` 词汇重新解释，补上缺失上下文。
+- **[wait-what](./wait-what/SKILL.md)**：消息没讲明白时立即调用。agent 会用通俗英语和你的 `GLOSSARY.md` 词汇重新解释，补上缺失上下文。
 
 <a id="model-invoked"></a>
 

@@ -5,7 +5,7 @@ argument-hint: "下一场会话将用于什么？"
 disable-model-invocation: true
 ---
 
-编写交接文档，总结当前对话，让一个新的 agent 能继续工作。保存到用户操作系统的临时目录，而不是当前工作区。
+编写总结当前对话的交接文档，使新 agent 能继续工作。保存在用户操作系统临时目录（`$TMPDIR`，否则 `/tmp`；Windows 使用 `%TEMP%`），而非当前工作空间。
 
 在文档中加入 "suggested skills"（建议使用的技能）章节，列出下一位 agent 应当通过 Skill 工具调用的技能。
 

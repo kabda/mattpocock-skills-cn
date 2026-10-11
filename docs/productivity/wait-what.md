@@ -2,7 +2,7 @@
 
 ## 它能做什么
 
-当一条消息没能让你理解时，输入 `wait-what`。[agent](https://www.aihero.dev/ai-coding-dictionary/agent) 随后会重新讲述刚才的内容。它补上你缺少的背景，用浅显英语表达，并使用项目 `CONTEXT.md` 中的词汇。
+当一条消息没能让你理解时，输入 `wait-what`。[agent](https://www.aihero.dev/ai-coding-dictionary/agent) 随后会重新讲述刚才的内容。它补上你缺少的背景，用浅显英语表达，并使用项目 `GLOSSARY.md` 中的词汇。
 
 这个技能只有三行。这是有意的设计，不是未完成的草稿。对抗啰嗦的技能会因自身膨胀而失败：一个四百行的简洁表达技能依然会让[模型](https://www.aihero.dev/ai-coding-dictionary/model)啰嗦，因为模型读到的是体量，而不是恳求。本技能只带着一个精确的引导词，没有其他负担。
 
@@ -28,9 +28,9 @@
 
 ## 复用你已有的语言
 
-正文复用了全局 `CLAUDE.md` 和项目 `CONTEXT.md` 中已有的引导词。ASD-STE100 Simplified Technical English 决定表达风格，通用语言提供名词。技能、`CLAUDE.md` 与 `CONTEXT.md` 使用相同的 [token](https://www.aihero.dev/ai-coding-dictionary/token)，因此调用它并不是新增指令，而是提醒 agent 遵守已同意的指令。
+正文复用了全局 `CLAUDE.md` 和项目 `GLOSSARY.md` 中已有的引导词。ASD-STE100 Simplified Technical English 决定表达风格，通用语言提供名词。技能、`CLAUDE.md` 与 `GLOSSARY.md` 使用相同的 [token](https://www.aihero.dev/ai-coding-dictionary/token)，因此调用它并不是新增指令，而是提醒 agent 遵守已同意的指令。
 
-如果没有 `CONTEXT.md`（也没有 `CONTEXT-MAP.md` 指向当前上下文的对应文件），技能仍然有效。你只会失去领域词汇这一部分。
+如果没有 `GLOSSARY.md`（也没有 `GLOSSARY-MAP.md` 指向当前上下文的对应文件），技能仍然有效。你只会失去领域词汇这一部分。
 
 <a id="its-working-if"></a>
 
@@ -38,11 +38,11 @@
 
 - 重新讲述的内容**更短、更清楚**，而不是更短、更生硬。
 - 它补上你缺少的前提，而不是只删字。
-- 项目名词取代自创词语。`CONTEXT.md` 中的术语重新出现。
+- 项目名词取代自创词语。`GLOSSARY.md` 中的术语重新出现。
 - 你可以连续使用两次，而不会退化成过度简略的表达。
 
 <a id="where-it-fits"></a>
 
 ## 它在流程中的位置
 
-你可以在任何对话的任何时刻、任何其他技能内部使用 `wait-what`。它在事后修复一条消息。真正的根治方式是事先约定共享语言，这正是 [grill-with-docs](https://aihero.dev/skills-grill-with-docs) 的作用：在[追问](https://www.aihero.dev/ai-coding-dictionary/grilling)会话中同步运行 [domain-modeling](https://aihero.dev/skills-domain-modeling)，将双方使用的词语写入 `CONTEXT.md`。如果不确定此刻哪个技能适合，[ask-matt](https://aihero.dev/skills-ask-matt) 会为你指路。
+你可以在任何对话的任何时刻、任何其他技能内部使用 `wait-what`。它在事后修复一条消息。真正的根治方式是事先约定共享语言，这正是 [grill-with-docs](https://aihero.dev/skills-grill-with-docs) 的作用：在[追问](https://www.aihero.dev/ai-coding-dictionary/grilling)会话中同步运行 [domain-modeling](https://aihero.dev/skills-domain-modeling)，将双方使用的词语写入 `GLOSSARY.md`。如果不确定此刻哪个技能适合，[ask-matt](https://aihero.dev/skills-ask-matt) 会为你指路。

@@ -1,7 +1,6 @@
 ---
 name: code-review
-description: >-
-  从两个维度审查固定基准点（提交、分支、标签或 merge-base）以来的改动：Standards（代码是否遵守仓库已记录的编码标准？）和 Spec（代码是否符合原始 issue／规格说明的要求？）。由并行子 agent 运行两项审查，并排报告。当用户希望审查分支、PR、进行中的改动，或要求 "review since X" 时使用。
+description: "从两个维度审查固定基准点（提交、分支、标签或 merge-base）以来的改动：Standards（代码是否遵守仓库已记录的编码标准？）和 Spec（代码是否符合原始 issue／规格说明的要求？）。由并行子 agent 运行两项审查，并排报告。当用户希望审查分支、PR、进行中的改动，或要求 \"review since X\" 时使用。"
 ---
 
 针对 `HEAD` 与用户给定固定基准点之间的 diff，开展双维度审查：
@@ -11,7 +10,7 @@ description: >-
 
 两个维度由**并行子 agent**运行，避免相互污染上下文，然后由本技能汇总发现。
 
-你应当已经获得 issue 跟踪器信息。如果缺少 `docs/agents/issue-tracker.md`，告诉用户运行 `/setup-matt-pocock-skills`。
+你应当已经获得 issue 跟踪器信息。没有时，告诉用户运行 `/setup-matt-pocock-skills`。
 
 <a id="process"></a>
 
@@ -33,7 +32,7 @@ description: >-
 
 按以下顺序寻找原始规格说明：
 
-1. 提交信息中的 issue 引用（`#123`、`Closes #45`、GitLab 的 `!67` 等），通过 `docs/agents/issue-tracker.md` 中的流程获取。
+1. 提交信息中的 issue 引用（`#123`、`Closes #45`、GitLab 的 `!67` 等），通过跟踪器文档中的流程获取。
 2. 用户通过参数传入的路径。
 3. `docs/`、`specs/` 或 `.scratch/` 下与分支名或功能匹配的规格说明文件。
 4. 如果没有找到，询问用户规格说明在哪里。如果用户说没有，**Spec** 子 agent 将跳过，并报告 "no spec available"。
@@ -42,7 +41,7 @@ description: >-
 
 ### 3. 确认标准来源
 
-仓库中任何说明代码应当如何编写的内容，例如 `CODING_STANDARDS.md` 或 `CONTRIBUTING.md`。
+搜索仓库中所有说明代码应如何编写的文件。存在 `CODING_STANDARDS.md` 或 `CONTRIBUTING.md` 时，必须将它们列入清单。
 
 除仓库记录的内容之外，Standards 维度始终包含下方的**坏味道基线**：来自 Fowler《Refactoring》第 3 章的一组固定代码坏味道，即使仓库什么也没记录，仍然适用。它受两条规则约束：
 
@@ -67,6 +66,8 @@ description: >-
 <a id="4-spawn-both-sub-agents-in-parallel"></a>
 
 ### 4. 并行启动两个子 agent
+
+同时在前台发起两个子 agent 调用，再汇总它们返回的报告。
 
 **Standards 子 agent 的提示词**应当包含：
 
